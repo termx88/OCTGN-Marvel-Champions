@@ -236,5 +236,12 @@ changelog = {
         "Fix: Power Stone attached to Nebula",
         "Fix: Ronan setup multiplayer (Milano and Power stone to 1st player)",
         "Fix: bad card verso for some SinisterMotives campaign cards"
+        ]),
+    '0000311': ("0.0.3.11", "30 April 2022", [
+        "Fix: Collector/Hela : HP was added when flipping to there infinite health side",
+        "Fix: Acceleration Markers was not transferred to the next Main Scheme",
+        "Fix: Modular Encounters was shuffled in encounter deck in The Hood scenario",
+        "Feature: ask choice when discarding Cards with \"Victory\" keyword and still having Markers",
+        "Fix: Hela HP added when side scheme discarded into victory pile"
         ])
 }
