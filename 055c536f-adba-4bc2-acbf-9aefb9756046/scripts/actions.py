@@ -44,6 +44,12 @@ def isScheme(cards, x = 0, y = 0):
             return False
     return True
 
+def isSideScheme(cards, x = 0, y = 0):
+    for c in cards:
+        if c.Type != 'side_scheme':
+            return False
+    return True
+
 def isHero(cards, x = 0, y = 0):
     for c in cards:
         if c.Type != 'hero' and c.Type != 'alter_ego':
@@ -790,8 +796,21 @@ def discard(card, x = 0, y = 0):
             notify("{} sent back to side schemes deck!".format(card))
             card.moveTo(specialDeckDiscard())
         elif hasVictory(card):
-            notify("{} has 'Victory' keyword and is then sent to Victory Display!".format(card))
-            card.moveTo(victoryDisplay())
+            discardChoice = 2
+            if card.markers[DamageMarker] == 0 or card.markers[ThreatMarker] != 0 or card.markers[AllPurposeMarker] != 0:
+                discardChoice = askChoice("Do you want to discard it or add it to Victory Display ?", ["Encounter Discard Pile", "Victory Pile"])
+                if discardChoice == 1:
+                    discardPile = encounterDiscardDeck()
+            if discardChoice == 2:
+                discardPile = victoryDisplay()
+                notify("{} has 'Victory' keyword and is then sent to Victory Display!".format(card))
+            card.moveTo(discardPile)
+            if discardChoice == 2 and isSideScheme([card]) and getGlobalVariable("villainSetup") == "Hela":
+                vCard = filter(lambda card: card.Type == "villain" and card.alternate == "", table)
+                if len(vCard) > 0:
+                    difficulty = getGlobalVariable("difficulty")
+                    others_hp = 3 if difficulty == "1" else 2
+                    addMarker(vCard[0], x=0, y=0, qty=others_hp * len(getPlayers()))
         else:
             card.moveTo(encounterDiscardDeck())
     elif card.Owner == 'invocation':
@@ -1431,5 +1450,11 @@ def setHPOnCharacter(card):
         nb_players = len(getPlayers())
         base_hp = int(card.properties["HP"])
         is_per_hero = card.properties["HP_Per_Hero"] == "True"
-        total_hp = base_hp * nb_players if is_per_hero else base_hp
+        total_base_hp = base_hp * nb_players if is_per_hero else base_hp
+        add_others = 0
+        if card.Type == "villain" and getGlobalVariable("villainSetup") == "Hela" and card.alternate == "":
+            sideSchemeInVictory = filter(lambda card: card.Type == "side_scheme", victoryDisplay())
+            difficulty = getGlobalVariable("difficulty")
+            add_others = (3 if difficulty == "1" else 2) * len(sideSchemeInVictory) * nb_players
+        total_hp = total_base_hp + add_others
         addMarker(card, x=0, y=0, qty=int(total_hp))
