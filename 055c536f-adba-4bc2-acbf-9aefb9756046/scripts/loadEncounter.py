@@ -14,6 +14,7 @@ def loadEncounter(group, x = 0, y = 0, nbEncounter = 1):
 
 def specificEncounter(group, x = 0, y = 0, nbModular = 1):
     mute()
+    vName = getGlobalVariable("villainSetup")
     for i in sorted(encounter_setup.keys()):
         setupPile().create(i, 1)
 
@@ -30,7 +31,10 @@ def specificEncounter(group, x = 0, y = 0, nbModular = 1):
         return
 
     for card in cardsSelected:
-        createCards(group,sorted(eval(card.Owner).keys()), eval(card.Owner))
+        if vName != 'The Hood':
+            createCards(group,sorted(eval(card.Owner).keys()), eval(card.Owner))
+        else:
+            createCards(specialDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))
     deleteCards(setupPile())
 
 
