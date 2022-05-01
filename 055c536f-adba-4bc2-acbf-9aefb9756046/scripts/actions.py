@@ -205,6 +205,7 @@ def setFirstPlayer(group = table, x = 0, y = 0):
     mute()
     currentFirstPlayer = num(getGlobalVariable("firstPlayer"))
     firstPlayerToken = [card for card in table if card.Type == 'first_player']
+    firstPlayerIdentityCard =  [card for card in table if card.Type == 'hero' or card.Type == 'alter_ego']
     if (currentFirstPlayer + 1) >= len(getPlayers()):
         newFirstPlayer = 0
     else:
@@ -212,7 +213,7 @@ def setFirstPlayer(group = table, x = 0, y = 0):
     setGlobalVariable("firstPlayer",str(newFirstPlayer))
     update()
     firstPlayerToken[0].controller = me
-    firstPlayerToken[0].moveToTable(playerX(newFirstPlayer),firstPlayerToken[0].position[1])
+    firstPlayerToken[0].moveToTable(firstPlayerIdentityCard[newFirstPlayer].position[0], firstPlayerIdentityCard[newFirstPlayer].position[1]+50)
     firstPlayerToken[0].sendToBack()
 
 def setActiveVillain(card, x = 0, y = 0):
@@ -363,7 +364,7 @@ def tableSetup(group=table, x=0, y=0, doPlayer=True, doEncounter=False):
     v = getGlobalVariable("villainSetup")
     if num(g) == len(getPlayers()) and len(v) > 0:
         table.create("65377f60-0de4-4196-a49e-96a550b4df81",playerX(0),tableLocations['hero'][1]+40,1,True)
-        firstPlayerToken = filter(lambda card: card.Type == 'first_player', table)
+        firstPlayerToken = [card for card in table if card.Type == 'first_player']
         firstPlayerToken[0].sendToBack()
         for p in players:
             remoteCall(p,"addObligationsToEncounter",[table, x, y, p])
@@ -486,6 +487,10 @@ def specific_hero_flip(card, x = 0, y = 0):
         if card.Type == "alter_ego":
             card.markers[AllPurposeMarker] = 0
             notify("{} removes all Marker from {}.".format(me, card))
+    if card.Owner == 'vision':
+        upgradeCard = filter(lambda c: c.CardNumber == "26002a", table)
+        if card.Type == "alter_ego" and len(upgradeCard) != 0:
+            me.counters["MaxHandSize"].value += 1
 
 def villainBoost(card, x=0, y=0, who=me):
     mute()
