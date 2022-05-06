@@ -198,7 +198,7 @@ Response: After you change to this mass form, draw 1 card.</property>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Condition."/>
-      <property name="Text">Max 2 per deck. Uses (2 training counters)/>
+      <property name="Text">Max 2 per deck. Uses (2 training counters)</property>
     </card>
     <card name="Chance Encounter" id="0b12d814-614b-4947-a995-f6e6750e86aa">
       <property name="CardNumber" value="26034"/>
