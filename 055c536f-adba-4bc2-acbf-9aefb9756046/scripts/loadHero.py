@@ -8,7 +8,7 @@ def loadHero(group, x = 0, y = 0):
         confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
         return
 
-    choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "A registered deck (o8d)", "A marvelcdb deck (URL)"])
+    choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)"])
 
     if choice == 0: return
     if choice == 1:
@@ -98,9 +98,7 @@ def heroSetup(group=table, x = 0, y = 0):
         if str(heroCard.properties["Owner"]) == 'vision':
             for c in filter(lambda card: card.Type == "upgrade", me.Deck):
                 if c.CardNumber == "26002a":
-                    c.moveTo(me.piles['Special Deck'])
-            me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+                    c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
         #------------------------------------------------------------
         # Draw Opening Hand
