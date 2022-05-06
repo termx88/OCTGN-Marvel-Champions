@@ -243,5 +243,12 @@ changelog = {
         "Fix: Modular Encounters was shuffled in encounter deck in The Hood scenario",
         "Feature: ask choice when discarding Cards with \"Victory\" keyword and still having Markers",
         "Fix: Hela HP added when side scheme discarded into victory pile"
+        ]),
+    '0000312': ("0.0.3.12", "06 May 2022", [
+        "Fix: First Player Token position when going from one character to one another",
+        "Fix: Vision max hand size when flipping to alter-ego",
+        "Fix: \"Assault Training\" card counters",
+        "Fix: Wrong modular encounter name in image pack for \"Symbiotic Strength\"",
+        "Fixed issue where control on a side scheme card was lost when revealed"
         ])
 }
