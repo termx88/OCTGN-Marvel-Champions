@@ -282,7 +282,7 @@ def defaultCardAction(args):
         return
     if args.card.group == table:
         if not args.card.isFaceUp or isScheme([args.card]):
-             remoteCall(getActivePlayer(), "revealHide", args.card)
+             remoteCall(args.card.controller, "revealHide", args.card)
         else:
             if args.card.Type == "villain":
                 villainBoost(args.card)
