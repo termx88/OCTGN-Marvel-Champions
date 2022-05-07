@@ -151,5 +151,17 @@
         <card id="939bf149-4cf6-4192-98ba-300000000050" name="Whispers of Paranoia">
             <property name="Owner" value="whispers_of_paranoia"/>
         </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000051" name="Armadillo">
+            <property name="Owner" value="armadillo"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000052" name="Zzzax">
+            <property name="Owner" value="zzzax"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000053" name="The Inheritors">
+            <property name="Owner" value="the_inheritors"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000054" name="Iron Spider's Sinister Six">
+            <property name="Owner" value="iron_spider_sinister_six"/>
+        </card>
     </cards>
 </set>

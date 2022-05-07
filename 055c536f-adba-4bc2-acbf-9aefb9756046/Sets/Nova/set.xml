@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Nova" id="46209500-1ae1-452b-81d7-0a0447e7b505" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Nova" id="b13b2622-5a3d-4945-9c21-dcb23ce93f33">
+      <property name="CardNumber" value="28001a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="nova"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Champion."/>
+      <property name="Unique" value="True"/>
+      <alternate name="Sam Alexender" type="b">
+        <property name="CardNumber" value="28001b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="nova"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Civilian."/>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Ms. Marvel" id="27ca3f3d-d6c5-44e1-a654-355da5efb679">
+      <property name="CardNumber" value="28002"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="nova"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Champion. Inhuman."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Forcefield Projection" id="a5c6671e-e075-4a7e-9d00-908c91539758">
+      <property name="CardNumber" value="28003"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="nova"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+    </card>
+    <card name="Lightspeed Flight" id="9efd02f1-485f-4304-b6d0-04b6c701a475">
+      <property name="CardNumber" value="28004"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="nova"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Superpower. Thwart."/>
+    </card>
+    <card name="Pot Shot" id="63d48598-0994-4374-a9d0-a767d6a51cd9">
+      <property name="CardNumber" value="28005"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="nova"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack. Superpower."/>
+    </card>
+    <card name="Unleash Nova Force" id="ccf92fc5-7e77-4070-ae41-d112e507585f">
+      <property name="CardNumber" value="28006"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="nova"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+    </card>
+    <card name="Connection to the Worldmind" id="71d5eaf1-5ef9-4b7f-9c2b-a580eb0845df">
+      <property name="CardNumber" value="28007"/>
+      <property name="Type" value="resource"/>
+      <property name="Owner" value="nova"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">Connection to the Worldmind does not count toward your hand size.</property>
+    </card>
+    <card name="Jesse Alexander" id="69f7bac0-e287-4f65-b1f5-8258fd26e4da">
+      <property name="CardNumber" value="28008"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="nova"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Persona."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Supernova Helmet" id="2ede2b5e-d768-49f2-9bb4-1884724b4f78">
+      <property name="CardNumber" value="28009"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="nova"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Armor."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="The Locust" id="d933187f-5904-4b55-8f95-7d07c8ee725a">
+      <property name="CardNumber" value="28010"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Pitchback" id="02803989-817e-46fa-bec9-22ebd413797d">
+      <property name="CardNumber" value="28012"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Aerial. Attack."/>
+    </card>
+    <card name="No Quarter" id="467bb268-f5b0-4e8b-9f1d-af89884d9cd1">
+      <property name="CardNumber" value="28013"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Attack."/>
+    </card>
+    <card name="One by One" id="00ce2f12-1554-45e1-9b56-505bac8367af">
+      <property name="CardNumber" value="28014"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack."/>
+    </card>
+    <card name="Fluid Motion" id="b90865cf-8358-4f10-bda1-c32d689cfbb9">
+      <property name="CardNumber" value="28016"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Honed Technique" id="73d69dc0-0957-4876-a7c9-9c6e63676ea5">
+      <property name="CardNumber" value="28017"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Moon Girl" id="c7126feb-f097-4e98-b154-17693ba482f8">
+      <property name="CardNumber" value="28018"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Champion. Genius."/>
+    </card>
+    <card name="Everyday Hero" id="96a2155d-3ec0-417c-82b9-fe7eb4e5716d">
+      <property name="CardNumber" value="28019"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Wild" value="1"/>
+    </card>
+    <card name="Champions Mobile Bunker" id="ab44bbb1-f160-4e47-8cba-ae8e8afc7729">
+      <property name="CardNumber" value="28020"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="2"/>
+      <property name="Attribute" value="Champion. Vehicle."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Yaw and Roll" id="6f2986b8-342b-47f8-ad1e-d1b89837c1c1">
+      <property name="CardNumber" value="28026"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Aerial. Thwart."/>
+    </card>
+    <card name="Height Advantage" id="eab687cf-2fd8-4941-8e8f-7198545f803a">
+      <property name="CardNumber" value="28027"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Aerial. Tactic."/>
+    </card>
+    <card name="Weight of the World" id="fb5ecb64-ca4e-4937-90be-047427c1685d" size="EncounterCard">
+      <property name="CardNumber" value="28021"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="nova"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="&quot;Bring the War!&quot;" id="10072bd5-da5a-47d0-a1ba-82eea6f0e8bf" size="SchemeCard">
+      <property name="CardNumber" value="28022"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="nova_encounter"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Hazard" value="1"/>
+    </card>
+    <card name="Warbringer" id="e77d65c8-27dd-4a71-9ba2-dae6c88a3779" size="EncounterCard">
+      <property name="CardNumber" value="28023"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="nova_encounter"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Brute. Chitauri."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="War Delivery" id="c697f1a7-6e4b-4672-bdbe-4a32032e29d9" size="EncounterCard">
+      <property name="CardNumber" value="28024"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="nova_encounter"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="&quot;The War's Been Brought&quot;" id="69c3f715-8f4b-454a-9c9f-8965f604b313" size="EncounterCard">
+      <property name="CardNumber" value="28025"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="nova_encounter"/>
+      <property name="Text">Surge.</property>
+    </card>
+    <card name="Armored Assault" id="0271ab7e-75bc-436d-b0f7-be103892ea1d" size="SchemeCard">
+      <property name="CardNumber" value="28028"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="armadillo"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="3"/>
+    </card>
+    <card name="Armadillo" id="e13a299e-8c42-484b-924b-2fc56afa962f" size="EncounterCard">
+      <property name="CardNumber" value="28029"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="armadillo"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="8"/>
+      <property name="Attribute" value="Brute. Elite."/>
+      <property name="Text">Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Rollin', Rollin'" id="0bb66b13-2327-4916-9c65-8d1ca623f3b9" size="EncounterCard">
+      <property name="CardNumber" value="28030"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="armadillo"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Condition."/>
+    </card>
+    <card name="Tough and Tumble" id="a2b27a0e-4812-4806-9654-f062f034de03" size="EncounterCard">
+      <property name="CardNumber" value="28031"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="armadillo"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Tough It Out" id="865165c4-5c04-42bc-9ae9-c84314ca2636" size="EncounterCard">
+      <property name="CardNumber" value="28032"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="armadillo"/>
+    </card>
+  </cards>
+</set>

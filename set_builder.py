@@ -4,7 +4,7 @@ import os.path
 from os import path
 
 
-runFile = 'sm'
+runFile = 'ironheart'
 xmlSet = None
 runFileList = ["D:\Téléchargements\[OCTGN]\Marvel Champions\Github_Database/marvelsdb-json-data/pack/" + runFile + '.json', "D:\Téléchargements\[OCTGN]\Marvel Champions\Github_Database/marvelsdb-json-data/pack/" + runFile + '_encounter' + '.json']
 
