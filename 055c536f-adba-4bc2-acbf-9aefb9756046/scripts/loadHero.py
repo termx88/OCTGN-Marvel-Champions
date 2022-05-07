@@ -100,6 +100,13 @@ def heroSetup(group=table, x = 0, y = 0):
                 if c.CardNumber == "26002a":
                     c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
+        # Ironheart
+        if str(heroCard.properties["Owner"]) == 'ironheart':
+            for c in filter(lambda card: card.Type == "hero", me.Deck):
+                c.moveTo(me.piles['Special Deck'])
+            me.piles['Special Deck'].collapsed = False
+            me.piles['Special Deck'].visibility = "all"
+
         #------------------------------------------------------------
         # Draw Opening Hand
         #------------------------------------------------------------

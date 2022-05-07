@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Ironheart" id="ec67f058-3ad2-45b0-accc-7d9b34aa9bd9" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Ironheart" id="fbfbc0f3-bfa6-48f6-a2b7-9a99b8bc6bce">
+      <property name="CardNumber" value="29001a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="HandSize" value="4"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="3"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Champion. Version 1."/>
+      <property name="Unique" value="True"/>
+      <alternate name="Riri Williams" type="b">
+        <property name="CardNumber" value="29001b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="ironheart"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Genius."/>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Ironheart" id="82e28243-edbd-439d-b5e6-5841ab87db96">
+      <property name="CardNumber" value="29002a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="3"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Aerial. Champion. Version 2."/>
+      <property name="Unique" value="True"/>
+      <alternate name="Riri Williams" type="b">
+        <property name="CardNumber" value="29002b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="ironheart"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Genius."/>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Ironheart" id="a24f1149-87bf-4eef-90f8-992b22b2039b">
+      <property name="CardNumber" value="29003a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="HandSize" value="6"/>
+      <property name="Thwart" value="3"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="3"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Aerial. Champion. Version 3."/>
+      <property name="Unique" value="True"/>
+      <alternate name="Riri Williams" type="b">
+        <property name="CardNumber" value="29003b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="ironheart"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Genius."/>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Brawn" id="37888118-f6e0-4b35-bbac-4039acfee5e6">
+      <property name="CardNumber" value="29004"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="3"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Champion. Gamma."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Fly Over" id="5196a1d5-caa7-454f-a05c-07d4a0ff9422">
+      <property name="CardNumber" value="29005"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Thwart."/>
+    </card>
+    <card name="Photon Beam" id="2fcf9ca1-d450-48ed-9038-352451152d0a">
+      <property name="CardNumber" value="29006"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack."/>
+    </card>
+    <card name="New and Improved" id="bc853266-253a-490c-825c-e9330afb0f18">
+      <property name="CardNumber" value="29007"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Sector Scan" id="1c6b900d-5ffa-43cd-94a4-2854fa10ac44">
+      <property name="CardNumber" value="29008"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+    </card>
+    <card name="Stroke of Genius" id="38f7a7da-4876-40fb-bd92-93e12e5ea93c">
+      <property name="CardNumber" value="29009"/>
+      <property name="Type" value="resource"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Resource_Mental" value="1"/>
+    </card>
+    <card name="Ronnie Williams" id="7cfe06c6-da6b-4e0d-8db1-472d337def1d">
+      <property name="CardNumber" value="29010"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Persona."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Tony Stark A.I." id="98ebf86a-a379-48d4-8723-c20237ea4df7">
+      <property name="CardNumber" value="29011"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Persona."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Photon Blasters" id="16459e01-b371-4012-8a52-effe8ce1e163">
+      <property name="CardNumber" value="29012"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Tech. Weapon."/>
+    </card>
+    <card name="Propulsion Jets" id="9168004c-fc9a-4610-8f81-b85a08e9193b">
+      <property name="CardNumber" value="29013"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Tech."/>
+    </card>
+    <card name="Cloud 9" id="55c38950-042b-4ec1-a07d-1d6ba9f9da5d">
+      <property name="CardNumber" value="29014"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Aerial. Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Falcon" id="d255aa3d-8747-4a1d-9490-fc1887630d83">
+      <property name="CardNumber" value="29015"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Aerial. Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Patriot" id="0707b91c-2b67-4746-bf2f-ae14c25d9796">
+      <property name="CardNumber" value="29016"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Go All Out" id="0234136e-f616-4ed4-9e67-123196846729">
+      <property name="CardNumber" value="29017"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Attack."/>
+    </card>
+    <card name="Push Ahead" id="b8014cdc-e819-4312-8290-15ad8acfe64d">
+      <property name="CardNumber" value="29018"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Thwart."/>
+    </card>
+    <card name="R&amp;D Facility" id="cb08b82e-8b84-4d4e-8aed-a7455b767441">
+      <property name="CardNumber" value="29020"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location. Shield."/>
+    </card>
+    <card name="Snowguard" id="c22f2b49-d7dd-440d-b1df-cfd1f058455a">
+      <property name="CardNumber" value="29023"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="0"/>
+      <property name="Attack" value="0"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Vivian" id="cdf2039d-073d-4fbc-a6ad-144ffd977a77">
+      <property name="CardNumber" value="29024"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Aerial. Android. Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="&quot;Go for Champions!&quot;" id="9d1ed258-ee76-47e7-8f1d-b9dd590fd293">
+      <property name="CardNumber" value="29025"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+    </card>
+    <card name="Ingenuity" id="db7e7914-1cf7-4f25-b1fb-70cb41c11025">
+      <property name="CardNumber" value="29027"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Bombshell" id="530c5583-ede8-4069-9a86-546973dcb375">
+      <property name="CardNumber" value="29033"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="3"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Wasp" id="b38cea4b-2753-4d7a-b6f8-c68c80069766">
+      <property name="CardNumber" value="29034"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Pinpoint" id="add626be-c334-43aa-bf98-9ddaff6d6161">
+      <property name="CardNumber" value="29035"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Champion."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="A Minor Setback" id="a2a02747-7bb6-4cc6-b1ea-736207e88fb1" size="EncounterCard">
+      <property name="CardNumber" value="29028"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="ironheart"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Rule by Force" id="4adfadaf-26f1-462c-a104-4785d9f7aa7a" size="SchemeCard">
+      <property name="CardNumber" value="29029"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="ironheart_encounter"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="Lucia von Bardas" id="647a92ef-1614-4be9-b6a3-182f5058822b" size="EncounterCard">
+      <property name="CardNumber" value="29030"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="ironheart_encounter"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Criminal. Cyborg. Elite."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Cyborg Tech" id="2a32105c-7878-4f46-8c6f-2f4cd7e81629" size="EncounterCard">
+      <property name="CardNumber" value="29031"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="ironheart_encounter"/>
+      <property name="Boost" value="0"/>
+      <property name="Attribute" value="Tech."/>
+    </card>
+    <card name="Political Retribution" id="8d6bfd8b-498d-4c78-958f-b566de2cc45d" size="EncounterCard">
+      <property name="CardNumber" value="29032"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="ironheart_encounter"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Feedback Loop" id="f0244c72-6c3e-4f1e-aaff-30b81661f88e" size="SchemeCard">
+      <property name="CardNumber" value="29036"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="zzzax"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Acceleration" value="1"/>
+    </card>
+    <card name="Zzzax" id="52a950f6-3304-42a3-bf0c-567f51aa505d" size="EncounterCard">
+      <property name="CardNumber" value="29037"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="zzzax"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="0"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Criminal."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Haywire" id="0c0e36ef-c097-4895-9db9-78fa3b28f79b" size="EncounterCard">
+      <property name="CardNumber" value="29038"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="zzzax"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Air Static" id="4d21ae7a-57f6-49cb-bfd6-5c58668b06e9" size="EncounterCard">
+      <property name="CardNumber" value="29039"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="zzzax"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Condition."/>
+    </card>
+    <card name="Zzzap!" id="2740251a-0e64-452d-872a-b7dfca1d5df2" size="EncounterCard">
+      <property name="CardNumber" value="29040"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="zzzax"/>
+      <property name="Boost" value="1"/>
+    </card>
+  </cards>
+</set>
