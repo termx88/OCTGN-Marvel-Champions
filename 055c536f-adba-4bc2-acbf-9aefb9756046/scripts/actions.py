@@ -406,13 +406,14 @@ def doEndHeroPhase():
     debug("doEndHeroPhase()")
 
     for p in players:
+        p_hand_size = countHandSize(p.piles['Hand'])
         remoteCall(p,"clearTargets",[])
         remoteCall(p,"readyAll",[])
-        remoteCall(p,"drawMany",[p.piles['Deck'],p.MaxHandSize - len(p.piles['Hand'])])
+        remoteCall(p, "drawMany", [p.piles['Deck'], p.MaxHandSize - p_hand_size])
 
         # Check for hand size!
-        if len(p.piles['Hand']) > num(p.counters["MaxHandSize"].value):
-            discardCount = len(p.piles['Hand']) - num(p.counters["MaxHandSize"].value)
+        if p_hand_size > num(p.counters["MaxHandSize"].value):
+            discardCount = p_hand_size - num(p.counters["MaxHandSize"].value)
             dlg = cardDlg(p.piles['Hand'])
             dlg.title = "You have more than the allowed cards in hand."
             dlg.text = "Select " + str(discardCount) + " Card(s) to discard :"
@@ -956,6 +957,8 @@ def drawCard(group):
             drawCard(group)
         else:
             card.moveTo(card.owner.hand)
+            if noCountInHandSize(card):
+                drawCard(group)
         checkDeckRemainingCards(group)
 
 def checkDeckRemainingCards(group):
@@ -1365,6 +1368,18 @@ def autoCharges(args):
                 lookForToughness(card)
                 placeThreatOnScheme(card)
                 setHPOnCharacter(card)  # Uncomment to try the HP automation for characters
+
+def noCountInHandSize(card):
+    """
+    Return boolean value to specify if the given card should be taken into account when computing hand size
+    """
+    return re.search('.*does not count toward your hand size.*', card.properties["Text"], re.IGNORECASE)
+
+def countHandSize(hand_group):
+    """
+    Return the number of cards in given hand, taking into account that some cards may be ignored in this process
+    """
+    return len([c for c in hand_group if not noCountInHandSize(c)])
 
 def lookForToughness(card):
     """

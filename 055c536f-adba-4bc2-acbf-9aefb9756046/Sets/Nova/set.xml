@@ -12,7 +12,7 @@
       <property name="HP" value="10"/>
       <property name="Attribute" value="Champion."/>
       <property name="Unique" value="True"/>
-      <alternate name="Sam Alexender" type="b">
+      <alternate name="Sam Alexander" type="b">
         <property name="CardNumber" value="28001b"/>
         <property name="Type" value="alter_ego"/>
         <property name="Owner" value="nova"/>
