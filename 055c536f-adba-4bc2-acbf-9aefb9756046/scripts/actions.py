@@ -779,7 +779,7 @@ def revealHide(card, x = 0, y = 0):
             lookForToughness(card)
             lookForCounters(card)
             placeThreatOnScheme(card)
-            setHPOnCharacter(card)  # Uncomment to try the HP automation for characters
+            setHPOnCharacter(card)
 
 def discard(card, x = 0, y = 0):
     mute()
@@ -1367,7 +1367,7 @@ def autoCharges(args):
                 lookForCounters(card)
                 lookForToughness(card)
                 placeThreatOnScheme(card)
-                setHPOnCharacter(card)  # Uncomment to try the HP automation for characters
+                setHPOnCharacter(card)
 
 def noCountInHandSize(card):
     """
@@ -1483,6 +1483,24 @@ def setHPOnCharacter(card):
                 new_loki[0].markers[StunnedMarker] = previous_loki[0].markers[StunnedMarker]
                 new_loki[0].markers[ConfusedMarker] = previous_loki[0].markers[ConfusedMarker]
                 new_loki[0].markers[AllPurposeMarker] = previous_loki[0].markers[AllPurposeMarker]
+
+    if (card.Type == "hero" or card.Type == "alter_ego") and card.Owner == "ironheart":
+        ironheart_on_table = [c for c in table if c.Type == 'hero' or c.Type == 'alter_ego']
+        if len(ironheart_on_table) == 2: # There should be 2 Ironheart cards on table: the previous one and the new one
+            # The 'previous' one is the one that has still some HP, the 'new' one enters play and then has not yet defined HP		
+            previous_ironheart = [c for c in ironheart_on_table if c.markers[HealthMarker] > 0]
+            new_ironheart = [c for c in ironheart_on_table if c.markers[HealthMarker] == 0]
+            if len(previous_ironheart) == 1 and len(new_ironheart) == 1:
+                notify("Copy all markers from actual Ironheart to new one!")
+                new_ironheart[0].markers[HealthMarker] = previous_ironheart[0].markers[HealthMarker]
+                new_ironheart[0].markers[ToughMarker] = previous_ironheart[0].markers[ToughMarker]
+                new_ironheart[0].markers[StunnedMarker] = previous_ironheart[0].markers[StunnedMarker]
+                new_ironheart[0].markers[ConfusedMarker] = previous_ironheart[0].markers[ConfusedMarker]
+                new_ironheart[0].markers[AllPurposeMarker] = previous_ironheart[0].markers[AllPurposeMarker]
+                previous_ironheart[0].moveToBottom(me.piles['Special Deck'])
+                description_search = re.search('.*Version 3.*', new_ironheart[0].properties["Attribute"], re.IGNORECASE)
+                if description_search and new_ironheart[0].markers[ToughMarker] == 0:
+                    tough(new_ironheart[0])
 
     if card.Type in ["hero", "alter_ego", "villain"] and card.markers[HealthMarker] == 0:
         nb_players = len(getPlayers())
