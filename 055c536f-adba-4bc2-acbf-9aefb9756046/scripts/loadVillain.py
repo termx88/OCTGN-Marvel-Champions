@@ -563,7 +563,7 @@ def SpecificVillainSetup(vName = ''):
             
                     # If players have been loaded before Villain: reset their hand and draw again
                     if len(p.piles['Hand']) > 0: 
-                        notify("{} cards already in {}'s hand - Shuffle back into deck and draw a new end (Mysterio II setup)".format(len(p.piles['Hand']), me.name))
+                        notify("{} cards already in {}'s hand - Shuffle back into deck and draw a new hand (Mysterio II setup)".format(len(p.piles['Hand']), me.name))
                         for c in p.piles['Hand']:
                             c.moveTo(p.Deck)
                             p.Deck.shuffle()
