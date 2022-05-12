@@ -15,7 +15,9 @@ def loadEncounter(group, x = 0, y = 0, nbEncounter = 1):
 def specificEncounter(group, x = 0, y = 0, nbModular = 1):
     mute()
     vName = getGlobalVariable("villainSetup")
-    for i in sorted(encounter_setup.keys()):
+
+    setup_cards = queryCard({"Type":"encounter_setup"}, True)
+    for i in setup_cards:
         setupPile().create(i, 1)
 
     cardsSelected = []

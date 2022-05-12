@@ -11,7 +11,8 @@ def loadVillain(group, x = 0, y = 0):
         confirm("Cannot generate a deck: You already have cards loaded. Reset the game in order to generate a new deck.")
         return
 
-    for i in sorted(villain_setup.keys()):
+    setup_cards = queryCard({"Type":"villain_setup"}, True)
+    for i in setup_cards:
         setupPile().create(i, 1)
     dlg = cardDlg(setupPile())
     dlg.title = "Which villain would you like to defeat ?"

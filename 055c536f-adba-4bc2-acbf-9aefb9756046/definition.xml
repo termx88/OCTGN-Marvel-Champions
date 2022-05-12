@@ -3,7 +3,7 @@
     name="Marvel Champions"
     id="055c536f-adba-4bc2-acbf-9aefb9756046"
     octgnVersion="3.4.362.0"
-    version="0.0.3.12"
+    version="0.0.3.13"
     scriptVersion="3.1.0.2"
     markersize="15"
     tags="OCTGN, Marvel, Champions"
@@ -21,7 +21,6 @@
         <script src="scripts/loadHero.py" />
         <script src="scripts/loadVillain.py" />
         <script src="scripts/plugin.py" />
-        <script src="scripts/setup_dictionaries.py" />
         <script src="scripts/util.py" />
     </scripts>
     <events>
@@ -110,7 +109,26 @@
     </card>
     <table name="Table" visibility="undefined" ordered="False" width="800" height="500" background="background/playmat2.png" backgroundStyle="uniformToFill" >
         <groupaction menu="Create Card" default="False" execute="createCard" />
-        <cardaction menu="Get Position" execute="getPosition"/>
+        <groupaction menu="Load Hero" shortcut="ctrl+H" execute="loadHero"/>
+        <groupaction menu="Load Villain" shortcut="ctrl+V" execute="loadVillain"/>
+        <groupaction menu="Next Villain" execute="nextVillainStage"/>
+        <groupaction menu="Next Scheme" execute="nextSchemeStage"/>
+        <groupaction menu="Advance Phase" default="False" shortcut="F12" execute="advanceGame" />
+        <groupactions menu="Setup and Saving Tools">
+            <groupaction menu="Unload Hero Deck" default="False" execute="unloadHeroDeck" />
+            <groupaction menu="Save Table State..." default="False" execute="saveManual" />
+            <groupaction menu="Load Table State..." default="False" execute="loadManual" />
+            <groupaction menu="Restore last Auto Save..." default="False" execute="restoreSave" />
+        </groupactions>
+        <groupaction menu="Pull boost/encounter card" shortcut="alt+enter" execute="villainBoost"/>
+        <groupaction menu="Ready All Cards" shortcut="ctrl+Q" execute="readyAll"/>
+        <groupaction menu="Take control of Global cards" default="False" shortcut="F8" execute="passSharedControl" />
+        <groupactions menu="Random">
+            <groupaction menu="Coin Flip" default="False" execute="flipCoin" />
+            <groupaction menu="Number" default="False" execute="randomNumber" />
+            <groupaction menu="Player" default="False" execute="randomPlayer" />
+        </groupactions>
+        <groupaction menu="Toggle Debug" default="False" execute="toggleDebug" />
         <cardaction menu="Flip Card" shortcut="ctrl+F" execute="revealHide" />
         <cardaction menu="Ready/Exhaust Card" shortcut="F7" execute="readyExhaust" showIf="exhaustable"/>
         <cardaction menu="Discard Card" shortcut="del" execute="discard"/>
@@ -118,6 +136,7 @@
         <cardaction menu="Move to Bottom of Hero Deck" execute="bottomPlayerDeck"/>
         <cardaction menu="Move to Bottom of Encounter Deck" execute="bottomEncounterDeck"/>
 		<cardaction menu="Add to Victory Display" default="False" shortcut="ctrl+V" execute="moveToVictory"/>
+        <cardaction menu="Get Position" execute="getPosition"/>
         <cardactions menu="Markers">
             <cardaction menu="Add marker" execute="addMarker" shortcut="Up"/>
             <cardaction menu="Add 3 markers" execute="add3Marker"/>
@@ -152,27 +171,6 @@
             <cardaction menu="White Highlight" default="False" shortcut="numpad7" execute="whiteHighlight" />
             <cardaction menu="Clear Highlight" default="False" shortcut="numpad0" execute="clearHighlight" />
         </cardactions>
-        <groupaction menu="Pull boost/encounter card" shortcut="alt+enter" execute="villainBoost"/>
-        <groupaction menu="Ready All Cards" shortcut="ctrl+Q" execute="readyAll"/>
-        <groupaction menu="Load Hero" shortcut="ctrl+H" execute="loadHero"/>
-        <groupaction menu="Load Villain" shortcut="ctrl+V" execute="loadVillain"/>
-        <groupaction menu="Next Villain" execute="nextVillainStage"/>
-        <groupaction menu="Next Scheme" execute="nextSchemeStage"/>
-        <groupaction menu="Clear Targets" default="False" shortcut="Esc" execute="clearTargets" />
-        <groupaction menu="Take control of Global cards" default="False" shortcut="F8" execute="passSharedControl" />
-        <groupaction menu="Unload Hero Deck" default="False" execute="unloadHeroDeck" />
-        <groupactions menu="Saving Tools">
-            <groupaction menu="Save Table State..." default="False" execute="saveManual" />
-            <groupaction menu="Load Table State..." default="False" execute="loadManual" />
-            <groupaction menu="Restore last Auto Save..." default="False" execute="restoreSave" />
-        </groupactions>
-        <groupactions menu="Random">
-            <groupaction menu="Coin Flip" default="False" execute="flipCoin" />
-            <groupaction menu="Number" default="False" execute="randomNumber" />
-            <groupaction menu="Player" default="False" execute="randomPlayer" />
-        </groupactions>
-        <groupaction menu="Advance Phase" default="False" shortcut="F12" execute="advanceGame" />
-        <groupaction menu="Toggle Debug" default="False" execute="toggleDebug" />
     </table>
     <player summary="H: {#Hand} | HP: {#HP}">
         <globalvariable name="deckLocked" value="0" />
@@ -182,6 +180,8 @@
         <globalvariable name="done" value="" />
         <counter name="HP" default="0" icon="symbols/health.png" />
         <counter name="MaxHandSize" default="0" reset="True" icon="symbols/open-hands.png" />
+        <counter name="AddCardToDraw (Alter-Ego)" default="0" reset="True" icon="symbols/open-hands.png" />
+        <counter name="AddCardToDraw (Hero)" default="0" reset="True" icon="symbols/open-hands.png" />
         <group name="Hand" visibility="me" ordered="False" icon="symbols/hand.png" viewState="expanded">
             <groupaction menu="Random Discard" execute="randomDiscard"/>
             <groupaction menu="Mulligan Hand" execute="mulligan"/>
@@ -217,6 +217,9 @@
         <group name="Removed" visibility="all" icon="symbols/remove.png" collapsed="True">
             <groupaction menu="View Discard Pile" default="True" execute="viewGroup"/>
         </group>
+        <group name="Setup" visibility="all" icon="symbols/remove.png" collapsed="True">
+            <groupaction menu="View Discard Pile" default="True" execute="viewGroup"/>
+        </group>
     </player>
     <shared summary="Villain HP: {#HP} | Round: {#Round}">
         <counter name="HP" default="0" icon="symbols/health.png" />
@@ -225,8 +228,21 @@
         <group name="Encounter" visibility="none" icon="symbols/faction.png" collapsed="False">
             <groupaction menu="Flip Top Card" shortcut="CTRL+F" execute="FlipDeckTopCard"/>
             <groupaction menu="Shuffle" shortcut="CTRL+S" execute="shuffle"/>
+            <groupaction menu="Draw Unrevealed" shortcut="CTRL+U" execute="drawUnrevealed"/>
         </group>
         <group name="Encounter Discard" visibility="all" icon="symbols/dead.png" collapsed="False">
+            <groupaction menu="View Pile" default="True" execute="viewGroup"/>
+            <groupaction menu="Shuffle Into Deck" execute="shuffleDiscardIntoDeck"/>
+        </group>
+        <group name="Side" visibility="none" icon="symbols/special.png" collapsed="True">
+            <groupaction menu="View Pile" default="True" execute="viewGroup"/>
+            <groupaction menu="Shuffle" shortcut="CTRL+S" execute="shuffle"/>
+            <groupaction menu="Draw Unrevealed" shortcut="CTRL+U" execute="drawUnrevealed"/>
+			<groupaction menu="Move All to Encounter Deck and Shuffle" execute="moveAllToEncounter" />
+			<groupaction menu="Move All to Encounter Deck Top" execute="moveAllToEncounterTop" />
+			<groupaction menu="Move All to Encounter Deck Bottom" execute="moveAllToEncounterBottom" />
+        </group>
+        <group name="Side Discard" visibility="all" icon="symbols/dead.png" collapsed="True">
             <groupaction menu="View Pile" default="True" execute="viewGroup"/>
             <groupaction menu="Shuffle Into Deck" execute="shuffleDiscardIntoDeck"/>
         </group>
@@ -269,6 +285,7 @@
     </deck>
     <sharedDeck>
         <section name="Encounter" group="Encounter" />
+        <section name="Side" group="Side" />
 		<section name="Special" group="Special" />
         <section name="Villain" group="Villain" />
         <section name="Scheme" group="Scheme" />

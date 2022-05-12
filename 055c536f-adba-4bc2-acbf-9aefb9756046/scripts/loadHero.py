@@ -12,20 +12,21 @@ def loadHero(group, x = 0, y = 0):
 
     if choice == 0: return
     if choice == 1:
-        for i in sorted(hero_setup.keys()):
-            me.piles["Removed"].create(i, 1)
-        dlg = cardDlg(me.piles["Removed"])
+        setup_cards = queryCard({"Type":"hero_setup"}, True)
+        for i in setup_cards:
+            me.piles["Setup"].create(i, 1)
+        dlg = cardDlg(me.piles["Setup"])
         dlg.title = "Select your Hero"
         dlg.text = "Select your Hero :"
         cardsSelected = dlg.show()
         if cardsSelected is None:
-            deleteCards(me.piles["Removed"])
+            deleteCards(me.piles["Setup"])
             return
         else:
             for card in cardsSelected:
                 deckname = createCards(me.Deck,sorted(eval(card.Owner).keys()), eval(card.Owner))
             changeOwner(deckname, card.Owner)
-            deleteCards(me.piles["Removed"])
+            deleteCards(me.piles["Setup"])
 
     if choice == 2:
         filename = openFileDlg('', '', 'o8d Files|*.o8d')
