@@ -127,7 +127,7 @@ def victoryDisplay():
     return shared.piles['Victory']
 
 def setupPile():
-    return shared.piles["Setup"]
+    return shared.piles['Setup']
 
 #------------------------------------------------------------
 # Global variable manipulations function
