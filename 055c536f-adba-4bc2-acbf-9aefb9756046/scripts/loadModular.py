@@ -16,22 +16,7 @@ def specificEncounter(group, x = 0, y = 0, nbModular = 1):
     mute()
     vName = getGlobalVariable("villainSetup")
 
-    setup_cards = queryCard({"Type":"encounter_setup"}, True)
-    for i in setup_cards:
-        setupPile().create(i, 1)
-
-    cardsSelected = []
-    dlg = cardDlg(setupPile())
-    dlg.title = "Modular encounter selection"
-    dlg.text = "Select at least {} modular(s) encounter(s):".format(nbModular)
-    dlg.min = nbModular
-    dlg.max = len(setupPile())
-    cardsSelected = dlg.show()
-    
-    if cardsSelected is None:
-        deleteCards(setupPile())
-        return
-
+    cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular))
     for card in cardsSelected:
         if vName != 'The Hood':
             createCards(group,sorted(eval(card.Owner).keys()), eval(card.Owner))

@@ -11,169 +11,157 @@ def loadVillain(group, x = 0, y = 0):
         confirm("Cannot generate a deck: You already have cards loaded. Reset the game in order to generate a new deck.")
         return
 
-    setup_cards = queryCard({"Type":"villain_setup"}, True)
-    for i in setup_cards:
-        setupPile().create(i, 1)
-    dlg = cardDlg(setupPile())
-    dlg.title = "Which villain would you like to defeat ?"
-    dlg.text = "Select your Opponent :"
-    cardsSelected = dlg.show()
-    if cardsSelected is None:
-        deleteCards(setupPile())
-        return
-    else:
-        for card in cardsSelected:
-            createCards(shared.villain,sorted(eval(card.Owner).keys()), eval(card.Owner))
-            deleteCards(setupPile())
+    cardsSelected = dialogBox_Setup(setupPile(), "villain_setup", "Which villain would you like to defeat ?", "Select your Opponent :")
+    for card in cardsSelected:
+        createCards(shared.villain,sorted(eval(card.Owner).keys()), eval(card.Owner))
+        update()
+        if card.Owner == "the_wrecking_crew":
+            nbModular = 0
 
-            passSharedControl(group)
-            update()
-            if card.Owner == "the_wrecking_crew":
-                nbModular = 0
+        if card.Owner == "baron_zemo_firestarter":
+            createCards(shared.villain,sorted(baron_zemo_firestarter_modules.keys()),baron_zemo_firestarter_modules)
+            createCards(shared.villain,sorted(legions_of_hydra.keys()),legions_of_hydra)
+            createCards(shared.villain,sorted(bomb_scare.keys()),bomb_scare)
 
-            if card.Owner == "baron_zemo_firestarter":
-                createCards(shared.villain,sorted(baron_zemo_firestarter_modules.keys()),baron_zemo_firestarter_modules)
-                createCards(shared.villain,sorted(legions_of_hydra.keys()),legions_of_hydra)
-                createCards(shared.villain,sorted(bomb_scare.keys()),bomb_scare)
+        if card.Owner == "crossbones":
+            createCards(shared.special,sorted(exper_weapon.keys()),exper_weapon)
+            specialDeck().collapsed = False
+            specialDeck().shuffle()
+            createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
+            nbModular = 3
 
-            if card.Owner == "crossbones":
-                createCards(shared.special,sorted(exper_weapon.keys()),exper_weapon)
-                specialDeck().collapsed = False
-                specialDeck().shuffle()
-                createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
-                nbModular = 3
+        if card.Owner == "absorbing_man":
+            createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
 
-            if card.Owner == "absorbing_man":
-                createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
+        if card.Owner == "taskmaster":
+            createCards(shared.villain,sorted(hydra_patrol.keys()),hydra_patrol)
+            createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
+            for c in filter(lambda card: card.Type == "ally", villainDeck()):
+                c.moveTo(specialDeck())
+            specialDeck().shuffle()
+            specialDeck().collapsed = False
 
-            if card.Owner == "taskmaster":
-                createCards(shared.villain,sorted(hydra_patrol.keys()),hydra_patrol)
-                createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
-                for c in filter(lambda card: card.Type == "ally", villainDeck()):
-                    c.moveTo(specialDeck())
-                specialDeck().shuffle()
-                specialDeck().collapsed = False
+        if card.Owner == "zola":
+            createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
 
-            if card.Owner == "zola":
-                createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
+        if card.Owner == "red_skull":
+            createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
+            for c in filter(lambda card: card.Type == "side_scheme", villainDeck()):
+                c.moveTo(specialDeck())
+            specialDeck().collapsed = False
+            specialDeckDiscard().collapsed = False
+            for c in filter(lambda card: card.CardNumber == "04130", villainDeck()):
+                c.moveTo(removedFromGameDeck())
+            removedFromGameDeck().collapsed = False
+            nbModular = 2
 
-            if card.Owner == "red_skull":
-                createCards(shared.campaign,sorted(trors_campaign.keys()),trors_campaign)
-                for c in filter(lambda card: card.Type == "side_scheme", villainDeck()):
-                    c.moveTo(specialDeck())
-                specialDeck().collapsed = False
-                specialDeckDiscard().collapsed = False
-                for c in filter(lambda card: card.CardNumber == "04130", villainDeck()):
-                    c.moveTo(removedFromGameDeck())
-                removedFromGameDeck().collapsed = False
-                nbModular = 2
+        if card.Owner == "the_once_and_future_kang":
+            for c in filter(lambda card: card.CardNumber == "11023", villainDeck()):
+                c.moveTo(removedFromGameDeck())
+            removedFromGameDeck().collapsed = False
 
-            if card.Owner == "the_once_and_future_kang":
-                for c in filter(lambda card: card.CardNumber == "11023", villainDeck()):
-                    c.moveTo(removedFromGameDeck())
-                removedFromGameDeck().collapsed = False
+        if card.Owner == "brotherhood_of_badoon":
+            createCards(shared.villain,sorted(ship_command.keys()),ship_command)
+            createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
+            createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
+            createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
 
-            if card.Owner == "brotherhood_of_badoon":
-                createCards(shared.villain,sorted(ship_command.keys()),ship_command)
-                createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
-                createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
-                createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
+        if card.Owner == "collector1":
+            createCards(shared.villain,sorted(galactic_artifacts.keys()),galactic_artifacts)
+            createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
+            createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
+            createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
 
-            if card.Owner == "collector1":
-                createCards(shared.villain,sorted(galactic_artifacts.keys()),galactic_artifacts)
-                createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
-                createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
-                createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
+        if card.Owner == "collector2":
+            createCards(shared.villain,sorted(galactic_artifacts.keys()),galactic_artifacts)
+            createCards(shared.special,sorted(ship_command.keys()),ship_command)
+            specialDeck().collapsed = False
+            createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
+            createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
+            createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
 
-            if card.Owner == "collector2":
-                createCards(shared.villain,sorted(galactic_artifacts.keys()),galactic_artifacts)
-                createCards(shared.special,sorted(ship_command.keys()),ship_command)
-                specialDeck().collapsed = False
-                createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
-                createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
-                createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
+        if card.Owner == "nebula":
+            createCards(shared.villain,sorted(power_stone.keys()),power_stone)
+            createCards(shared.villain,sorted(ship_command.keys()),ship_command)
+            createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
+            createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
+            createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
 
-            if card.Owner == "nebula":
-                createCards(shared.villain,sorted(power_stone.keys()),power_stone)
-                createCards(shared.villain,sorted(ship_command.keys()),ship_command)
-                createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
-                createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
-                createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
+        if card.Owner == "ronan":
+            createCards(shared.villain,sorted(power_stone.keys()),power_stone)
+            createCards(shared.villain,sorted(ship_command.keys()),ship_command)
+            createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
+            createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
+            createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
 
-            if card.Owner == "ronan":
-                createCards(shared.villain,sorted(power_stone.keys()),power_stone)
-                createCards(shared.villain,sorted(ship_command.keys()),ship_command)
-                createCards(shared.campaign,sorted(gmw_campaign_market.keys()),gmw_campaign_market)
-                createCards(shared.campaign,sorted(gmw_campaign_challenge.keys()),gmw_campaign_challenge)
-                createCards(shared.campaign,sorted(badoon_headhunter.keys()),badoon_headhunter)
+        if card.Owner == "ebony_maw":
+            createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
+            nbModular = 2
 
-            if card.Owner == "ebony_maw":
-                createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
-                nbModular = 2
+        if card.Owner == "tower_defense":
+            createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
 
-            if card.Owner == "tower_defense":
-                createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
+        if card.Owner == "thanos":
+            createCards(specialDeck(), sorted(infinity_gauntlet.keys()),infinity_gauntlet)
+            specialDeck().shuffle()
+            specialDeck().collapsed = False
+            specialDeckDiscard().collapsed = False
+            createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
+            nbModular = 2
 
-            if card.Owner == "thanos":
-                createCards(specialDeck(), sorted(infinity_gauntlet.keys()),infinity_gauntlet)
-                specialDeck().shuffle()
-                specialDeck().collapsed = False
-                specialDeckDiscard().collapsed = False
-                createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
-                nbModular = 2
+        if card.Owner == "hela":
+            createCards(removedFromGameDeck(), sorted(hela_setup.keys()), hela_setup)
+            createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
+            nbModular = 2
 
-            if card.Owner == "hela":
-                createCards(removedFromGameDeck(), sorted(hela_setup.keys()), hela_setup)
-                createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
-                nbModular = 2
+        if card.Owner == "loki":
+            villainDeck().collapsed = False
+            createCards(specialDeck(), sorted(infinity_gauntlet.keys()),infinity_gauntlet)
+            specialDeck().shuffle()
+            specialDeck().collapsed = False
+            specialDeckDiscard().collapsed = False
+            createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
+            nbModular = 2
 
-            if card.Owner == "loki":
-                villainDeck().collapsed = False
-                createCards(specialDeck(), sorted(infinity_gauntlet.keys()),infinity_gauntlet)
-                specialDeck().shuffle()
-                specialDeck().collapsed = False
-                specialDeckDiscard().collapsed = False
-                createCards(shared.campaign,sorted(mts_campaign.keys()),mts_campaign)
-                nbModular = 2
+        if card.Owner == "hood":
+            specialDeck().collapsed = False
+            nbModular = 7
 
-            if card.Owner == "hood":
-                specialDeck().collapsed = False
-                nbModular = 7
+        if card.Owner == "sandman":
+            createCards(shared.villain,sorted(city_in_chaos.keys()),city_in_chaos)
+            createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
+            createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
+            nbModular = 1
 
-            if card.Owner == "sandman":
-                createCards(shared.villain,sorted(city_in_chaos.keys()),city_in_chaos)
-                createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
-                createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
-                nbModular = 1
+        if card.Owner == "venom":
+            createCards(shared.villain,sorted(symbiotic_strength.keys()),symbiotic_strength)
+            createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
+            createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
+            nbModular = 1
 
-            if card.Owner == "venom":
-                createCards(shared.villain,sorted(symbiotic_strength.keys()),symbiotic_strength)
-                createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
-                createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
-                nbModular = 1
+        if card.Owner == "mysterio":
+            createCards(shared.villain,sorted(personal_nightmare.keys()),personal_nightmare)
+            createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
+            createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
+            nbModular = 1
 
-            if card.Owner == "mysterio":
-                createCards(shared.villain,sorted(personal_nightmare.keys()),personal_nightmare)
-                createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
-                createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
-                nbModular = 1
+        if card.Owner == "sinister_six":
+            createCards(shared.villain,sorted(guerrilla_tactics.keys()),guerrilla_tactics)
+            createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
+            createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
+            nbModular = 1
 
-            if card.Owner == "sinister_six":
-                createCards(shared.villain,sorted(guerrilla_tactics.keys()),guerrilla_tactics)
-                createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
-                createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
-                nbModular = 1
+        if card.Owner == "venom_goblin":
+            createCards(shared.villain,sorted(symbiotic_strength.keys()),symbiotic_strength)
+            createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
+            createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
+            nbModular = 1
 
-            if card.Owner == "venom_goblin":
-                createCards(shared.villain,sorted(symbiotic_strength.keys()),symbiotic_strength)
-                createCards(shared.campaign,sorted(sm_campaign.keys()),sm_campaign)
-                createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
-                nbModular = 1
-
-            villainName = card.Name
-            setGlobalVariable("villainSetup",str(villainName))
+        villainName = card.Name
+        setGlobalVariable("villainSetup",str(villainName))
 
     update()
+    deleteCards(setupPile())
     loadDifficulty()
     loadEncounter(shared.encounter, nbEncounter = nbModular)
     notify('{} loaded {}, Good Luck!'.format(me, villainName))

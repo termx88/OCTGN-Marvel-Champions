@@ -8,39 +8,42 @@ def loadHero(group, x = 0, y = 0):
         confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
         return
 
-    choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)"])
+    choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "Universal Pre-build deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)"])
 
     if choice == 0: return
     if choice == 1:
-        setup_cards = queryCard({"Type":"hero_setup"}, True)
-        for i in setup_cards:
-            me.piles["Setup"].create(i, 1)
-        dlg = cardDlg(me.piles["Setup"])
-        dlg.title = "Select your Hero"
-        dlg.text = "Select your Hero :"
-        cardsSelected = dlg.show()
-        if cardsSelected is None:
-            deleteCards(me.piles["Setup"])
-            return
-        else:
-            for card in cardsSelected:
-                deckname = createCards(me.Deck,sorted(eval(card.Owner).keys()), eval(card.Owner))
-            changeOwner(deckname, card.Owner)
-            deleteCards(me.piles["Setup"])
+        cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :")
+        for card in cardsSelected:
+            deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
+            deckname2 = createCards(me.Deck, pre_build[str(card.Owner)].keys(), pre_build[str(card.Owner)])
+        changeOwner(deckname1, card.Owner)
+        changeOwner(deckname2, card.Owner)
+        deleteCards(me.piles["Setup"])
 
     if choice == 2:
+        cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :")
+        for card in cardsSelected:
+            deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
+        changeOwner(deckname1, card.Owner)
+        deleteCards(me.piles["Setup"])
+
+        universal_prebuild_List = universal_prebuild.keys()
+        prebuild_Choice = askChoice("What Universal Pre-Build deck do you want to load?", universal_prebuild_List)
+        deckname2 = createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuild[universal_prebuild_List[prebuild_Choice-1]]), True)
+
+    if choice == 3:
         filename = openFileDlg('', '', 'o8d Files|*.o8d')
         if filename is None:
             return        
         deckname = o8dLoad(filename)
 
-    if choice == 3:
+    if choice == 4:
         url = askString("Please enter the URL of the deck you wish to load.", "")
         if url == None: return
         if not "view/" in url:
             whisper("Error: Invalid URL.")
             return
-        deckname = createAPICards(url)
+        deckname = createAPICards(url, False)
 
     tableSetup()
 
@@ -62,6 +65,10 @@ def unloadHeroDeck(group, x=0, y=0):
         hero_id = hero_cards[0]
         notify("Removing {}'s cards from table.".format(me))
         [c.delete() for c in group if c.owner == me and c.Owner in [hero_id, "{}_nemesis".format(hero_id)]]
+
+        for p in shared.piles:
+            notify("{} removes cards from {}.".format(me, p))
+            [c.delete() for c in shared.piles[p] if c.Owner in [hero_id, "{}_nemesis".format(hero_id)]]
 
 def heroSetup(group=table, x = 0, y = 0):
 
@@ -86,7 +93,8 @@ def heroSetup(group=table, x = 0, y = 0):
 
     if newHero:
         me.deck.shuffle()
-        createCards(heroCard.owner.piles["Nemesis"],nemesis[str(heroCard.properties["Owner"])].keys(),nemesis[str(heroCard.properties["Owner"])])       
+        nemesis_Deck = createCards(heroCard.owner.piles["Nemesis"],nemesis[str(heroCard.Owner)].keys(),nemesis[str(heroCard.Owner)])
+        changeOwner(nemesis_Deck, heroCard.Owner)
 
         #------------------------------------------------------------
         # Specific Hero setup
@@ -176,7 +184,8 @@ def changeOwner(cards, hero_id):
         if card.Owner is None or card.Owner in ["", "basic", "justice", "leadership", "protection", "aggression"]:
             card.Owner = hero_id
 
-def createAPICards(url):
+def createAPICards(url, filter = False):
+    notify("Looking {} for deck.".format(url))
     all_cards = []
     if "decklist/" in str(url):
         deckid = url.split("view/")[1].split("/")[0]
@@ -193,19 +202,27 @@ def createAPICards(url):
         hero = JavaScriptSerializer().DeserializeObject(data)["investigator_code"]
         chars_to_remove = ['[',']']
         rx = '[' + re.escape(''.join(chars_to_remove)) + ']'
+        hero_card = me.piles["Setup"].create(card_mapping[hero])
         for id in deck:
             line = re.sub(rx,'',str(id))
             line = line.split(',')
             cardid = line[0]
             qty = int(line[1].strip())
-            card = me.Deck.create(card_mapping[cardid], qty)
+            card = me.piles["Setup"].create(card_mapping[cardid], qty)
             if card == None:
                 whisper("Error loading deck: Unknown card found.  Please restart game and try a different deck.")
             if qty == 1:
                 all_cards.append(card)
             else:
                 all_cards.extend(card)
-        hero_card = me.Deck.create(card_mapping[hero])
+        # Filter cards to move only aspect cards il filter = True
+        for c in me.piles["Setup"]:
+            if not filter:
+                c.moveTo(me.Deck)
+            elif filter and c.Owner != hero_card.Owner:
+                c.moveTo(me.Deck)
+                all_cards.remove(c)
+        deleteCards(me.piles["Setup"]) 
         changeOwner(all_cards, hero_card.Owner)
         return deckname
     except ValueError:

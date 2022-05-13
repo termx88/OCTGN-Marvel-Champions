@@ -340,6 +340,21 @@ def changeLog():
             confirm("What's new in {} ({}):\n-{}".format(stringVersion, date, updates))
     setSetting("lastVersion", convertToString(currentVersion))  ## Store's the current version to a setting
 
+def dialogBox_Setup(group, type, title, text):
+    setup_cards = queryCard({"Type":type}, True)
+    for i in setup_cards:
+        group.create(i, 1)
+    update()
+    dlg = cardDlg(group)
+    dlg.title = title
+    dlg.text = text
+    cardsSelected = dlg.show()
+    deleteCards(group)
+    if cardsSelected is None:
+        return
+    else:
+        return cardsSelected
+
 def tableSetup(group=table, x=0, y=0, doPlayer=True, doEncounter=False):
     mute()
 
