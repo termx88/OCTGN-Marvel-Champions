@@ -117,13 +117,14 @@
         <groupaction menu="Next Villain" execute="nextVillainStage"/>
         <groupaction menu="Next Scheme" execute="nextSchemeStage"/>
         <groupaction menu="Advance Phase" default="False" shortcut="F12" execute="advanceGame" />
+        <groupaction menu="Pull boost/encounter card" shortcut="alt+enter" execute="villainBoost"/>
         <groupactions menu="Setup and Saving Tools">
+            <groupaction menu="Load Universal Pre-Built Hero Deck" default="False" execute="loadPreBuiltDeck" />
             <groupaction menu="Unload Hero Deck" default="False" execute="unloadHeroDeck" />
             <groupaction menu="Save Table State..." default="False" execute="saveManual" />
             <groupaction menu="Load Table State..." default="False" execute="loadManual" />
             <groupaction menu="Restore last Auto Save..." default="False" execute="restoreSave" />
         </groupactions>
-        <groupaction menu="Pull boost/encounter card" shortcut="alt+enter" execute="villainBoost"/>
         <groupaction menu="Ready All Cards" shortcut="ctrl+Q" execute="readyAll"/>
         <groupaction menu="Take control of Global cards" default="False" shortcut="F8" execute="passSharedControl" />
         <groupactions menu="Random">

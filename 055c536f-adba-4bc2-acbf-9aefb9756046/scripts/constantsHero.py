@@ -1,22 +1,22 @@
 # --------------------------------
-# Universal Pre-Build Decks (Aspect Cards Only)
+# Universal Pre-Built Decks (Aspect Cards Only)
 # --------------------------------
 
-universal_prebuild = {
-    'Reckless Aggression':      '87153',
-    'Graceful Aggression':      '87152',
-    'Warrior Aggression':       '198702',
-    'Defiant Justice':          '87151',
-    'Evasive Justice':          '87976',
-    'Guardian Justice':         '198706',
-    'SHIELD Justice':           '304322',
-    'Unyielding Protection':    '87124',
-    'Debilitating Protection':  '87125',
-    'Guardian Protection':      '198716',
-    'Courageous Leadership':    '87148',
-    'Commanding Leadership':    '87130',
-    'Guardian Leadership':      '198713',
-    'Sacrificial Leadership':   '304324'
+universal_prebuilt = {
+    '01-Reckless Aggression':      '87153',
+    '02-Graceful Aggression':      '87152',
+    '03-Warrior Aggression':       '198702',
+    '04-Defiant Justice':          '87151',
+    '05-Evasive Justice':          '87976',
+    '06-Guardian Justice':         '198706',
+    '07-SHIELD Justice':           '304322',
+    '08-Unyielding Protection':    '87124',
+    '09-Debilitating Protection':  '87125',
+    '10-Guardian Protection':      '198716',
+    '11-Courageous Leadership':    '87148',
+    '12-Commanding Leadership':    '87130',
+    '13-Guardian Leadership':      '198713',
+    '14-Sacrificial Leadership':   '304324'
 }
 
 # --------------------------------
@@ -492,10 +492,10 @@ hero_set = {
 }
 
 # --------------------------------
-# Pre-Build Decks
+# Pre-Built Decks
 # --------------------------------
 
-pre_build = {
+pre_built = {
     # Core Set Hero Out of Box Decks
     'spider_man': {
         '01058':1,

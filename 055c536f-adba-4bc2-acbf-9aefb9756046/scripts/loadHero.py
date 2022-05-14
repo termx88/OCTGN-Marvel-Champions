@@ -8,36 +8,25 @@ def loadHero(group, x = 0, y = 0):
         confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
         return
 
-    choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "Universal Pre-build deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)"])
+    choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)"])
 
     if choice == 0: return
     if choice == 1:
         cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :")
         for card in cardsSelected:
             deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
-            deckname2 = createCards(me.Deck, pre_build[str(card.Owner)].keys(), pre_build[str(card.Owner)])
+            deckname2 = createCards(me.Deck, pre_built[str(card.Owner)].keys(), pre_built[str(card.Owner)])
         changeOwner(deckname1, card.Owner)
         changeOwner(deckname2, card.Owner)
         deleteCards(me.piles["Setup"])
 
     if choice == 2:
-        cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :")
-        for card in cardsSelected:
-            deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
-        changeOwner(deckname1, card.Owner)
-        deleteCards(me.piles["Setup"])
-
-        universal_prebuild_List = universal_prebuild.keys()
-        prebuild_Choice = askChoice("What Universal Pre-Build deck do you want to load?", universal_prebuild_List)
-        deckname2 = createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuild[universal_prebuild_List[prebuild_Choice-1]]), True)
-
-    if choice == 3:
         filename = openFileDlg('', '', 'o8d Files|*.o8d')
         if filename is None:
             return        
         deckname = o8dLoad(filename)
 
-    if choice == 4:
+    if choice == 3:
         url = askString("Please enter the URL of the deck you wish to load.", "")
         if url == None: return
         if not "view/" in url:
@@ -46,6 +35,25 @@ def loadHero(group, x = 0, y = 0):
         deckname = createAPICards(url, False)
 
     tableSetup()
+
+def loadPreBuiltDeck(group, x=0, y=0):
+    """
+    https://boardgamegeek.com/geeklist/278797/marvel-champions-universal-pre-built-decks
+    """
+    mute()
+    if not deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
+        confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
+        return
+
+    cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :")
+    for card in cardsSelected:
+        deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
+    changeOwner(deckname1, card.Owner)
+    deleteCards(me.piles["Setup"])
+
+    universal_prebuilt_List = sorted(universal_prebuilt.keys())
+    prebuilt_Choice = askChoice("What Universal Pre-Built deck do you want to load?", universal_prebuilt_List)
+    deckname2 = createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuilt[universal_prebuilt_List[prebuilt_Choice-1]]), True)
 
 def unloadHeroDeck(group, x=0, y=0):
     """
@@ -65,6 +73,7 @@ def unloadHeroDeck(group, x=0, y=0):
         hero_id = hero_cards[0]
         notify("Removing {}'s cards from table.".format(me))
         [c.delete() for c in group if c.owner == me and c.Owner in [hero_id, "{}_nemesis".format(hero_id)]]
+        [c.delete() for c in group if c.Type == "first_player"]
 
         for p in shared.piles:
             notify("{} removes cards from {}.".format(me, p))
