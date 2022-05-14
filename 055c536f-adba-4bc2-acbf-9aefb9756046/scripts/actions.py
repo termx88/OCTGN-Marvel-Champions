@@ -384,7 +384,6 @@ def tableSetup(group=table, x=0, y=0, doPlayer=True, doEncounter=False):
         for p in players:
             remoteCall(p,"addObligationsToEncounter",[table, x, y, p])
         update()
-        players[0].setActive()
         setGlobalVariable("firstPlayer",str(0))
         debug("{} is active".format(str(players[0].name)))
 
@@ -402,7 +401,9 @@ def addObligationsToEncounter(group = table, x = 0, y = 0, p=me):
 def advanceGame(group = None, x = 0, y = 0):
     # Check if we should pass the turn or just change the phase
     debug("advanceGame triggered")
-    if currentPhase()[1] == 1:
+    if turnNumber() == 0:
+        me.setActive()
+    elif currentPhase()[1] == 1:
         doEndHeroPhase()
         remoteCall(getActivePlayer(), "setPhase", [2]) #Must be triggered by active player
 
