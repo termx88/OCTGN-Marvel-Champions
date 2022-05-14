@@ -102,7 +102,8 @@ def heroSetup(group=table, x = 0, y = 0):
 
     if newHero:
         me.deck.shuffle()
-        nemesis_Deck = createCards(heroCard.owner.piles["Nemesis"],nemesis[str(heroCard.Owner)].keys(),nemesis[str(heroCard.Owner)])
+        if len(me.piles["Nemesis"]) == 0:
+            nemesis_Deck = createCards(heroCard.owner.piles["Nemesis"],nemesis[str(heroCard.Owner)].keys(),nemesis[str(heroCard.Owner)])
         changeOwner(nemesis_Deck, heroCard.Owner)
 
         #------------------------------------------------------------

@@ -375,19 +375,25 @@ def tableSetup(group=table, x=0, y=0, doPlayer=True, doEncounter=False):
 
     update()
 
+    checkSetup()
+
+def checkSetup(group = None, x = 0, y = 0):
     g = getGlobalVariable("playersSetup")
     v = getGlobalVariable("villainSetup")
     if num(g) == len(getPlayers()) and len(v) > 0:
-        table.create("65377f60-0de4-4196-a49e-96a550b4df81",playerX(0),tableLocations['hero'][1]+40,1,True)
-        firstPlayerToken = [card for card in table if card.Type == 'first_player']
-        firstPlayerToken[0].sendToBack()
-        for p in players:
-            remoteCall(p,"addObligationsToEncounter",[table, x, y, p])
-        update()
-        setGlobalVariable("firstPlayer",str(0))
-        debug("{} is active".format(str(players[0].name)))
+        startGame()
 
-        update()
+def startGame(group = None, x = 0, y = 0):
+    table.create("65377f60-0de4-4196-a49e-96a550b4df81",playerX(0),tableLocations['hero'][1]+40,1,True)
+    firstPlayerToken = [card for card in table if card.Type == 'first_player']
+    firstPlayerToken[0].sendToBack()
+    for p in players:
+        remoteCall(p,"addObligationsToEncounter",[table, x, y, p])
+    update()
+    setGlobalVariable("firstPlayer",str(0))
+    debug("{} is active".format(str(players[0].name)))
+
+    update()
 
 def addObligationsToEncounter(group = table, x = 0, y = 0, p=me):
     vName = getGlobalVariable("villainSetup")

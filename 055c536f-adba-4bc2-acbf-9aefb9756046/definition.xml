@@ -285,7 +285,10 @@
         </group>
     </shared>
     <deck>
-        <section name="Cards" group="Deck"/>
+        <section name="Cards" group="Deck" />
+        <section name="PreBuiltCards" group="Deck" />
+        <section name="Special" group="Special Deck" />
+        <section name="Nemesis" group="Nemesis" />
     </deck>
     <sharedDeck>
         <section name="Encounter" group="Encounter" />
@@ -296,5 +299,6 @@
         <section name="Campaign" group="Campaign" />
         <section name="Removed" group="Removed" />
         <section name="Setup" group="Setup" />
+        <section name="Recommended_Modular" group="Setup" />
     </sharedDeck>
 </game>
