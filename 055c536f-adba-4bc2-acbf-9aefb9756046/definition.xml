@@ -120,8 +120,8 @@
         <groupaction menu="Advance Phase" default="False" shortcut="F12" execute="advanceGame" />
         <groupaction menu="Pull boost/encounter card" shortcut="alt+enter" execute="villainBoost"/>
         <groupactions menu="Setup and Saving Tools">
-            <groupaction menu="Load Universal Pre-Built Hero Deck" default="False" execute="loadPreBuiltDeck" />
             <groupaction menu="Unload Hero Deck" default="False" execute="unloadHeroDeck" />
+            <groupaction menu="Load Universal Pre-Built Hero Deck" default="False" execute="loadPreBuiltDeck" />
             <groupaction menu="Load FanMade Hero Deck" default="False" execute="loadFanMade_Hero" />
             <groupaction menu="Save Table State..." default="False" execute="saveManual" />
             <groupaction menu="Load Table State..." default="False" execute="loadManual" />

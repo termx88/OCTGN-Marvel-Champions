@@ -277,9 +277,6 @@ def markersUpdate(args):
 #Triggered even OnCardDoubleClicked
 def defaultCardAction(args):
     mute()
-    if getActivePlayer() == None:
-        whisper("No active player. Default double-click card action is disabled")
-        return
     if args.card.group == table:
         if not args.card.isFaceUp or isScheme([args.card]):
              remoteCall(args.card.controller, "revealHide", args.card)

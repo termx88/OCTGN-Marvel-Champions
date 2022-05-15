@@ -18,11 +18,6 @@ def loadVillain(group, x = 0, y = 0):
         if card.Owner == "the_wrecking_crew":
             nbModular = 0
 
-        if card.Owner == "baron_zemo_firestarter":
-            createCards(shared.villain,sorted(baron_zemo_firestarter_modules.keys()),baron_zemo_firestarter_modules)
-            createCards(shared.villain,sorted(legions_of_hydra.keys()),legions_of_hydra)
-            createCards(shared.villain,sorted(bomb_scare.keys()),bomb_scare)
-
         if card.Owner == "crossbones":
             createCards(shared.special,sorted(exper_weapon.keys()),exper_weapon)
             specialDeck().collapsed = False
@@ -394,16 +389,6 @@ def SpecificVillainSetup(vName = ''):
                 minionCard[i].moveToTable(playerX(i), 0)
 
 				
-    if vName == 'Baron Zemo: Firestarter':
-        EnvCard = sorted(filter(lambda card: card.CardNumber == "91006", encounterDeck())) # environment card
-        if msCardOnTable[0].CardNumber == "91004a" and len(EnvCard) > 0: # Stage 1 main scheme
-            EnvCard[0].moveToTable(tableLocations['environment'][0], tableLocations['environment'][1])
-            ssCard = filter(lambda card: card.CardNumber == "01109", encounterDeck()) # Bomb Scare side scheme
-            ssCard[0].moveToTable(ssX, ssY)
-            minionCard = filter(lambda card: card.CardNumber == "01182", encounterDeck()) # Hydra Soldier minion
-            minionCard[0].moveToTable(tableLocations['environment'][0] - 90, tableLocations['environment'][1])
-
-
     if vName == 'Absorbing Man':
         if vCardOnTable[0].CardNumber == "04077": # Absorbing Man II
             revealCardOnSetup("Super Absorbing Power", "04092", ssX, ssY)
