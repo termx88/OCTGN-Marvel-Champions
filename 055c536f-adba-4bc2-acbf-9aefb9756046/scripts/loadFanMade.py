@@ -44,12 +44,13 @@ def loadFanMade_Hero(group, x = 0, y = 0):
     changeOwner(all_cards, hero_id)
 
     # 2- If some aspect cards have been found, let player choose to load them or not
-    do_step3 = False
+    do_step3 = True
     if len(aspect_cards) > 0:
         choice = askChoice("Do you want to also load the prebuilt hero cards from this .o8d file?", ["Yes", "No"])
         # No answer or 'Yes' have the same effect: we load those cards
+        if choice != 2:
+            do_step3 = False
         if choice == 2:
-            do_step3 = True
             # Remove them from deck as they have already been created
             [c.delete() for c in me.Deck if c in aspect_cards]
 
