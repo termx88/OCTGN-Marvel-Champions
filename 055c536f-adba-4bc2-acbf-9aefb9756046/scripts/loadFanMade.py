@@ -142,22 +142,23 @@ def loadFanMade_Villain(group, x = 0, y = 0):
                     else:
                         all_cards.extend(cards)
 
-    # 2- If cards found in Recommended_Modular 
-    if recommendedChoice == 2:
-        for c in setupPile():
-            c.moveTo(shared.piles["Removed"])
-        cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular))
-        for c in shared.piles["Removed"]:
-            c.moveTo(setupPile())        
-
-            
-    # 3- Create modular cards from Setup Pile to Encounter Deck.
+    # 2- Create modular cards from Setup Pile to Encounter Deck.
     for card in setupPile():
-        setupCards = createCards(encounterDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))
-        if qty == 1:
-            all_cards.append(setupCards)
+        if card.Type == "encounter_setup":
+            setupCards = createCards(encounterDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))
+            if qty == 1:
+                all_cards.append(setupCards)
+            else:
+                all_cards.extend(setupCards)
         else:
-            all_cards.extend(setupCards)
+            card.moveTo(encounterDeck())
+
+    # 3- If cards found in Recommended_Modular 
+    if recommendedChoice == 2:
+        cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular), min = 1, max = 50)
+        for card in cardsSelected:
+            createCards(encounterDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))       
+
 
     deleteCards(setupPile())
     # changeOwner(all_cards, villain_id) <= Not working right now
