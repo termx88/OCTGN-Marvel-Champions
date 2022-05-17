@@ -8,7 +8,8 @@ def loadFanMade_Hero(group, x = 0, y = 0):
         confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
         return
 
-    o8d = openFileDlg('Select fan made o8d deck to load', '', 'o8d Files|*.o8d')
+    dir = open("data.path", 'r').readline() + "\\GameDatabase\\055c536f-adba-4bc2-acbf-9aefb9756046\\FanMade\\Heroes\\"
+    o8d = openFileDlg('Select fan made o8d deck to load', dir, 'o8d Files|*.o8d')
     if o8d is None:
          return        
     full_dict = o8dLoadAsDict(o8d)
@@ -93,26 +94,79 @@ def loadFanMade_Hero(group, x = 0, y = 0):
 def loadFanMade_Villain(group, x = 0, y = 0):
     mute()
     villainName = ''
-    nbModular = 1
+    nbModular = 0
 
     if not deckNotLoaded(group,0,0,shared.villain):
         confirm("Cannot generate a deck: You already have cards loaded. Reset the game in order to generate a new deck.")
         return
 
-    # Fonction permettant de télécharger le deck :
-        # - Inclure toutes les sections "shared=True"
-        # - Pour la section "Recommended_Modular", demander si on veut charger le recommandé ou non. Si on ne veut pas alors demander quel set(s) 
-		# on veut charger. (Inclure la possibilité d'aller chercher un set FanMade qui devra être chargé directement dans le deck rencontre)
+    dir = open("data.path", 'r').readline() + "\\GameDatabase\\055c536f-adba-4bc2-acbf-9aefb9756046\\FanMade\\Villains\\"
+    o8d = openFileDlg('Select fan made o8d deck to load', dir, 'o8d Files|*.o8d')
+    if o8d is None:
+         return        
+    full_dict = o8dLoadAsDict(o8d)
+
+    villain_id = ""
+    all_cards = []
+    recommendedChoice = 1
+    
+    # 1- Load Villain cards + Scheme + Encounter + Side + Special + Campaign + Setup Deck cards
+    for section_id, section_elements in full_dict.items():
+        if section_elements["shared"]:
+            # Manage in which pile cards will be created: Deck, Special Deck or Nemesis
+            destination_pile = encounterDeck()
+            if section_elements["section"] == "Villain":
+                destination_pile = villainDeck()
+            if section_elements["section"] == "Scheme":
+                destination_pile = mainSchemeDeck()
+            if section_elements["section"] == "Side":
+                destination_pile = sideDeck()
+            if section_elements["section"] == "Special":
+                destination_pile = specialDeck()
+            if section_elements["section"] == "Campaign":
+                destination_pile = campaignDeck()
+            if section_elements["section"] == "Setup":
+                destination_pile = setupPile()
+            if section_elements["section"] == "Recommended_Modular":
+                destination_pile = setupPile()
+                recommendedChoice = askChoice("Do you want to also load the Recommended Modular ?", ["Yes", "No, I want to load another modular encounter"])
+              
+            # Create cards
+            for card_id,qty in section_elements["cards"].items():
+                if section_elements["section"] != "Recommended_Modular" or (section_elements["section"] == "Recommended_Modular" and recommendedChoice != 2):
+                    cards = destination_pile.create(card_id, qty)
+                    if qty == 1:
+                        all_cards.append(cards)
+                        if cards.Type == "villain":
+                            villain_id = cards.Owner
+                    else:
+                        all_cards.extend(cards)
+
+    # 2- If cards found in Recommended_Modular 
+    if recommendedChoice == 2:
+        for c in setupPile():
+            c.moveTo(shared.piles["Removed"])
+        cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular))
+        for c in shared.piles["Removed"]:
+            c.moveTo(setupPile())        
+
+            
+    # 3- Create modular cards from Setup Pile to Encounter Deck.
+    for card in setupPile():
+        setupCards = createCards(encounterDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))
+        if qty == 1:
+            all_cards.append(setupCards)
+        else:
+            all_cards.extend(setupCards)
+
+    deleteCards(setupPile())
+    # changeOwner(all_cards, villain_id) <= Not working right now
 
     villainName = (c[0].Name for c in shared.villain)
     setGlobalVariable("villainSetup",str(villainName))
 
     update()
 
-    cardsSelected = [c for c in setupPile()]
-    for card in cardsSelected:
-        createCards(shared.encounter, eval(card.Owner).keys(), eval(card.Owner))
-    deleteCards(setupPile())
     loadDifficulty()
     notify('{} loaded {}, Good Luck!'.format(me, villainName))
     tableSetup(doPlayer=False,doEncounter=False)

@@ -123,7 +123,9 @@
         <groupactions menu="Setup and Saving Tools">
             <groupaction menu="Unload Hero Deck" default="False" execute="unloadHeroDeck" />
             <groupaction menu="Load Universal Pre-Built Hero Deck" default="False" execute="loadPreBuiltDeck" />
-            <groupaction menu="Load FanMade Hero Deck" default="False" execute="loadFanMade_Hero" />
+            <groupaction menu="Load FanMade Hero Deck [WIP]" default="False" execute="loadFanMade_Hero" />
+            <groupaction menu="Load FanMade Villain Scenario [WIP]" default="False" execute="loadFanMade_Villain" />
+            <groupaction menu="Load FanMade Modular [WIP]" default="False" execute="loadFanMade_Modular" />
             <groupaction menu="Save Table State..." default="False" execute="saveManual" />
             <groupaction menu="Load Table State..." default="False" execute="loadManual" />
             <groupaction menu="Restore last Auto Save..." default="False" execute="restoreSave" />

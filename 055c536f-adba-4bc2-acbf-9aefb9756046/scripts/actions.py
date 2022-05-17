@@ -111,6 +111,12 @@ def encounterAndDiscardDeck():
     deck.extend(shared.piles['Encounter Discard'])
     return deck
 
+def sideDeck():
+    return shared.piles['Side']
+
+def sideDeckDiscard():
+    return shared.piles['Side Discard']
+
 def specialDeck():
     return shared.piles['Special']
 

@@ -25,10 +25,6 @@
             <property name="Type" value="villain_setup" />
             <property name="Owner" value="the_wrecking_crew"/>
         </card>
-        <card id="939bf149-4cf6-4192-98ba-200000000007" name="Baron Zemo: Firestarter (By: FelixFactory)">
-            <property name="Type" value="villain_setup" />
-            <property name="Owner" value="baron_zemo_firestarter"/>
-        </card>
         <card id="939bf149-4cf6-4192-98ba-200000000008" name="Crossbones">
             <property name="Type" value="villain_setup" />
             <property name="Owner" value="crossbones"/>
