@@ -11,7 +11,7 @@ def loadVillain(group, x = 0, y = 0):
         confirm("Cannot generate a deck: You already have cards loaded. Reset the game in order to generate a new deck.")
         return
 
-    cardsSelected = dialogBox_Setup(setupPile(), "villain_setup", "Which villain would you like to defeat ?", "Select your Opponent :")
+    cardsSelected = dialogBox_Setup(setupPile(), "villain_setup", "Which villain would you like to defeat ?", "Select your Opponent :", min = 1, max = 1)
     for card in cardsSelected:
         createCards(shared.villain,sorted(eval(card.Owner).keys()), eval(card.Owner))
         update()

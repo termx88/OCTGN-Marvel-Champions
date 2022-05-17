@@ -343,7 +343,7 @@ def changeLog():
             confirm("What's new in {} ({}):\n-{}".format(stringVersion, date, updates))
     setSetting("lastVersion", convertToString(currentVersion))  ## Store's the current version to a setting
 
-def dialogBox_Setup(group, type, title, text):
+def dialogBox_Setup(group, type, title, text, min = 1, max = 1):
     setup_cards = queryCard({"Type":type}, True)
     for i in setup_cards:
         group.create(i, 1)
@@ -351,6 +351,8 @@ def dialogBox_Setup(group, type, title, text):
     dlg = cardDlg(group)
     dlg.title = title
     dlg.text = text
+    dlg.min = min
+    dlg.max = max
     cardsSelected = dlg.show()
     deleteCards(group)
     if cardsSelected is None:

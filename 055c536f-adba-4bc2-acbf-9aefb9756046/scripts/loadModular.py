@@ -16,7 +16,7 @@ def specificEncounter(group, x = 0, y = 0, nbModular = 1):
     mute()
     vName = getGlobalVariable("villainSetup")
 
-    cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular))
+    cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular), min = nbModular, max = 50)
     for card in cardsSelected:
         if vName != 'The Hood':
             createCards(group,sorted(eval(card.Owner).keys()), eval(card.Owner))

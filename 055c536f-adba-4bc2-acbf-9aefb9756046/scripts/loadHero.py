@@ -12,7 +12,7 @@ def loadHero(group, x = 0, y = 0):
 
     if choice == 0: return
     if choice == 1:
-        cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :")
+        cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :", min = 1, max = 1)
         for card in cardsSelected:
             deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
             deckname2 = createCards(me.Deck, pre_built[str(card.Owner)].keys(), pre_built[str(card.Owner)])
@@ -45,7 +45,7 @@ def loadPreBuiltDeck(group, x=0, y=0):
         confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
         return
 
-    cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :")
+    cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :", min = 1, max = 1)
     for card in cardsSelected:
         deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
     changeOwner(deckname1, card.Owner)
