@@ -287,7 +287,7 @@ def defaultCardAction(args):
         if not args.card.isFaceUp or isScheme([args.card]):
              remoteCall(args.card.controller, "revealHide", args.card)
         else:
-            if args.card.Type == "villain":
+            if args.card.Type == "villain" or lookForVillainous(args.card):
                 villainBoost(args.card)
             elif args.card.Owner == "infinity_gauntlet":
                 infinityGauntletBoost(args.card)
@@ -1420,6 +1420,15 @@ def lookForToughness(card):
         description_search = re.search('.*Toughness.*', card.properties["Text"], re.IGNORECASE)
         if description_search:
             tough(card)
+
+def lookForVillainous(card):
+    """
+    Adds a Tough status card to a character if such ability is found in card's text
+    """
+    if card.Type in ["minion"]:
+        description_search = re.search('.*Villainous.*', card.properties["Text"], re.IGNORECASE)
+        if description_search:
+            return True       
 
 def lookForCounters(card):
     """

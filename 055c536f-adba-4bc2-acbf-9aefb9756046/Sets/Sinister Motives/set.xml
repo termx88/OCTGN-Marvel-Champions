@@ -1611,6 +1611,7 @@ If there are no chime counters here, flip this card.</property>
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Elite. Genius."/>
+      <property name="Text">Villainous.</property>
     </card>
     <card name="Electro" id="618c2d7c-28b0-47bb-b98b-7c17e9dde660" size="EncounterCard">
       <property name="CardNumber" value="27159"/>
@@ -1621,6 +1622,7 @@ If there are no chime counters here, flip this card.</property>
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Criminal. Elite."/>
+      <property name="Text">Villainous.</property>
     </card>
     <card name="Hobgoblin" id="85ddb2ef-981d-4802-991b-44bad12e54af" size="EncounterCard">
       <property name="CardNumber" value="27160"/>
@@ -1631,6 +1633,7 @@ If there are no chime counters here, flip this card.</property>
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Aerial. Elite."/>
+      <property name="Text">Villainous.</property>
     </card>
     <card name="Kraven the Hunter" id="057cd98e-008f-43d9-9bf3-130211be6aea" size="EncounterCard">
       <property name="CardNumber" value="27161"/>
@@ -1641,6 +1644,7 @@ If there are no chime counters here, flip this card.</property>
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Elite."/>
+      <property name="Text">Villainous.</property>
     </card>
     <card name="Scorpion" id="60c3c0b6-baba-4879-9452-b3aecec46bef" size="EncounterCard">
       <property name="CardNumber" value="27162"/>
@@ -1662,6 +1666,7 @@ If there are no chime counters here, flip this card.</property>
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Aerial. Elite."/>
+      <property name="Text">Villainous.</property>
     </card>
     <card name="Improvised Weapons" id="869e8157-2aa8-4e8e-ba62-0b256b667a9e" size="EncounterCard">
       <property name="CardNumber" value="27164"/>
