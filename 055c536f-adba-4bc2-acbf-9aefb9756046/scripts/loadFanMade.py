@@ -101,6 +101,7 @@ def loadFanMade_Villain(group, x = 0, y = 0):
         return
 
     dir = open("data.path", 'r').readline() + "\\GameDatabase\\055c536f-adba-4bc2-acbf-9aefb9756046\\FanMade\\Villains\\"
+    notify(dir)
     o8d = openFileDlg('Select fan made o8d deck to load', dir, 'o8d Files|*.o8d')
     if o8d is None:
          return        
@@ -127,13 +128,13 @@ def loadFanMade_Villain(group, x = 0, y = 0):
                 destination_pile = campaignDeck()
             if section_elements["section"] == "Setup":
                 destination_pile = setupPile()
-            if section_elements["section"] == "Recommended_Modular":
+            if section_elements["section"] == "Recommended":
                 destination_pile = setupPile()
                 recommendedChoice = askChoice("Do you want to also load the Recommended Modular ?", ["Yes", "No, I want to load another modular encounter"])
               
             # Create cards
             for card_id,qty in section_elements["cards"].items():
-                if section_elements["section"] != "Recommended_Modular" or (section_elements["section"] == "Recommended_Modular" and recommendedChoice != 2):
+                if section_elements["section"] != "Recommended" or (section_elements["section"] == "Recommended" and recommendedChoice != 2):
                     cards = destination_pile.create(card_id, qty)
                     if qty == 1:
                         all_cards.append(cards)

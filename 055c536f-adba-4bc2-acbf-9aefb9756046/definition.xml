@@ -304,6 +304,6 @@
         <section name="Campaign" group="Campaign" />
         <section name="Removed" group="Removed" />
         <section name="Setup" group="Setup" />
-        <section name="Recommended_Modular" group="Setup" />
+        <section name="Recommended" group="Setup" />
     </sharedDeck>
 </game>
