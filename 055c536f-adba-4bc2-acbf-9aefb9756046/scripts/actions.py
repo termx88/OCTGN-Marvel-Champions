@@ -1425,12 +1425,9 @@ def lookForToughness(card):
 
 def lookForVillainous(card):
     """
-    Adds a Tough status card to a character if such ability is found in card's text
+    Look for Villainous keyword => for boost card purpose
     """
-    if card.Type in ["minion"]:
-        description_search = re.search('.*Villainous.*', card.properties["Text"], re.IGNORECASE)
-        if description_search:
-            return True       
+    return re.search('.*Villainous.*', card.properties["Text"], re.IGNORECASE) if card.Type in ["minion"] else False  
 
 def lookForCounters(card):
     """
