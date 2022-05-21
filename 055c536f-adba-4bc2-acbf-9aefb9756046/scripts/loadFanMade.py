@@ -101,7 +101,6 @@ def loadFanMade_Villain(group, x = 0, y = 0):
         return
 
     dir = open("data.path", 'r').readline() + "\\GameDatabase\\055c536f-adba-4bc2-acbf-9aefb9756046\\FanMade\\Villains\\"
-    notify(dir)
     o8d = openFileDlg('Select fan made o8d deck to load', dir, 'o8d Files|*.o8d')
     if o8d is None:
          return        
@@ -135,7 +134,6 @@ def loadFanMade_Villain(group, x = 0, y = 0):
             for card_id,qty in section_elements["cards"].items():
                 if section_elements["section"] != "Recommended" or (section_elements["section"] == "Recommended" and recommendedChoice != 2):
                     cards = destination_pile.create(card_id, qty)
-                    notify("{} created in {}".format(cards, destination_pile))
                     if qty == 1:
                         all_cards.append(cards)
                     else:
@@ -197,7 +195,6 @@ def loadFanMade_Modular(group, x = 0, y = 0):
             # Manage in which pile cards will be created: Deck, Special Deck or Nemesis
             destination_pile_choice = askChoice("In which pile do you want to load cards from {} section ?".format(section_id), playerPilesList)
             destination_pile = me.piles[playerPilesList[destination_pile_choice-1]]
-            notify("{} selected!".format(destination_pile))
             
             # Create cards
             for card_id,qty in section_elements["cards"].items():
