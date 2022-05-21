@@ -503,6 +503,19 @@ def changeForm(card, x = 0, y = 0):
         if choice == 3:
             card.alternate = "b"
             notify("{} changes form to {}.".format(me, card))
+    elif len(card.alternates) > 2:
+        curAlt = card.alternate
+        altNames = []
+        for alt in card.alternates:
+            card.alternate = alt
+            altName = card.name
+            notify("{}".format(altName))
+            altNames.append(altName) 
+        card.alternate = curAlt
+        altChoice = askChoice("Which form would you like to change into: ", altNames)
+        if altChoice == 0: return
+        elif altChoice != 0:
+            card.alternate = card.alternates[altChoice-1]
     elif "b" in card.alternates:
         if card.alternate == "":
             card.alternate = "b"

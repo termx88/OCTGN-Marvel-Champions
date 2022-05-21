@@ -107,7 +107,6 @@ def loadFanMade_Villain(group, x = 0, y = 0):
          return        
     full_dict = o8dLoadAsDict(o8d)
 
-    villain_id = ""
     all_cards = []
     recommendedChoice = 1
     
@@ -136,10 +135,9 @@ def loadFanMade_Villain(group, x = 0, y = 0):
             for card_id,qty in section_elements["cards"].items():
                 if section_elements["section"] != "Recommended" or (section_elements["section"] == "Recommended" and recommendedChoice != 2):
                     cards = destination_pile.create(card_id, qty)
+                    notify("{} created in {}".format(cards, destination_pile))
                     if qty == 1:
                         all_cards.append(cards)
-                        if cards.Type == "villain":
-                            villain_id = cards.Owner
                     else:
                         all_cards.extend(cards)
 
@@ -162,19 +160,56 @@ def loadFanMade_Villain(group, x = 0, y = 0):
 
 
     deleteCards(setupPile())
-    # changeOwner(all_cards, villain_id) <= Not working right now
-
-    villainName = (c[0].Name for c in shared.villain)
-    setGlobalVariable("villainSetup",str(villainName))
 
     update()
 
     loadDifficulty()
+    gameDifficulty = getGlobalVariable("difficulty")
+
+    # Move cards from Villain Deck to Encounter and Scheme Decks
+    mainSchemeCards = [c for c in mainSchemeDeck()]
+    villainCards = [c for c in villainDeck()]
+
+    mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0],tableLocations['mainScheme'][1])
+    villainCards[0].moveToTable(villainX(1,0),tableLocations['villain'][1])
+
+    villainName = villainCards[0].Name
+    setGlobalVariable("villainSetup",str(villainName))
+    vName = getGlobalVariable("villainSetup")   
+    shared.counters["HP"].value = int(villainCards[0].properties["HP"]) * len(players)
+    shared.encounter.shuffle()
     notify('{} loaded {}, Good Luck!'.format(me, villainName))
-    tableSetup(doPlayer=False,doEncounter=False)
 
 def loadFanMade_Modular(group, x = 0, y = 0):
     mute()
 
-    # Fonction permettant de télécharger le deck :
-        # - Inclure toutes les sections "shared=True"
+    dir = open("data.path", 'r').readline() + "//GameDatabase//055c536f-adba-4bc2-acbf-9aefb9756046//FanMade//"
+    o8d = openFileDlg('Select fan made o8d deck to load', dir, 'o8d Files|*.o8d')
+    if o8d is None:
+         return        
+    full_dict = o8dLoadAsDict(o8d)
+    playerPilesList = [p for p in me.piles]
+    sharedPilesList = [p for p in shared.piles]
+
+    # 1- Load cards in sections where shared = False
+    for section_id, section_elements in full_dict.items():
+        if not section_elements["shared"] and len(section_elements["cards"].items()) > 0:
+            # Manage in which pile cards will be created: Deck, Special Deck or Nemesis
+            destination_pile_choice = askChoice("In which pile do you want to load cards from {} section ?".format(section_id), playerPilesList)
+            destination_pile = me.piles[playerPilesList[destination_pile_choice-1]]
+            notify("{} selected!".format(destination_pile))
+            
+            # Create cards
+            for card_id,qty in section_elements["cards"].items():
+                cards = destination_pile.create(card_id, qty)
+
+    # 2- Load cards in sections where shared = True
+    for section_id, section_elements in full_dict.items():
+        if section_elements["shared"] and len(section_elements["cards"].items()) > 0:
+            # Manage in which pile cards will be created: Deck, Special Deck or Nemesis
+            destination_pile_choice = askChoice("In which pile do you want to load cards from {} section ?".format(section_id), sharedPilesList)
+            destination_pile = shared.piles[sharedPilesList[destination_pile_choice-1]]
+            
+            # Create cards
+            for card_id,qty in section_elements["cards"].items():
+                cards = destination_pile.create(card_id, qty)
