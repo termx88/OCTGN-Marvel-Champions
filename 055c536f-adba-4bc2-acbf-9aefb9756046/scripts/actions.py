@@ -491,19 +491,7 @@ def deleteCards(group):
 
 def changeForm(card, x = 0, y = 0):
     mute()
-    if card.Owner == 'ant' or card.Owner == 'wsp':
-        choice = askChoice("Which form would you like to change into: ", ["Tiny", "Giant", "Alter-Ego"])
-        if choice == 0: return
-        if choice == 1:
-            card.alternate = ""
-            notify("{} changes form to {}.".format(me, card))
-        if choice == 2:
-            card.alternate = "c"
-            notify("{} changes form to {}.".format(me, card))
-        if choice == 3:
-            card.alternate = "b"
-            notify("{} changes form to {}.".format(me, card))
-    elif len(card.alternates) > 2:
+    if len(card.alternates) > 2:
         curAlt = card.alternate
         altNames = []
         for alt in card.alternates:

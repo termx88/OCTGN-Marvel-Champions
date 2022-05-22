@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <set name="Wasp" id="61039cd6-e30d-4e50-9019-0960e40385f4" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
   <cards>
-    <card name="Wasp" id="8f023a00-d5d2-4ae6-ade7-3418e0b6f160">
+    <card name="Wasp (Tiny Form)" id="8f023a00-d5d2-4ae6-ade7-3418e0b6f160">
       <property name="CardNumber" value="13001a"/>
       <property name="Type" value="hero"/>
       <property name="Owner" value="wsp"/>
@@ -14,19 +14,7 @@
       <property name="Text">Small but Mighty - &lt;b&gt;Response:&lt;/b&gt; After Wasp &lt;em&gt;(or an event you play)&lt;/em&gt; defeats a minion or side scheme, deal 1 damage to the villain.</property>
       <property name="Quote">"You should learn to play nice!"</property>
       <property name="Unique" value="True"/>
-      <alternate name="Nadia Van Dyne" type="b">
-        <property name="CardNumber" value="13001b"/>
-        <property name="Type" value="alter_ego"/>
-        <property name="Owner" value="wsp"/>
-        <property name="HandSize" value="6"/>
-        <property name="Recovery" value="3"/>
-        <property name="HP" value="11"/>
-        <property name="Attribute" value="Genius."/>
-        <property name="Text">G.I.R.L. - &lt;b&gt;Action:&lt;/b&gt; Shuffle up to 2 cards with a printed [mental] resource from your discard pile into your deck. (Limit once per round.)</property>
-        <property name="Quote">"G.I.R.L. is dedicated to finding brilliant women who will not only save the world, but change it."</property>
-        <property name="Unique" value="True"/>
-      </alternate>
-      <alternate name="Wasp" type="c">
+      <alternate name="Wasp (Giant Form)" type="c">
         <property name="CardNumber" value="13001c"/>
         <property name="Type" value="hero"/>
         <property name="Owner" value="wsp"/>
@@ -37,6 +25,18 @@
         <property name="HP" value="11"/>
         <property name="Attribute" value="Avenger. Giant."/>
         <property name="Text">Damage you deal using your basic attack power (ATK) can be divided among enemies as you choose. Threat you remove using your basic thwart power (THW) can be divided among schemes as you choose.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+      <alternate name="Nadia Van Dyne" type="b">
+        <property name="CardNumber" value="13001b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="wsp"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="11"/>
+        <property name="Attribute" value="Genius."/>
+        <property name="Text">G.I.R.L. - &lt;b&gt;Action:&lt;/b&gt; Shuffle up to 2 cards with a printed [mental] resource from your discard pile into your deck. (Limit once per round.)</property>
+        <property name="Quote">"G.I.R.L. is dedicated to finding brilliant women who will not only save the world, but change it."</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>

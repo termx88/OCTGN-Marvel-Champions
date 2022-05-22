@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <set name="Ant-man" id="7e399030-8d69-490f-9fd4-dafa6b293a51" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
   <cards>
-    <card name="Ant-Man" id="b768a53b-cb8c-47c5-9b65-f20ed2d89837">
+    <card name="Ant-Man (Tiny Form)" id="b768a53b-cb8c-47c5-9b65-f20ed2d89837">
       <property name="CardNumber" value="12001a"/>
       <property name="Type" value="hero"/>
       <property name="Owner" value="ant"/>
@@ -14,19 +14,7 @@
       <property name="Text">Puny Pest - &lt;b&gt;Response:&lt;/b&gt; After you change to this form, remove 1 threat from a scheme.</property>
       <property name="Quote">"Why don't you pick on somebody your own size?"</property>
       <property name="Unique" value="True"/>
-      <alternate name="Scott Lang" type="b">
-        <property name="CardNumber" value="12001b"/>
-        <property name="Type" value="alter_ego"/>
-        <property name="Owner" value="ant"/>
-        <property name="HandSize" value="6"/>
-        <property name="Recovery" value="3"/>
-        <property name="HP" value="12"/>
-        <property name="Attribute" value="Civilian."/>
-        <property name="Text">Time to Unwind - &lt;b&gt;Response:&lt;/b&gt; After you change to this form, heal 1 damage from Scott Lang.</property>
-        <property name="Quote">"being Cassie's hero is all I've ever wanted."</property>
-        <property name="Unique" value="True"/>
-      </alternate>
-      <alternate name="Ant-Man" type="c">
+      <alternate name="Ant-Man (Giant Form)" type="c">
         <property name="CardNumber" value="12001c"/>
         <property name="Type" value="hero"/>
         <property name="Owner" value="ant"/>
@@ -38,6 +26,18 @@
         <property name="Attribute" value="Avenger. Giant."/>
         <property name="Text">Giant Nuisance - &lt;b&gt;Response:&lt;/b&gt; After you change to this form, deal 1 damage to an enemy.</property>
         <property name="Quote">"Oh Yeah, tiny dude is big now!"</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+      <alternate name="Scott Lang" type="b">
+        <property name="CardNumber" value="12001b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="ant"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="12"/>
+        <property name="Attribute" value="Civilian."/>
+        <property name="Text">Time to Unwind - &lt;b&gt;Response:&lt;/b&gt; After you change to this form, heal 1 damage from Scott Lang.</property>
+        <property name="Quote">"being Cassie's hero is all I've ever wanted."</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
