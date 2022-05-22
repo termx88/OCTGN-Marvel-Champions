@@ -99,11 +99,11 @@ def loadFanMade_Villain(group, x = 0, y = 0):
     if not deckNotLoaded(group,0,0,shared.villain):
         confirm("Cannot generate a deck: You already have cards loaded. Reset the game in order to generate a new deck.")
         return
-
+    # At the moment the second parameter of openFileDlg is never taken into account by OCTGN CSharp code
     dir = open("data.path", 'r').readline() + "\\GameDatabase\\055c536f-adba-4bc2-acbf-9aefb9756046\\FanMade\\Villains\\"
     o8d = openFileDlg('Select fan made o8d deck to load', dir, 'o8d Files|*.o8d')
     if o8d is None:
-         return        
+         return
     full_dict = o8dLoadAsDict(o8d)
 
     all_cards = []
@@ -131,22 +131,14 @@ def loadFanMade_Villain(group, x = 0, y = 0):
                 recommendedChoice = askChoice("Do you want to also load the Recommended Modular ?", ["Yes", "No, I want to load another modular encounter"])
               
             # Create cards
-            for card_id,qty in section_elements["cards"].items():
+            for card_id,qty in sorted(section_elements["cards"].items()):
                 if section_elements["section"] != "Recommended" or (section_elements["section"] == "Recommended" and recommendedChoice != 2):
-                    cards = destination_pile.create(card_id, qty)
-                    if qty == 1:
-                        all_cards.append(cards)
-                    else:
-                        all_cards.extend(cards)
+                    destination_pile.create(card_id, qty)
 
     # 2- Create modular cards from Setup Pile to Encounter Deck.
     for card in setupPile():
         if card.Type == "encounter_setup":
-            setupCards = createCards(encounterDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))
-            if qty == 1:
-                all_cards.append(setupCards)
-            else:
-                all_cards.extend(setupCards)
+            createCards(encounterDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))
         else:
             card.moveTo(encounterDeck())
 
