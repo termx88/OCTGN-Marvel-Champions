@@ -1194,7 +1194,9 @@ def nextVillainStage(group=None, x=0, y=0):
         return
 
     if vName == 'The Wrecking Crew':
-        vCards = filter(lambda card: card.Owner == getActiveVillain().Owner and (card.Type == 'villain' or card.Type == 'side_scheme'), table)
+        villainOnTable = filter(lambda card: card.Type == 'villain', table)
+        villainChoice = askChoice("Which villain is defeated ?", [c.Name for c in villainOnTable])
+        vCards = filter(lambda card: card.Owner == villainOnTable[villainChoice-1].Owner and (card.Type == 'villain' or card.Type == 'side_scheme'), table)
         for c in vCards:
             c.moveToBottom(removedFromGameDeck())
 
