@@ -107,13 +107,15 @@ def loadTable(phase):
         if not filename:
             return
 
-        for pl in players:
-            for p in pl.piles:
-                [c.delete() for c in pl.piles[p]]
-                [c.delete() for c in pl.hand]
-        [c.delete() for c in table]
-        for p in shared.piles:
-            [c.delete() for c in shared.piles[p]]
+        # deleteChoice = askChoice("Do you want to delete all cards on table and in each piles ?", ["Yes", "No"])
+        # if deleteChoice == 1:
+            # for pl in players:
+                # for p in pl.piles:
+                    # [c.delete() for c in pl.piles[p]]
+                    # [c.delete() for c in pl.hand]
+            # [c.delete() for c in table]
+            # for p in shared.piles:
+                # [c.delete() for c in shared.piles[p]]
 
         with open(filename, 'r') as f:
             tab = json().DeserializeObject(f.read())
