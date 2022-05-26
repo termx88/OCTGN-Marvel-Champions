@@ -211,6 +211,8 @@ def setFirstPlayer(group = table, x = 0, y = 0):
     mute()
     currentFirstPlayer = num(getGlobalVariable("firstPlayer"))
     firstPlayerToken = [card for card in table if card.Type == 'first_player']
+    if len(firstPlayerToken) == 0:
+        firstPlayerToken = [table.create("65377f60-0de4-4196-a49e-96a550b4df81",0,0,1,True)]
     firstPlayerIdentityCard =  [card for card in table if card.Type == 'hero' or card.Type == 'alter_ego']
     if (currentFirstPlayer + 1) >= len(getPlayers()):
         newFirstPlayer = 0
@@ -219,7 +221,7 @@ def setFirstPlayer(group = table, x = 0, y = 0):
     setGlobalVariable("firstPlayer",str(newFirstPlayer))
     update()
     firstPlayerToken[0].controller = me
-    firstPlayerToken[0].moveToTable(firstPlayerIdentityCard[newFirstPlayer].position[0], firstPlayerIdentityCard[newFirstPlayer].position[1]+50)
+    firstPlayerToken[0].moveToTable(firstPlayerIdentityCard[newFirstPlayer].position[0], firstPlayerIdentityCard[newFirstPlayer].position[1]-40)
     firstPlayerToken[0].sendToBack()
 
 def setActiveVillain(card, x = 0, y = 0):
@@ -389,7 +391,8 @@ def checkSetup(group = None, x = 0, y = 0):
         startGame()
 
 def startGame(group = None, x = 0, y = 0):
-    table.create("65377f60-0de4-4196-a49e-96a550b4df81",playerX(0),tableLocations['hero'][1]+40,1,True)
+    table.create("65377f60-0de4-4196-a49e-96a550b4df81",playerX(0),tableLocations['hero'][1]-40,1,True)
+    update()
     firstPlayerToken = [card for card in table if card.Type == 'first_player']
     firstPlayerToken[0].sendToBack()
     for p in players:

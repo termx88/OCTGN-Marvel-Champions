@@ -124,7 +124,7 @@ def heroSetup(group=table, x = 0, y = 0):
                 if c.CardNumber == "21002" or c.CardNumber == "21003" or c.CardNumber == "21004":
                     c.moveTo(me.piles['Special Deck'])
             me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+            me.piles['Special Deck'].visibility = "me"
 
         # Valkyrie
         if str(heroCard.properties["Owner"]) == 'valk':
@@ -132,7 +132,7 @@ def heroSetup(group=table, x = 0, y = 0):
                 if c.CardNumber == "25002":
                     c.moveTo(me.piles['Special Deck'])
             me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+            me.piles['Special Deck'].visibility = "me"
 
         # Vision
         if str(heroCard.properties["Owner"]) == 'vision':
@@ -142,10 +142,9 @@ def heroSetup(group=table, x = 0, y = 0):
 
         # Ironheart
         if str(heroCard.properties["Owner"]) == 'ironheart':
-            for c in filter(lambda card: card.Type == "hero", me.Deck):
-                c.moveTo(me.piles['Special Deck'])
+            createCards(me.piles['Special Deck'],sorted(special_decks['ironheart'].keys()),special_decks['ironheart'])
             me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+            me.piles['Special Deck'].visibility = "me"
 
         #------------------------------------------------------------
         # Draw Opening Hand

@@ -251,7 +251,7 @@ changelog = {
         "Fix: Wrong modular encounter name in image pack for \"Symbiotic Strength\"",
         "Fixed issue where control on a side scheme card was lost when revealed"
         ]),
-    '0000313': ("0.0.3.13", "26 May 2022", [
+    '0000314': ("0.0.3.14", "26 May 2022", [
         "Nova Hero pack added",
         "Ironheart Hero pack added",
         "Feature: Mysterio scenario improved : encounter cards are now automatically shuffled in players deck at Expert setup",
