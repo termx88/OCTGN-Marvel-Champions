@@ -396,7 +396,10 @@ def startGame(group = None, x = 0, y = 0):
     firstPlayerToken = [card for card in table if card.Type == 'first_player']
     firstPlayerToken[0].sendToBack()
     for p in players:
-        remoteCall(p,"addObligationsToEncounter",[table, x, y, p])
+        p_hand_size = countHandSize(p.piles['Hand'])
+        p.deck.shuffle()
+        remoteCall(p, "drawMany", [p.piles['Deck'], p.MaxHandSize - p_hand_size, True])
+        remoteCall(p, "addObligationsToEncounter", [table, x, y, p])
     update()
     setGlobalVariable("firstPlayer",str(0))
     debug("{} is active".format(str(players[0].name)))
@@ -437,9 +440,9 @@ def doEndHeroPhase():
 
     for p in players:
         p_hand_size = countHandSize(p.piles['Hand'])
-        remoteCall(p,"clearTargets",[])
-        remoteCall(p,"readyAll",[])
-        remoteCall(p, "drawMany", [p.piles['Deck'], p.MaxHandSize - p_hand_size])
+        remoteCall(p, "clearTargets", [])
+        remoteCall(p, "readyAll", [])
+        remoteCall(p, "drawMany", [p.piles['Deck'], p.MaxHandSize - p_hand_size, True])
 
         # Check for hand size!
         if p_hand_size > num(p.counters["MaxHandSize"].value):
@@ -879,10 +882,10 @@ def doDiscard(card, pile):
 
 def draw(group, x = 0, y = 0):
     mute()
-    drawCard(group)
+    drawCard(group, False)
     notify("{} draws a card.".format(me))
 
-def drawMany(group, count = None):
+def drawMany(group, count = None, checkHandSize = False):
     mute()
     if len(group) == 0:
         notifyBar("#FF0000", "Deck {} is empty!".format(group.name))
@@ -896,7 +899,35 @@ def drawMany(group, count = None):
         whisper("drawMany: invalid card count")
         return
     for i in range(0, count):
-        drawCard(group)
+        drawCard(group, checkHandSize)
+
+def drawCard(group, checkHandSize = False):
+    mute()
+    # For special deck we shuffle when we need to draw and deck is empty
+    if group.name == 'Special Deck':
+        if len(me.piles[group.name]) == 0:
+            for c in me.piles["Special Deck Discard"]: c.moveTo(c.owner.piles["Special Deck"])
+            me.piles["Special Deck"].shuffle()
+            notifyBar("#0000FF", "Special Deck for player {} has been created from discard and shuffled!".format(me.name))
+            rnd(1,1)
+
+        card = me.piles["Special Deck"][0]
+        card.moveToTable(0,0,False)
+    # For player deck, we draw and if deck is empty after (or while) drawing, we notify + recreate deck from its discard (shuffle it)
+    else:
+        card = me.deck[0]
+        # Mysterio can put some encounter cards in players decks: 
+        if isEncounter([card]) and getGlobalVariable("villainSetup") == "Mysterio":
+            posX = playerX(int(me.getGlobalVariable("playerID"))) - 35
+            posY = 100
+            # Deal as a facedown card and draw another one as a replacement
+            drawUnrevealed(group, posX, posY)
+            drawCard(group, checkHandSize)
+        else:
+            card.moveTo(card.owner.hand)
+            if noCountInHandSize(card) and checkHandSize:
+                drawCard(group, checkHandSize)
+        checkDeckRemainingCards(group)
 
 def drawUnrevealed(group=None, x=0, y=0):
     mute()
@@ -912,6 +943,33 @@ def drawUnrevealed(group=None, x=0, y=0):
     checkDeckRemainingCards(group)
     notify("{} draws an unrevealed card from the {}.".format(me, group.name))
     return card
+
+def checkDeckRemainingCards(group):
+    """
+    Check how many remaining cards in the given group. Warn in notification bar if empty + recreate and shuffle
+    """
+    if len(me.piles[group.name]) == 0:
+        for c in me.piles["Deck Discard"]:
+            c.moveTo(me.Deck)
+        me.Deck.shuffle()
+        notifyBar("#FF0000", "{}'s deck has been created from discard and shuffled!".format(me.name))
+        rnd(1,1)
+
+def mulligan(group, x = 0, y = 0):
+    mute()
+    dlg = cardDlg(me.hand)
+    dlg.min = 0
+    dlg.max = len(me.hand)
+    dlg.text = "Select which cards you would like to mulligan"
+    mulliganList = dlg.show()
+    if not mulliganList:
+        return
+    if not confirm("Confirm Mulligan?"):
+        return
+    notify("{} mulligans.".format(me))
+    for card in mulliganList:
+        card.moveTo(me.piles["Deck Discard"])
+    drawMany(me.Deck, len(mulliganList), True)
 
 def FlipDeckTopCard(group=None, x=0, y=0):
     mute()
@@ -969,62 +1027,6 @@ def moveAllToEncounterBottom(group):
         for c in group:
             c.moveToBottom(encounterDeck())
             notify("{} moves all cards from {} to the bottom of the Encounter Deck".format(me, group.name))
-
-def drawCard(group):
-    mute()
-    # For special deck we shuffle when we need to draw and deck is empty
-    if group.name == 'Special Deck':
-        if len(me.piles[group.name]) == 0:
-            for c in me.piles["Special Deck Discard"]: c.moveTo(c.owner.piles["Special Deck"])
-            me.piles["Special Deck"].shuffle()
-            notifyBar("#0000FF", "Special Deck for player {} has been created from discard and shuffled!".format(me.name))
-            rnd(1,1)
-
-        card = me.piles["Special Deck"][0]
-        card.moveToTable(0,0,False)
-    # For player deck, we draw and if deck is empty after (or while) drawing, we notify + recreate deck from its discard (shuffle it)
-    else:
-        card = me.deck[0]
-        # Mysterio can put some encounter cards in players decks: 
-        if isEncounter([card]) and getGlobalVariable("villainSetup") == "Mysterio":
-            posX = playerX(int(me.getGlobalVariable("playerID"))) - 35
-            posY = 100
-            # Deal as a facedown card and draw another one as a replacement
-            drawUnrevealed(group, posX, posY)
-            drawCard(group)
-        else:
-            card.moveTo(card.owner.hand)
-            if noCountInHandSize(card):
-                drawCard(group)
-        checkDeckRemainingCards(group)
-
-def checkDeckRemainingCards(group):
-    """
-    Check how many remaining cards in the given group. Warn in notification bar if empty + recreate and shuffle
-    """
-    if len(me.piles[group.name]) == 0:
-        for c in me.piles["Deck Discard"]:
-            c.moveTo(c.owner.Deck)
-        me.Deck.shuffle()
-        notifyBar("#FF0000", "{}'s deck has been created from discard and shuffled!".format(me.name))
-        rnd(1,1)
-
-def mulligan(group, x = 0, y = 0):
-    mute()
-    dlg = cardDlg(me.hand)
-    dlg.min = 0
-    dlg.max = len(me.hand)
-    dlg.text = "Select which cards you would like to mulligan"
-    mulliganList = dlg.show()
-    if not mulliganList:
-        return
-    if not confirm("Confirm Mulligan?"):
-        return
-    notify("{} mulligans.".format(me))
-    for card in mulliganList:
-        card.moveTo(card.owner.piles["Deck Discard"])
-    for card in me.Deck.top(len(mulliganList)):
-        card.moveTo(card.owner.hand)
 
 def shuffle(group, x = 0, y = 0, silence = False):
     mute()
@@ -1101,11 +1103,6 @@ def pluralize(num):
        return ""
    else:
        return "s"
-
-
-def drawOpeningHand():
-    me.deck.shuffle()
-    drawMany(me.deck, me.MaxHandSize)
 
 def setHeroCounters(heroCard):
     me.counters['HP'].value = num(heroCard.HP)

@@ -146,13 +146,6 @@ def heroSetup(group=table, x = 0, y = 0):
             me.piles['Special Deck'].collapsed = False
             me.piles['Special Deck'].visibility = "me"
 
-        #------------------------------------------------------------
-        # Draw Opening Hand
-        #------------------------------------------------------------
-
-        if len(me.hand) == 0:
-            drawOpeningHand()
-
 #------------------------------------------------------------
 # 'Load Hero' specific functions
 #------------------------------------------------------------

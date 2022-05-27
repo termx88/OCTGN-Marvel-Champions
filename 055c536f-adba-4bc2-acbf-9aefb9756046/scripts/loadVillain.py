@@ -541,7 +541,7 @@ def SpecificVillainSetup(vName = ''):
                         for c in p.piles['Hand']:
                             c.moveTo(p.Deck)
                             p.Deck.shuffle()
-                        drawMany(p.deck, p.MaxHandSize)
+                        drawMany(p.deck, p.MaxHandSize, True)
                 notifyBar("#0000FF", "Mysterio II: first encounter card has been shuffled into players deck!")
 
     if vName == 'Sinister Six':
