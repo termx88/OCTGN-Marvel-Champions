@@ -1527,7 +1527,7 @@ def setHPOnCharacter(card):
                 new_loki[0].markers[AllPurposeMarker] = previous_loki[0].markers[AllPurposeMarker]
 
     if (card.Type == "hero" or card.Type == "alter_ego") and card.Owner == "ironheart":
-        ironheart_on_table = [c for c in table if c.Type == 'hero' or c.Type == 'alter_ego']
+        ironheart_on_table = [c for c in table if c.Type == 'hero' or c.Type == 'alter_ego' and c.Owner == "ironheart"]
         if len(ironheart_on_table) == 2: # There should be 2 Ironheart cards on table: the previous one and the new one
             # The 'previous' one is the one that has still some HP, the 'new' one enters play and then has not yet defined HP		
             previous_ironheart = [c for c in ironheart_on_table if c.markers[HealthMarker] > 0]

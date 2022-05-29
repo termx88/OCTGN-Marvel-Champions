@@ -98,7 +98,6 @@ def heroSetup(group=table, x = 0, y = 0):
         heroCard = hero[0]
         heroCard.moveToTable(playerX(id),tableLocations['hero'][1])
         heroCard.alternate = 'b'
-        # heroCard.markers[HealthMarker] += num(heroCard.HP)
         setHeroCounters(heroCard)
         notify("{} places his Hero on the table".format(me))
 

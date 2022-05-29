@@ -203,6 +203,7 @@
       <property name="Cost" value="3"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Location. Shield."/>
+      <property name="Text">Uses (3 research counters)</property>
     </card>
     <card name="Snowguard" id="c22f2b49-d7dd-440d-b1df-cfd1f058455a">
       <property name="CardNumber" value="29023"/>

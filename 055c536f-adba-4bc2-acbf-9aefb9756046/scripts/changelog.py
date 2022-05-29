@@ -251,7 +251,7 @@ changelog = {
         "Fix: Wrong modular encounter name in image pack for \"Symbiotic Strength\"",
         "Fixed issue where control on a side scheme card was lost when revealed"
         ]),
-    '0000314': ("0.0.3.14", "26 May 2022", [
+    '0000313': ("0.0.3.13", "26 May 2022", [
         "Nova Hero pack added",
         "Ironheart Hero pack added",
         "Feature: Mysterio scenario improved : encounter cards are now automatically shuffled in players deck at Expert setup",
@@ -263,5 +263,13 @@ changelog = {
         "Feature[Work In Progress]: We can now load fanmade. (right-click on table: Setup & Save Tools)",
         "Some fanmade examples: https://tinyurl.com/mcfanmade",
         "Fix: Modular selection box allowed only 1 modular despite some scenario needs 3 (when not taking recommended)"
+        ]),
+    '0000314': ("0.0.3.14", "26 May 2022", [
+        "Fix: Ironheart deck from marvelcdb wasn't loading version 2 and 3 hero card."
+        ]),
+    '0000315': ("0.0.3.15", "29 May 2022", [
+        "fix: Hela Gjallerbru and Hall of Nostrond side schemes mixed. You will need to redownload and install the MTS image pack",
+        "fix: Drawing cards with ctrl+D no longer draw 2 cards with Nova \"Connection to the Worldmind\"",
+        "fix: Ironheart version swap discarded other heroes"
         ])
 }
