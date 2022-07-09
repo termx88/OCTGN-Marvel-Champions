@@ -117,7 +117,7 @@
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 2[per player]</property>
+      <property name="Text">Hinder 2[per_player]</property>
     </card>
     <card name="Field Recruitment" id="1dedc24d-0a09-4a5d-ab0d-2211f8f217f3" size="EncounterCard">
       <property name="CardNumber" value="24012"/>
