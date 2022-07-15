@@ -134,10 +134,12 @@
             <property name="Owner" value="ironheart" />
         </card>
         <card id="939bf149-4cf6-4192-98ba-100000000034" name="Spider-Ham">
-            <property name="Owner" value="spider_ham" />
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="spiderham" />
         </card>
         <card id="939bf149-4cf6-4192-98ba-100000000035" name="SP//dr">
-            <property name="Owner" value="sp_dr" />
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="spdr" />
         </card>
     </cards>
 </set>

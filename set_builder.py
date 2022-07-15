@@ -4,13 +4,13 @@ import os.path
 from os import path
 
 
-runFile = 'ironheart'
+runFile = 'spiderham'
 xmlSet = None
-runFileList = ["D:\Téléchargements\[OCTGN]\Marvel Champions\Github_Database/marvelsdb-json-data/pack/" + runFile + '.json', "D:\Téléchargements\[OCTGN]\Marvel Champions\Github_Database/marvelsdb-json-data/pack/" + runFile + '_encounter' + '.json']
+runFileList = ["D:\Téléchargements\Marvel Champions\Github_Database/marvelsdb-json-data/pack/" + runFile + '.json', "D:\Téléchargements\Marvel Champions\Github_Database/marvelsdb-json-data/pack/" + runFile + '_encounter' + '.json']
 
 
 def getPack(set_code):
-  with open('D:\Téléchargements\[OCTGN]\Marvel Champions\Github_Database/marvelsdb-json-data/packs.json') as pack_json_file:
+  with open('D:\Téléchargements\Marvel Champions\Github_Database/marvelsdb-json-data/packs.json') as pack_json_file:
     packData = json.load(pack_json_file)
     for i in packData:
       if i['code'] == set_code:
@@ -444,5 +444,5 @@ for curFile in runFileList:
 # create a new XML file with the results
 mydata = ET.tostring(xmlSet, pretty_print=True, encoding='utf-8',
                      xml_declaration=True, standalone="yes")
-myfile = open("D:\Téléchargements\[OCTGN]\Marvel Champions\Github_Database\OCTGN-Marvel-Champions/" + runFile + "_set.xml", "wb")
+myfile = open("D:\Téléchargements\Marvel Champions\Github_Database\OCTGN-Marvel-Champions/" + runFile + "_set.xml", "wb")
 myfile.write(mydata)

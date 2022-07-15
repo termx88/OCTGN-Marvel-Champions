@@ -271,5 +271,11 @@ changelog = {
         "fix: Hela Gjallerbru and Hall of Nostrond side schemes mixed. You will need to redownload and install the MTS image pack",
         "fix: Drawing cards with ctrl+D no longer draw 2 cards with Nova \"Connection to the Worldmind\"",
         "fix: Ironheart version swap discarded other heroes"
+        ]),
+    '0000316': ("0.0.3.16", "17 July 2022", [
+        "Spider-Ham Hero pack added",
+        "SP/dr Hero pack added",
+        "fix: Ironheart version didn't swap in multiplayer",
+        "Stun/Confuse/Tough status no longer stuck to 1 or 2 cards"
         ])
 }

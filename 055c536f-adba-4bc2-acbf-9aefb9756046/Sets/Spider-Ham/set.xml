@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set name="Spider-Ham" id="5f189d1d-2352-41cc-b285-a4c687da51de" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+ <cards>
+    <card name="Spider-Ham" id="5f189d1d-2352-41cc-b285-a4c687030001">
+      <property name="CardNumber" value="30001a"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="hero"/>
+      <property name="Unique" value="True"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Defense" value="1"/>
+      <property name="HP" value="12"/>
+      <property name="HandSize" value="5"/>
+      <property name="Attribute" value="Cartoon. Web-Warrior."/>
+      <property name="Text" value="Each toon counter on Spider-Ham can be spent as if it were a [wild] resource.&lt;i&gt;Spider-Nonsense&lt;/i&gt; — &lt;b&gt;Response:&lt;/b&gt; After Spider-Ham takes any amount of damage, place 1 toon counter on him."/>
+      <alternate name="Peter Porker" type="b">
+        <property name="CardNumber" value="30001b"/>
+        <property name="Owner" value="spiderham"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Unique" value="True"/>
+        <property name="Recovery" value="5"/>
+        <property name="HP" value="12"/>
+        <property name="HandSize" value="6"/>
+        <property name="Attribute" value="Cartoon. Civilian."/>
+        <property name="Text" value="&lt;i&gt;Cartoon Power&lt;/i&gt; — &lt;b&gt;Response:&lt;/b&gt; After you make a basic recovery, place 1 toon counter on Peter Porker."/>
+      </alternate>
+    </card>
+    <card name="Captain Americat" id="5f189d1d-2352-41cc-b285-a4c687030002">
+      <property name="CardNumber" value="30002"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="ally"/>
+      <property name="Unique" value="True"/>
+      <property name="Cost" value="3"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="HP" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Cartoon."/>
+      <property name="Text" value="&lt;b&gt;Response:&lt;/b&gt; After Captain Americat enters play, give someone a high five. Place 1 toon counter on your identity and shuffle 1 Spider-Ham card from your discard pile into your deck."/>
+      <property name="Quote" value="&quot;I fight in purr-suit of justice and freedom!&quot;"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="AttackCost" value="1"/>
+    </card>
+    <card name="Ham It Up" id="5f189d1d-2352-41cc-b285-a4c687030003">
+      <property name="CardNumber" value="30003"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Cartoon. Thwart."/>
+      <property name="Text" value="&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 1 threat from a scheme for each toon counter on Spider-Ham."/>
+      <property name="Quote" value="&quot;Looks like pigs CAN fly!&quot; —Spider-Ham"/>
+    </card>
+    <card name="Hogwashed" id="5f189d1d-2352-41cc-b285-a4c687030004">
+      <property name="CardNumber" value="30004"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Cartoon."/>
+      <property name="Text" value="&lt;b&gt;Hero Action:&lt;/b&gt; Remove 1 toon counter from Spider-Ham â†’ loudly read this card's flavor text. Choose to either deal 5 damage to a minion or remove 5 threat from a side scheme."/>
+      <property name="Quote" value="POW! BAM! WHACK! SMACK! BOINK!"/>
+    </card>
+    <card name="&quot;I Don't Think So!&quot;" id="5f189d1d-2352-41cc-b285-a4c687030005">
+      <property name="CardNumber" value="30005"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Cartoon."/>
+      <property name="Text" value="&lt;b&gt;Hero Interrupt:&lt;/b&gt; When you reveal a card from the encounter deck, remove 1 toon counter from Spider-Ham â†’ say &quot;I don't think so!&quot; in your best Spider-Ham voice. Cancel the effects of that card and discard it."/>
+    </card>
+    <card name="Petulant Pig" id="5f189d1d-2352-41cc-b285-a4c687030006">
+      <property name="CardNumber" value="30006"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Cartoon."/>
+      <property name="Text" value="&lt;b&gt;Hero Action:&lt;/b&gt; Stick your tongue out at the villain. The villain attacks you. Draw 3 cards."/>
+      <property name="Quote" value="&quot;THBBPTHBPT!&quot; —Spider-Ham"/>
+    </card>
+    <card name="Swinging Wb Pig" id="5f189d1d-2352-41cc-b285-a4c687030007">
+      <property name="CardNumber" value="30007"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Cartoon. Attack."/>
+      <property name="Text" value="&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 6 damage to an enemy. Confuse that enemy."/>
+      <property name="Quote" value="&quot;Am I a pig with the proportionate strength and agility of a spider? Or a spider with the physical limitations of a pig?&quot; —Peter Porker"/>
+    </card>
+    <card name="The Daily Beagle" id="5f189d1d-2352-41cc-b285-a4c687030008">
+      <property name="CardNumber" value="30008"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Cartoon. Location."/>
+      <property name="Text" value="&lt;b&gt;Alter-Ego Action:&lt;/b&gt; Exhaust The Daily Beagle â†’ place 1 toon counter on Peter Porker."/>
+      <property name="Quote" value="&quot;J. Jonah Jackal here with today's trusted, trademarked televised tirade—a tantrum tinged by a towering 'told you!'&quot; —J. Jonah Jackal"/>
+    </card>
+    <card name="Cartoon Physics" id="5f189d1d-2352-41cc-b285-a4c687030009">
+      <property name="CardNumber" value="30009"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Cartoon. Superpower."/>
+      <property name="Text" value="&lt;b&gt;Interrupt:&lt;/b&gt; When your identity would take any amount of damage, discard this card â†’ wiggle your body and prevent all but 1 of that damage."/>
+      <property name="Quote" value="&quot;Barely felt a thing…&quot; —Spider-Ham"/>
+    </card>
+    <card name="Huge Wooden Hammer" id="5f189d1d-2352-41cc-b285-a4c687030010">
+      <property name="CardNumber" value="30010"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Cartoon. Weapon."/>
+      <property name="Text" value="Spider-Ham gets +1 ATK.&lt;b&gt;Hero Interrupt:&lt;/b&gt; When Spider-Ham makes a basic attack, exhaust Huge Wooden Hammer and remove 1 toon counter from Spider-Ham â†’ Spider-Ham gets +2 ATK for that attack. That attack gains overkill."/>
+    </card>
+    <card name="Organic Webbing" id="5f189d1d-2352-41cc-b285-a4c687030011">
+      <property name="CardNumber" value="30011"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Cartoon. Superpower."/>
+      <property name="Text" value="Spider-Ham gets +1 THW.&lt;b&gt;Hero Action:&lt;/b&gt; Exhaust Organic Webbing and remove 1 toon counter from Spider-Ham â†’ ready Spider-Ham. He gains the [Aerial] trait until the end of the phase."/>
+    </card>
+    <card name="Lady Spider" id="5f189d1d-2352-41cc-b285-a4c687030012">
+      <property name="CardNumber" value="30012"/>
+      <property name="Type" value="ally"/>
+      <property name="Unique" value="True"/>
+      <property name="Cost" value="4"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Web-Warrior."/>
+      <property name="Text" value="&lt;b&gt;Response:&lt;/b&gt; After Lady Spider thwarts and removes threat from a scheme, if you control another [Web-Warrior] card, remove an equal amount of threat from a different scheme."/>
+      <property name="Quote" value="&quot;Let no one cage you.&quot;"/>
+      <property name="ThwartCost" value="2"/>
+      <property name="AttackCost" value="2"/>
+    </card>
+    <card name="Spider-Man" id="5f189d1d-2352-41cc-b285-a4c687030013">
+      <property name="CardNumber" value="30013"/>
+      <property name="Type" value="ally"/>
+      <property name="Unique" value="True"/>
+      <property name="Cost" value="3"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Web-Warrior."/>
+      <property name="Text" value="&lt;b&gt;Response:&lt;/b&gt; After Spider-Man enters play, remove 1 threat from a scheme for each [Web-Warrior] card you control (including Spider-Man)."/>
+      <property name="Quote" value="&quot;Villains from Ham's future. Gigantic robots now. Worlds in the Web are becoming entangled.&quot;"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="AttackCost" value="1"/>
+    </card>
+    <card name="Even the Odds" id="5f189d1d-2352-41cc-b285-a4c687030014">
+      <property name="CardNumber" value="30014"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Thwart."/>
+      <property name="Text" value="Requirement ([energy]).&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 1[per_player] threat from each side scheme. Deal 1 damage to the villain for each side scheme defeated this way."/>
+    </card>
+    <card name="Overwatch" id="5f189d1d-2352-41cc-b285-a4c687030019">
+      <property name="CardNumber" value="30019"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Text" value="Attach to a scheme. Max 1 per scheme.&lt;b&gt;Hero Interrupt:&lt;/b&gt; When any amount of threat is removed from attached scheme by a thwart, discard this card â†’ remove an equal amount of threat from a different scheme."/>
+    </card>
+    <card name="Scarlet Spider" id="5f189d1d-2352-41cc-b285-a4c687030020">
+      <property name="CardNumber" value="30020"/>
+      <property name="Type" value="ally"/>
+      <property name="Unique" value="True"/>
+      <property name="Cost" value="4"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Web-Warrior."/>
+      <property name="Text" value="Play only if you control a [Web-Warrior] card.&lt;b&gt;Interrupt:&lt;/b&gt; When you would reveal an encounter card, name a card type, then look at that card. If that card is of the named type, deal 1 damage to Scarlet Spider and draw 1 card."/>
+      <property name="ThwartCost" value="1"/>
+      <property name="AttackCost" value="1"/>
+    </card>
+    <card name="SP//dr" id="5f189d1d-2352-41cc-b285-a4c687030021">
+      <property name="CardNumber" value="30021"/>
+      <property name="Type" value="ally"/>
+      <property name="Unique" value="True"/>
+      <property name="Cost" value="2"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Web-Warrior."/>
+      <property name="Text" value="Play only if you control a [Web-Warrior] card.&lt;b&gt;When Defeated:&lt;/b&gt; Add SP//dr to your hand if she was defeated by taking excess consequential damage."/>
+      <property name="ThwartCost" value="2"/>
+      <property name="AttackCost" value="1"/>
+    </card>
+    <card name="&quot;I Really Want a Hot Dog!&quot;" id="5f189d1d-2352-41cc-b285-a4c687030024" size="EncounterCard">
+      <property name="CardNumber" value="30024"/>
+      <property name="Owner" value="spiderham"/>
+      <property name="Type" value="obligation"/>
+      <property name="Text" value="&lt;b&gt;&lt;i&gt;Give to the Peter Porker player.&lt;/i&gt;&lt;/b&gt;You may flip to alter-ego form. Choose:- Exhaust Peter Porker and remove 1 toon counter from him â†’ remove &quot;I Really Want a Hot Dog&quot; from the game.- You are stunned. If you are already stunned, this cards gains surge. Discard this obligation."/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Nefarious Trap" id="5f189d1d-2352-41cc-b285-a4c687030025" size="SchemeCard">
+      <property name="CardNumber" value="30025"/>
+      <property name="Owner" value="spiderham_nemesis"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Text" value="&lt;b&gt;When Defeated:&lt;/b&gt; The Green Gobbler attacks the player who defeated this scheme. If The Green Gobbler is not in play, search the encounter deck and discard pile for him and put him into play engaged with the player who defeated this scheme."/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Hazard" value="1"/>
+    </card>
+    <card name="The Green Gobbler" id="5f189d1d-2352-41cc-b285-a4c687030026" size="EncounterCard">
+      <property name="CardNumber" value="30026"/>
+      <property name="Owner" value="spiderham_nemesis"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Cartoon. Criminal."/>
+      <property name="Text" value="&lt;b&gt;Forced Response:&lt;/b&gt; After The Green Gobbler engages you, discard all counters from each card you control.&lt;i&gt;(Spider-Ham's nemesis minion.)&lt;/i&gt;"/>
+      <property name="Boost" value="3"/>
+      <property name="Quote" value="&quot;I'll succeed by any means necessary, even if I must resort to fowl play!&quot; —The Green Gobbler"/>
+    </card>
+    <card name="Gobbler Glider" id="5f189d1d-2352-41cc-b285-a4c687030027" size="EncounterCard">
+      <property name="CardNumber" value="30027"/>
+      <property name="Owner" value="spiderham_nemesis"/>
+      <property name="Type" value="attachment"/>
+      <property name="Scheme" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Text" value="Surge.Attach to The Green Gobbler. If you cannot, attach to a minion.Attached minion gains the [Aerial] trait."/>
+      <property name="Boost" value="2"/>
+      <property name="Quote" value="&quot;once I'm finished, I'll be at the top of the pecking order.&quot; —The Green Gobbler"/>
+    </card>
+    <card name="&quot;Feast on This!&quot;" id="5f189d1d-2352-41cc-b285-a4c687030028" size="EncounterCard">
+      <property name="CardNumber" value="30028"/>
+      <property name="Owner" value="spiderham_nemesis"/>
+      <property name="Type" value="treachery"/>
+      <property name="Text" value="&lt;b&gt;When Revealed:&lt;/b&gt; Take 2 damage. You are confused. If you already confused, this card gains surge."/>
+      <property name="Boost" value="1"/>
+      <property name="Quote" value="&quot;I hope you left room for some pumpkin DIE!&quot; —The Green Gobbler"/>
+    </card>
+    <card name="Warrior of the Great Web" id="5f189d1d-2352-41cc-b285-a4c687030029">
+      <property name="CardNumber" value="30029"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Title."/>
+      <property name="Text" value="Attach to a character with &quot;Spider&quot; in its title. Max 1 per character.Attached character gains the [Web-Warrior] trait.&lt;b&gt;Response:&lt;/b&gt; After a [Web-Warrior] ally leaves play, attached character gets +1 ATK until the end of the psase."/>
+    </card>
+    <card name="Hunting the Spider-Totems" id="5f189d1d-2352-41cc-b285-a4c687030030" size="SchemeCard">
+      <property name="CardNumber" value="30030"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Text" value="&lt;b&gt;Forced Interrupt:&lt;/b&gt; When the villain phase begins, discard the top 3 cards of the encounter deck. Put each [Inheritor] minion discarded this way into play engaged with a player who controls a [Web-Warrior] character, if able. Otherwise, put each [Inheritor] minion discarded this way into play engaged with the first player."/>
+      <property name="Boost" value="3"/>
+      <property name="Quote" value="&quot;there is no 'mission'. This is what we do—we hunt the spiders. It's our way.&quot; —Karn"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="Bora" id="5f189d1d-2352-41cc-b285-a4c687030031" size="EncounterCard">
+      <property name="CardNumber" value="30031"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="3"/>
+      <property name="Attack" value="1"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Inheritor."/>
+      <property name="Text" value="Each [Inheritor] minion gains 1 acceleration icon ([acceleration]).&lt;b&gt;When revealed:&lt;/b&gt; If a [Web-Warrior] character is in play, place 1 threat on each scheme."/>
+      <property name="Boost" value="2"/>
+      <property name="Quote" value="&quot;My dear brothers, let us devour them together!&quot;"/>
+    </card>
+    <card name="Brix" id="5f189d1d-2352-41cc-b285-a4c687030032" size="EncounterCard">
+      <property name="CardNumber" value="30032"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Inheritor."/>
+      <property name="Text" value="Each [Inheritor] minion gains patrol.&lt;b&gt;When Revealed:&lt;/b&gt; If a [Web-Warrior] character is in play, place 2 threat on the main scheme."/>
+      <property name="Boost" value="2"/>
+      <property name="Quote" value="&quot;In a twist of irony, the Web of Life and Destiny has brought us to this very moment. Your last moment.&quot;"/>
+    </card>
+    <card name="Daemos" id="5f189d1d-2352-41cc-b285-a4c687030033" size="EncounterCard">
+      <property name="CardNumber" value="30033"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="1"/>
+      <property name="Attack" value="3"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Inheritor"/>
+      <property name="Text" value="Each [Inheritor] minion gains stalwart.&lt;b&gt;When Revealed:&lt;/b&gt; If a [Web-Warrior] character is in play, stun a character you control."/>
+      <property name="Boost" value="2"/>
+      <property name="Quote" value="&quot;I am Daemos, son of Solus. One of the Inheritors of All Creation. And you… are a mote. A speck. A bit of dust in the wind.&quot;"/>
+    </card>
+    <card name="Jennix" id="5f189d1d-2352-41cc-b285-a4c687030034" size="EncounterCard">
+      <property name="CardNumber" value="30034"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Inheritor"/>
+      <property name="Text" value="Each [Inheritor] minion gains guard.&lt;b&gt;When Revealed:&lt;/b&gt; If a [Web-Warrior] character is in play, give Jennix a tough status card."/>
+      <property name="Boost" value="2"/>
+      <property name="Quote" value="&quot;I prefer to make them struggle. I love the taste of adrenaline.&quot;"/>
+    </card>
+    <card name="Karn" id="5f189d1d-2352-41cc-b285-a4c687030035" size="EncounterCard">
+      <property name="CardNumber" value="30035"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="1"/>
+      <property name="Attack" value="3"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Inheritor."/>
+      <property name="Text" value="Each [Inheritor] minion's attacks gain overkill and piercing.&lt;b&gt;When Revealed:&lt;/b&gt; If a [Web-Warrior] character is in play, discard an upgrade or support you control."/>
+      <property name="Boost" value="2"/>
+      <property name="Quote" value="&quot;You'll make a filling meal.&quot;"/>
+    </card>
+    <card name="Morlun" id="5f189d1d-2352-41cc-b285-a4c687030036" size="EncounterCard">
+      <property name="CardNumber" value="30036"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Elite. Inheritor."/>
+      <property name="Text" value="Each [Inheritor] minion gets +1 ATK.&lt;b&gt;When Revealed:&lt;/b&gt; If a [Web-Warrior] character is in play, take 2 damage."/>
+      <property name="Boost" value="2"/>
+      <property name="Quote" value="&quot;Mm. Never savored a life force so sweet&quot;"/>
+    </card>
+    <card name="Solus" id="5f189d1d-2352-41cc-b285-a4c687030037" size="EncounterCard">
+      <property name="CardNumber" value="30037"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="2"/>
+      <property name="Attack" value="3"/>
+      <property name="HP" value="7"/>
+      <property name="Attribute" value="Elite. Inheritor."/>
+      <property name="Text" value="Each [Inheritor] minion gains villainous.&lt;b&gt;When Revealed:&lt;/b&gt; If a [Web-Warrior] character is in play, give Solus 1 facedown boost card."/>
+      <property name="Boost" value="3"/>
+      <property name="Quote" value="&quot;I am Solus. I herald the death of you all.&quot;"/>
+    </card>
+    <card name="Verna" id="5f189d1d-2352-41cc-b285-a4c687030038" size="EncounterCard">
+      <property name="CardNumber" value="30038"/>
+      <property name="Owner" value="inheritors"/>
+      <property name="Type" value="minion"/>
+      <property name="Unique" value="True"/>
+      <property name="Scheme" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Elite. Inheritor."/>
+      <property name="Text" value="Each [Inheritor] minion gains retaliate 1.&lt;b&gt;When Revealed:&lt;/b&gt; If a [Web-Warrior] character is in play, deal 1 damage to each character you control."/>
+      <property name="Boost" value="2"/>
+      <property name="Quote" value="&quot;I will feast on your bones!&quot;"/>
+    </card>
+ </cards>
+</set>

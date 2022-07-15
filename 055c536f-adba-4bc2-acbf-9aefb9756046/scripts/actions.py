@@ -504,7 +504,7 @@ def changeForm(card, x = 0, y = 0):
             card.alternate = alt
             altName = card.name
             notify("{}".format(altName))
-            altNames.append(altName) 
+            altNames.append(altName)
         card.alternate = curAlt
         altChoice = askChoice("Which form would you like to change into: ", altNames)
         if altChoice == 0: return
@@ -532,6 +532,67 @@ def specific_hero_flip(card, x = 0, y = 0):
         upgradeCard = filter(lambda c: c.CardNumber == "26002a", table)
         if card.Type == "alter_ego" and len(upgradeCard) != 0:
             me.counters["MaxHandSize"].value += 1
+    if card.Owner == 'spdr':
+        heroCard = filter(lambda c: c.CardNumber == "31001a", table)
+        supportCard = filter(lambda c: c.CardNumber == "31001b", table)
+        alteregoCard = filter(lambda c: c.CardNumber == "31002a", table)
+        upgradeCard = filter(lambda c: c.CardNumber == "31002b", table)
+        if card.CardNumber == "31001a":
+            heroCard[0].alternate = "b"
+            upgradeCard[0].alternate = ""
+            upgradeCard[0].markers[HealthMarker] = heroCard[0].markers[HealthMarker]
+            upgradeCard[0].markers[ToughMarker] = heroCard[0].markers[ToughMarker]
+            upgradeCard[0].markers[StunnedMarker] = heroCard[0].markers[StunnedMarker]
+            upgradeCard[0].markers[ConfusedMarker] = heroCard[0].markers[ConfusedMarker]
+            upgradeCard[0].markers[AllPurposeMarker] = heroCard[0].markers[AllPurposeMarker]
+            heroCard[0].markers[HealthMarker] = 0
+            heroCard[0].markers[ToughMarker] = 0
+            heroCard[0].markers[StunnedMarker] = 0
+            heroCard[0].markers[ConfusedMarker] = 0
+            heroCard[0].markers[AllPurposeMarker] = 0
+            me.counters["MaxHandSize"].value = num(upgradeCard[0].HandSize)
+        elif card.CardNumber == "31001b":
+            supportCard[0].alternate = ""
+            alteregoCard[0].alternate = "b"
+            supportCard[0].markers[HealthMarker] = alteregoCard[0].markers[HealthMarker]
+            supportCard[0].markers[ToughMarker] = alteregoCard[0].markers[ToughMarker]
+            supportCard[0].markers[StunnedMarker] = alteregoCard[0].markers[StunnedMarker]
+            supportCard[0].markers[ConfusedMarker] = alteregoCard[0].markers[ConfusedMarker]
+            supportCard[0].markers[AllPurposeMarker] = alteregoCard[0].markers[AllPurposeMarker]
+            alteregoCard[0].markers[HealthMarker] = 0
+            alteregoCard[0].markers[ToughMarker] = 0
+            alteregoCard[0].markers[StunnedMarker] = 0
+            alteregoCard[0].markers[ConfusedMarker] = 0
+            alteregoCard[0].markers[AllPurposeMarker] = 0
+            me.counters["MaxHandSize"].value = num(supportCard[0].HandSize)
+        elif card.CardNumber == "31002a":
+            alteregoCard[0].alternate = "b"
+            supportCard[0].alternate = ""
+            supportCard[0].markers[HealthMarker] = alteregoCard[0].markers[HealthMarker]
+            supportCard[0].markers[ToughMarker] = alteregoCard[0].markers[ToughMarker]
+            supportCard[0].markers[StunnedMarker] = alteregoCard[0].markers[StunnedMarker]
+            supportCard[0].markers[ConfusedMarker] = alteregoCard[0].markers[ConfusedMarker]
+            supportCard[0].markers[AllPurposeMarker] = alteregoCard[0].markers[AllPurposeMarker]
+            alteregoCard[0].markers[HealthMarker] = 0
+            alteregoCard[0].markers[ToughMarker] = 0
+            alteregoCard[0].markers[StunnedMarker] = 0
+            alteregoCard[0].markers[ConfusedMarker] = 0
+            alteregoCard[0].markers[AllPurposeMarker] = 0
+            me.counters["MaxHandSize"].value = num(supportCard[0].HandSize)
+        elif card.CardNumber == "31002b":
+            upgradeCard[0].alternate = ""
+            heroCard[0].alternate = "b"
+            upgradeCard[0].markers[HealthMarker] = heroCard[0].markers[HealthMarker]
+            upgradeCard[0].markers[ToughMarker] = heroCard[0].markers[ToughMarker]
+            upgradeCard[0].markers[StunnedMarker] = heroCard[0].markers[StunnedMarker]
+            upgradeCard[0].markers[ConfusedMarker] = heroCard[0].markers[ConfusedMarker]
+            upgradeCard[0].markers[AllPurposeMarker] = heroCard[0].markers[AllPurposeMarker]
+            heroCard[0].markers[HealthMarker] = 0
+            heroCard[0].markers[ToughMarker] = 0
+            heroCard[0].markers[StunnedMarker] = 0
+            heroCard[0].markers[ConfusedMarker] = 0
+            heroCard[0].markers[AllPurposeMarker] = 0
+            me.counters["MaxHandSize"].value = num(upgradeCard[0].HandSize)
 
 def villainBoost(card, x=0, y=0, who=me):
     mute()
@@ -717,42 +778,33 @@ def clearAPCounter(card, x = 0, y = 0):
 
 def stun(card, x = 0, y = 0):
     mute()
-    if card.markers[StunnedMarker] == 2:
-        notify("{} is already stunned.".format(card))
-    else:
-        card.markers[StunnedMarker] += 1
-        notify("{} is stunned.".format(card))
+    card.markers[StunnedMarker] += 1
+    notify("{} gains a stunned marker.".format(card))
 
 def confuse(card, x = 0, y = 0):
     mute()
-    if card.markers[ConfusedMarker] == 2:
-        notify("{} is already confused.".format(card))
-    else:
-        card.markers[ConfusedMarker] += 1
-        notify("{} is confused.".format(card))
+    card.markers[ConfusedMarker] += 1
+    notify("{} gains a confused marker.".format(card))
 
 def tough(card, x = 0, y = 0):
     mute()
-    if card.markers[ToughMarker] == 1:
-        notify("{} already has a tough marker.".format(card))
-    else:
-        card.markers[ToughMarker] = 1
-        notify("{} gains a tough marker.".format(card))
+    card.markers[ToughMarker] += 1
+    notify("{} gains a tough marker.".format(card))
 
 def removeStun(card, x = 0, y = 0):
     mute()
-    card.markers[StunnedMarker] = 0
-    notify("{} is no longer stunned.".format(card))
+    card.markers[StunnedMarker] -= 1
+    notify("{} removes 1 Stunned marker from {}.".format(me, card))
 
 def removeConfuse(card, x = 0, y = 0):
     mute()
-    card.markers[ConfusedMarker] = 0
-    notify("{} is no longer confused.".format(card))
+    card.markers[ConfusedMarker] -= 1
+    notify("{} removes 1 Confused marker from {}.".format(me, card))
 
 def removeTough(card, x = 0, y = 0):
     mute()
-    card.markers[ToughMarker] = 0
-    notify("{} is no longer tough.".format(card))
+    card.markers[ToughMarker] -= 1
+    notify("{} removes 1 Tough marker from {}.".format(me, card))
 
 def flipCoin(group, x = 0, y = 0):
     mute()
@@ -789,7 +841,9 @@ def readyExhaust(card, x = 0, y = 0):
 def revealHide(card, x = 0, y = 0):
     mute()
     if "b" in card.alternates:
-        if card.Type == "hero" or card.Type == "alter_ego":
+        if card.CardNumber == "31001a" or card.CardNumber == "31001b" or card.CardNumber == "31002a" or card.CardNumber == "31002b":
+            specific_hero_flip(card)
+        elif card.Type == "hero" or card.Type == "alter_ego":
             changeForm(card)
             specific_hero_flip(card)
         else:
@@ -916,7 +970,7 @@ def drawCard(group, checkHandSize = False):
     # For player deck, we draw and if deck is empty after (or while) drawing, we notify + recreate deck from its discard (shuffle it)
     else:
         card = me.deck[0]
-        # Mysterio can put some encounter cards in players decks: 
+        # Mysterio can put some encounter cards in players decks:
         if isEncounter([card]) and getGlobalVariable("villainSetup") == "Mysterio":
             posX = playerX(int(me.getGlobalVariable("playerID"))) - 35
             posY = 100
@@ -1297,7 +1351,7 @@ def nextVillainStage(group=None, x=0, y=0):
         vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
         if len(vCards) > 0:
             randomLoki = rnd(0, len(vCards)-1) # Returns a random INTEGER value and use it to choose which Loki will be loaded
-            
+
         for c in table:
             if c.Type == 'villain':
                 x, y = c.position
@@ -1430,7 +1484,7 @@ def lookForVillainous(card):
     """
     Look for Villainous keyword => for boost card purpose
     """
-    return re.search('.*Villainous.*', card.properties["Text"], re.IGNORECASE) if card.Type in ["minion"] else False  
+    return re.search('.*Villainous.*', card.properties["Text"], re.IGNORECASE) if card.Type in ["minion"] else False
 
 def lookForCounters(card):
     """
@@ -1460,7 +1514,7 @@ def lookForCounters(card):
             notify(log_msg)
             total_counters = nb_counters + additional_counters
             addAPCounter(card, x=0, y=0, qty=total_counters)
-    
+
         description_search = re.search('.*enters play with (\d+).?(\[per_.*\])?.*counters on.*', card.properties["Text"], re.IGNORECASE)
         if description_search:
             nb_base_counters = int(description_search.group(1))
@@ -1481,13 +1535,13 @@ def placeThreatOnScheme(card):
             nb_players = len(getPlayers())
             scheme_txt = card.properties["Text"]
             log_msg = "Initializing {} with ".format(card.name)
-            
+
             # Initial value
             base_threats = init_val
             if not is_base_fixed:
                 base_threats = init_val * nb_players
             log_msg += "{} base threats".format(base_threats)
-            
+
             # Handle 'Hinder' (Hinder 3[per_player])
             add_hinder = 0
             description_search = re.search('.*Hinder (\d+).?\[per_.*\].*', card.properties["Text"], re.IGNORECASE)
@@ -1515,7 +1569,7 @@ def setHPOnCharacter(card):
     if card.Type == "villain" and getGlobalVariable("villainSetup") == "Loki":
         lokis_on_table = [c for c in table if c.Type == 'villain']
         if len(lokis_on_table) == 2: # There should be 2 Loki cards on table: the previous one and the new one
-            # The 'previous' one is the one that has still some HP, the 'new' one enters play and then has not yet defined HP		
+            # The 'previous' one is the one that has still some HP, the 'new' one enters play and then has not yet defined HP
             previous_loki = [c for c in lokis_on_table if c.markers[HealthMarker] > 0]
             new_loki = [c for c in lokis_on_table if c.markers[HealthMarker] == 0]
             if len(previous_loki) == 1 and len(new_loki) == 1:
@@ -1527,9 +1581,9 @@ def setHPOnCharacter(card):
                 new_loki[0].markers[AllPurposeMarker] = previous_loki[0].markers[AllPurposeMarker]
 
     if (card.Type == "hero" or card.Type == "alter_ego") and card.Owner == "ironheart":
-        ironheart_on_table = [c for c in table if c.Type == 'hero' or c.Type == 'alter_ego' and c.Owner == "ironheart"]
+        ironheart_on_table = [c for c in table if (c.Type == 'hero' or c.Type == 'alter_ego') and c.Owner == "ironheart"]
         if len(ironheart_on_table) == 2: # There should be 2 Ironheart cards on table: the previous one and the new one
-            # The 'previous' one is the one that has still some HP, the 'new' one enters play and then has not yet defined HP		
+            # The 'previous' one is the one that has still some HP, the 'new' one enters play and then has not yet defined HP
             previous_ironheart = [c for c in ironheart_on_table if c.markers[HealthMarker] > 0]
             new_ironheart = [c for c in ironheart_on_table if c.markers[HealthMarker] == 0]
             if len(previous_ironheart) == 1 and len(new_ironheart) == 1:

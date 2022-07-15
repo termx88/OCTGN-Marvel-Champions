@@ -145,6 +145,12 @@ def heroSetup(group=table, x = 0, y = 0):
             me.piles['Special Deck'].collapsed = False
             me.piles['Special Deck'].visibility = "me"
 
+        # SP//dr
+        if str(heroCard.properties["Owner"]) == 'spdr':
+            createCards(me.piles['Special Deck'],sorted(special_decks['spdr'].keys()),special_decks['spdr'])
+            for c in me.piles['Special Deck']:
+                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+
 #------------------------------------------------------------
 # 'Load Hero' specific functions
 #------------------------------------------------------------

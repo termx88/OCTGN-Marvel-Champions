@@ -3,14 +3,14 @@
     name="Marvel Champions"
     id="055c536f-adba-4bc2-acbf-9aefb9756046"
     octgnVersion="3.4.362.0"
-    version="0.0.3.15"
+    version="0.0.3.16"
     scriptVersion="3.1.0.2"
     markersize="15"
     tags="OCTGN, Marvel, Champions"
     description="The Marvel Champions Game Package for OCTGN."
     setsurl="https://twistedsistem.wixsite.com/octgnmarvelchampions"
     gameurl="https://twistedsistem.wixsite.com/octgnmarvelchampions"
-    authors="Ourob09&#10;Twistedsistem"
+    authors="Ourob09"
     iconurl="https://cf.geekdo-images.com/imagepage/img/yP879xM9IHQ_LayhuPw7yLoy5uM=/fit-in/900x600/filters:no_upscale()/pic4900321.jpg"
     usetwosidedtable="False">
     <scripts>

@@ -210,10 +210,12 @@
             <property name="Owner" value="zzzax"/>
         </card>
         <card id="939bf149-4cf6-4192-98ba-300000000053" name="The Inheritors">
-            <property name="Owner" value="the_inheritors"/>
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="inheritors"/>
         </card>
         <card id="939bf149-4cf6-4192-98ba-300000000054" name="Iron Spider's Sinister Six">
-            <property name="Owner" value="iron_spider_sinister_six"/>
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="ironspider_sinister"/>
         </card>
     </cards>
 </set>
