@@ -1343,6 +1343,7 @@ Attached character cannot ready.
       <property name="HP" value="6"/>
       <property name="Attribute" value="Black Order. Elite."/>
       <property name="Unique" value="True"/>
+      <property name="Text">Villainous.</property>
     </card>
     <card name="Tribute" id="6899d51d-dc58-4ff4-80af-7a08c2545732" size="SchemeCard">
       <property name="CardNumber" value="21128"/>

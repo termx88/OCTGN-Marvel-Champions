@@ -1,3 +1,4 @@
+
 #------------------------------------------------------------
 # 'Load Villain' event
 #------------------------------------------------------------
@@ -317,10 +318,7 @@ def villainSetup(group=table, x = 0, y = 0):
         villainCards[0].moveToTable(villainX(1,0),tableLocations['villain'][1])
         villainCards[0].anchor = False
 
-
-    shared.counters["HP"].value = int(villainCards[0].properties["HP"]) * len(players)
     shared.encounter.shuffle()
-
     SpecificVillainSetup(vName)
 
 
@@ -368,6 +366,7 @@ def SpecificVillainSetup(vName = ''):
                 ssX = ssCard1_OnTable[0].position[0] + 100
                 ssY = ssCard1_OnTable[0].position[1]
             revealCardOnSetup("'Immortal' Klaw", "01127", ssX, ssY)
+            addMarker(vCardOntable[0], x=0, y=0, qty = 10)
 
 
     if vName == 'Ultron':

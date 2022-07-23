@@ -556,7 +556,7 @@ Each enemy gains steady. (Steady characters require 2 status cards of the same t
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 2[per player]</property>
+      <property name="Text">Hinder 2[per_player]</property>
     </card>
     <card name="Wrecker" id="9b0bfde9-ee72-4d81-954f-5e55a2c5a12c" size="EncounterCard">
       <property name="CardNumber" value="24065"/>
