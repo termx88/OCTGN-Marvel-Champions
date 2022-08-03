@@ -8,11 +8,21 @@ def loadVillain(group, x = 0, y = 0):
     villainName = ''
     nbModular = 1
 
-    if not deckNotLoaded(group,0,0,shared.villain):
-        confirm("Cannot generate a deck: You already have cards loaded. Reset the game in order to generate a new deck.")
+    if me._id != 1:
+        msg = """You're not the game host\n
+Only the host is allowed to load a scenario."""
+        askChoice(msg, [], [], ["Close"])
+        return
+
+    if not deckNotLoaded(group, 0, 0, shared.villain):
+        msg = """Cannot generate a deck: You already have cards loaded.\n
+Reset the game in order to generate a new deck."""
+        askChoice(msg, [], [], ["Close"])
         return
 
     cardsSelected = dialogBox_Setup(setupPile(), "villain_setup", "Which villain would you like to defeat ?", "Select your Opponent :", min = 1, max = 1)
+    if cardsSelected is None:
+        return
     for card in cardsSelected:
         createCards(shared.villain,sorted(eval(card.Owner).keys()), eval(card.Owner))
         update()
@@ -158,10 +168,11 @@ def loadVillain(group, x = 0, y = 0):
 
     update()
     deleteCards(setupPile())
-    loadDifficulty()
-    loadEncounter(shared.encounter, nbEncounter = nbModular)
+    if not loadDifficulty(): return
+    if not loadEncounter(shared.encounter, nbEncounter = nbModular): return
+    villainSetup()
     notify('{} loaded {}, Good Luck!'.format(me, villainName))
-    tableSetup(doPlayer=False,doEncounter=True)
+    checkSetup()
 
 
 def loadDifficulty():
@@ -169,18 +180,17 @@ def loadDifficulty():
     choice = askChoice("What difficulty would you like to play at?", ["Standard", "Expert", "Standard II", "Expert II"])
 
     if vName == 'The Wrecking Crew':
-        if choice == 0: return
-        if choice == 1: return
-        if choice == 2:
-            setGlobalVariable("difficulty", "1")
+        if choice == 0:
+            deleteAllSharedCards()
             return
-        if choice == 3: return
-        if choice == 4:
+        if choice == 2 or choice == 4:
             setGlobalVariable("difficulty", "1")
-            return
+        return True
 
     else:
-        if choice == 0: return
+        if choice == 0: 
+            deleteAllSharedCards()
+            return
         if choice == 1:
             createCards(shared.encounter,sorted(standard.keys()),standard)
         if choice == 2:
@@ -199,7 +209,11 @@ def loadDifficulty():
             EnvCardOnTable[0].alternate = 'b'
             createCards(shared.encounter,sorted(expert_ii.keys()),expert_ii)
             setGlobalVariable("difficulty", "1")
+        return True
 
+def deleteAllSharedCards():
+    for pl in shared.piles:
+        deleteCards(shared.piles[pl])
 
 def villainSetup(group=table, x = 0, y = 0):
     # Global Variables
@@ -366,7 +380,6 @@ def SpecificVillainSetup(vName = ''):
                 ssX = ssCard1_OnTable[0].position[0] + 100
                 ssY = ssCard1_OnTable[0].position[1]
             revealCardOnSetup("'Immortal' Klaw", "01127", ssX, ssY)
-            addMarker(vCardOntable[0], x=0, y=0, qty = 10)
 
 
     if vName == 'Ultron':
@@ -540,7 +553,7 @@ def SpecificVillainSetup(vName = ''):
                         for c in p.piles['Hand']:
                             c.moveTo(p.Deck)
                             p.Deck.shuffle()
-                        drawMany(p.deck, p.MaxHandSize, True)
+                        drawMany(p.deck, maxHandSize(p), True)
                 notifyBar("#0000FF", "Mysterio II: first encounter card has been shuffled into players deck!")
 
     if vName == 'Sinister Six':
