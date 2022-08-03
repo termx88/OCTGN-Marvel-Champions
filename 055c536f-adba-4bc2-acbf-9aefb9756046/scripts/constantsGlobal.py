@@ -26,8 +26,9 @@ RedColour = "#B80404"
 BlackColour = "#000000"
 WhiteColour = "#FFFFFF"
 
-showDebug = False #Can be changed to turn on debug - we don't care about the value on game reconnect so it is safe to use a python global
-
+showDebug   = False #Can be changed to turn on debug - we don't care about the value on game reconnect so it is safe to use a python global
+Website     = "https://twistedsistem.wixsite.com/octgnmarvelchampions"
+Github     = "https://github.com/Ouroboros009/OCTGN-Marvel-Champions/issues"
 
 # Table Locations for Cards
 tableLocations = {
