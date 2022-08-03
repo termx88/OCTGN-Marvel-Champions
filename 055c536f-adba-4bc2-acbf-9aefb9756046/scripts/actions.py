@@ -208,32 +208,20 @@ def deckNotLoaded(group, x = 0, y = 0, checkGroup = me.Deck):
     return True
 
 def setFirstPlayer(group = table, x = 0, y = 0):
-    """
-    Sets firstPlayer variable as a string to look into playerList to know which player is the first player.
-    """
     mute()
-
-    playerList = eval(getGlobalVariable("playerList"))
     currentFirstPlayer = num(getGlobalVariable("firstPlayer"))
-    # Check if first player is set (should be called only when game start) else change the first player
-    if turnNumber() == 0:
-        newFirstPlayer = 0
-    # Give first player to the next one in order of deck loading at the start of the game.
-    elif (currentFirstPlayer + 1) >= len(getPlayers()):
+    firstPlayerToken = [card for card in table if card.Type == 'first_player']
+    if len(firstPlayerToken) == 0:
+        firstPlayerToken = [table.create("65377f60-0de4-4196-a49e-96a550b4df81",0,0,1,True)]
+    firstPlayerIdentityCard =  [card for card in table if card.Type == 'hero' or card.Type == 'alter_ego']
+    if (currentFirstPlayer + 1) >= len(getPlayers()):
         newFirstPlayer = 0
     else:
         newFirstPlayer = currentFirstPlayer + 1
-    setGlobalVariable("firstPlayer", str(newFirstPlayer))
-
-    # If first player token doesn't exist then create a new one.
-    firstPlayerToken = [card for card in table if card.Type == 'first_player']
-    if len(firstPlayerToken) == 0:
-        firstPlayerToken = [table.create("65377f60-0de4-4196-a49e-96a550b4df81", 0, 0, 1, True)]
-    firstPlHero = eval(getGlobalVariable("heroesPlayed"))[newFirstPlayer]
-    firstPlHeroCard = [c for c in table if (c.Type == 'hero' or c.Type == 'alter_ego') and c.Owner == firstPlHero]
+    setGlobalVariable("firstPlayer",str(newFirstPlayer))
     update()
     firstPlayerToken[0].controller = me
-    firstPlayerToken[0].moveToTable(firstPlHeroCard[0].position[0], firstPlHeroCard[0].position[1]-40)
+    firstPlayerToken[0].moveToTable(firstPlayerIdentityCard[newFirstPlayer].position[0], firstPlayerIdentityCard[newFirstPlayer].position[1]-40)
     firstPlayerToken[0].sendToBack()
 
 def setActiveVillain(card, x = 0, y = 0):
@@ -257,13 +245,11 @@ def getActiveVillain(group = table, x = 0, y = 0):
 #Triggered event OnTableLoad
 # args: no args are passed with this event call
 def initializeGame():
-    """
-    Happens when the table first loads, and never again.
-    """
     mute()
-    if table.isTwoSided():
-        warning("This game is designed to be played on a single-sided table.\n\nPlease start a new game and make sure the option 'Two Side Table' is disabled.")
-    showWelcomeScreen()
+    changeLog()
+    pList = eval(getGlobalVariable("playerList"))
+    pList.append(me._id)
+    setGlobalVariable("playerList",str(pList))
     update()
 
 #Triggered event OnLoadDeck
@@ -286,12 +272,8 @@ def deckLoaded(args):
 #We use this to manage turn and phase management by tracking changes to the player "done" variable
 def globalChanged(args):
     debug("globalChanged(Variable {}, from {}, to {})".format(args.name, args.oldValue, args.value))
-    # if args.name == "playerList":
-        # notify("Player List : {}".format(args.value))
-    # if args.name == "heroesPlayed":
-        # notify("Heroes List : {}".format(args.value))
-    # if args.name == "firstPlayer":
-        # notify("First player : {}".format(args.value))
+    if args.name == "firstPlayer":
+        notify("First player : {}".format(args.value))
 
 def markersUpdate(args):
     mute()
@@ -341,10 +323,27 @@ def moveCards(args):
     mute()
     autoCharges(args)
 
-
 #------------------------------------------------------------
 # Game Flow functions
 #------------------------------------------------------------
+
+def changeLog():
+    mute()
+    #### LOAD CHANGELOG
+    v1, v2, v3, v4 = gameVersion.split('.')  ## split apart the game's version number
+    v1 = int(v1) * 1000000
+    v2 = int(v2) * 10000
+    v3 = int(v3) * 100
+    v4 = int(v4)
+    currentVersion = v1 + v2 + v3 + v4  ## An integer interpretation of the version number, for comparisons later
+    lastVersion = getSetting("lastVersion", convertToString(currentVersion - 1))  ## -1 is for players experiencing the system for the first time
+    lastVersion = int(lastVersion)
+    for log in sorted(changelog):  ## Sort the dictionary numerically
+        if lastVersion < int(log):  ## Trigger a changelog for each update they haven't seen yet.
+            stringVersion, date, text = changelog[log]
+            updates = '\n-'.join(text)
+            confirm("What's new in {} ({}):\n-{}".format(stringVersion, date, updates))
+    setSetting("lastVersion", convertToString(currentVersion))  ## Store's the current version to a setting
 
 def dialogBox_Setup(group, type, title, text, min = 1, max = 1):
     setup_cards = queryCard({"Type":type}, True)
@@ -392,43 +391,43 @@ def checkSetup(group = None, x = 0, y = 0):
         startGame()
 
 def startGame(group = None, x = 0, y = 0):
-    setFirstPlayer()
-    for p in getPlayers():
-        p_hand_size = countHandSize(p.piles['Hand'])
-        p.Deck.shuffle()
-        remoteCall(p, "drawMany", [p.piles['Deck'], maxHandSize(p) - p_hand_size, True])
-        if p.getGlobalVariable("heroPlayed") == 'vision':
-            p.counters['Default Card Draw'].value += 1
-        remoteCall(p, "addObligationsToEncounter", [p.piles["Nemesis"]])
+    table.create("65377f60-0de4-4196-a49e-96a550b4df81",playerX(0),tableLocations['hero'][1]-40,1,True)
     update()
-    shuffle(encounterDeck())
-    advanceGame()
+    firstPlayerToken = [card for card in table if card.Type == 'first_player']
+    firstPlayerToken[0].sendToBack()
+    for p in players:
+        p_hand_size = countHandSize(p.piles['Hand'])
+        p.deck.shuffle()
+        remoteCall(p, "drawMany", [p.piles['Deck'], p.MaxHandSize - p_hand_size, True])
+        remoteCall(p, "addObligationsToEncounter", [table, x, y, p])
+    update()
+    setGlobalVariable("firstPlayer",str(0))
+    debug("{} is active".format(str(players[0].name)))
 
-def addObligationsToEncounter(group = me.piles["Nemesis"]):
+    update()
+
+def addObligationsToEncounter(group = table, x = 0, y = 0, p=me):
     vName = getGlobalVariable("villainSetup")
     update()
     if vName == 'The Wrecking Crew' or vName == 'Kang': return
-    playerOblCard = filter(lambda card: card.Type == 'obligation', group)
+    playerOblCard = filter(lambda card: card.Type == 'obligation', me.piles["Nemesis"])
     for c in playerOblCard:
         c.moveTo(encounterDeck())
+    shuffle(encounterDeck())
 
 def advanceGame(group = None, x = 0, y = 0):
     # Check if we should pass the turn or just change the phase
     debug("advanceGame triggered")
     if turnNumber() == 0:
-        firstPlinList = num(getGlobalVariable("firstPlayer"))
-        firstPl = num(eval(getGlobalVariable("playerList"))[firstPlinList])
-        Player(firstPl).setActive()
+        me.setActive()
     elif currentPhase()[1] == 1:
         doEndHeroPhase()
         remoteCall(getActivePlayer(), "setPhase", [2]) #Must be triggered by active player
+
     elif currentPhase()[1] == 2:
         setFirstPlayer()
         setGlobalVariable("phase", "Hero Phase")
-        firstPlinList = num(getGlobalVariable("firstPlayer"))
-        firstPl = num(eval(getGlobalVariable("playerList"))[firstPlinList])
-        remoteCall(getActivePlayer(), "nextTurn", [Player(firstPl), True]) #Must be triggered by active player to add +1 to turn counter
-        notify("Next Player is {}".format(Player(firstPl)))
+        remoteCall(getActivePlayer(), "nextTurn", [Player(num(getGlobalVariable("firstPlayer"))+1), True]) #Must be triggered by active player to add +1 to turn counter
         update()
         shared.counters['Round'].value += 1
         saveTable(getGlobalVariable("phase"))
@@ -443,11 +442,11 @@ def doEndHeroPhase():
         p_hand_size = countHandSize(p.piles['Hand'])
         remoteCall(p, "clearTargets", [])
         remoteCall(p, "readyAll", [])
-        remoteCall(p, "drawMany", [p.piles['Deck'], maxHandSize(p) - p_hand_size, True])
+        remoteCall(p, "drawMany", [p.piles['Deck'], p.MaxHandSize - p_hand_size, True])
 
         # Check for hand size!
-        if p_hand_size > maxHandSize(p):
-            discardCount = p_hand_size - maxHandSize(p)
+        if p_hand_size > num(p.counters["MaxHandSize"].value):
+            discardCount = p_hand_size - num(p.counters["MaxHandSize"].value)
             dlg = cardDlg(p.piles['Hand'])
             dlg.title = "You have more than the allowed cards in hand."
             dlg.text = "Select " + str(discardCount) + " Card(s) to discard :"
@@ -459,12 +458,16 @@ def doEndHeroPhase():
                     remoteCall(p,"discard",[card])
 
 def passSharedControl(group, x=0, y=0):
-    notify(me.name + " takes control of targeted cards")
+    notify(me.name + " takes control of shared cards")
     mute()
     #Take control of each not player card on table
     for card in table:
-        if card.targetedBy == me:
+        if not isPlayerCard(card):
             card.controller = me
+    #Take control of each shared pile
+    for p in shared.piles:
+            if shared.piles[p].controller != me:
+                shared.piles[p].controller = me
 
 def readyAll(group = table, x = 0, y = 0):
     mute()
@@ -514,8 +517,7 @@ def changeForm(card, x = 0, y = 0):
         else:
             card.alternate = ""
             notify("{} changes form to {}.".format(me, card))
-    me.setGlobalVariable("cardForm", card.Type)
-    me.counters["Default Card Draw"].value = num(card.HandSize)
+    me.counters["MaxHandSize"].value = num(card.HandSize)
 
 def specific_hero_flip(card, x = 0, y = 0):
     mute()
@@ -529,7 +531,7 @@ def specific_hero_flip(card, x = 0, y = 0):
     if card.Owner == 'vision':
         upgradeCard = filter(lambda c: c.CardNumber == "26002a", table)
         if card.Type == "alter_ego" and len(upgradeCard) != 0:
-            me.counters["Default Card Draw"].value += 1
+            me.counters["MaxHandSize"].value += 1
     if card.Owner == 'spdr':
         heroCard = filter(lambda c: c.CardNumber == "31001a", table)
         supportCard = filter(lambda c: c.CardNumber == "31001b", table)
@@ -538,27 +540,59 @@ def specific_hero_flip(card, x = 0, y = 0):
         if card.CardNumber == "31001a":
             heroCard[0].alternate = "b"
             upgradeCard[0].alternate = ""
-            switchCards(heroCard[0], upgradeCard[0], h = 1, t = 1, s = 1, c = 1, a = 1)
-            me.setGlobalVariable("cardForm", "alter_ego")
-            me.counters["Default Card Draw"].value = num(upgradeCard[0].HandSize)
+            upgradeCard[0].markers[HealthMarker] = heroCard[0].markers[HealthMarker]
+            upgradeCard[0].markers[ToughMarker] = heroCard[0].markers[ToughMarker]
+            upgradeCard[0].markers[StunnedMarker] = heroCard[0].markers[StunnedMarker]
+            upgradeCard[0].markers[ConfusedMarker] = heroCard[0].markers[ConfusedMarker]
+            upgradeCard[0].markers[AllPurposeMarker] = heroCard[0].markers[AllPurposeMarker]
+            heroCard[0].markers[HealthMarker] = 0
+            heroCard[0].markers[ToughMarker] = 0
+            heroCard[0].markers[StunnedMarker] = 0
+            heroCard[0].markers[ConfusedMarker] = 0
+            heroCard[0].markers[AllPurposeMarker] = 0
+            me.counters["MaxHandSize"].value = num(upgradeCard[0].HandSize)
         elif card.CardNumber == "31001b":
             supportCard[0].alternate = ""
             alteregoCard[0].alternate = "b"
-            switchCards(alteregoCard[0], supportCard[0], h = 1, t = 1, s = 1, c = 1, a = 1)
-            me.setGlobalVariable("cardForm", "hero")
-            me.counters["Default Card Draw"].value = num(supportCard[0].HandSize)
+            supportCard[0].markers[HealthMarker] = alteregoCard[0].markers[HealthMarker]
+            supportCard[0].markers[ToughMarker] = alteregoCard[0].markers[ToughMarker]
+            supportCard[0].markers[StunnedMarker] = alteregoCard[0].markers[StunnedMarker]
+            supportCard[0].markers[ConfusedMarker] = alteregoCard[0].markers[ConfusedMarker]
+            supportCard[0].markers[AllPurposeMarker] = alteregoCard[0].markers[AllPurposeMarker]
+            alteregoCard[0].markers[HealthMarker] = 0
+            alteregoCard[0].markers[ToughMarker] = 0
+            alteregoCard[0].markers[StunnedMarker] = 0
+            alteregoCard[0].markers[ConfusedMarker] = 0
+            alteregoCard[0].markers[AllPurposeMarker] = 0
+            me.counters["MaxHandSize"].value = num(supportCard[0].HandSize)
         elif card.CardNumber == "31002a":
             alteregoCard[0].alternate = "b"
             supportCard[0].alternate = ""
-            switchCards(alteregoCard[0], supportCard[0], h = 1, t = 1, s = 1, c = 1, a = 1)
-            me.setGlobalVariable("cardForm", "hero")
-            me.counters["Default Card Draw"].value = num(supportCard[0].HandSize)
+            supportCard[0].markers[HealthMarker] = alteregoCard[0].markers[HealthMarker]
+            supportCard[0].markers[ToughMarker] = alteregoCard[0].markers[ToughMarker]
+            supportCard[0].markers[StunnedMarker] = alteregoCard[0].markers[StunnedMarker]
+            supportCard[0].markers[ConfusedMarker] = alteregoCard[0].markers[ConfusedMarker]
+            supportCard[0].markers[AllPurposeMarker] = alteregoCard[0].markers[AllPurposeMarker]
+            alteregoCard[0].markers[HealthMarker] = 0
+            alteregoCard[0].markers[ToughMarker] = 0
+            alteregoCard[0].markers[StunnedMarker] = 0
+            alteregoCard[0].markers[ConfusedMarker] = 0
+            alteregoCard[0].markers[AllPurposeMarker] = 0
+            me.counters["MaxHandSize"].value = num(supportCard[0].HandSize)
         elif card.CardNumber == "31002b":
             upgradeCard[0].alternate = ""
             heroCard[0].alternate = "b"
-            switchCards(heroCard[0], upgradeCard[0], h = 1, t = 1, s = 1, c = 1, a = 1)
-            me.setGlobalVariable("cardForm", "alter_ego")
-            me.counters["Default Card Draw"].value = num(upgradeCard[0].HandSize)
+            upgradeCard[0].markers[HealthMarker] = heroCard[0].markers[HealthMarker]
+            upgradeCard[0].markers[ToughMarker] = heroCard[0].markers[ToughMarker]
+            upgradeCard[0].markers[StunnedMarker] = heroCard[0].markers[StunnedMarker]
+            upgradeCard[0].markers[ConfusedMarker] = heroCard[0].markers[ConfusedMarker]
+            upgradeCard[0].markers[AllPurposeMarker] = heroCard[0].markers[AllPurposeMarker]
+            heroCard[0].markers[HealthMarker] = 0
+            heroCard[0].markers[ToughMarker] = 0
+            heroCard[0].markers[StunnedMarker] = 0
+            heroCard[0].markers[ConfusedMarker] = 0
+            heroCard[0].markers[AllPurposeMarker] = 0
+            me.counters["MaxHandSize"].value = num(upgradeCard[0].HandSize)
 
 def villainBoost(card, x=0, y=0, who=me):
     mute()
@@ -1069,26 +1103,20 @@ def shuffleDiscardIntoDeck(group, x = 0, y = 0):
     mute()
     if len(group) == 0: return
     if group == me.piles["Deck Discard"]:
-        if len(me.piles["Deck"]) > 0:
-            if askChoice("There are still {} card(s) in your Deck. Are you sure you want to shuffle your discard pile into your Deck ?".format(len(me.piles["Deck"])), ["Yes", "No"]) != 1:
-                return
         for card in group:
             card.moveTo(me.piles["Deck"])
         me.piles["Deck"].shuffle()
         notify("{} shuffles their discard pile into their Deck.".format(me))
-    if group == encounterDiscardDeck():
-        if len(shared.encounter) > 0:
-            if askChoice("There are still {} card(s) in Encounter Deck. Are you sure you want to shuffle discard pile into this Deck ?".format(len(shared.encounter)), ["Yes", "No"]) != 1:
-                return
-        for card in group:
-            card.moveTo(shared.encounter)
-        shared.encounter.shuffle()
-        notify("{} shuffles the encounter discard pile into the encounter Deck.".format(me))
     if group == me.piles["Special Deck Discard"]:
         for card in group:
             card.moveTo(me.piles["Special Deck"])
         me.piles["Special Deck"].shuffle()
         notify("{} shuffles the special discard pile into the special Deck.".format(me))
+    if group == encounterDiscardDeck():
+        for card in group:
+            card.moveTo(shared.encounter)
+        shared.encounter.shuffle()
+        notify("{} shuffles the encounter discard pile into the encounter Deck.".format(me))
     if group == specialDeckDiscard():
         for card in group:
             card.moveTo(specialDeck())
@@ -1129,6 +1157,17 @@ def pluralize(num):
        return ""
    else:
        return "s"
+
+def setHeroCounters(heroCard):
+    me.counters['HP'].value = num(heroCard.HP)
+    me.counters['MaxHandSize'].value = num(heroCard.HandSize)
+
+def countHeros(p):
+    heros = 0
+    for card in table:
+        if card.controller == p and (card.Type == "hero" or card.Type == "alter_ego"):
+            heros += 1
+    return heros
 
 def createCard(group=None, x=0, y=0):
     cardID, quantity = askCard()
@@ -1376,22 +1415,6 @@ def clearTargets(group=table, x=0, y=0):
         if c.controller == me or (c.targetedBy is not None and c.targetedBy == me):
             c.target(False)
 
-def switchCards(oldCard, newCard, h = 1, t = 1, s = 1, c = 1, a = 1):
-    if h == 1:
-        newCard.markers[HealthMarker] = oldCard.markers[HealthMarker]
-    if t == 1:
-        newCard.markers[ToughMarker] = oldCard.markers[ToughMarker]
-    if s == 1:
-        newCard.markers[StunnedMarker] = oldCard.markers[StunnedMarker]
-    if c == 1:
-        newCard.markers[ConfusedMarker] = oldCard.markers[ConfusedMarker]
-    if a == 1:
-        newCard.markers[AllPurposeMarker] = oldCard.markers[AllPurposeMarker]
-    oldCard.markers[HealthMarker] = 0
-    oldCard.markers[ToughMarker] = 0
-    oldCard.markers[StunnedMarker] = 0
-    oldCard.markers[ConfusedMarker] = 0
-    oldCard.markers[AllPurposeMarker] = 0
 
 #------------------------------------------------------------
 # Highlight
@@ -1447,16 +1470,6 @@ def countHandSize(hand_group):
     Return the number of cards in given hand, taking into account that some cards may be ignored in this process
     """
     return len([c for c in hand_group if not noCountInHandSize(c)])
-
-def maxHandSize(p):
-    """
-    Return the maximum number of cards a player can have in hand.
-    """
-    additionnal_handSize = p.counters["Additionnal Alter-Ego Card Draw"].value
-    if p.getGlobalVariable("cardForm") != "alter_ego":
-        additionnal_handSize = p.counters["Additionnal Hero Card Draw"].value
-    handSize = p.counters["Default Card Draw"].value + additionnal_handSize
-    return handSize
 
 def lookForToughness(card):
     """
@@ -1561,7 +1574,11 @@ def setHPOnCharacter(card):
             new_loki = [c for c in lokis_on_table if c.markers[HealthMarker] == 0]
             if len(previous_loki) == 1 and len(new_loki) == 1:
                 notify("Copy all markers from actual Loki to new one!")
-                switchCards(previous_loki[0], new_loki[0], h = 1, t = 1, s = 1, c = 1, a = 1)
+                new_loki[0].markers[HealthMarker] = previous_loki[0].markers[HealthMarker]
+                new_loki[0].markers[ToughMarker] = previous_loki[0].markers[ToughMarker]
+                new_loki[0].markers[StunnedMarker] = previous_loki[0].markers[StunnedMarker]
+                new_loki[0].markers[ConfusedMarker] = previous_loki[0].markers[ConfusedMarker]
+                new_loki[0].markers[AllPurposeMarker] = previous_loki[0].markers[AllPurposeMarker]
 
     if (card.Type == "hero" or card.Type == "alter_ego") and card.Owner == "ironheart":
         ironheart_on_table = [c for c in table if (c.Type == 'hero' or c.Type == 'alter_ego') and c.Owner == "ironheart"]
@@ -1571,9 +1588,11 @@ def setHPOnCharacter(card):
             new_ironheart = [c for c in ironheart_on_table if c.markers[HealthMarker] == 0]
             if len(previous_ironheart) == 1 and len(new_ironheart) == 1:
                 notify("Copy all markers from actual Ironheart to new one!")
-                switchCards(previous_ironheart[0], new_ironheart[0], h = 1, t = 1, s = 1, c = 1, a = 1)
-                me.setGlobalVariable("cardForm", new_ironheart[0].Type)
-                me.counters['Default Card Draw'].value = num(new_ironheart[0].HandSize)
+                new_ironheart[0].markers[HealthMarker] = previous_ironheart[0].markers[HealthMarker]
+                new_ironheart[0].markers[ToughMarker] = previous_ironheart[0].markers[ToughMarker]
+                new_ironheart[0].markers[StunnedMarker] = previous_ironheart[0].markers[StunnedMarker]
+                new_ironheart[0].markers[ConfusedMarker] = previous_ironheart[0].markers[ConfusedMarker]
+                new_ironheart[0].markers[AllPurposeMarker] = previous_ironheart[0].markers[AllPurposeMarker]
                 previous_ironheart[0].moveToBottom(me.piles['Special Deck'])
                 description_search = re.search('.*Version 3.*', new_ironheart[0].properties["Attribute"], re.IGNORECASE)
                 if description_search and new_ironheart[0].markers[ToughMarker] == 0:

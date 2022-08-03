@@ -275,19 +275,7 @@ changelog = {
     '0000316': ("0.0.3.16", "17 July 2022", [
         "Spider-Ham Hero pack added",
         "SP/dr Hero pack added",
-        "Fix: Ironheart version didn't swap in multiplayer",
+        "fix: Ironheart version didn't swap in multiplayer",
         "Stun/Confuse/Tough status no longer stuck to 1 or 2 cards"
-        ]),
-    '0000320': ("0.0.3.20", "03 August 2022", [
-        "Feature: Welcome Screen added to help new people starting a game. It also provides usefull links. You can also access it right click onto the table.",
-        "Feature: Card info function added when right-clicking on a card. It provides rules information on some keywords.",
-        "Feature: Counters added to adjust your hand size in Hero form and Alter-ego form (usefull for Iron Man or when playing cards like \"Symbiote Suit\" or \"The Sorcerer Supreme\").",
-        "Feature: Warning message if a player want to shuffle his discard pile into his deck if his deck is still containing cards.",
-        "Feature: Warning message if a player want to shuffle encounter discard pile into encounter deck if this deck is still containing cards.",
-        "Fix: Some workaround about first player behaviour that might still needs some tests. Players order is based on loaded deck order.",  
-        "Fix: Hawkeye prebuild deck missing 1 card.",
-        "Shortcut: F8 shortcut for taking control of targeted (shift + mouse left-click) cards.",
-        "Shortcut: F9 shortcut for random number function",
-        "Fonts changed to Elektra Medium Pro Regular"
         ])
 }

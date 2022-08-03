@@ -2,22 +2,17 @@
 # 'Load Hero' event
 #------------------------------------------------------------
 
-def loadHero(group, x = 0, y = 0, askMethod = True, choice = 0):
+def loadHero(group, x = 0, y = 0):
     mute()
     if not deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
-        msg = """Cannot generate a deck: You already have cards loaded.\n
-Reset the game in order to generate a new deck."""
-        askChoice(msg, [], [], ["Close"])
+        confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
         return
 
-    if askMethod:
-        choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)"])
+    choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)"])
 
     if choice == 0: return
     if choice == 1:
         cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :", min = 1, max = 1)
-        if cardsSelected is None:
-            return
         for card in cardsSelected:
             deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
             deckname2 = createCards(me.Deck, pre_built[str(card.Owner)].keys(), pre_built[str(card.Owner)])
@@ -39,8 +34,7 @@ Reset the game in order to generate a new deck."""
             return
         deckname = createAPICards(url, False)
 
-    heroSetup()
-    checkSetup()
+    tableSetup()
 
 def loadPreBuiltDeck(group, x=0, y=0):
     """
@@ -61,8 +55,7 @@ def loadPreBuiltDeck(group, x=0, y=0):
     prebuilt_Choice = askChoice("What Universal Pre-Built deck do you want to load?", universal_prebuilt_List)
     deckname2 = createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuilt[universal_prebuilt_List[prebuilt_Choice-1]]), True, new_owner=card.Owner)
 
-    heroSetup()
-    checkSetup()
+    tableSetup()
 
 def unloadHeroDeck(group, x=0, y=0):
     """
@@ -105,15 +98,7 @@ def heroSetup(group=table, x = 0, y = 0):
         heroCard = hero[0]
         heroCard.moveToTable(playerX(id),tableLocations['hero'][1])
         heroCard.alternate = 'b'
-        pList = eval(getGlobalVariable("playerList"))
-        pList.append(me._id)
-        setGlobalVariable("playerList",str(pList))
-        heroesPlayed = eval(getGlobalVariable("heroesPlayed"))
-        heroesPlayed.append(heroCard.Owner)
-        setGlobalVariable("heroesPlayed", str(heroesPlayed))
-        me.setGlobalVariable("heroPlayed", str(heroCard.Owner))
-        me.counters['Max HP'].value = num(heroCard.HP)
-        me.counters['Default Card Draw'].value = num(heroCard.HandSize)
+        setHeroCounters(heroCard)
         notify("{} places his Hero on the table".format(me))
 
     if newHero:
@@ -165,13 +150,6 @@ def heroSetup(group=table, x = 0, y = 0):
             createCards(me.piles['Special Deck'],sorted(special_decks['spdr'].keys()),special_decks['spdr'])
             for c in me.piles['Special Deck']:
                 c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
-
-def countHeros(p):
-    heros = 0
-    for card in table:
-        if card.controller == p and (card.Type == "hero" or card.Type == "alter_ego"):
-            heros += 1
-    return heros
 
 #------------------------------------------------------------
 # 'Load Hero' specific functions
