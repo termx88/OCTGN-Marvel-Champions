@@ -113,8 +113,11 @@ def serializeCardMarkers(card):
     return markers
     
 def serializeGlobalVariable():
-    globalVariable = {'difficulty':None, 'lock':None, 'game':None, 'playersSetup':None, 'villainSetup':None, 'done':None, 'phase':None, 'deckLocked':None, 'firstPlayer':None}
+    globalVariable = {'difficulty':None, 'playerList':None, 'heroesPlayed':None, 'firstPlayer':None, 'lock':None, 'game':None, 'playersSetup':None, 'villainSetup':None, 'done':None, 'phase':None, 'deckLocked':None}
     globalVariable['difficulty'] = getGlobalVariable("difficulty")
+    globalVariable['playerList'] = getGlobalVariable("playerList")
+    globalVariable['heroesPlayed'] = getGlobalVariable("heroesPlayed")
+    globalVariable['firstPlayer'] = getGlobalVariable("firstPlayer")
     globalVariable['lock'] = getGlobalVariable("lock")
     globalVariable['game'] = getGlobalVariable("game")
     globalVariable['playersSetup'] = getGlobalVariable("playersSetup")
@@ -122,7 +125,6 @@ def serializeGlobalVariable():
     globalVariable['done'] = getGlobalVariable("done")
     globalVariable['phase'] = getGlobalVariable("phase")
     globalVariable['deckLocked'] = getGlobalVariable("deckLocked")
-    globalVariable['firstPlayer'] = getGlobalVariable("firstPlayer")
     return globalVariable
 
 def deserializeGlobalVariable(gvKey, gvValue):

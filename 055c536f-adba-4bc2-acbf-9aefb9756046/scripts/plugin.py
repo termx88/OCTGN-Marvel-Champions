@@ -27,7 +27,7 @@ def saveTable(phase):
             return
     
     try:
-        tab = {"table":[], "shared": {}, 'counters': None, "players": None, "ActivePlayer": None, "phase": None, "globalVariable": {}}
+        tab = {"table":[], "shared": {}, 'counters': None, "players": None, "globalVariable": {}, "phase": None}
 
         # loop and retrieve cards from the table
         for card in table:
@@ -48,14 +48,11 @@ def saveTable(phase):
         players = sorted(getPlayers(), key=lambda x: x._id, reverse=False)
         tab['players'] = [serializePlayer(pl) for pl in players]
 
-        # Active Player
-        tab['ActivePlayer'] = str(getActivePlayer()._id)
+        # Global Variable
+        tab['globalVariable'] = serializeGlobalVariable()
 
         # Phase
         tab['phase'] = getGlobalVariable("phase")
-
-        # Global Variable
-        tab['globalVariable'] = serializeGlobalVariable()
 
         if phase == "":
             filename = saveFileDlg('', '', 'Json Files|*.json')
@@ -135,20 +132,14 @@ def loadTable(phase):
             for player in tab['players']:
                 deserializePlayer(player)
 
-        if tab['ActivePlayer'] is not None and len(tab['ActivePlayer']) > 0:
-            setActivePlayer(Player(num(tab['ActivePlayer'])))
-
-        if tab['phase'] is not None and len(tab['phase']) > 0:
-            activePlayerNum = num(tab['ActivePlayer']) - 1
-            if tab['phase'] == "Hero Phase":
-                players[activePlayerNum].setActive()
-            if tab['phase'] == "Villain Phase":
-                players[activePlayerNum].setActive()
-                setPhase(2)
-
         if tab['globalVariable'] is not None and len(tab['globalVariable']) > 0:
             for k in tab['globalVariable'].Keys:
                 deserializeGlobalVariable(k, tab['globalVariable'][k])
+
+        if tab['phase'] is not None and len(tab['phase']) > 0:
+            advanceGame()
+            if tab['phase'] == "Villain Phase":
+                setPhase(2)
                 
     finally:
         clearLock()

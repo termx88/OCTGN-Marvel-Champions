@@ -289,5 +289,8 @@ changelog = {
         "Shortcut: F8 shortcut for taking control of targeted (shift + mouse left-click) cards.",
         "Shortcut: F9 shortcut for random number function",
         "Fonts changed to Elektra Medium Pro Regular"
+        ]),
+    '0000321': ("0.0.3.21", "07 August 2022", [
+        "Hotfix: Saving tools didn't work since update 3.20"
         ])
 }
