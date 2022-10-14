@@ -217,5 +217,29 @@
             <property name="Type" value="encounter_setup" />
             <property name="Owner" value="ironspider_sinister"/>
         </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000055" name="Brotherhood">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="brotherhood"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000056" name="Mystique">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="mystique"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000057" name="Zero Tolerance">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="zero_tolerance"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000058" name="Sentinels">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="sentinels"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000059" name="Acolytes">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="acolytes"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000060" name="Future Past">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="future_past"/>
+        </card>
     </cards>
 </set>

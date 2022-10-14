@@ -292,5 +292,10 @@ changelog = {
         ]),
     '0000321': ("0.0.3.21", "07 August 2022", [
         "Hotfix: Saving tools didn't work since update 3.20"
+        ]),
+    '0000330': ("0.0.3.30", "14 October 2022", [
+        "Mutant Genesis expansion added",
+        "Cyclops Hero pack added",
+        "Phoenix Hero pack added"
         ])
 }

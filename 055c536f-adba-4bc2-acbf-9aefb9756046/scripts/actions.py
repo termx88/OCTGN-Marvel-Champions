@@ -401,7 +401,6 @@ def startGame(group = None, x = 0, y = 0):
             p.counters['Default Card Draw'].value += 1
         remoteCall(p, "addObligationsToEncounter", [p.piles["Nemesis"]])
     update()
-    shuffle(encounterDeck())
     advanceGame()
 
 def addObligationsToEncounter(group = me.piles["Nemesis"]):
@@ -411,6 +410,7 @@ def addObligationsToEncounter(group = me.piles["Nemesis"]):
     playerOblCard = filter(lambda card: card.Type == 'obligation', group)
     for c in playerOblCard:
         c.moveTo(encounterDeck())
+    shuffle(encounterDeck())
 
 def advanceGame(group = None, x = 0, y = 0):
     # Check if we should pass the turn or just change the phase
@@ -944,7 +944,7 @@ def drawCard(group, checkHandSize = False):
             drawUnrevealed(group, posX, posY)
             drawCard(group, checkHandSize)
         else:
-            card.moveTo(card.owner.hand)
+            card.moveTo(me.hand)
             if noCountInHandSize(card) and checkHandSize:
                 drawCard(group, checkHandSize)
         checkDeckRemainingCards(group)
@@ -1177,6 +1177,15 @@ def nextSchemeStage(group=None, x=0, y=0):
 
     if vName == 'Kang':
         whisper("You can't advance to next scheme using \"Next Scheme\" function for Kang. Use \"Next Villain\" instead")
+    elif vName == 'Mansion Attack':
+        msCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
+        if len(msCards) > 0:
+            randomScheme = rnd(0, len(msCards)-1) # Returns a random INTEGER value and use it to choose which Loki will be loaded
+        for c in table:
+            if c.Type == 'main_scheme':
+                x, y = c.position
+                c.moveTo(victoryDisplay())
+                msCards[randomScheme].moveToTable(x, y)
     else:
         for c in table:
             if c.Type == 'main_scheme' and len(mainSchemeDeck()) > 0:
@@ -1198,6 +1207,7 @@ def nextVillainStage(group=None, x=0, y=0):
 
     # Global Variable
     vName = getGlobalVariable("villainSetup")
+    gameDifficulty = getGlobalVariable("difficulty")
 
     # We need a new Villain card
     if group is None or group == table:
@@ -1338,6 +1348,18 @@ def nextVillainStage(group=None, x=0, y=0):
                     vCards[randomLoki].markers[ConfusedMarker] = currentConfused
                     vCards[randomLoki].markers[AllPurposeMarker] = currentAllPurpose
                     c.moveTo(villainDeck())
+
+    elif vName == 'Mansion Attack':
+        vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
+        if len(vCards) > 0:
+            randomVillain = rnd(0, len(vCards)-1) # Returns a random INTEGER value and use it to choose which Loki will be loaded
+        for c in table:
+            if c.Type == 'villain':
+                x, y = c.position
+                c.moveTo(victoryDisplay())
+                vCards[randomVillain].moveToTable(x, y)
+                if gameDifficulty == "1":
+                    vCards[randomVillain].alternate = "b"
 
     else:
         for c in table:

@@ -1,0 +1,1893 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Mutant Genesis" id="47d34c5d-5319-45a9-a2d6-1fb975198ec7" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Colossus" id="47d34c5d-5319-45a9-a2d6-1fb975032001">
+      <property name="CardNumber" value="32001a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="colossus"/>
+      <property name="HandSize" value="4"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="14"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">Colossus can have 1 additional tough status card.\n&lt;i&gt;Stell Skin&lt;/i&gt; – &lt;b&gt;Response&lt;/b&gt;: After you change to this form, give Colossus a tough status card.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Piotr Rasputin" type="b">
+        <property name="CardNumber" value="32001b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="colossus"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="4"/>
+        <property name="HP" value="14"/>
+        <property name="Attribute" value="Mutant."/>
+        <property name="Text">&lt;b&gt;Setup&lt;/b&gt;: Search your deck for a copy of Organic Steel and add it to your hand.\n&lt;i&gt;Aspiring Artist&lt;/i&gt; – &lt;b&gt;Response&lt;/b&gt;: After you change to this form, shuffle a Colossus card from your discard pile into your deck.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Shadowcat" id="47d34c5d-5319-45a9-a2d6-1fb975032002">
+      <property name="CardNumber" value="32002"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">Shadowcat ignores the guard and patrol keywords, and any crisis icons ([crisis]) in play.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Piotr's Studio" id="47d34c5d-5319-45a9-a2d6-1fb975032003">
+      <property name="CardNumber" value="32003"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Piotr's Studio → discard cards from your deck until you discard a Colossus card. Add that card to your hand.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Iron Will" id="47d34c5d-5319-45a9-a2d6-1fb975032004">
+      <property name="CardNumber" value="32004"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">Colossus gets +1 THW.\n&lt;b&gt;Response&lt;/b&gt;: After a tough status card is discarded from Colossus, draw 1 card.</property>
+    </card>
+    <card name="Titanium Muscles" id="47d34c5d-5319-45a9-a2d6-1fb975032005">
+      <property name="CardNumber" value="32005"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">Colossus gets +1 ATK.\n&lt;b&gt;Hero Resource&lt;/b&gt;: Exhaust this card → generate a [physical] resource for each tough status card on Colossus.</property>
+    </card>
+    <card name="Organic Steel" id="47d34c5d-5319-45a9-a2d6-1fb975032006">
+      <property name="CardNumber" value="32006"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">Uses (2 steel counters).\n&lt;b&gt;Hero Response&lt;/b&gt;: After a tough status card is discarded from Colossus, exhaust this card and remove 1 steel counter from it → give Colossus a tough status card.</property>
+    </card>
+    <card name="Made of Rage" id="47d34c5d-5319-45a9-a2d6-1fb975032007">
+      <property name="CardNumber" value="32007"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When you make a basic attack, discard a tough status card from your hero → youo get +6 ATK for that attack. That attack gains overkill.</property>
+    </card>
+    <card name="Steel Fist" id="47d34c5d-5319-45a9-a2d6-1fb975032008">
+      <property name="CardNumber" value="32008"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Deal 5 damage to an enemu. You may discard a tough status card from your hero → stun and confuse that enemy.</property>
+    </card>
+    <card name="Bulletproof Protector" id="47d34c5d-5319-45a9-a2d6-1fb975032009">
+      <property name="CardNumber" value="32009"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Discard a tough status card from your hero → choose :\n• Give your hero 2 tough status cards.\n• Ready your hero.</property>
+    </card>
+    <card name="Armor Up" id="47d34c5d-5319-45a9-a2d6-1fb975032010">
+      <property name="CardNumber" value="32010"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Interrupt&lt;/b&gt;: When the villain activates, change to hero form.</property>
+    </card>
+    <card name="Nightcrawler" id="47d34c5d-5319-45a9-a2d6-1fb975032011">
+      <property name="CardNumber" value="32011"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When an [[X-MEN]] character would take any amount of damage from an enemy attack, spend a [energy] resource and return Nightcrawler to your hand → prevent all of that damage.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Polaris" id="47d34c5d-5319-45a9-a2d6-1fb975032012">
+      <property name="CardNumber" value="32012"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Polaris enters play, give an [[X-MEN]] character a tough status card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Protective Training" id="47d34c5d-5319-45a9-a2d6-1fb975032013">
+      <property name="CardNumber" value="32013"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Training."/>
+      <property name="Text">Attach to an [[X-MEN]] ally. Max 1 [[Training]] upgrade per ally.\nAttached ally gets +3 hit points.</property>
+    </card>
+    <card name="Powerful Punch" id="47d34c5d-5319-45a9-a2d6-1fb975032014">
+      <property name="CardNumber" value="32014"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack. Defense."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(attack/defense)&lt;/i&gt;: When an enemy initiates an attack, deal 4 damage to that enemy.</property>
+    </card>
+    <card name="Bait and Switch" id="47d34c5d-5319-45a9-a2d6-1fb975032015">
+      <property name="CardNumber" value="32015"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: The villain attacks you. Remove 4 threat from the main scheme.</property>
+    </card>
+    <card name="Perseverance" id="47d34c5d-5319-45a9-a2d6-1fb975032016">
+      <property name="CardNumber" value="32016"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Tactic."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After you change form, give your hero a tough status card.</property>
+    </card>
+    <card name="Mutant Protection" id="47d34c5d-5319-45a9-a2d6-1fb975032017">
+      <property name="CardNumber" value="32017"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Defense."/>
+      <property name="Text">Play only if your identity has the [[X-MEN]] trait.\n&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When an enemy attacks, put an [[X-MEN]] ally into play from your hand. Exhaust it and declare it the defender for this attack.</property>
+    </card>
+    <card name="Defensive Energy" id="47d34c5d-5319-45a9-a2d6-1fb975032018">
+      <property name="CardNumber" value="32018"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">Max 2 per deck.\n&lt;b&gt;Hero Interrupt&lt;/b&gt;: When you spend this card to play a [[Defense]] event, draw 1 card.</property>
+    </card>
+    <card name="Professor X" id="47d34c5d-5319-45a9-a2d6-1fb975032019">
+      <property name="CardNumber" value="32019"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="3"/>
+      <property name="Attack" value="0"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Psionic. X-Men."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After Professor X enters play, choose one : confuse the villain, stun a minion, or ready an [[X-MEN]] character. At the end of the round, if Professor X is still in play, discard him.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="The X-Jet" id="47d34c5d-5319-45a9-a2d6-1fb975032020">
+      <property name="CardNumber" value="32020"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Vehicle. X-Men."/>
+      <property name="Text">&lt;b&gt;Resource&lt;/b&gt;: Exhaust The X-Jet → generate a [wild] resource for a player whose identity has the [[X-MEN]] trait.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Shadow and Steel" id="47d34c5d-5319-45a9-a2d6-1fb975032021">
+      <property name="CardNumber" value="32021"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack. Defense."/>
+      <property name="Text">Team-Up (Colossus and Shadowcat).\nMax 1 per deck.\n\n&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(attack/defense)&lt;/i&gt;: When an enemy attacks, prevent all damage from that attack and deal 4 damage to the attacking enemy.</property>
+    </card>
+    <card name="Energy" id="47d34c5d-5319-45a9-a2d6-1fb975032022">
+      <property name="CardNumber" value="32022"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Energy" value="2"/>
+      <property name="Text">Max 1 per deck.</property>
+    </card>
+    <card name="Genius" id="47d34c5d-5319-45a9-a2d6-1fb975032023">
+      <property name="CardNumber" value="32023"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Mental" value="2"/>
+      <property name="Text">Max 1 per deck.</property>
+    </card>
+    <card name="Strength" id="47d34c5d-5319-45a9-a2d6-1fb975032024">
+      <property name="CardNumber" value="32024"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Physical" value="2"/>
+      <property name="Text">Max 1 per deck.</property>
+    </card>
+    <card name="Shadowcat" id="47d34c5d-5319-45a9-a2d6-1fb975032030">
+      <property name="CardNumber" value="32030a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="9"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;i&gt;Selective Intangibility&lt;/i&gt; – While you are in Phased mass form, Shadowcat ignores the guard and patrol keywords, and any crisis icons ([crisis]) in play.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Kitty Pride" type="b">
+        <property name="CardNumber" value="32030b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="shadowcat"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="9"/>
+        <property name="Attribute" value="Mutant."/>
+        <property name="Text">&lt;b&gt;Setup&lt;/b&gt;: Put your mass form upgrade into play, Solid side faceup.\n&lt;i&gt;Phase Control&lt;/i&gt; – &lt;b&gt;Action&lt;/b&gt;: Flip your mass form upgrade. (Limit once per round.)</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Solid" id="47d34c5d-5319-45a9-a2d6-1fb975032031">
+      <property name="CardNumber" value="32031a"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Text">Mass form. Permanent.\n&lt;b&gt;Hero Resource&lt;/b&gt;: Exhaust this card → generate a [physical] resource for an [[attack]] or [[defense]] event.\n&lt;b&gt;Response&lt;/b&gt;: After you attack or defend in Solid mass form, flip this card.</property>
+      <alternate name="Phased" type="b">
+        <property name="CardNumber" value="32031b"/>
+        <property name="Type" value="upgrade"/>
+        <property name="Owner" value="shadowcat"/>
+        <property name="Resource_Mental" value="1"/>
+        <property name="Text">Mass form. Permanent.\nWhile Shadowcat is defending, she cannot take damage.\n&lt;b&gt;Forced Response&lt;/b&gt;: After you attack or defend in Phased mass form, flip this card.</property>
+      </alternate>
+    </card>
+    <card name="Lockheed" id="47d34c5d-5319-45a9-a2d6-1fb975032032">
+      <property name="CardNumber" value="32032"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Dragon. X-Men."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Lockheed enters play, if you are in:\n• Solid mass form, deal 2 damage to an enemy.\n• Phased mass form, remove 2 threat from a scheme.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Kitty's Room" id="47d34c5d-5319-45a9-a2d6-1fb975032033">
+      <property name="CardNumber" value="32033"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Kitty's Room → if you are in:\n• Solid mass form, heal 2 damage from Kitty Pryde.\n• Phased mass form, draw 1 card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Acute Control" id="47d34c5d-5319-45a9-a2d6-1fb975032034">
+      <property name="CardNumber" value="32034"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After you ignore the guard or patrol keyword on a minion, exhaust Acute Control → deal 2 damage to that minion.</property>
+    </card>
+    <card name="Intangible Interference" id="47d34c5d-5319-45a9-a2d6-1fb975032035">
+      <property name="CardNumber" value="32035"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After you ignore the crisis icon ([crisis]) on a scheme, exhaust Intangible Interference → remove 2 thret from that scheme.</property>
+    </card>
+    <card name="Phased and Confused" id="47d34c5d-5319-45a9-a2d6-1fb975032036">
+      <property name="CardNumber" value="32036"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Hero form only. Attach to an enemy. Max 1 per enemy.\n&lt;b&gt;Forced Interrupt&lt;/b&gt;: When attached enemy would attack, discard this card insted. Then, confuse that enemy.</property>
+    </card>
+    <card name="Shadowcat Surprise" id="47d34c5d-5319-45a9-a2d6-1fb975032037">
+      <property name="CardNumber" value="32037"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 3 damage to an enemy. Ready your hero.</property>
+    </card>
+    <card name="Phase Strike" id="47d34c5d-5319-45a9-a2d6-1fb975032038">
+      <property name="CardNumber" value="32038"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 6 damage to an enemy. If you are in Phased mass form, you may discard an attachment with the text \"&lt;b&gt;Hero Action&lt;/b&gt;\" or \"&lt;b&gt;Hero Response&lt;/b&gt;\" from that enemy.</property>
+    </card>
+    <card name="Airwalk" id="47d34c5d-5319-45a9-a2d6-1fb975032039">
+      <property name="CardNumber" value="32039"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Superpower. Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 2 threat from a scheme (4 threat instead if you are in Phased mass form).</property>
+    </card>
+    <card name="Quick Shift" id="47d34c5d-5319-45a9-a2d6-1fb975032040">
+      <property name="CardNumber" value="32040"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Defense. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When an enemy attacks, if you are in:\n• Solid mass form, change to Phased mass form.\n• Phased mass form, draw 2 cards.</property>
+    </card>
+    <card name="Wolverine" id="47d34c5d-5319-45a9-a2d6-1fb975032041">
+      <property name="CardNumber" value="32041"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="3"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">[star] Wolverine's attacks gain piercing.\n&lt;b&gt;Response&lt;/b&gt;: After your turn begins, heal 1 damage from Wolverine.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Magik" id="47d34c5d-5319-45a9-a2d6-1fb975032042">
+      <property name="CardNumber" value="32042"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Mystic. X-Men."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play Magik from your hand, spend a [mental] resource → choose a non-[[Elite]] minion engaged with an [[X-MEN]] hero. Shuffle that minion into the encounter deck.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Attack Training" id="47d34c5d-5319-45a9-a2d6-1fb975032043">
+      <property name="CardNumber" value="32043"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Training."/>
+      <property name="Text">Attach to an [[X-MEN]] ally. Max 1 [[Training]] upgrade per ally.\nAttached ally gets +1 ATK and +2 hit points.</property>
+    </card>
+    <card name="Gatekeeper" id="47d34c5d-5319-45a9-a2d6-1fb975032044">
+      <property name="CardNumber" value="32044"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to a minion.\nAttached minion gets +2 hit points and gains patrol.\n&lt;b&gt;Interrupt&lt;/b&gt;: When attached minion is defeated, remove 4 threat from the main scheme.</property>
+    </card>
+    <card name="Team Strike" id="47d34c5d-5319-45a9-a2d6-1fb975032045">
+      <property name="CardNumber" value="32045"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">Play only if your identity has the [[X-MEN]] trait.\n&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Exhaust your hero and any number of [[X-MEN]] allies → deal X damage among enemies in play, where X is the total ATK of the characters you exhausted this way.</property>
+    </card>
+    <card name="Toe to Toe" id="47d34c5d-5319-45a9-a2d6-1fb975032046">
+      <property name="CardNumber" value="32046"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Choose an enemy. That enemy attacks you. Deal 5 damage to that enemy.</property>
+    </card>
+    <card name="Aggressive Energy" id="47d34c5d-5319-45a9-a2d6-1fb975032047">
+      <property name="CardNumber" value="32047"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">Max 2 per deck.\n&lt;b&gt;Hero Interrupt&lt;/b&gt;: When you spend this card to play a [[Attack]] event, that event deals 1 additional damage.</property>
+    </card>
+    <card name="Colossus" id="47d34c5d-5319-45a9-a2d6-1fb975032048">
+      <property name="CardNumber" value="32048"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="3"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">Reduce the cost to play Colossus by 1 if your identity has the [[MUTANT]] or [[X-MEN]] trait.\nToughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="X-Mansion" id="47d34c5d-5319-45a9-a2d6-1fb975032049">
+      <property name="CardNumber" value="32049"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location. X-Men."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust X-Mansion → heal 1 damage from a [[MUTANT]] or [[X-MEN]] character. Any player whose alter-ego has the [[MUTANT]] trait may trigger this ability.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Ready to Rumble" id="47d34c5d-5319-45a9-a2d6-1fb975032051">
+      <property name="CardNumber" value="32051"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Play under any player's control.\nMax 1 per_player.\n&lt;b&gt;Hero Response&lt;/b&gt;: After you change form, discard this card → ready your hero.</property>
+    </card>
+    <card name="Frightened Police" id="47d34c5d-5319-45a9-a2d6-1fb975032171" size="SchemeCard">
+      <property name="CardNumber" value="32171a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mut_gen_campaign"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <alternate name="Metro P.D." type="b" size="EncounterCard">
+        <property name="CardNumber" value="32171b"/>
+        <property name="Type" value="support"/>
+        <property name="Owner" value="mut_gen_campaign"/>
+        <property name="Resource_Mental" value="1"/>
+        <property name="Attribute" value="Persona."/>
+        <property name="Text">Permanent.\nThe first player controls Metro P.D.</property>
+      </alternate>
+    </card>
+    <card name="Enemy of My Enemy" id="47d34c5d-5319-45a9-a2d6-1fb975032172" size="SchemeCard">
+      <property name="CardNumber" value="32172a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mut_gen_campaign"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <alternate name="Magneto" type="b" size="EncounterCard">
+        <property name="CardNumber" value="32172b"/>
+        <property name="Type" value="ally"/>
+        <property name="Owner" value="mut_gen_campaign"/>
+        <property name="Attack" value="3"/>
+        <property name="Scheme" value="2"/>
+        <property name="Resource_Wild" value="1"/>
+        <property name="HP" value="5"/>
+        <property name="Attribute" value="Brotherhood of Mutants."/>
+        <property name="Text">Victory 1.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Find the Prisoners" id="47d34c5d-5319-45a9-a2d6-1fb975032173" size="SchemeCard">
+      <property name="CardNumber" value="32173a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mut_gen_campaign"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <alternate name="Rescue Captives" type="b" size="EncounterCard">
+        <property name="CardNumber" value="32173b"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="mut_gen_campaign"/>
+        <property name="Boost" value="2"/>
+        <property name="Attribute" value="Mission."/>
+      </alternate>
+    </card>
+    <card name="Surprise Attack" id="47d34c5d-5319-45a9-a2d6-1fb975032174" size="SchemeCard">
+      <property name="CardNumber" value="32174a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mut_gen_campaign"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <alternate name="Reactive Defense" type="b" size="EncounterCard">
+        <property name="CardNumber" value="32174b"/>
+        <property name="Type" value="obligation"/>
+        <property name="Owner" value="mut_gen_campaign"/>
+        <property name="Boost" value="2"/>
+      </alternate>
+    </card>
+    <card name="Magneto's Fortress" id="47d34c5d-5319-45a9-a2d6-1fb975032175" size="SchemeCard">
+      <property name="CardNumber" value="32175a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mut_gen_campaign"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <alternate name="Magneto's Power" type="b" size="EncounterCard">
+        <property name="CardNumber" value="32175b"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="mut_gen_campaign"/>
+        <property name="Attribute" value="Condition."/>
+        <property name="Text">Attach to Magneto.\nPermanent.</property>
+      </alternate>
+    </card>
+    <card name="Coup de Grâce" id="47d34c5d-5319-45a9-a2d6-1fb975032176">
+      <property name="CardNumber" value="32176"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="brawler"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Swagger" id="47d34c5d-5319-45a9-a2d6-1fb975032177">
+      <property name="CardNumber" value="32177"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="brawler"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Brazen Defense" id="47d34c5d-5319-45a9-a2d6-1fb975032178">
+      <property name="CardNumber" value="32178"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="brawler"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Ferocious Attack" id="47d34c5d-5319-45a9-a2d6-1fb975032179">
+      <property name="CardNumber" value="32179"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="brawler"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="War Cry" id="47d34c5d-5319-45a9-a2d6-1fb975032180">
+      <property name="CardNumber" value="32180"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="brawler"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Coup de Grâce" id="47d34c5d-5319-45a9-a2d6-1fb975032181">
+      <property name="CardNumber" value="32181"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="commander"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Compassion" id="47d34c5d-5319-45a9-a2d6-1fb975032182">
+      <property name="CardNumber" value="32182"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="commander"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Group Assault" id="47d34c5d-5319-45a9-a2d6-1fb975032183">
+      <property name="CardNumber" value="32183"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="commander"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Shock and Awe" id="47d34c5d-5319-45a9-a2d6-1fb975032184">
+      <property name="CardNumber" value="32184"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="commander"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Improvisation" id="47d34c5d-5319-45a9-a2d6-1fb975032185">
+      <property name="CardNumber" value="32185"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="commander"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Swagger" id="47d34c5d-5319-45a9-a2d6-1fb975032186">
+      <property name="CardNumber" value="32186"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="defender"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Surprise!" id="47d34c5d-5319-45a9-a2d6-1fb975032187">
+      <property name="CardNumber" value="32187"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="defender"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Heroic Intervention" id="47d34c5d-5319-45a9-a2d6-1fb975032188">
+      <property name="CardNumber" value="32188"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="defender"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Determined Defense" id="47d34c5d-5319-45a9-a2d6-1fb975032189">
+      <property name="CardNumber" value="32189"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="defender"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Bodyguard" id="47d34c5d-5319-45a9-a2d6-1fb975032190">
+      <property name="CardNumber" value="32190"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="defender"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Surprise!" id="47d34c5d-5319-45a9-a2d6-1fb975032191">
+      <property name="CardNumber" value="32191"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="peacekeeper"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Compassion" id="47d34c5d-5319-45a9-a2d6-1fb975032192">
+      <property name="CardNumber" value="32192"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="peacekeeper"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Rescue Operation" id="47d34c5d-5319-45a9-a2d6-1fb975032193">
+      <property name="CardNumber" value="32193"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="peacekeeper"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Mentorship" id="47d34c5d-5319-45a9-a2d6-1fb975032194">
+      <property name="CardNumber" value="32194"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="peacekeeper"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Fortitude" id="47d34c5d-5319-45a9-a2d6-1fb975032195">
+      <property name="CardNumber" value="32195"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="peacekeeper"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Skill."/>
+    </card>
+    <card name="Homesick" id="47d34c5d-5319-45a9-a2d6-1fb975032025" size="EncounterCard">
+      <property name="CardNumber" value="32025"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="colossus"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Juggernaut" id="47d34c5d-5319-45a9-a2d6-1fb975032026" size="EncounterCard">
+      <property name="CardNumber" value="32026"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="colossus_nemesis"/>
+      <property name="Attack" value="4"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="8"/>
+      <property name="Attribute" value="Brute. Elite."/>
+      <property name="Text">Stalwart. Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Rampaging Juggernaut" id="47d34c5d-5319-45a9-a2d6-1fb975032027" size="SchemeCard">
+      <property name="CardNumber" value="32027"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="colossus_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+    </card>
+    <card name="Unstoppable" id="47d34c5d-5319-45a9-a2d6-1fb975032028" size="EncounterCard">
+      <property name="CardNumber" value="32028"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="colossus_nemesis"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Slammed" id="47d34c5d-5319-45a9-a2d6-1fb975032029" size="EncounterCard">
+      <property name="CardNumber" value="32029"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="colossus_nemesis"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Permanently Phased" id="47d34c5d-5319-45a9-a2d6-1fb975032055" size="EncounterCard">
+      <property name="CardNumber" value="32055"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="shadowcat"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="White Queen" id="47d34c5d-5319-45a9-a2d6-1fb975032056" size="EncounterCard">
+      <property name="CardNumber" value="32056"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="shadowcat_nemesis"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Elite. Psionic."/>
+      <property name="Text">Villainous.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="The Hellfire Club" id="47d34c5d-5319-45a9-a2d6-1fb975032057" size="SchemeCard">
+      <property name="CardNumber" value="32057"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="shadowcat_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="Scheme_Acceleration" value="1"/>
+    </card>
+    <card name="Hellfire Pawn" id="47d34c5d-5319-45a9-a2d6-1fb975032058" size="EncounterCard">
+      <property name="CardNumber" value="32058"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="shadowcat_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="0"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Hellfire."/>
+      <property name="Text">Guard. Patrol. Surge.</property>
+    </card>
+    <card name="Telepathic Restraint" id="47d34c5d-5319-45a9-a2d6-1fb975032059" size="EncounterCard">
+      <property name="CardNumber" value="32059"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="shadowcat_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Condition."/>
+    </card>
+    <card name="Sabretooth I" id="47d34c5d-5319-45a9-a2d6-1fb975032060" size="VillainCard">
+      <property name="CardNumber" value="32060"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="13"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutant"/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Sabretooth II" id="47d34c5d-5319-45a9-a2d6-1fb975032061" size="VillainCard">
+      <property name="CardNumber" value="32061"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutant"/>
+      <property name="Text">Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Sabretooth III" id="47d34c5d-5319-45a9-a2d6-1fb975032062" size="VillainCard">
+      <property name="CardNumber" value="32062"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="18"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutant"/>
+      <property name="Text">Retaliate 1. Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Stalked by Sabretooth 1A" id="47d34c5d-5319-45a9-a2d6-1fb975032063" size="SchemeCard">
+      <property name="CardNumber" value="32063a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="sabretooth"/>
+      <alternate name="Stalked by Sabretooth 1B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32063b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="sabretooth"/>
+        <property name="BaseThreat" value="0"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="The Injured Senator 2A" id="47d34c5d-5319-45a9-a2d6-1fb975032064" size="SchemeCard">
+      <property name="CardNumber" value="32064a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="sabretooth"/>
+      <alternate name="The Injured Senator 2B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32064b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="sabretooth"/>
+        <property name="BaseThreat" value="0"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Find the Senator" id="47d34c5d-5319-45a9-a2d6-1fb975032065" size="SchemeCard">
+      <property name="CardNumber" value="32065a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="BaseThreat" value="5"/>
+      <alternate name="Protect the Senator" type="b" size="EncounterCard">
+        <property name="CardNumber" value="32065b"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="sabretooth"/>
+      </alternate>
+    </card>
+    <card name="Robert Kelly" id="47d34c5d-5319-45a9-a2d6-1fb975032066" size="EncounterCard">
+      <property name="CardNumber" value="32066"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Cost" value="0"/>
+      <property name="HP" value="9"/>
+      <property name="Attribute" value="Senator."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Adamantium Claws" id="47d34c5d-5319-45a9-a2d6-1fb975032067" size="EncounterCard">
+      <property name="CardNumber" value="32067"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Boost" value="0"/>
+      <property name="Attribute" value="Weapon."/>
+    </card>
+    <card name="Animal Ferocity" id="47d34c5d-5319-45a9-a2d6-1fb975032068" size="EncounterCard">
+      <property name="CardNumber" value="32068"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Boost" value="0"/>
+      <property name="Attribute" value="Condition."/>
+    </card>
+    <card name="Sabretooth Strikes" id="47d34c5d-5319-45a9-a2d6-1fb975032069" size="EncounterCard">
+      <property name="CardNumber" value="32069"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Boost" value="0"/>
+    </card>
+    <card name="Unreleting Savage" id="47d34c5d-5319-45a9-a2d6-1fb975032070" size="EncounterCard">
+      <property name="CardNumber" value="32070"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Medical Emergency" id="47d34c5d-5319-45a9-a2d6-1fb975032071" size="SchemeCard">
+      <property name="CardNumber" value="32071"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">Hinder 2[per_player].\nVictory 1.</property>
+    </card>
+    <card name="Deral Rage" id="47d34c5d-5319-45a9-a2d6-1fb975032072" size="SchemeCard">
+      <property name="CardNumber" value="32072"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="sabretooth"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Crisis" value="1"/>
+    </card>
+    <card name="Avalanche" id="47d34c5d-5319-45a9-a2d6-1fb975032073" size="EncounterCard">
+      <property name="CardNumber" value="32073"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="brotherhood"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Blob" id="47d34c5d-5319-45a9-a2d6-1fb975032074" size="EncounterCard">
+      <property name="CardNumber" value="32074"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="brotherhood"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Text">Guard.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Pyro" id="47d34c5d-5319-45a9-a2d6-1fb975032075" size="EncounterCard">
+      <property name="CardNumber" value="32075"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="brotherhood"/>
+      <property name="Attack" value="0"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Toad" id="47d34c5d-5319-45a9-a2d6-1fb975032076" size="EncounterCard">
+      <property name="CardNumber" value="32076"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="brotherhood"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Homo Superior" id="47d34c5d-5319-45a9-a2d6-1fb975032077" size="EncounterCard">
+      <property name="CardNumber" value="32077"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="brotherhood"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Condition."/>
+    </card>
+    <card name="Mutant Terrorists" id="47d34c5d-5319-45a9-a2d6-1fb975032078" size="EncounterCard">
+      <property name="CardNumber" value="32078"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="brotherhood"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="The Brotherhood" id="47d34c5d-5319-45a9-a2d6-1fb975032079" size="SchemeCard">
+      <property name="CardNumber" value="32079"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="brotherhood"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">Hinder 2[per_player].</property>
+    </card>
+    <card name="Mystique" id="47d34c5d-5319-45a9-a2d6-1fb975032080" size="EncounterCard">
+      <property name="CardNumber" value="32080"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mystique"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="9"/>
+      <property name="Attribute" value="Brotherhood of Mutants. Elite."/>
+      <property name="Text">Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Metamorphic Mayhem" id="47d34c5d-5319-45a9-a2d6-1fb975032081" size="SchemeCard">
+      <property name="CardNumber" value="32081"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mystique"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="Infiltration" id="47d34c5d-5319-45a9-a2d6-1fb975032082" size="EncounterCard">
+      <property name="CardNumber" value="32082"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mystique"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Shapeshifter."/>
+    </card>
+    <card name="Shapeshifter Surprise" id="47d34c5d-5319-45a9-a2d6-1fb975032083" size="EncounterCard">
+      <property name="CardNumber" value="32083"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mystique"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Shapeshifter."/>
+    </card>
+    <card name="Sentinel I" id="47d34c5d-5319-45a9-a2d6-1fb975032084" size="VillainCard">
+      <property name="CardNumber" value="32084"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="16"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Toughness.</property>
+    </card>
+    <card name="Sentinel II" id="47d34c5d-5319-45a9-a2d6-1fb975032085" size="VillainCard">
+      <property name="CardNumber" value="32085"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="18"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Steady. Toughness.</property>
+    </card>
+    <card name="Sentinel III" id="47d34c5d-5319-45a9-a2d6-1fb975032086" size="VillainCard">
+      <property name="CardNumber" value="32086"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="3"/>
+      <property name="HP" value="22"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Stalwart. Toughness.</property>
+    </card>
+    <card name="Night of the Sentinels A" id="47d34c5d-5319-45a9-a2d6-1fb975032087" size="SchemeCard">
+      <property name="CardNumber" value="32087a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="project_wideawake"/>
+      <alternate name="Night of the Sentinels B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32087b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="project_wideawake"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Mutant at the Mall" id="47d34c5d-5319-45a9-a2d6-1fb975032088" size="SchemeCard">
+      <property name="CardNumber" value="32088a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <alternate name="Jubilee" type="b" size="EncounterCard">
+        <property name="CardNumber" value="32088b"/>
+        <property name="Type" value="ally"/>
+        <property name="Owner" value="project_wideawake"/>
+        <property name="Thwart" value="1"/>
+        <property name="Attack" value="1"/>
+        <property name="Cost" value="0"/>
+        <property name="Resource_Wild" value="1"/>
+        <property name="HP" value="3"/>
+        <property name="Attribute" value="X-Men."/>
+        <property name="Text">Victory -1.\nThe first player controls Jubilee. She does not count against your ally limit.\n&lt;b&gt;Action&lt;/b&gt;: Exhaust Jubilee and spend a [energy] resource → deal 2 damage to an enemy.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Rictor" id="47d34c5d-5319-45a9-a2d6-1fb975032089" size="EncounterCard">
+      <property name="CardNumber" value="32089"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Captive. X-Men."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Boom Boom" id="47d34c5d-5319-45a9-a2d6-1fb975032090" size="EncounterCard">
+      <property name="CardNumber" value="32090"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Captive. X-Men."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Cannonball" id="47d34c5d-5319-45a9-a2d6-1fb975032091" size="EncounterCard">
+      <property name="CardNumber" value="32091"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="2"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Captive. X-Men."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Wolfsbane" id="47d34c5d-5319-45a9-a2d6-1fb975032092" size="EncounterCard">
+      <property name="CardNumber" value="32092"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="2"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Captive. X-Men."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Sentinel Mark IV" id="47d34c5d-5319-45a9-a2d6-1fb975032093" size="EncounterCard">
+      <property name="CardNumber" value="32093"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="0"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Guard. Patrol.</property>
+    </card>
+    <card name="Gauntlet Beam" id="47d34c5d-5319-45a9-a2d6-1fb975032094" size="EncounterCard">
+      <property name="CardNumber" value="32094"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Sentinel. Tech."/>
+      <property name="Text">Attach to the villain.\n[star] The villain's attacks gain piercing and ranged.</property>
+    </card>
+    <card name="Learning A.I." id="47d34c5d-5319-45a9-a2d6-1fb975032095" size="EncounterCard">
+      <property name="CardNumber" value="32095"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Boost" value="0"/>
+      <property name="Attribute" value="Sentinel. Tech."/>
+      <property name="Text">Attach to the villain.\n[star] The villain gains retaliate 1.</property>
+    </card>
+    <card name="Adaptive Armor" id="47d34c5d-5319-45a9-a2d6-1fb975032096" size="EncounterCard">
+      <property name="CardNumber" value="32096"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Boost" value="0"/>
+      <property name="Attribute" value="Sentinel. Tech."/>
+      <property name="Text">Attach to the villain.\n[star] The villain gets +8 hit points.</property>
+    </card>
+    <card name="Self-Repair" id="47d34c5d-5319-45a9-a2d6-1fb975032097" size="EncounterCard">
+      <property name="CardNumber" value="32097"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Boost" value="0"/>
+    </card>
+    <card name="Mutant Detected" id="47d34c5d-5319-45a9-a2d6-1fb975032098" size="EncounterCard">
+      <property name="CardNumber" value="32098"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Warn the Others" id="47d34c5d-5319-45a9-a2d6-1fb975032099" size="EncounterCard">
+      <property name="CardNumber" value="32099"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Abduction Protocols" id="47d34c5d-5319-45a9-a2d6-1fb975032100" size="SchemeCard">
+      <property name="CardNumber" value="32100"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="project_wideawake"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">Hinder 2[per_player]. Victory 2.</property>
+    </card>
+    <card name="Sentinel Mark II" id="47d34c5d-5319-45a9-a2d6-1fb975032101" size="EncounterCard">
+      <property name="CardNumber" value="32101"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="zero_tolerance"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Sentinel."/>
+    </card>
+    <card name="Sentinel Mark III" id="47d34c5d-5319-45a9-a2d6-1fb975032102" size="EncounterCard">
+      <property name="CardNumber" value="32102"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="zero_tolerance"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="0"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Toughness.</property>
+    </card>
+    <card name="Energy Barrier" id="47d34c5d-5319-45a9-a2d6-1fb975032103" size="EncounterCard">
+      <property name="CardNumber" value="32103"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="zero_tolerance"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Sentinel. Tech."/>
+    </card>
+    <card name="Operation Zero Tolerance" id="47d34c5d-5319-45a9-a2d6-1fb975032104" size="SchemeCard">
+      <property name="CardNumber" value="32104"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="zero_tolerance"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+    </card>
+    <card name="Sentinel Mark V" id="47d34c5d-5319-45a9-a2d6-1fb975032105" size="EncounterCard">
+      <property name="CardNumber" value="32105"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="sentinels"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Sentinel."/>
+    </card>
+    <card name="Sentinel Mark VI" id="47d34c5d-5319-45a9-a2d6-1fb975032106" size="EncounterCard">
+      <property name="CardNumber" value="32106"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="sentinels"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="0"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Quickstrike.</property>
+    </card>
+    <card name="Targeted for Elimination" id="47d34c5d-5319-45a9-a2d6-1fb975032107" size="EncounterCard">
+      <property name="CardNumber" value="32107"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="sentinels"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Relentless Robots" id="47d34c5d-5319-45a9-a2d6-1fb975032108" size="SchemeCard">
+      <property name="CardNumber" value="32108"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="sentinels"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Scheme_Hazard" value="1"/>
+    </card>
+    <card name="Master Mold I" id="47d34c5d-5319-45a9-a2d6-1fb975032109" size="VillainCard">
+      <property name="CardNumber" value="32109"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="12"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Stalwart. Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Master Mold II" id="47d34c5d-5319-45a9-a2d6-1fb975032110" size="VillainCard">
+      <property name="CardNumber" value="32110"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="14"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Stalwart. Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Master Mold III" id="47d34c5d-5319-45a9-a2d6-1fb975032111" size="VillainCard">
+      <property name="CardNumber" value="32111"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Attack" value="4"/>
+      <property name="Scheme" value="3"/>
+      <property name="HP" value="16"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Stalwart. Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="The Sentinel Factory A" id="47d34c5d-5319-45a9-a2d6-1fb975032112" size="SchemeCard">
+      <property name="CardNumber" value="32112a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="master_mold"/>
+      <alternate name="The Sentinel Factory B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32112b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="master_mold"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="6"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Master Mold's Agenda A" id="47d34c5d-5319-45a9-a2d6-1fb975032113" size="SchemeCard">
+      <property name="CardNumber" value="32113a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="master_mold"/>
+      <alternate name="Master Mold's Agenda B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32113b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="master_mold"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="8"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Sentinel Mark VIII" id="47d34c5d-5319-45a9-a2d6-1fb975032114" size="EncounterCard">
+      <property name="CardNumber" value="32114"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="3"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="8"/>
+      <property name="Attribute" value="Sentinel."/>
+    </card>
+    <card name="Unit Upgrade" id="47d34c5d-5319-45a9-a2d6-1fb975032115" size="EncounterCard">
+      <property name="CardNumber" value="32115"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Boost" value="0"/>
+      <property name="Attribute" value="Sentinel. Tech."/>
+    </card>
+    <card name="Stun Beam" id="47d34c5d-5319-45a9-a2d6-1fb975032116" size="EncounterCard">
+      <property name="CardNumber" value="32116"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Sentinel. Tech."/>
+    </card>
+    <card name="Master Mold's Children" id="47d34c5d-5319-45a9-a2d6-1fb975032117" size="EncounterCard">
+      <property name="CardNumber" value="32117"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Shields Up" id="47d34c5d-5319-45a9-a2d6-1fb975032118" size="EncounterCard">
+      <property name="CardNumber" value="32118"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Boost" value="0"/>
+    </card>
+    <card name="Intruder Alert!" id="47d34c5d-5319-45a9-a2d6-1fb975032119" size="SchemeCard">
+      <property name="CardNumber" value="32119"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Scheme_Crisis" value="1"/>
+    </card>
+    <card name="Insert Virus Program" id="47d34c5d-5319-45a9-a2d6-1fb975032120" size="SchemeCard">
+      <property name="CardNumber" value="32120"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="master_mold"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">Hinder 2[per_player]. Victory 1.</property>
+    </card>
+    <card name="Avalanche A" id="47d34c5d-5319-45a9-a2d6-1fb975032121" size="VillainCard">
+      <property name="CardNumber" value="32121a"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Text">Toughness. Victory 2.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Avalanche B" type="b" size="VillainCard">
+        <property name="CardNumber" value="32121b"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="Attack" value="4"/>
+        <property name="Scheme" value="2"/>
+        <property name="HP" value="18"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Brotherhood of Mutants."/>
+        <property name="Text">Toughness. Victory 2.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Blob A" id="47d34c5d-5319-45a9-a2d6-1fb975032122" size="VillainCard">
+      <property name="CardNumber" value="32122a"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="16"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Text">Toughness. Victory 2.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Blob B" type="b" size="VillainCard">
+        <property name="CardNumber" value="32122b"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="Attack" value="2"/>
+        <property name="Scheme" value="2"/>
+        <property name="HP" value="19"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Brotherhood of Mutants."/>
+        <property name="Text">Toughness. Victory 2.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Pyro A" id="47d34c5d-5319-45a9-a2d6-1fb975032123" size="VillainCard">
+      <property name="CardNumber" value="32123a"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Attack" value="0"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="14"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Text">Toughness. Victory 2.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Pyro B" type="b" size="VillainCard">
+        <property name="CardNumber" value="32123b"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="Attack" value="1"/>
+        <property name="Scheme" value="2"/>
+        <property name="HP" value="17"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Brotherhood of Mutants."/>
+        <property name="Text">Toughness. Victory 2.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Toad A" id="47d34c5d-5319-45a9-a2d6-1fb975032124" size="VillainCard">
+      <property name="CardNumber" value="32124a"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="13"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Text">Toughness. Victory 2.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Toad B" type="b" size="VillainCard">
+        <property name="CardNumber" value="32124b"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="Attack" value="2"/>
+        <property name="Scheme" value="3"/>
+        <property name="HP" value="16"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Brotherhood of Mutants."/>
+        <property name="Text">Toughness. Victory 2.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="The Brotherhood Strikes! A" id="47d34c5d-5319-45a9-a2d6-1fb975032125" size="SchemeCard">
+      <property name="CardNumber" value="32125a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mansion_attack"/>
+      <alternate name="The Brotherhood Strikes! B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32125b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="BaseThreat" value="0"/>
+        <property name="Threat" value="0"/>
+      </alternate>
+    </card>
+    <card name="Attack's on Xavier" id="47d34c5d-5319-45a9-a2d6-1fb975032126" size="SchemeCard">
+      <property name="CardNumber" value="32126a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mansion_attack"/>
+      <alternate name="The Atrium" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32126b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="7"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Attack's on Xavier" id="47d34c5d-5319-45a9-a2d6-1fb975032127" size="SchemeCard">
+      <property name="CardNumber" value="32127a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mansion_attack"/>
+      <alternate name="The Cafeteria" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32127b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="7"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Attack's on Xavier" id="47d34c5d-5319-45a9-a2d6-1fb975032128" size="SchemeCard">
+      <property name="CardNumber" value="32128a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mansion_attack"/>
+      <alternate name="The Basketball Court" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32128b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="7"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Attack's on Xavier" id="47d34c5d-5319-45a9-a2d6-1fb975032129" size="SchemeCard">
+      <property name="CardNumber" value="32129a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mansion_attack"/>
+      <alternate name="The Courtyard" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32129b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mansion_attack"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="7"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Save the School" id="47d34c5d-5319-45a9-a2d6-1fb975032130" size="EncounterCard">
+      <property name="CardNumber" value="32130"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="mansion_attack"/>
+    </card>
+    <card name="Brotherhood Beatdown" id="47d34c5d-5319-45a9-a2d6-1fb975032131" size="EncounterCard">
+      <property name="CardNumber" value="32131"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Ground Swell" id="47d34c5d-5319-45a9-a2d6-1fb975032132" size="EncounterCard">
+      <property name="CardNumber" value="32132"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Immovable" id="47d34c5d-5319-45a9-a2d6-1fb975032133" size="EncounterCard">
+      <property name="CardNumber" value="32133"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Pyromaniac" id="47d34c5d-5319-45a9-a2d6-1fb975032134" size="EncounterCard">
+      <property name="CardNumber" value="32134"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Hopping Mad" id="47d34c5d-5319-45a9-a2d6-1fb975032135" size="EncounterCard">
+      <property name="CardNumber" value="32135"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Protect the Students" id="47d34c5d-5319-45a9-a2d6-1fb975032136" size="SchemeCard">
+      <property name="CardNumber" value="32136"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">Hinder 2[per_player].</property>
+    </card>
+    <card name="Under Siege" id="47d34c5d-5319-45a9-a2d6-1fb975032137" size="SchemeCard">
+      <property name="CardNumber" value="32137"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mansion_attack"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="0"/>
+      <property name="Scheme_Acceleration" value="1"/>
+    </card>
+    <card name="Magneto I" id="47d34c5d-5319-45a9-a2d6-1fb975032138" size="VillainCard">
+      <property name="CardNumber" value="32138"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="18"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Text">Steady. Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Magneto II" id="47d34c5d-5319-45a9-a2d6-1fb975032139" size="VillainCard">
+      <property name="CardNumber" value="32139"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="20"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Text">Steady. Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Magneto III" id="47d34c5d-5319-45a9-a2d6-1fb975032140" size="VillainCard">
+      <property name="CardNumber" value="32140"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="3"/>
+      <property name="HP" value="22"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brotherhood of Mutants."/>
+      <property name="Text">Steady. Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Asteroid M A" id="47d34c5d-5319-45a9-a2d6-1fb975032141" size="SchemeCard">
+      <property name="CardNumber" value="32141a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="magneto"/>
+      <alternate name="Asteroid M B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32141b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="magneto"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="5"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Factory Online A" id="47d34c5d-5319-45a9-a2d6-1fb975032142" size="SchemeCard">
+      <property name="CardNumber" value="32142a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="magneto"/>
+      <alternate name="Factory Online B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32142b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="magneto"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="6"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="The Rule of Magnus A" id="47d34c5d-5319-45a9-a2d6-1fb975032143" size="SchemeCard">
+      <property name="CardNumber" value="32143a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="magneto"/>
+      <alternate name="The Rule of Magnus B" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32143b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="magneto"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="7"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Boarding Party" id="47d34c5d-5319-45a9-a2d6-1fb975032144" size="SchemeCard">
+      <property name="CardNumber" value="32144a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="magneto"/>
+      <property name="BaseThreat" value="3"/>
+      <alternate name="Sabotage Master Mold" type="b" size="SchemeCard">
+        <property name="CardNumber" value="32144b"/>
+        <property name="Type" value="side_scheme"/>
+        <property name="Owner" value="magneto"/>
+        <property name="BaseThreat" value="3"/>
+      </alternate>
+    </card>
+    <card name="Orbital Decay" id="47d34c5d-5319-45a9-a2d6-1fb975032145" size="SchemeCard">
+      <property name="CardNumber" value="32145a"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="magneto"/>
+      <alternate name="Physical Strain" type="b" size="EncounterCard">
+        <property name="CardNumber" value="32145b"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="magneto"/>
+        <property name="Attribute" value="Condition."/>
+        <property name="Text">Attach to Magneto.\nPermanent.\nMagneto loses steady.</property>
+      </alternate>
+    </card>
+    <card name="M-Type Sentinel" id="47d34c5d-5319-45a9-a2d6-1fb975032146" size="EncounterCard">
+      <property name="CardNumber" value="32146"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="0"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Sentinel."/>
+      <property name="Text">Guard.</property>
+    </card>
+    <card name="Magneto's Helmet" id="47d34c5d-5319-45a9-a2d6-1fb975032147" size="EncounterCard">
+      <property name="CardNumber" value="32147"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="3"/>
+      <property name="Attribute" value="Armor. Magnetic."/>
+      <property name="Text">Attach to Magneto.\nMagneto cannot be confused.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Magneto's Armor" id="47d34c5d-5319-45a9-a2d6-1fb975032148" size="EncounterCard">
+      <property name="CardNumber" value="32148"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="3"/>
+      <property name="Attribute" value="Armor. Magnetic."/>
+      <property name="Text">Attach to Magneto.\nMagneto cannot be stunned.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Magnetic Bubble" id="47d34c5d-5319-45a9-a2d6-1fb975032149" size="EncounterCard">
+      <property name="CardNumber" value="32149"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Magnetic."/>
+      <property name="Text">Attach to Magneto.\nMagneto gains retaliate 1.</property>
+    </card>
+    <card name="Wrapped in Metal" id="47d34c5d-5319-45a9-a2d6-1fb975032150" size="EncounterCard">
+      <property name="CardNumber" value="32150"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Magnetic."/>
+    </card>
+    <card name="Master of Magnetism" id="47d34c5d-5319-45a9-a2d6-1fb975032151" size="EncounterCard">
+      <property name="CardNumber" value="32151"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Electric Shock" id="47d34c5d-5319-45a9-a2d6-1fb975032152" size="EncounterCard">
+      <property name="CardNumber" value="32152"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Magnetic."/>
+    </card>
+    <card name="Electromagnetic Blast" id="47d34c5d-5319-45a9-a2d6-1fb975032153" size="EncounterCard">
+      <property name="CardNumber" value="32153"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="0"/>
+      <property name="Attribute" value="Magnetic."/>
+    </card>
+    <card name="Metal Shards" id="47d34c5d-5319-45a9-a2d6-1fb975032154" size="EncounterCard">
+      <property name="CardNumber" value="32154"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="0"/>
+      <property name="Attribute" value="Magnetic."/>
+    </card>
+    <card name="Magnetic Missile" id="47d34c5d-5319-45a9-a2d6-1fb975032155" size="EncounterCard">
+      <property name="CardNumber" value="32155"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Magnetic."/>
+      <property name="Text">Surge.</property>
+    </card>
+    <card name="Magnetic Mayhem" id="47d34c5d-5319-45a9-a2d6-1fb975032156" size="SchemeCard">
+      <property name="CardNumber" value="32156"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="4"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Attribute" value="Magnetic."/>
+    </card>
+    <card name="Magnetically Sealed" id="47d34c5d-5319-45a9-a2d6-1fb975032157" size="SchemeCard">
+      <property name="CardNumber" value="32157"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="0"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Attribute" value="Magnetic."/>
+    </card>
+    <card name="Seized!" id="47d34c5d-5319-45a9-a2d6-1fb975032158" size="SchemeCard">
+      <property name="CardNumber" value="32158"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="magneto"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Attribute" value="Magnetic."/>
+    </card>
+    <card name="Fabian Cortez" id="47d34c5d-5319-45a9-a2d6-1fb975032159" size="EncounterCard">
+      <property name="CardNumber" value="32159"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="acolytes"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Acolyte. Elite."/>
+      <property name="Text">Teamwork ([[ACOLYTE]]). Villainous.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Amelia Voght" id="47d34c5d-5319-45a9-a2d6-1fb975032160" size="EncounterCard">
+      <property name="CardNumber" value="32160"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="acolytes"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Acolyte."/>
+      <property name="Text">Stalwart. Teamwork ([[ACOLYTE]]).</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Senyaka" id="47d34c5d-5319-45a9-a2d6-1fb975032161" size="EncounterCard">
+      <property name="CardNumber" value="32161"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="acolytes"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Acolyte."/>
+      <property name="Text">Teamwork ([[ACOLYTE]]).</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Delgado" id="47d34c5d-5319-45a9-a2d6-1fb975032162" size="EncounterCard">
+      <property name="CardNumber" value="32162"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="acolytes"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Acolyte."/>
+      <property name="Text">Retaliate 1. Teamwork ([[ACOLYTE]]).</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Unuscione" id="47d34c5d-5319-45a9-a2d6-1fb975032163" size="EncounterCard">
+      <property name="CardNumber" value="32163"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="acolytes"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Acolyte."/>
+      <property name="Text">Teamwork ([[ACOLYTE]]). Toughness.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Zeal for the Cause" id="47d34c5d-5319-45a9-a2d6-1fb975032164" size="EncounterCard">
+      <property name="CardNumber" value="32164"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="acolytes"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="The Acolytes" id="47d34c5d-5319-45a9-a2d6-1fb975032165" size="SchemeCard">
+      <property name="CardNumber" value="32165"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="acolytes"/>
+      <property name="Boost" value="0"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Scheme_Hazard" value="1"/>
+    </card>
+    <card name="Nimrod" id="47d34c5d-5319-45a9-a2d6-1fb975032166" size="EncounterCard">
+      <property name="CardNumber" value="32166"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="future_past"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="9"/>
+      <property name="Attribute" value="Elite. Sentinel."/>
+      <property name="Text">Stalwart. Victory 1.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Bastion" id="47d34c5d-5319-45a9-a2d6-1fb975032167" size="EncounterCard">
+      <property name="CardNumber" value="32167"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="future_past"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="0"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Elite. Sentinel."/>
+      <property name="Text">Toughness. Villainous. Victory 1.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Nimrod's Portal" id="47d34c5d-5319-45a9-a2d6-1fb975032168" size="SchemeCard">
+      <property name="CardNumber" value="32168"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="future_past"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">Victory 1.</property>
+    </card>
+    <card name="Bastion's Machinations" id="47d34c5d-5319-45a9-a2d6-1fb975032169" size="SchemeCard">
+      <property name="CardNumber" value="32169"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="future_past"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text">Victory 1.</property>
+    </card>
+    <card name="Nano-Sentinel Tech" id="47d34c5d-5319-45a9-a2d6-1fb975032170" size="EncounterCard">
+      <property name="CardNumber" value="32170"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="future_past"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Sentinel. Tech."/>
+      <property name="Text">Victory 1.</property>
+    </card>
+  </cards>
+</set>

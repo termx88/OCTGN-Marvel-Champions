@@ -141,5 +141,27 @@
             <property name="Type" value="hero_setup" />
             <property name="Owner" value="spdr" />
         </card>
+        <card id="939bf149-4cf6-4192-98ba-100000000036" name="Colossus">
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="colossus" />
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-100000000037" name="Shadowcat">
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="shadowcat" />
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-100000000038" name="Cyclops">
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="cyclops" />
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-100000000039" name="Phoenix">
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="phoenix" />
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-100000000040" name="Wolverine">
+            <property name="Owner" value="wolv" />
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-100000000041" name="Storm">
+            <property name="Owner" value="storm" />
+        </card>
     </cards>
 </set>

@@ -113,5 +113,34 @@
             <property name="Type" value="villain_setup" />
             <property name="Owner" value="venom_goblin"/>
         </card>
+        <card id="939bf149-4cf6-4192-98ba-200000000030" name="Sabretooth">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="sabretooth"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-200000000031" name="Project Wideawake">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="project_wideawake"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-200000000032" name="Master Mold">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="master_mold"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-200000000033" name="Mansion Attack">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="mansion_attack"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-200000000034" name="Magneto">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="magneto"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-200000000035" name="MaGog">
+            <property name="Owner" value="magog"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-200000000036" name="Spiral">
+            <property name="Owner" value="spiral"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-200000000037" name="Mojo">
+            <property name="Owner" value="mojo"/>
+        </card>
     </cards>
 </set>

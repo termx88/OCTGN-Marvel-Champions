@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Phoenix" id="9b407333-e221-495f-a145-e5a9b405a0f3" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Phoenix" id="9b407333-e221-495f-a145-e5a9b4034001">
+      <property name="CardNumber" value="34001a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="3"/>
+      <property name="Attack" value="1"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="9"/>
+      <property name="Attribute" value="Psionic. X-Men."/>
+      <property name="Text">&lt;i&gt;Psionic Bond&lt;/i&gt; − &lt;b&gt;Hero Resource&lt;/b&gt;: Remove 1 power counter from Phoenix Force → generate a [wild] resource. (Limit once per phase).</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Jean Grey" type="b">
+        <property name="CardNumber" value="34001b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="phoenix"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="9"/>
+        <property name="Attribute" value="Mutant. Psionic."/>
+        <property name="Text">&lt;b&gt;Setup&lt;/b&gt;: Put your Phoenix Force upgrade into play,  [[RESTRAINED]] side faceup. Place 4 power counters on it.\n[star]&lt;b&gt;Response&lt;/b&gt;: After you make a basic recovery, place 1 power counter on Phoenix Force.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Phoenix Force A" id="9b407333-e221-495f-a145-e5a9b4034002">
+      <property name="CardNumber" value="34002a"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Restrained."/>
+      <property name="Text">Permanent.\nYou gain the [[RESTRAINED]] trait.\n&lt;b&gt;Forced Response&lt;/b&gt;: After the last power counter is removed from here, flip this card.</property>
+      <alternate name="Phoenix Force B" type="b">
+        <property name="CardNumber" value="34002b"/>
+        <property name="Type" value="upgrade"/>
+        <property name="Owner" value="phoenix"/>
+        <property name="Resource_Physical" value="1"/>
+        <property name="Attribute" value="Unleashed."/>
+        <property name="Text">Permanent.\nYou gain the [[UNLEASHED]] trait.\nPhoenix gets -2 THW and +2 ATK.\n&lt;b&gt;Forced Response&lt;/b&gt;: After a power counter is placed here, if there are 4 or more power counters here, flip this card.</property>
+      </alternate>
+    </card>
+    <card name="Cyclops" id="9b407333-e221-495f-a145-e5a9b4034003">
+      <property name="CardNumber" value="34003"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Cyclops enters play, place 2 power counters on Phoenix Force.\n&lt;b&gt;Response&lt;/b&gt;: When Cyclops leaves play, remove 2 power counters from Phoenix Force.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="White Hot Room" id="9b407333-e221-495f-a145-e5a9b4034004">
+      <property name="CardNumber" value="34004"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location. Phoenix."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust White Hot Room → choose:\• Place 1 power counter on Phoenix Force.\n• Heal 2 damage from Jean Grey.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Phoenix Suit" id="9b407333-e221-495f-a145-e5a9b4034005">
+      <property name="CardNumber" value="34005"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Item."/>
+      <property name="Text">Phoenix gains the [[AERIAL]] trait.\nWhile you have the [[RESTRAINED]] trait, you gain steady.\nWhile you have the [[UNLEASHED]] trait, you gain retaliate 1.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Rise from the Ashes" id="9b407333-e221-495f-a145-e5a9b4034006">
+      <property name="CardNumber" value="34006"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Phoenix."/>
+      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When you would be defeated, remove this card from the game → ready your identity and restore it to its printed hit point value instead. Remove each power counter from Phoenix Force.</property>
+    </card>
+    <card name="Telekinetic Shield" id="9b407333-e221-495f-a145-e5a9b4034007">
+      <property name="CardNumber" value="34007"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Psionic."/>
+      <property name="Text">Attach to a friendly character.\n&lt;b&gt;Forced Interrupt&lt;/b&gt;: When attached character would take damage from an enemy attack, place that damage here instead. Then, if there is at least 5 damage here, discard Telekinetic Shield.</property>
+    </card>
+    <card name="Mental Paralysis" id="9b407333-e221-495f-a145-e5a9b4034008">
+      <property name="CardNumber" value="34008"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="2"/>
+      <property name="Attribute" value="Psionic."/>
+      <property name="Text">Hero form only. Attach to a non-[[ELITE]] minion.\nAttached minion cannot activate.\n&lt;b&gt;Forced Interrupt&lt;/b&gt;: After you flip to alter-ego form, discard this card.</property>
+    </card>
+    <card name="Mind Control" id="9b407333-e221-495f-a145-e5a9b4034009">
+      <property name="CardNumber" value="34009"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="4"/>
+      <property name="Attribute" value="Condition. Psionic."/>
+      <property name="Text">Attach to a non-[[ELITE]] minion.\nTake control of attached minion and treat it as a [[CONTROLLED]] ally with a blank text box. Its THW is equal to its printed SCH and it takes 1 consequential damage after it thwarts or attacks.</property>
+    </card>
+    <card name="Telekinetic Attack" id="9b407333-e221-495f-a145-e5a9b4034010">
+      <property name="CardNumber" value="34010"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack. Psionic."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 7 damage to an enemy. If you have the [[UNLEASHED]] trait, this attack deals 2 additional damage and gains overkill.</property>
+    </card>
+    <card name="Psychic Blast" id="9b407333-e221-495f-a145-e5a9b4034011">
+      <property name="CardNumber" value="34011"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Psionic."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Deal 4 damage to the villain. If you have the [[UNLEASHED]] trait, deal 4 damage to each minion angaged with you.</property>
+    </card>
+    <card name="Telepathic Trickery" id="9b407333-e221-495f-a145-e5a9b4034012">
+      <property name="CardNumber" value="34012"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Psionic. Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 4 threat from a scheme. If you have the [[UNLEASHED]] trait, stun and confuse an enemy.</property>
+    </card>
+    <card name="Phoenix Firebird" id="9b407333-e221-495f-a145-e5a9b4034013">
+      <property name="CardNumber" value="34013"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Phoenix."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Choose:\• Remove 1 power counter from Phoenix Force → ready Phoenix.\n• Place 2 power counters on Phoenix Force.</property>
+    </card>
+    <card name="Banshee" id="9b407333-e221-495f-a145-e5a9b4034014">
+      <property name="CardNumber" value="34014"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Aerial. X-Men."/>
+      <property name="Text">[star]&lt;b&gt;Response&lt;/b&gt;: After Banshee thwarts, confuse a minion.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Marvel Girl" id="9b407333-e221-495f-a145-e5a9b4034015">
+      <property name="CardNumber" value="34015"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Psionic. X-Men."/>
+      <property name="Text">[star]&lt;b&gt;Interrupt&lt;/b&gt;: When Marvel Girl Attacks a minion, remove X threat from the main scheme, where X is that minion's printed SCH.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Mission Training" id="9b407333-e221-495f-a145-e5a9b4034016">
+      <property name="CardNumber" value="34016"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Training."/>
+      <property name="Text">Attach to an [[X-MEN]] ally. Max 1 [[TRAINING]] upgrade per ally.\nAttached ally gets +1 THW point and +2 hit points.</property>
+    </card>
+    <card name="Psychic Manipulation" id="9b407333-e221-495f-a145-e5a9b4034017">
+      <property name="CardNumber" value="34017"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Psionic. Thwart."/>
+      <property name="Text">Play only if your identity has the [[PSIONIC]] trait.&lt;b&gt;Interrupt&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: When the villain schemes, this activation removes threat instead of placing it.</property>
+    </card>
+    <card name="Mutant Peacekeepers" id="9b407333-e221-495f-a145-e5a9b4034018">
+      <property name="CardNumber" value="34018"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Thwart."/>
+      <property name="Text">Play only if your identity has the [[X-MEN]] trait.&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Exhaust your hero and any number of [[X-MEN]] allies → remove X threat from among schemes in play, where X is the total THW of those characters.</property>
+    </card>
+    <card name="Swift Retribution" id="9b407333-e221-495f-a145-e5a9b4034019">
+      <property name="CardNumber" value="34019"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: The villain schemes. Deal 4 damage to the villain.</property>
+    </card>
+    <card name="Passion for Justice" id="9b407333-e221-495f-a145-e5a9b4034020">
+      <property name="CardNumber" value="34020"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">Max 2 per deck.\n&lt;b&gt;Interrupt&lt;/b&gt;: When you spend this card to play a [[THWART]] event, that event removes 1 additionnal threat.</property>
+    </card>
+    <card name="Storm" id="9b407333-e221-495f-a145-e5a9b4034021">
+      <property name="CardNumber" value="34021"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="5"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Aerial. X-Men."/>
+      <property name="Text">Reduce the cost to play Storm by 1 if your identity has the [[MUTANT]] or [[X-MEN]] trait.\n[star]&lt;b&gt;Interrupt&lt;/b&gt;: When Storm thwarts a scheme, move 2 threat from that scheme to another scheme.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Cerebro" id="9b407333-e221-495f-a145-e5a9b4034022">
+      <property name="CardNumber" value="34022"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location. X-Men."/>
+      <property name="Text">Play only if your identity has the [[MUTANT]] trait.\n&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Cerebro → search the top 5 cards of your deck for an [[X-MEN]] ally (search your whole deck instead if you control a [[PSIONIC]] character) and add that ally to your hand. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Down Time" id="9b407333-e221-495f-a145-e5a9b4034024">
+      <property name="CardNumber" value="34024"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Play under any player's control. Max 1 per player.\nYour alter-ego gets +2 REC.</property>
+    </card>
+    <card name="Psychic Assault" id="9b407333-e221-495f-a145-e5a9b4034032">
+      <property name="CardNumber" value="34032"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Attribute" value="Attack. Psionic."/>
+      <property name="Text">Play only if your identity has the [[PSIONIC]] trait.\n&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 3 damage to an enemy. Confuse that enemy.</property>
+    </card>
+    <card name="Psychic Misdirection" id="9b407333-e221-495f-a145-e5a9b4034033">
+      <property name="CardNumber" value="34033"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Attribute" value="Defense. Psionic."/>
+      <property name="Text">Play only if your identity has the [[PSIONIC]] trait.\n&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When an enemy attacks you, choose a different enemy → damage from that attack is dealt to the chosen enemy instead of you.</property>
+    </card>
+    <card name="Psychic Kicker" id="9b407333-e221-495f-a145-e5a9b4034034">
+      <property name="CardNumber" value="34034"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Attribute" value="Psionic."/>
+      <property name="Text">Play only if your identity has the [[PSIONIC]] trait.\n&lt;b&gt;Hero Action&lt;/b&gt;: Ready an ally. That ally gets +2 THW and +2 ATK for its next basic thwart or attack action this phase.</property>
+    </card>
+    <card name="Soul Sisters" id="9b407333-e221-495f-a145-e5a9b4034035">
+      <property name="CardNumber" value="34035"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Text">Team-Up (Phoenix and Storm). Max 1 per deck.\n&lt;b&gt;Hero Action&lt;/b&gt;: Ready Phoenix and Storm. Heal 2 damage from each of them.</property>
+    </card>
+    <card name="Burning Hunger" id="9b407333-e221-495f-a145-e5a9b4034028" size="EncounterCard">
+      <property name="CardNumber" value="34028"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="phoenix"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Dark Phoenix" id="9b407333-e221-495f-a145-e5a9b4034029" size="EncounterCard">
+      <property name="CardNumber" value="34029"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="phoenix_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="12"/>
+      <property name="Attribute" value="Cosmic Entity. Elite."/>
+      <property name="Text">Steady. Toughness. Villainous.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Consume the World" id="9b407333-e221-495f-a145-e5a9b4034030" size="SchemeCard">
+      <property name="CardNumber" value="34030"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="phoenix_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text">Permanent.</property>
+    </card>
+    <card name="Fiery Rage" id="9b407333-e221-495f-a145-e5a9b4034031" size="EncounterCard">
+      <property name="CardNumber" value="34031"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="phoenix_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">Peril.</property>
+    </card>
+  </cards>
+</set>

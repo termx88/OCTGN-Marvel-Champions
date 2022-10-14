@@ -163,6 +163,37 @@ Reset the game in order to generate a new deck."""
             createCards(shared.campaign,sorted(osborn_tech.keys()),osborn_tech)
             nbModular = 1
 
+        if card.Owner == "sabretooth":
+            createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
+            nbModular = 2
+
+        if card.Owner == "project_wideawake":
+            createCards(shared.villain,sorted(zero_tolerance.keys()),zero_tolerance)
+            createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
+            nbModular = 1
+            for c in filter(lambda card: card.Type == "ally", villainDeck()):
+                c.moveTo(specialDeck())
+            specialDeck().shuffle()
+            specialDeck().collapsed = False
+
+        if card.Owner == "master_mold":
+            createCards(shared.villain,sorted(sentinels.keys()),sentinels)
+            createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
+            nbModular = 1
+
+        if card.Owner == "mansion_attack":
+            createCards(shared.villain,sorted(brotherhood.keys()),brotherhood)
+            createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
+            nbModular = 1
+
+        if card.Owner == "magneto":
+            createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
+            nbModular = 1
+            for c in filter(lambda card: card.CardNumber == "32145a", villainDeck()):
+                c.moveTo(specialDeck())
+            specialDeck().shuffle()
+            specialDeck().collapsed = False
+
         villainName = card.Name
         setGlobalVariable("villainSetup",str(villainName))
 
@@ -316,6 +347,17 @@ def villainSetup(group=table, x = 0, y = 0):
         sorted(mainSchemeCards)[0].moveToTable(tableLocations['mainSchemeCentered'][0]-100,tableLocations['villain'][1]+100)
         sorted(mainSchemeCards)[0].anchor = False
         sorted(mainSchemeCards).pop(0)
+
+    elif vName == 'Mansion Attack':
+        # If we loaded the encounter deck - add the first main scheme card to the table
+        sorted(mainSchemeCards)[0].moveToTable(tableLocations['mainScheme'][0],tableLocations['mainScheme'][1])
+        sorted(mainSchemeCards)[0].anchor = False
+        sorted(mainSchemeCards).pop(0)
+        randomVillain = rnd(0, 3) # Returns a random INTEGER value and use it to choose which Loki will be loaded
+        villainCards[randomVillain].moveToTable(villainX(1,0),tableLocations['villain'][1])
+        villainCards[randomVillain].anchor = False
+        if gameDifficulty == "1":
+            villainCards[randomVillain].alternate = "b"
 
     else:
         # If we loaded the encounter deck - add the first main scheme card to the table
@@ -556,6 +598,7 @@ def SpecificVillainSetup(vName = ''):
                         drawMany(p.deck, maxHandSize(p), True)
                 notifyBar("#0000FF", "Mysterio II: first encounter card has been shuffled into players deck!")
 
+
     if vName == 'Sinister Six':
         if msCardOnTable[0].CardNumber == "27100a": # Stage 1 main scheme
             revealCardOnSetup("Light at the End", "27102", tableLocations['mainSchemeCentered'][0]+100, tableLocations['villain'][1]+100)
@@ -566,3 +609,31 @@ def SpecificVillainSetup(vName = ''):
             msCards = filter(lambda card: card.Type == "main_scheme", mainSchemeDeck())
             for idx, c in enumerate(msCards):
                 c.moveToTable(villainX(3, idx), tableLocations['villain'][1]+100)
+
+
+    if vName == 'Sabretooth':
+        if msCardOnTable[0].CardNumber == "32063a": # Stage 1 main scheme
+            revealCardOnSetup("Robert Kelly", "32066", ssX, ssY)
+            revealCardOnSetup("Find the Senator", "32065a", ssX, ssY)
+
+
+    if vName == 'Project Wideawake':
+        if msCardOnTable[0].CardNumber == "32087a": # Stage 1 main scheme
+            revealCardOnSetup("Operation Zero Tolerance", "32104", ssX, ssY)
+            revealCardOnSetup("Mutants at the Mall", "32088a", ssX+100, ssY)
+
+
+    if vName == 'Master Mold':
+        if msCardOnTable[0].CardNumber == "32112a": # Stage 1 main scheme
+            magnetoAlly = table.create("47d34c5d-5319-45a9-a2d6-1fb975032172", 0, 0, 1, True)
+            magnetoAlly.alternate = "b"
+            
+            
+    if vName == 'Mansion Attack':
+        if msCardOnTable[0].CardNumber == "32125a": # Stage 1 main scheme
+            c = revealCardOnSetup("Save The School", "32130", tableLocations['environment'][0], tableLocations['environment'][1])
+
+
+    if vName == 'Magneto':
+        if msCardOnTable[0].CardNumber == "32141a": # Stage 1 main scheme
+            revealCardOnSetup("Operation Zero Tolerance", "32144a", ssX, ssY)

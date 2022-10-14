@@ -166,6 +166,19 @@ def heroSetup(group=table, x = 0, y = 0):
             for c in me.piles['Special Deck']:
                 c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
+        # Shadowcat
+        if str(heroCard.properties["Owner"]) == 'shadowcat':
+            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
+                if c.CardNumber == "32031a":
+                    c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+
+        # Phoenix
+        if str(heroCard.properties["Owner"]) == 'phoenix':
+            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
+                if c.CardNumber == "34002a":
+                    c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+                    c.markers[AllPurposeMarker] = 4
+
 def countHeros(p):
     heros = 0
     for card in table:

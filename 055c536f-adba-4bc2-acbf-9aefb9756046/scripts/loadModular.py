@@ -108,4 +108,15 @@ def recommendedEncounter(group, x = 0, y = 0, villainName=''):
         return True
     if villainName == 'Venom Goblin':
         createCards(group,sorted(goblin_gear.keys()),goblin_gear)
+    if villainName == 'Sabretooth':
+        createCards(group,sorted(brotherhood.keys()),brotherhood)
+        createCards(group,sorted(mystique.keys()),mystique)
+    if villainName == 'Project Wideawake':
+        createCards(group,sorted(sentinels.keys()),sentinels)
+    if villainName == 'Master Mold':
+        createCards(group,sorted(zero_tolerance.keys()),zero_tolerance)
+    if villainName == 'Mansion Attack':
+        createCards(group,sorted(mystique.keys()),mystique)
+    if villainName == 'Magneto':
+        createCards(group,sorted(acolytes.keys()),acolytes)
     return True
