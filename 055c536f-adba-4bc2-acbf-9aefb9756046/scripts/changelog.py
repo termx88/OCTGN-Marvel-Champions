@@ -297,5 +297,8 @@ changelog = {
         "Mutant Genesis expansion added",
         "Cyclops Hero pack added",
         "Phoenix Hero pack added"
+        ]),
+    '0000331': ("0.0.3.31", "15 October 2022", [
+        "Fix on some Magneto side scheme (missing threat)"
         ])
 }

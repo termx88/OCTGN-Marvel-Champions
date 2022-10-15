@@ -1644,12 +1644,14 @@
         <property name="Type" value="side_scheme"/>
         <property name="Owner" value="magneto"/>
         <property name="BaseThreat" value="3"/>
+        <property name="Text">Victory 0.</property>
       </alternate>
     </card>
     <card name="Orbital Decay" id="47d34c5d-5319-45a9-a2d6-1fb975032145" size="SchemeCard">
       <property name="CardNumber" value="32145a"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="magneto"/>
+      <property name="BaseThreat" value="3"/>
       <alternate name="Physical Strain" type="b" size="EncounterCard">
         <property name="CardNumber" value="32145b"/>
         <property name="Type" value="attachment"/>
