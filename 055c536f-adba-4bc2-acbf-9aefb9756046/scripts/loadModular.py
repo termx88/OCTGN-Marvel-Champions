@@ -12,6 +12,7 @@ def loadEncounter(group, x = 0, y = 0, nbEncounter = 1):
             return
         if setupChoice == 1: return recommendedEncounter(group, villainName=vName)
         if setupChoice == 2: return specificEncounter(group, nbModular = nbEncounter)
+    elif nbEncounter == 0: return True
 
 
 def specificEncounter(group, x = 0, y = 0, nbModular = 1):

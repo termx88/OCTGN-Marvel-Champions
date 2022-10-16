@@ -300,5 +300,8 @@ changelog = {
         ]),
     '0000331': ("0.0.3.31", "15 October 2022", [
         "Fix on some Magneto side scheme (missing threat)"
+        ]),
+    '0000332': ("0.0.3.32", "16 October 2022", [
+        "Fix: Wrecking Crew Scenario wasn't loading during setup"
         ])
 }
