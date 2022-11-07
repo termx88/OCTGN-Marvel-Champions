@@ -279,6 +279,7 @@
       <property name="HP" value="6"/>
       <property name="Attribute" value="Elite. Marauder."/>
       <property name="Unique" value="True"/>
+      <property name="Text">Stalwart. Toughness. Villainous.</property>
     </card>
     <card name="Genetic Manipulation" id="7da2a29c-3abd-4e3b-b36e-9f140c033029" size="SchemeCard">
       <property name="CardNumber" value="33029"/>

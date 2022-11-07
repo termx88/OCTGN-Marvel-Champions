@@ -303,5 +303,9 @@ changelog = {
         ]),
     '0000332': ("0.0.3.32", "16 October 2022", [
         "Fix: Wrecking Crew Scenario wasn't loading during setup"
+        ]),
+    '0000334': ("0.0.3.34", "7 November 2022", [
+        "Fix: Sabretooth scenario missing 1 card (Medical Emergency)",
+        "Fix: Future Past module missing in campaign cards."        
         ])
 }

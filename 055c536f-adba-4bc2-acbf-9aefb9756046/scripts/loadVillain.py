@@ -164,11 +164,13 @@ Reset the game in order to generate a new deck."""
             nbModular = 1
 
         if card.Owner == "sabretooth":
+            createCards(shared.campaign,sorted(future_past.keys()),future_past)
             createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
             nbModular = 2
 
         if card.Owner == "project_wideawake":
             createCards(shared.villain,sorted(zero_tolerance.keys()),zero_tolerance)
+            createCards(shared.campaign,sorted(future_past.keys()),future_past)
             createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
             nbModular = 1
             for c in filter(lambda card: card.Type == "ally", villainDeck()):
@@ -178,15 +180,18 @@ Reset the game in order to generate a new deck."""
 
         if card.Owner == "master_mold":
             createCards(shared.villain,sorted(sentinels.keys()),sentinels)
+            createCards(shared.campaign,sorted(future_past.keys()),future_past)
             createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
             nbModular = 1
 
         if card.Owner == "mansion_attack":
             createCards(shared.villain,sorted(brotherhood.keys()),brotherhood)
+            createCards(shared.campaign,sorted(future_past.keys()),future_past)
             createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
             nbModular = 1
 
         if card.Owner == "magneto":
+            createCards(shared.campaign,sorted(future_past.keys()),future_past)
             createCards(shared.campaign,sorted(mut_gen_campaign.keys()),mut_gen_campaign)
             nbModular = 1
             for c in filter(lambda card: card.CardNumber == "32145a", villainDeck()):
