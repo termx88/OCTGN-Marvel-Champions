@@ -1052,7 +1052,7 @@
         <property name="Unique" value="True"/>
       </alternate>
     </card>
-    <card name="Rictor" id="47d34c5d-5319-45a9-a2d6-1fb975032089" size="EncounterCard">
+    <card name="Rictor" id="47d34c5d-5319-45a9-a2d6-1fb975032089">
       <property name="CardNumber" value="32089"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="project_wideawake"/>
@@ -1064,7 +1064,7 @@
       <property name="Attribute" value="Captive. X-Men."/>
       <property name="Unique" value="True"/>
     </card>
-    <card name="Boom Boom" id="47d34c5d-5319-45a9-a2d6-1fb975032090" size="EncounterCard">
+    <card name="Boom Boom" id="47d34c5d-5319-45a9-a2d6-1fb975032090">
       <property name="CardNumber" value="32090"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="project_wideawake"/>
@@ -1075,7 +1075,7 @@
       <property name="Attribute" value="Captive. X-Men."/>
       <property name="Unique" value="True"/>
     </card>
-    <card name="Cannonball" id="47d34c5d-5319-45a9-a2d6-1fb975032091" size="EncounterCard">
+    <card name="Cannonball" id="47d34c5d-5319-45a9-a2d6-1fb975032091">
       <property name="CardNumber" value="32091"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="project_wideawake"/>
@@ -1086,7 +1086,7 @@
       <property name="Attribute" value="Captive. X-Men."/>
       <property name="Unique" value="True"/>
     </card>
-    <card name="Wolfsbane" id="47d34c5d-5319-45a9-a2d6-1fb975032092" size="EncounterCard">
+    <card name="Wolfsbane" id="47d34c5d-5319-45a9-a2d6-1fb975032092">
       <property name="CardNumber" value="32092"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="project_wideawake"/>

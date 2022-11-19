@@ -241,5 +241,37 @@
             <property name="Type" value="encounter_setup" />
             <property name="Owner" value="future_past"/>
         </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000061" name="Deathstrike">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="deathstrike"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000062" name="Shadow King">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="shadow_king"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000063" name="Crime">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="crime"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000064" name="Fantasy">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="fantasy"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000065" name="Horror">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="horror"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000066" name="Sci-Fi">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="sci_fi"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000067" name="Sitcom">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="sitcom"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000068" name="Western">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="western"/>
+        </card>
     </cards>
 </set>

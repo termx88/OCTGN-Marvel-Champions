@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Wolverine" id="663cb632-e6c8-4e94-8676-a8e0ca895722" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Wolverine" id="663cb632-e6c8-4e94-8676-a8e0ca035001">
+      <property name="CardNumber" value="35001a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;i&gt;Healing Factor&lt;/i&gt; − &lt;b&gt;Response&lt;/b&gt;: After the player phase begins, heal 2 damage.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Logan" type="b">
+        <property name="CardNumber" value="35001b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="wolverine"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="6"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Mutant."/>
+        <property name="Text">&lt;i&gt;Snikt!&lt;/i&gt; − &lt;b&gt;Setup&lt;/b&gt;: Search your deck and discard pile for the Wolverine's Claws upgrade and put it into play.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Wolverine's Claws" id="663cb632-e6c8-4e94-8676-a8e0ca035002">
+      <property name="CardNumber" value="35002"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Permanent.\n&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Wolverine's Claws, choose en [[ATTACK]] event in your hand, and take damage equal to its printed cost → play that event, ignoring its resource cost. That attack gains piercing.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Jubilé" id="663cb632-e6c8-4e94-8676-a8e0ca035003">
+      <property name="CardNumber" value="35003"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Adamantium Skeleton" id="663cb632-e6c8-4e94-8676-a8e0ca035004">
+      <property name="CardNumber" value="35004"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Text">You get +4 hit points.\Wolverine gets +1 ATK and his basic attacks gain piercing.</property>
+    </card>
+    <card name="Berserker Frenzy" id="663cb632-e6c8-4e94-8676-a8e0ca035005">
+      <property name="CardNumber" value="35005"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After Wolverine takes any amount of damage from an ennemy attack, draw 1 card.\n&lt;b&gt;Forced Response&lt;/b&gt;: After you flip to alter-ego form, discard this card.</property>
+    </card>
+    <card name="\&quot;I Got Better\&quot;" id="663cb632-e6c8-4e94-8676-a8e0ca035006">
+      <property name="CardNumber" value="35006"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When you would be defeated by an ennemy attack, instead set your hit point dial to 5, ready your identity, and discard this card.</property>
+    </card>
+    <card name="Logan's Cabin" id="663cb632-e6c8-4e94-8676-a8e0ca035007">
+      <property name="CardNumber" value="35007"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Logan's Cabin → shuffle 1 Wolverin card from you discard pile into your deck.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Berserker Barrage" id="663cb632-e6c8-4e94-8676-a8e0ca035008">
+      <property name="CardNumber" value="35008"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 4 damage to an enemy. If this attack defeats an enemy, you may take 2 damage → repeat this ability.</property>
+    </card>
+    <card name="Slice and Dice" id="663cb632-e6c8-4e94-8676-a8e0ca035009">
+      <property name="CardNumber" value="35009"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Make the following 2 attacks in order:\n• Deal 3 damage to an enemy.\n• Deal 3 damage to an enemy.</property>
+    </card>
+    <card name="Lunging Strike" id="663cb632-e6c8-4e94-8676-a8e0ca035010">
+      <property name="CardNumber" value="35010"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 8 damage to an enemy. If you exhausted Wolverine's Claws to play this card, this attack gains overkill.</property>
+    </card>
+    <card name="Track by Scent" id="663cb632-e6c8-4e94-8676-a8e0ca035011">
+      <property name="CardNumber" value="35011"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Superpower. Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. If this remove the last threat from that scheme, draw 2 cards.</property>
+    </card>
+    <card name="Regenerative Healing" id="663cb632-e6c8-4e94-8676-a8e0ca035012">
+      <property name="CardNumber" value="35012"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Choose:\n• Heal 4 damage from your identity.\n• Discard each stunned and confused status card from your identity.</property>
+    </card>
+    <card name="Psylocke" id="663cb632-e6c8-4e94-8676-a8e0ca035013">
+      <property name="CardNumber" value="35013"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Psionic. X-Men."/>
+      <property name="Text">Psylocke enters play with 2 psionic counters on her.\n[star] &lt;b&gt;Interrupt&lt;/b&gt;: When Psylocke attacks an enemy, remove 1 psionic counter from her → confuse that enemy and deal 1 damage to it.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Sunfire" id="663cb632-e6c8-4e94-8676-a8e0ca035014">
+      <property name="CardNumber" value="35014"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play Sunfire from your hand, spend a [energy] resource → choose an attachment with the text \"Hero Action\" or \"Hero Response\" and discard it.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Battle Fury" id="663cb632-e6c8-4e94-8676-a8e0ca035015">
+      <property name="CardNumber" value="35015"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Play under any player's control.\nMax 1 per player.\n&lt;b&gt;Response&lt;/b&gt;: After your hero attacks and defeats a minion, deal 1 damage to your hero and discard Battle Fury → ready your hero.</property>
+    </card>
+    <card name="Warrior Skill" id="663cb632-e6c8-4e94-8676-a8e0ca035016">
+      <property name="CardNumber" value="35016"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">Uses (3 warrior counters). Max 1 per player.\n&lt;b&gt;Interrupt&lt;/b&gt;: When your hero attacks, remove 1 counter from here → that attacks deals 1 additionnal damage.</property>
+    </card>
+    <card name="Outta My Way!" id="663cb632-e6c8-4e94-8676-a8e0ca035017">
+      <property name="CardNumber" value="35017"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 3 damage to an enemy (5 damage instead if that enemy has the guard or patrol keyword).</property>
+    </card>
+    <card name="Precision Strike" id="663cb632-e6c8-4e94-8676-a8e0ca035018">
+      <property name="CardNumber" value="35018"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 2 damage to an enemy. If this attack defeats that enemy, heal 2 damage from your hero.</property>
+    </card>
+    <card name="Mean Swing" id="663cb632-e6c8-4e94-8676-a8e0ca035019">
+      <property name="CardNumber" value="35019"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When your hero makes a basic attack, exhaust a [[WEAPON]] upgrade on your hero → your hero gets +3 ATK for this attack.</property>
+    </card>
+    <card name="Weapon X" id="663cb632-e6c8-4e94-8676-a8e0ca035022">
+      <property name="CardNumber" value="35022"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">Play only if your identity has the [[MUTANT]] trait.\n&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Weapon X and take 1 damage → discard cards from your deck unti you discard an identity-specific card, then add that card to your hand.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Fastball Special" id="663cb632-e6c8-4e94-8676-a8e0ca035023">
+      <property name="CardNumber" value="35023"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Aerial. Attack."/>
+      <property name="Text">Team-Up (Colossus and Wolverine).\nMax 1 per deck.\n&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal X damage to an enemy, where X is the total ATK of Colossus and Wolverine. This attack gains overkill and piercing.</property>
+    </card>
+    <card name="Command Center" id="663cb632-e6c8-4e94-8676-a8e0ca035032">
+      <property name="CardNumber" value="35032"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">Max 1 per player.\n&lt;b&gt;Response&lt;/b&gt;: After an ally thwarts and defeat a side scheme, exhaust Command Center → deal 2 damage to an enemy.</property>
+    </card>
+    <card name="Longshot" id="663cb632-e6c8-4e94-8676-a8e0ca035033">
+      <property name="CardNumber" value="35033"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">Play only if your identity has the [[X-MEN]] trait.\n[star] &lt;b&gt;Response&lt;/b&gt;: After Longshot attacks a non-[[ELITE]] minion, discard the top card of the encounter deck. If that card has a star icon ([star]) in the boost area, defeat the attacked minion.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Past Demons" id="663cb632-e6c8-4e94-8676-a8e0ca035027" size="EncounterCard">
+      <property name="CardNumber" value="35027"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="wolverine"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Omega Red" id="663cb632-e6c8-4e94-8676-a8e0ca035028" size="EncounterCard">
+      <property name="CardNumber" value="35028"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="wolverine_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="8"/>
+      <property name="Attribute" value="Brute. Elite."/>
+      <property name="Text">Retaliate 1. Steady.</property>
+    </card>
+    <card name="The Carbonadium Synthesizer" id="663cb632-e6c8-4e94-8676-a8e0ca035029" size="SchemeCard">
+      <property name="CardNumber" value="35029"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="wolverine_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="5"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">While the Carbonadium Synthesizer is in play, Omega Red cannot be defeated.</property>
+    </card>
+    <card name="Death Factor" id="663cb632-e6c8-4e94-8676-a8e0ca035030" size="EncounterCard">
+      <property name="CardNumber" value="35030"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="wolverine_nemesis"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Tentacle Strike" id="663cb632-e6c8-4e94-8676-a8e0ca035031" size="EncounterCard">
+      <property name="CardNumber" value="35031"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="wolverine_nemesis"/>
+    </card>
+    <card name="Lady Deathstrike" id="663cb632-e6c8-4e94-8676-a8e0ca035034" size="EncounterCard">
+      <property name="CardNumber" value="35034"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="deathstrike"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Elite. Reaver."/>
+      <property name="Text">Quickstrike.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Seeking Vengeance" id="663cb632-e6c8-4e94-8676-a8e0ca035035" size="SchemeCard">
+      <property name="CardNumber" value="35035"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="deathstrike"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="5"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Acceleration" value="1"/>
+    </card>
+    <card name="Adamantium Upgrades" id="663cb632-e6c8-4e94-8676-a8e0ca035036" size="EncounterCard">
+      <property name="CardNumber" value="35036"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="deathstrike"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Tech."/>
+    </card>
+    <card name="Bain de Sang" id="663cb632-e6c8-4e94-8676-a8e0ca035037" size="EncounterCard">
+      <property name="CardNumber" value="35037"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="deathstrike"/>
+    </card>
+  </cards>
+</set>

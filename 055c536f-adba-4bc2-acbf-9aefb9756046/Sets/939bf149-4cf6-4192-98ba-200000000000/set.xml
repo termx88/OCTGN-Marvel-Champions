@@ -134,12 +134,15 @@
             <property name="Owner" value="magneto"/>
         </card>
         <card id="939bf149-4cf6-4192-98ba-200000000035" name="MaGog">
+            <property name="Type" value="villain_setup" />
             <property name="Owner" value="magog"/>
         </card>
         <card id="939bf149-4cf6-4192-98ba-200000000036" name="Spiral">
+            <property name="Type" value="villain_setup" />
             <property name="Owner" value="spiral"/>
         </card>
         <card id="939bf149-4cf6-4192-98ba-200000000037" name="Mojo">
+            <property name="Type" value="villain_setup" />
             <property name="Owner" value="mojo"/>
         </card>
     </cards>

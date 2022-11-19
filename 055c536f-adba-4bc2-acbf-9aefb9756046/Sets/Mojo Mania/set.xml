@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Mojo Mania" id="56b64e85-e416-4ec5-83e2-4bbd16acf52c" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="MaGog (A)" id="56b64e85-e416-4ec5-83e2-4bbd16039001" size="VillainCard">
+      <property name="CardNumber" value="39001a"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="magog"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="10"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Brute."/>
+      <property name="Unique" value="True"/>
+      <alternate name="MaGog (B)" type="b" size="VillainCard">
+        <property name="CardNumber" value="39001b"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="magog"/>
+        <property name="Attack" value="3"/>
+        <property name="Scheme" value="1"/>
+        <property name="HP" value="10"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Brute."/>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Melee in the Mojo-seum (1A)" id="56b64e85-e416-4ec5-83e2-4bbd16039002" size="SchemeCard">
+      <property name="CardNumber" value="39002a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="magog"/>
+      <alternate name="Melee in the Mojo-seum (1B)" type="b" size="SchemeCard">
+        <property name="CardNumber" value="39002b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="magog"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="6"/>
+        <property name="EscalationThreat" value="2"/>
+      </alternate>
+    </card>
+    <card name="The Champion (Booing Crowd)" id="56b64e85-e416-4ec5-83e2-4bbd16039003" size="EncounterCard">
+      <property name="CardNumber" value="39003a"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="magog"/>
+      <property name="Attribute" value="Booing Crowd."/>
+      <alternate name="The Champion (Cheering Crowd)" type="b" size="EncounterCard">
+        <property name="CardNumber" value="39003b"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="magog"/>
+        <property name="Attribute" value="Cheering Crowd."/>
+      </alternate>
+    </card>
+    <card name="The Challengers (Booing Crowd)" id="56b64e85-e416-4ec5-83e2-4bbd16039004" size="EncounterCard">
+      <property name="CardNumber" value="39004a"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="magog"/>
+      <property name="Attribute" value="Booing Crowd."/>
+      <alternate name="The Challengers (Cheering Crowd)" type="b" size="EncounterCard">
+        <property name="CardNumber" value="39004b"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="magog"/>
+        <property name="Attribute" value="Cheering Crowd."/>
+      </alternate>
+    </card>
+    <card name="Jolt of Adrenaline" id="56b64e85-e416-4ec5-83e2-4bbd16039005" size="EncounterCard">
+      <property name="CardNumber" value="39005"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="magog"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to MaGog.\nMaGog gains retaliate 1 and stalwart.</property>
+    </card>
+    <card name="Surge of Aggression" id="56b64e85-e416-4ec5-83e2-4bbd16039006" size="EncounterCard">
+      <property name="CardNumber" value="39006"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="magog"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to MaGog.</property>
+    </card>
+    <card name="Surprise Contender" id="56b64e85-e416-4ec5-83e2-4bbd16039007" size="EncounterCard">
+      <property name="CardNumber" value="39007"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="magog"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="7"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Clone. Elite."/>
+      <property name="Text">Villainous.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Pump Up the Crowd" id="56b64e85-e416-4ec5-83e2-4bbd16039008" size="SchemeCard">
+      <property name="CardNumber" value="39008"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="magog"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="Scheme_Acceleration" value="2"/>
+    </card>
+    <card name="Break a Leg" id="56b64e85-e416-4ec5-83e2-4bbd16039009" size="EncounterCard">
+      <property name="CardNumber" value="39009"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="magog"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Defend the Title" id="56b64e85-e416-4ec5-83e2-4bbd16039010" size="EncounterCard">
+      <property name="CardNumber" value="39010"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="magog"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Stage Fright" id="56b64e85-e416-4ec5-83e2-4bbd16039011" size="EncounterCard">
+      <property name="CardNumber" value="39011"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="magog"/>
+    </card>
+    <card name="Spiral I (Escaped)" id="56b64e85-e416-4ec5-83e2-4bbd16039012" size="VillainCard">
+      <property name="CardNumber" value="39012a"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="spiral"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="13"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Escaped. Mystic."/>
+      <property name="Unique" value="True"/>
+      <alternate name="Spiral I (Cornered)" type="b" size="VillainCard">
+        <property name="CardNumber" value="39012b"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="spiral"/>
+        <property name="Attack" value="1"/>
+        <property name="Scheme" value="1"/>
+        <property name="HP" value="13"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Cornered. Mystic."/>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Spiral II (Escaped)" id="56b64e85-e416-4ec5-83e2-4bbd16039013" size="VillainCard">
+      <property name="CardNumber" value="39013a"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="spiral"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Escaped. Mystic."/>
+      <property name="Unique" value="True"/>
+      <alternate name="Spiral II (Cornered)" type="b" size="VillainCard">
+        <property name="CardNumber" value="39013b"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="spiral"/>
+        <property name="Attack" value="2"/>
+        <property name="Scheme" value="2"/>
+        <property name="HP" value="15"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Cornered. Mystic."/>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Spiral III (Escaped)" id="56b64e85-e416-4ec5-83e2-4bbd16039014" size="VillainCard">
+      <property name="CardNumber" value="39014a"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="spiral"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="17"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Escaped. Mystic."/>
+      <property name="Unique" value="True"/>
+      <alternate name="Spiral III (Cornered)" type="b" size="VillainCard">
+        <property name="CardNumber" value="39014b"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="spiral"/>
+        <property name="Attack" value="3"/>
+        <property name="Scheme" value="2"/>
+        <property name="HP" value="17"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Cornered. Mystic."/>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Across the Mojoverse (1A)" id="56b64e85-e416-4ec5-83e2-4bbd16039015" size="SchemeCard">
+      <property name="CardNumber" value="39015a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="spiral"/>
+      <alternate name="Across the Mojoverse (1B)" type="b" size="SchemeCard">
+        <property name="CardNumber" value="39015b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="spiral"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="Threat" value="15"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="The Search for Spiral" id="56b64e85-e416-4ec5-83e2-4bbd16039016" size="SchemeCard">
+      <property name="CardNumber" value="39016"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="spiral"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Text">Permanent.</property>
+    </card>
+    <card name="Cornered!" id="56b64e85-e416-4ec5-83e2-4bbd16039017" size="EncounterCard">
+      <property name="CardNumber" value="39017"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="spiral"/>
+    </card>
+    <card name="Spiral's Swords" id="56b64e85-e416-4ec5-83e2-4bbd16039018" size="EncounterCard">
+      <property name="CardNumber" value="39018"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="spiral"/>
+      <property name="Boost" value="3"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to Spiral.\nUses (3 sword counters).</property>
+    </card>
+    <card name="Erratic Teleportation" id="56b64e85-e416-4ec5-83e2-4bbd16039019" size="EncounterCard">
+      <property name="CardNumber" value="39019"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="spiral"/>
+      <property name="Boost" value="1"/>
+      <property name="Text">Surge.</property>
+    </card>
+    <card name="The Show Must Go On" id="56b64e85-e416-4ec5-83e2-4bbd16039020" size="EncounterCard">
+      <property name="CardNumber" value="39020"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="spiral"/>
+      <property name="Boost" value="3"/>
+    </card>
+    <card name="Well-Armed" id="56b64e85-e416-4ec5-83e2-4bbd16039021" size="EncounterCard">
+      <property name="CardNumber" value="39021"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="spiral"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Mojo I" id="56b64e85-e416-4ec5-83e2-4bbd16039022" size="VillainCard">
+      <property name="CardNumber" value="39022"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="16"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Spineless."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Mojo II" id="56b64e85-e416-4ec5-83e2-4bbd16039023" size="VillainCard">
+      <property name="CardNumber" value="39023"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="3"/>
+      <property name="HP" value="18"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Spineless."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Mojo III" id="56b64e85-e416-4ec5-83e2-4bbd16039024" size="VillainCard">
+      <property name="CardNumber" value="39024"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="4"/>
+      <property name="HP" value="25"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Spineless."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="MojoMania (1A)" id="56b64e85-e416-4ec5-83e2-4bbd16039025" size="SchemeCard">
+      <property name="CardNumber" value="39025a"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mojo"/>
+      <alternate name="MojoMania (1B)" type="b" size="SchemeCard">
+        <property name="CardNumber" value="39025b"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mojo"/>
+        <property name="BaseThreat" value="10"/>
+        <property name="Threat" value="25"/>
+        <property name="EscalationThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="Wheel of Genres (Spinning)" id="56b64e85-e416-4ec5-83e2-4bbd16039026" size="EncounterCard">
+      <property name="CardNumber" value="39026a"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="mojo"/>
+      <alternate name="Wheel of Genres (Stopped)" type="b" size="EncounterCard">
+        <property name="CardNumber" value="39026b"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="mojo"/>
+      </alternate>
+    </card>
+    <card name="Major Domo" id="56b64e85-e416-4ec5-83e2-4bbd16039027" size="EncounterCard">
+      <property name="CardNumber" value="39027"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Boost" value="3"/>
+      <property name="Attribute" value="Persona."/>
+      <property name="Text">Attach to Mojo.</property>
+    </card>
+    <card name="Stinger Tail" id="56b64e85-e416-4ec5-83e2-4bbd16039028" size="EncounterCard">
+      <property name="CardNumber" value="39028"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to Mojo.\n Mojo gains retaliate 2.</property>
+    </card>
+    <card name="Supporting Actor" id="56b64e85-e416-4ec5-83e2-4bbd16039029" size="EncounterCard">
+      <property name="CardNumber" value="39029"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Robot. Thespyan."/>
+    </card>
+    <card name="Paparazzi" id="56b64e85-e416-4ec5-83e2-4bbd16039030" size="EncounterCard">
+      <property name="CardNumber" value="39030"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">Hinder 10.</property>
+    </card>
+    <card name="Undercover Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039031" size="SchemeCard">
+      <property name="CardNumber" value="39031"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">Hinder 2[per_hero].</property>
+    </card>
+    <card name="Curtain Call" id="56b64e85-e416-4ec5-83e2-4bbd16039032" size="EncounterCard">
+      <property name="CardNumber" value="39032"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mojo"/>
+    </card>
+    <card name="Director's Directions" id="56b64e85-e416-4ec5-83e2-4bbd16039033" size="EncounterCard">
+      <property name="CardNumber" value="39033"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mojo"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Top Billing" id="56b64e85-e416-4ec5-83e2-4bbd16039034" size="EncounterCard">
+      <property name="CardNumber" value="39034"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mojo"/>
+    </card>
+    <card name="Dial M for Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039035" size="EncounterCard">
+      <property name="CardNumber" value="39035"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="crime"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Setting. Show."/>
+      <property name="Text">Each other encounter card gains incite 1.\nEach friendly character gets +1 THW.</property>
+    </card>
+    <card name="Build the Case" id="56b64e85-e416-4ec5-83e2-4bbd16039036" size="EncounterCard">
+      <property name="CardNumber" value="39036"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="crime"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Crime Scene Investigation" id="56b64e85-e416-4ec5-83e2-4bbd16039037" size="SchemeCard">
+      <property name="CardNumber" value="39037"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="crime"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="5"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text">Hinder 1[per_hero].</property>
+    </card>
+    <card name="Law &amp; Order" id="56b64e85-e416-4ec5-83e2-4bbd16039038" size="SchemeCard">
+      <property name="CardNumber" value="39038"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="crime"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="5"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text">Hinder 1[per_hero].</property>
+    </card>
+    <card name="Dragnet" id="56b64e85-e416-4ec5-83e2-4bbd16039039" size="SchemeCard">
+      <property name="CardNumber" value="39039"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="crime"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="5"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text">Hinder 1[per_hero].</property>
+    </card>
+    <card name="Elementary, My Dear Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039040" size="EncounterCard">
+      <property name="CardNumber" value="39040"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="crime"/>
+    </card>
+    <card name="A Game of Mojo's" id="56b64e85-e416-4ec5-83e2-4bbd16039041" size="EncounterCard">
+      <property name="CardNumber" value="39041"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="fantasy"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Setting. Show."/>
+    </card>
+    <card name="Dragon" id="56b64e85-e416-4ec5-83e2-4bbd16039042" size="EncounterCard">
+      <property name="CardNumber" value="39042"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="fantasy"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="4"/>
+      <property name="HP" value="10"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Dragon. Elite."/>
+      <property name="Text">Retaliate 1. Toughness.</property>
+    </card>
+    <card name="Goblin" id="56b64e85-e416-4ec5-83e2-4bbd16039043" size="EncounterCard">
+      <property name="CardNumber" value="39043"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="fantasy"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="1"/>
+      <property name="Attribute" value="Goblin."/>
+      <property name="Text">Surge.</property>
+    </card>
+    <card name="Troll" id="56b64e85-e416-4ec5-83e2-4bbd16039044" size="EncounterCard">
+      <property name="CardNumber" value="39044"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="fantasy"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="0"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="7"/>
+      <property name="Attribute" value="Brute. Troll."/>
+      <property name="Text">Toughness.</property>
+    </card>
+    <card name="Fetch Quest" id="56b64e85-e416-4ec5-83e2-4bbd16039045" size="SchemeCard">
+      <property name="CardNumber" value="39045"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="fantasy"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="Text">Surge.</property>
+    </card>
+    <card name="Mana Drain" id="56b64e85-e416-4ec5-83e2-4bbd16039046" size="EncounterCard">
+      <property name="CardNumber" value="39046"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="fantasy"/>
+    </card>
+    <card name="The Mojo Files" id="56b64e85-e416-4ec5-83e2-4bbd16039047" size="EncounterCard">
+      <property name="CardNumber" value="39047"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="horror"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Setting. Show."/>
+      <property name="Text">Each minion gains quickstrike.</property>
+    </card>
+    <card name="Bandolier of Stakes" id="56b64e85-e416-4ec5-83e2-4bbd16039048" size="EncounterCard">
+      <property name="CardNumber" value="39048"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="horror"/>
+      <property name="Attribute" value="Item."/>
+      <property name="Text">Surge. Uses (3 stake counters).</property>
+    </card>
+    <card name="Cultist" id="56b64e85-e416-4ec5-83e2-4bbd16039049" size="EncounterCard">
+      <property name="CardNumber" value="39049"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="horror"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Mystic."/>
+    </card>
+    <card name="The Kraken" id="56b64e85-e416-4ec5-83e2-4bbd16039050" size="EncounterCard">
+      <property name="CardNumber" value="39050"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="horror"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="0"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="6"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Creature. Elite."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Vampire" id="56b64e85-e416-4ec5-83e2-4bbd16039051" size="EncounterCard">
+      <property name="CardNumber" value="39051"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="horror"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Vampire."/>
+    </card>
+    <card name="Werewolf Pack" id="56b64e85-e416-4ec5-83e2-4bbd16039052" size="EncounterCard">
+      <property name="CardNumber" value="39052"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="horror"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Werewolf."/>
+    </card>
+    <card name="Mojo Runner" id="56b64e85-e416-4ec5-83e2-4bbd16039053" size="EncounterCard">
+      <property name="CardNumber" value="39053"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="sci-fi"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Setting. Show."/>
+      <property name="Text">Each minion and ally gains toughness.</property>
+    </card>
+    <card name="Avalanche 9.0" id="56b64e85-e416-4ec5-83e2-4bbd16039054" size="EncounterCard">
+      <property name="CardNumber" value="39054"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="sci-fi"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Program."/>
+    </card>
+    <card name="Blob 3.14" id="56b64e85-e416-4ec5-83e2-4bbd16039055" size="EncounterCard">
+      <property name="CardNumber" value="39055"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="sci-fi"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Program."/>
+    </card>
+    <card name="Magneto 2.6" id="56b64e85-e416-4ec5-83e2-4bbd16039056" size="EncounterCard">
+      <property name="CardNumber" value="39056"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="sci-fi"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="7"/>
+      <property name="Attribute" value="Program."/>
+      <property name="Text">Villainous.</property>
+    </card>
+    <card name="Pyro 4.0" id="56b64e85-e416-4ec5-83e2-4bbd16039057" size="EncounterCard">
+      <property name="CardNumber" value="39057"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="sci-fi"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Program."/>
+    </card>
+    <card name="Toad 2.0" id="56b64e85-e416-4ec5-83e2-4bbd16039058" size="EncounterCard">
+      <property name="CardNumber" value="39058"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="sci-fi"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Program."/>
+    </card>
+    <card name="ICE-Teroid M" id="56b64e85-e416-4ec5-83e2-4bbd16039059" size="SchemeCard">
+      <property name="CardNumber" value="39059"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="sci-fi"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="Text">Each minion gains guard and patrol.</property>
+    </card>
+    <card name="Mojo in the Middle" id="56b64e85-e416-4ec5-83e2-4bbd16039060" size="EncounterCard">
+      <property name="CardNumber" value="39060"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="sitcom"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Setting. Show."/>
+      <property name="Text">Each obligation gains 1 acceleration icon ([acceleration]).</property>
+    </card>
+    <card name="Family Matters" id="56b64e85-e416-4ec5-83e2-4bbd16039061" size="EncounterCard">
+      <property name="CardNumber" value="39061"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="sitcom"/>
+      <property name="Boost" value="3"/>
+    </card>
+    <card name="Growing Pains" id="56b64e85-e416-4ec5-83e2-4bbd16039062" size="EncounterCard">
+      <property name="CardNumber" value="39062"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="sitcom"/>
+    </card>
+    <card name="The Odd Couple" id="56b64e85-e416-4ec5-83e2-4bbd16039063" size="EncounterCard">
+      <property name="CardNumber" value="39063"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="sitcom"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="The One with the Breakup" id="56b64e85-e416-4ec5-83e2-4bbd16039064" size="EncounterCard">
+      <property name="CardNumber" value="39064"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="sitcom"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Watch Me Play" id="56b64e85-e416-4ec5-83e2-4bbd16039065" size="EncounterCard">
+      <property name="CardNumber" value="39065"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="sitcom"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">Incite 3. Peril.</property>
+    </card>
+    <card name="Wild Wild Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039066" size="EncounterCard">
+      <property name="CardNumber" value="39066"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="western"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Setting. Show."/>
+    </card>
+    <card name="Dead or Alive" id="56b64e85-e416-4ec5-83e2-4bbd16039067" size="EncounterCard">
+      <property name="CardNumber" value="39067"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="western"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Bounty."/>
+    </card>
+    <card name="Card Shark" id="56b64e85-e416-4ec5-83e2-4bbd16039068" size="EncounterCard">
+      <property name="CardNumber" value="39068"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="western"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="7"/>
+      <property name="Attribute" value="Creature. Elite."/>
+    </card>
+    <card name="Gunslinger" id="56b64e85-e416-4ec5-83e2-4bbd16039069" size="EncounterCard">
+      <property name="CardNumber" value="39069"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="western"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Outlaw."/>
+      <property name="Text">Quickstrike.</property>
+    </card>
+    <card name="A Game of Cards" id="56b64e85-e416-4ec5-83e2-4bbd16039070" size="EncounterCard">
+      <property name="CardNumber" value="39070"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="western"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Longshot" id="56b64e85-e416-4ec5-83e2-4bbd16039071" size="EncounterCard">
+      <property name="CardNumber" value="39071"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="longshot"/>
+    </card>
+  </cards>
+</set>

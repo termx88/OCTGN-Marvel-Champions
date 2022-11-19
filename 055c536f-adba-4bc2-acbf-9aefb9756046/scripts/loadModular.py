@@ -19,7 +19,7 @@ def specificEncounter(group, x = 0, y = 0, nbModular = 1):
     mute()
     vName = getGlobalVariable("villainSetup")
 
-    cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular), min = nbModular, max = 50)
+    cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", None, "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular), min = nbModular, max = 50)
     if cardsSelected is None:
         deleteAllSharedCards()
         return
@@ -120,4 +120,31 @@ def recommendedEncounter(group, x = 0, y = 0, villainName=''):
         createCards(group,sorted(mystique.keys()),mystique)
     if villainName == 'Magneto':
         createCards(group,sorted(acolytes.keys()),acolytes)
+    if villainName == 'MaGog':
+        mojoSelectedModular = dialogBox_Setup(specialDeck(), "encounter_setup", ["Crime", "Fantasy", "Horror", "Sci-Fi", "Sitcom", "Western"], "Modular encounter selection", "Select 1 modular encounter:", min = 1, max = 1)
+        if mojoSelectedModular is None:
+            deleteAllSharedCards()
+            return
+        for card in mojoSelectedModular:
+            createCards(shared.encounter,sorted(eval(card.Owner).keys()), eval(card.Owner))
+        deleteCards(specialDeck())
+    if villainName == 'Spiral':
+        mojoSelectedModular = dialogBox_Setup(specialDeck(), "encounter_setup", ["Crime", "Fantasy", "Horror", "Sci-Fi", "Sitcom", "Western"], "Modular encounter selection", "Select 3 modulars encounters:", min = 3, max = 3)
+        if mojoSelectedModular is None:
+            deleteAllSharedCards()
+            return
+        for card in mojoSelectedModular:
+            createCards(sideDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))
+        deleteCards(specialDeck())
+        for c in sideDeck():
+            if c.Type != "environment":
+                c.moveTo(shared.encounter)
+    if villainName == 'Mojo':
+        mojoSelectedModular = dialogBox_Setup(specialDeck(), "encounter_setup", ["Crime", "Fantasy", "Horror", "Sci-Fi", "Sitcom", "Western"], "Modular encounter selection", "Select {} modulars encounters:".format(1 + len(getPlayers())), min = 1 + len(getPlayers()), max = 1 + len(getPlayers()))
+        if mojoSelectedModular is None:
+            deleteAllSharedCards()
+            return
+        for card in mojoSelectedModular:
+            createCards(sideDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))
+        deleteCards(specialDeck())
     return True

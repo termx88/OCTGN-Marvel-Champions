@@ -307,5 +307,10 @@ changelog = {
     '0000334': ("0.0.3.34", "7 November 2022", [
         "Fix: Sabretooth scenario missing 1 card (Medical Emergency)",
         "Fix: Future Past module missing in campaign cards."        
+        ]),
+    '0000340': ("0.0.3.40", "19 November 2022", [
+        "Wolverine Hero pack added",
+        "Storm Hero pack added",
+        "Mojo Mania Scenario pack added"     
         ])
 }

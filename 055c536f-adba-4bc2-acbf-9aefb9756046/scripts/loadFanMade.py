@@ -202,7 +202,7 @@ Reset the game in order to generate a new deck."""
 
     # 3- If cards found in Recommended_Modular 
     if recommendedChoice == 2:
-        cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular), min = 1, max = 50)
+        cardsSelected = dialogBox_Setup(setupPile(), "encounter_setup", None, "Modular encounter selection", "Select at least {} modular(s) encounter(s):".format(nbModular), min = 1, max = 50)
         for card in cardsSelected:
             createCards(encounterDeck(),sorted(eval(card.Owner).keys()), eval(card.Owner))       
 

@@ -73,7 +73,7 @@ def isAttackable(cards, x = 0, y = 0):
 
 def exhaustable(cards, x = 0, y = 0):
     for c in cards:
-        if c.Type != "hero" and c.Type != "alter_ego" and c.Type != "ally"  and c.Type != "upgrade" and c.Type != "support":
+        if c.Type != "hero" and c.Type != "alter_ego" and c.Type != "ally" and c.Type != "minion"  and c.Type != "upgrade" and c.Type != "support":
             return False
     return True
 
@@ -346,8 +346,13 @@ def moveCards(args):
 # Game Flow functions
 #------------------------------------------------------------
 
-def dialogBox_Setup(group, type, title, text, min = 1, max = 1):
-    setup_cards = queryCard({"Type":type}, True)
+def dialogBox_Setup(group, type, nameList, title, text, min = 1, max = 1):
+    if nameList == None:
+        setup_cards = queryCard({"Type":type}, True)
+    elif type == None:
+        setup_cards = queryCard({"Name":nameList}, True)
+    else:
+        setup_cards = queryCard({"Type":type, "Name":nameList}, True)
     for i in setup_cards:
         group.create(i, 1)
     update()
@@ -1099,6 +1104,8 @@ def shuffleSetIntoEncounter(group, x = 0, y = 0):
     mute()
     if len(group) == 0: return
 
+    # Global Variable
+    vName = getGlobalVariable("villainSetup")
     ownerList = []
 
     if group == specialDeck():
@@ -1120,6 +1127,36 @@ def shuffleSetIntoEncounter(group, x = 0, y = 0):
                     card.moveTo(shared.encounter)
             notify("{} shuffles {} into the Encounter Deck.".format(me, ownerList[ownerChoice-2]))
         shared.encounter.shuffle()
+
+    if vName == "Mojo":
+        for card in sideDeck():
+            ownerExistsInList = ownerList.count(card.Owner)
+            if ownerExistsInList == 0:
+                ownerList.append(card.Owner)
+        ownerChoice = askChoice("Which encounter set would you like to shuffle into deck?", ["Random"] + ownerList)
+        if ownerChoice == 0: return
+        if ownerChoice == 1:
+            ownerToShuffle = ownerList[rnd(0, len(ownerList)-1)]
+        else:
+            ownerToShuffle = ownerList[ownerChoice-2]
+
+        for card in sideDeck():
+            if card.Owner == ownerToShuffle:
+                if card.Type == "environment":
+                    card.moveToTable(tableLocations['environment'][0]-70, tableLocations['environment'][1])
+                else:
+                    card.moveTo(sideDeckDiscard())
+        update()
+        sideDeckDiscard().shuffle()
+        for card in sideDeckDiscard():
+            card.moveTo(shared.encounter)
+
+        if len(ownerList) == 1 + len(getPlayers()):
+            update()
+            shared.encounter.shuffle()
+            notify("{} shuffles {} into the Encounter Deck.".format(me, ownerToShuffle))
+        else:
+            notify("{} put {} cards on top of the Encounter Deck.".format(me, ownerToShuffle))
 
 def viewGroup(group, x = 0, y = 0):
     group.lookAt(-1)
@@ -1374,6 +1411,7 @@ def nextVillainStage(group=None, x=0, y=0):
                 currentConfused = c.markers[ConfusedMarker]
                 currentAcceleration = c.markers[AccelerationMarker]
                 currentAllPurpose = c.markers[AllPurposeMarker]
+                currentAlternate = c.alternate
                 c.moveToBottom(removedFromGameDeck())
 
         for card in villainDeck():
@@ -1388,6 +1426,7 @@ def nextVillainStage(group=None, x=0, y=0):
                 card.markers[ConfusedMarker] = currentConfused
                 card.markers[AccelerationMarker] = currentAcceleration
                 card.markers[AllPurposeMarker] = currentAllPurpose
+                card.alternate = currentAlternate
                 card.anchor = False
                 SpecificVillainSetup(vName)
                 notify("{} advances Villain to the next stage".format(me))

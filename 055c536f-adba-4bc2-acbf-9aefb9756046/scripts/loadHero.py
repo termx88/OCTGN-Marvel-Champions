@@ -15,7 +15,7 @@ Reset the game in order to generate a new deck."""
 
     if choice == 0: return
     if choice == 1:
-        cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :", min = 1, max = 1)
+        cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", None, "Select your Hero", "Select your Hero :", min = 1, max = 1)
         if cardsSelected is None:
             return
         for card in cardsSelected:
@@ -51,7 +51,7 @@ def loadPreBuiltDeck(group, x=0, y=0):
         confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
         return
 
-    cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", "Select your Hero", "Select your Hero :", min = 1, max = 1)
+    cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", None, "Select your Hero", "Select your Hero :", min = 1, max = 1)
     for card in cardsSelected:
         deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
     changeOwner(deckname1, card.Owner)
@@ -138,7 +138,7 @@ def heroSetup(group=table, x = 0, y = 0):
                 if c.CardNumber == "21002" or c.CardNumber == "21003" or c.CardNumber == "21004":
                     c.moveTo(me.piles['Special Deck'])
             me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "me"
+            me.piles['Special Deck'].visibility = "all"
 
         # Valkyrie
         if str(heroCard.properties["Owner"]) == 'valk':
@@ -146,7 +146,7 @@ def heroSetup(group=table, x = 0, y = 0):
                 if c.CardNumber == "25002":
                     c.moveTo(me.piles['Special Deck'])
             me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "me"
+            me.piles['Special Deck'].visibility = "all"
 
         # Vision
         if str(heroCard.properties["Owner"]) == 'vision':
@@ -158,7 +158,7 @@ def heroSetup(group=table, x = 0, y = 0):
         if str(heroCard.properties["Owner"]) == 'ironheart':
             createCards(me.piles['Special Deck'],sorted(special_decks['ironheart'].keys()),special_decks['ironheart'])
             me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "me"
+            me.piles['Special Deck'].visibility = "all"
 
         # SP//dr
         if str(heroCard.properties["Owner"]) == 'spdr':
@@ -178,6 +178,18 @@ def heroSetup(group=table, x = 0, y = 0):
                 if c.CardNumber == "34002a":
                     c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
                     c.markers[AllPurposeMarker] = 4
+
+        # Wolverine
+        if str(heroCard.properties["Owner"]) == 'wolverine':
+            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
+                if c.CardNumber == "35002":
+                    c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+
+        # Storm
+        if str(heroCard.properties["Owner"]) == 'storm':
+            createCards(me.piles['Special Deck'],special_decks['storm'].keys(),special_decks['storm'])
+            me.piles['Special Deck'].collapsed = False
+            me.piles['Special Deck'].visibility = "all"
 
 def countHeros(p):
     heros = 0

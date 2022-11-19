@@ -623,7 +623,87 @@ mut_gen_campaign = {
     '32192':1,
     '32193':1,
     '32194':1,
-    '32195':1
+    '32195':1,
+    '32088b':1, #Jubilee from Project WideAwake scenario
+    '32089':1, #Rictor from Project WideAwake scenario
+    '32090':1, #Boom Boom from Project WideAwake scenario
+    '32091':1, #Cannonball from Project WideAwake scenario
+    '32092':1 #Wolsfbane from Project WideAwake scenario
+}
+
+# Wolverine Hero Pack
+deathstrike = {
+    '35034':1,
+    '35035':1,
+    '35036':2,
+    '35037':2
+}
+
+# Storm Hero Pack
+shadow_king = {
+    '36036':1,
+    '36037':1,
+    '36038':2,
+    '36039':1
+}
+
+# Mojo Mania Scenario Pack
+crime = {
+    '39035':1,
+    '39036':1,
+    '39037':1,
+    '39038':1,
+    '39039':1,
+    '39040':1
+}
+
+fantasy = {
+    '39041':1,
+    '39042':1,
+    '39043':1,
+    '39044':1,
+    '39045':1,
+    '39046':1
+}
+
+horror = {
+    '39047':1,
+    '39048':1,
+    '39049':1,
+    '39050':1,
+    '39051':1,
+    '39052':1
+}
+
+sci_fi = {
+    '39053':1,
+    '39054':1,
+    '39055':1,
+    '39056':1,
+    '39057':1,
+    '39058':1,
+    '39059':1
+}
+
+sitcom = {
+    '39060':1,
+    '39061':1,
+    '39062':1,
+    '39063':1,
+    '39064':1,
+    '39065':1
+}
+
+western = {
+    '39066':1,
+    '39067':1,
+    '39068':1,
+    '39069':2,
+    '39070':1
+}
+
+longshot = {
+    '39071':1
 }
 
 # Ronan PnP module

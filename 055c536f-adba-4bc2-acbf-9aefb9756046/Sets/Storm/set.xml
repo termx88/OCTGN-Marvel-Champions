@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Storm" id="775cc394-70e0-4a37-bb3b-5a13b47c9e31" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Storm" id="775cc394-70e0-4a37-bb3b-5a13b4036001">
+      <property name="CardNumber" value="36001a"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="storm"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="1"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;i&gt;Weather Control&lt;/i&gt; − &lt;b&gt;Action&lt;/b&gt;: Swap your [[WEATHER]] support in play with a support of your choice from the [[WEATHER]] deck. Resolve the \"&lt;b&gt;Special&lt;/b&gt;\" ability on your [[WEATHER]] support in play. (Limit once per round).</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Ororo Munroe" type="b">
+        <property name="CardNumber" value="36001b"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="storm"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Mutant."/>
+        <property name="Text">Ororo Munroe begins the game with a [[WEATHER]] deck. (see insert.)\n&lt;i&gt;\"I fell a storm comming...\"&lt;/i&gt; − &lt;b&gt;Setup&lt;/b&gt;: Choose a support from the [[WEATHER]] deck and put it into play.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Clear Skies" id="775cc394-70e0-4a37-bb3b-5a13b4036002">
+      <property name="CardNumber" value="36002"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="weather"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Weather."/>
+      <property name="Text">Permanent.\nEach character gains stalwart.\n&lt;b&gt;Special&lt;/b&gt;: Draw 1 card.</property>
+    </card>
+    <card name="Hurricane" id="775cc394-70e0-4a37-bb3b-5a13b4036003">
+      <property name="CardNumber" value="36003"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="weather"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Weather."/>
+      <property name="Text">Permanent.\nEach character gains retaliate 1.\n&lt;b&gt;Special&lt;/b&gt;: Remove 2 threat from a scheme.</property>
+    </card>
+    <card name="Thunderstorm" id="775cc394-70e0-4a37-bb3b-5a13b4036004">
+      <property name="CardNumber" value="36004"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="weather"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Weather."/>
+      <property name="Text">Permanent.\nEach character gets +1 ATK.\n&lt;b&gt;Special&lt;/b&gt;: Deal 2 damage to an enemy.</property>
+    </card>
+    <card name="Blizzard" id="775cc394-70e0-4a37-bb3b-5a13b4036005">
+      <property name="CardNumber" value="36005"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="weather"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Weather."/>
+      <property name="Text">Permanent.\nEach character gets -1 ATK.\n&lt;b&gt;Special&lt;/b&gt;: Choose a non-[[ELITE]] minion → until the end of the round, treat that minion's text box as if it were blank &lt;i&gt;(except for &lt;b&gt;TRAITS&lt;/b&gt;&lt;/i&gt;).</property>
+    </card>
+    <card name="Storm's Crown" id="775cc394-70e0-4a37-bb3b-5a13b4036006">
+      <property name="CardNumber" value="36006"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="storm"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Item."/>
+      <property name="Text">Storm gets +1 THW.\n&lt;b&gt;Hero Resource&lt;/b&gt;: Exhaust Storm's Crown → generate the printed resource on your [[WEATHER]] support.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Storm's Cape" id="775cc394-70e0-4a37-bb3b-5a13b4036007">
+      <property name="CardNumber" value="36007"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="storm"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Item."/>
+      <property name="Text">Storm gets +1 DEF and gains the [[AERIAL]] trait.\n&lt;b&gt;Hero Response&lt;/b&gt;: After you resolve the  \"&lt;b&gt;Special&lt;/b&gt;\" ability on your [[WEATHER]] support, exhaust Storm's Cape → ready Storm.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Ororo's Garden" id="775cc394-70e0-4a37-bb3b-5a13b4036008">
+      <property name="CardNumber" value="36008"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="storm"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Ororo's Garden → heal 2 damage from you identity.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Weather Goddess" id="775cc394-70e0-4a37-bb3b-5a13b4036009">
+      <property name="CardNumber" value="36009"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="storm"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;:  Swap your [[WEATHER]] support in play with a support of your choice from the [[WEATHER]] deck. Resolve the \"&lt;b&gt;Special&lt;/b&gt;\" ability on your [[WEATHER]] support in play.</property>
+    </card>
+    <card name="Torrential Rain" id="775cc394-70e0-4a37-bb3b-5a13b4036010">
+      <property name="CardNumber" value="36010"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="storm"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Superpower. Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from among schemes in play. If Hurricane is in play, resolve its \"&lt;b&gt;Special&lt;/b&gt;\" ability.</property>
+    </card>
+    <card name="Lightning Bolt" id="775cc394-70e0-4a37-bb3b-5a13b4036011">
+      <property name="CardNumber" value="36011"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="storm"/>
+      <property name="Cost" value="3"/>
+      <property name="Attribute" value="Attack. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 8 damage to an enemy. If Thunderstorm is in play, resolve its \"&lt;b&gt;Special&lt;/b&gt;\" ability.</property>
+    </card>
+    <card name="Flash Freeze" id="775cc394-70e0-4a37-bb3b-5a13b4036012">
+      <property name="CardNumber" value="36012"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="storm"/>
+      <property name="Cost" value="1"/>
+      <property name="Attribute" value="Defense. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When the villain attacks you, the villain and each minion engaged with you get -3 ATK while attacking you this phase. If Blizzard is in play, resolve its \"&lt;b&gt;Special&lt;/b&gt;\" ability.</property>
+    </card>
+    <card name="Blast of Wind" id="775cc394-70e0-4a37-bb3b-5a13b4036013">
+      <property name="CardNumber" value="36013"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="storm"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Choose a player → deal 3 damage to the villain and each minion engaged with that player. Resolve the \"&lt;b&gt;Special&lt;/b&gt;\" ability of your [[WEATHER]] support.</property>
+    </card>
+    <card name="Havok" id="775cc394-70e0-4a37-bb3b-5a13b4036014">
+      <property name="CardNumber" value="36014"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">[star] &lt;b&gt;Forced Interrupt&lt;/b&gt;: When Havok attacks, discard the top card of the encounter deck. For each boost icon ([boost]) discarded this way, Havok gets +1 ATK for this attack and takes +1 consequential damage ([consequential]).</property>
+    </card>
+    <card name="Mirage" id="775cc394-70e0-4a37-bb3b-5a13b4036015">
+      <property name="CardNumber" value="36015"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Psionic. X-Men."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Mirage enters play, choose an enemy whose SCH is less than Mirage's THW → stun that enemy.</property>
+    </card>
+    <card name="Gentle" id="775cc394-70e0-4a37-bb3b-5a13b4036016">
+      <property name="CardNumber" value="36016"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="3"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">[star] Gentle takes +1 consequential damage ([consequential]) after he attacks the villain.</property>
+    </card>
+    <card name="Pixie" id="775cc394-70e0-4a37-bb3b-5a13b4036017">
+      <property name="CardNumber" value="36017"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Aerial. X-Men."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play Pixie from your hand, add an [[X-MEN]] ally from your discard pile to your hand.</property>
+    </card>
+    <card name="Uncanny X-Men" id="775cc394-70e0-4a37-bb3b-5a13b4036018">
+      <property name="CardNumber" value="36018"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Team."/>
+      <property name="Text">Play under any player's control. Max 1 [[TEAM]] card per player.\nEach of your [[X-MEN]] allies gets +1 hit point. If each of your characters has the [[X-MEN]] trait, each of your [[X-MEN]] allies costs 1 fewer resource to play.</property>
+    </card>
+    <card name="Leadership Skill" id="775cc394-70e0-4a37-bb3b-5a13b4036019">
+      <property name="CardNumber" value="36019"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">Uses (3 leadership counters). Max 1 per player.\n&lt;b&gt;Interrupt&lt;/b&gt;: When an ally makes a basic thwart or basic attack action, remove 1 leadership counter from here → that ally gets +1 THW and +1 ATK for that action.</property>
+    </card>
+    <card name="\&quot;To Me, My X-Men!\&quot;" id="775cc394-70e0-4a37-bb3b-5a13b4036020">
+      <property name="CardNumber" value="36020"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Attribute" value="Tactic."/>
+      <property name="Text">Play only if your identity has the [[X-MEN]] trait.&lt;b&gt;Hero Action&lt;/b&gt;: Search the top 5 cards of your deck for an [[X-MEN]] ally and put it into play. If that ally is still in play at the end of the phase, add it to your hand.</property>
+    </card>
+    <card name="Forge" id="775cc394-70e0-4a37-bb3b-5a13b4036022">
+      <property name="CardNumber" value="36022"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Forge enters play, search your deck and discard pile for an [[X-MEN]] or [[X-FORCE]] support and add it to your hand. (Shuffle.)</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Endurance" id="775cc394-70e0-4a37-bb3b-5a13b4036026">
+      <property name="CardNumber" value="36026"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Play under any player's control. Max 1 per player.\nYou get +3 hit points.</property>
+    </card>
+    <card name="Hangar Bay" id="775cc394-70e0-4a37-bb3b-5a13b4036035">
+      <property name="CardNumber" value="36035"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">Max 1 per player.\n&lt;b&gt;Response&lt;/b&gt;: After an ally defends against an attack and is not defeated, exhaust this card → ready that ally.</property>
+    </card>
+    <card name="Claustrophobia" id="775cc394-70e0-4a37-bb3b-5a13b4036030" size="EncounterCard">
+      <property name="CardNumber" value="36030"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="storm"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Callisto" id="775cc394-70e0-4a37-bb3b-5a13b4036031" size="EncounterCard">
+      <property name="CardNumber" value="36031"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="storm_nemesis"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Elite. Morlock."/>
+      <property name="Text">Quickstrike.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Leader of the Morlocks" id="775cc394-70e0-4a37-bb3b-5a13b4036032" size="SchemeCard">
+      <property name="CardNumber" value="36032"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="storm_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+    </card>
+    <card name="Switchblade" id="775cc394-70e0-4a37-bb3b-5a13b4036033" size="EncounterCard">
+      <property name="CardNumber" value="36033"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="storm_nemesis"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="Knife Fight" id="775cc394-70e0-4a37-bb3b-5a13b4036034" size="EncounterCard">
+      <property name="CardNumber" value="36034"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="storm_nemesis"/>
+      <property name="Boost" value="2"/>
+    </card>
+    <card name="The Shadow King" id="775cc394-70e0-4a37-bb3b-5a13b4036036" size="EncounterCard">
+      <property name="CardNumber" value="36036"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="shadow_king"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="3"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Elite. Psionic."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Ruler of the Astral Plane" id="775cc394-70e0-4a37-bb3b-5a13b4036037" size="SchemeCard">
+      <property name="CardNumber" value="36037"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="shadow_king"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Scheme_Acceleration" value="1"/>
+    </card>
+    <card name="Possessed" id="775cc394-70e0-4a37-bb3b-5a13b4036038" size="EncounterCard">
+      <property name="CardNumber" value="36038"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="shadow_king"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Condition."/>
+    </card>
+    <card name="Astral Attack" id="775cc394-70e0-4a37-bb3b-5a13b4036039" size="EncounterCard">
+      <property name="CardNumber" value="36039"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="shadow_king"/>
+    </card>
+  </cards>
+</set>

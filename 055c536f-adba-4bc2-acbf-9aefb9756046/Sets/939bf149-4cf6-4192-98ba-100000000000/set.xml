@@ -158,9 +158,11 @@
             <property name="Owner" value="phoenix" />
         </card>
         <card id="939bf149-4cf6-4192-98ba-100000000040" name="Wolverine">
-            <property name="Owner" value="wolv" />
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="wolverine" />
         </card>
         <card id="939bf149-4cf6-4192-98ba-100000000041" name="Storm">
+            <property name="Type" value="hero_setup" />
             <property name="Owner" value="storm" />
         </card>
     </cards>

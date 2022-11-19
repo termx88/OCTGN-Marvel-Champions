@@ -20,7 +20,7 @@ Reset the game in order to generate a new deck."""
         askChoice(msg, [], [], ["Close"])
         return
 
-    cardsSelected = dialogBox_Setup(setupPile(), "villain_setup", "Which villain would you like to defeat ?", "Select your Opponent :", min = 1, max = 1)
+    cardsSelected = dialogBox_Setup(setupPile(), "villain_setup", None, "Which villain would you like to defeat ?", "Select your Opponent :", min = 1, max = 1)
     if cardsSelected is None:
         return
     for card in cardsSelected:
@@ -199,6 +199,22 @@ Reset the game in order to generate a new deck."""
             specialDeck().shuffle()
             specialDeck().collapsed = False
 
+        if card.Owner == "magog":
+            nbModular = 1
+            createCards(shared.campaign,sorted(longshot.keys()),longshot)
+
+        if card.Owner == "spiral":
+            nbModular = 0
+            createCards(shared.campaign,sorted(longshot.keys()),longshot)
+            recommendedEncounter(shared.encounter, x = 0, y = 0, villainName='Spiral')
+            sideDeck().collapsed = False
+
+        if card.Owner == "mojo":
+            nbModular = 0
+            createCards(shared.campaign,sorted(longshot.keys()),longshot)
+            recommendedEncounter(sideDeck(), x = 0, y = 0, villainName='Mojo')
+            sideDeck().collapsed = False
+
         villainName = card.Name
         setGlobalVariable("villainSetup",str(villainName))
 
@@ -363,6 +379,16 @@ def villainSetup(group=table, x = 0, y = 0):
         villainCards[randomVillain].anchor = False
         if gameDifficulty == "1":
             villainCards[randomVillain].alternate = "b"
+
+    elif vName == 'MaGog':
+        # If we loaded the encounter deck - add the first main scheme card to the table
+        sorted(mainSchemeCards)[0].moveToTable(tableLocations['mainScheme'][0],tableLocations['mainScheme'][1])
+        sorted(mainSchemeCards)[0].anchor = False
+        sorted(mainSchemeCards).pop(0)
+        randomVillain = rnd(0, 3) # Returns a random INTEGER value and use it to choose which Loki will be loaded
+        villainCards[0].moveToTable(villainX(1,0),tableLocations['villain'][1])
+        if gameDifficulty == "1":
+            villainCards[0].alternate = "b"
 
     else:
         # If we loaded the encounter deck - add the first main scheme card to the table
@@ -642,3 +668,26 @@ def SpecificVillainSetup(vName = ''):
     if vName == 'Magneto':
         if msCardOnTable[0].CardNumber == "32141a": # Stage 1 main scheme
             revealCardOnSetup("Operation Zero Tolerance", "32144a", ssX, ssY)
+            
+    
+    if vName == 'MaGog':
+        if msCardOnTable[0].CardNumber == "39002a": # Stage 1 main scheme
+            revealCardOnSetup("The Champion (Booing Crowd)", "39003a", tableLocations['environment'][0] - 70, tableLocations['environment'][1])
+            revealCardOnSetup("The Challengers (Booing Crowd)", "39004a", tableLocations['environment'][0], tableLocations['environment'][1])
+            
+    
+    if vName == 'Spiral':
+        if msCardOnTable[0].CardNumber == "39015a": # Stage 1 main scheme
+            revealCardOnSetup("The Search for Spiral", "39016", ssX, ssY)
+            envCards = [c for c in sideDeck() if (c.Type == "environment")]
+            rndCard = rnd(0, len(envCards)-1)
+            envCards[rndCard].moveToTable(tableLocations['environment'][0], tableLocations['environment'][1])            
+            corneredCard = [c for c in shared.encounter if (c.CardNumber == "39017")]
+            corneredCard[0].moveTo(sideDeck())
+            update()
+            sideDeck().shuffle
+            
+    
+    if vName == 'Mojo':
+        if msCardOnTable[0].CardNumber == "39025a": # Stage 1 main scheme
+            revealCardOnSetup("Wheel of Genres (Spinning)", "39026a", tableLocations['environment'][0], tableLocations['environment'][1])

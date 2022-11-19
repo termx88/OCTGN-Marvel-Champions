@@ -4,7 +4,7 @@ import os.path
 from os import path
 
 
-runFile = 'mut_gen'
+runFile = 'mojo'
 xmlSet = None
 runFileList = ["D:\Téléchargements\Marvel Champions\Github_Database/marvelsdb-json-data/pack/" + runFile + '.json', "D:\Téléchargements\Marvel Champions\Github_Database/marvelsdb-json-data/pack/" + runFile + '_encounter' + '.json']
 
