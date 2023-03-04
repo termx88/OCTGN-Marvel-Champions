@@ -191,6 +191,14 @@ def heroSetup(group=table, x = 0, y = 0):
             me.piles['Special Deck'].collapsed = False
             me.piles['Special Deck'].visibility = "all"
 
+        # Rogue
+        if str(heroCard.properties["Owner"]) == 'rogue':
+            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
+                if c.CardNumber == "38002":
+                    c.moveTo(me.piles['Special Deck'])
+            me.piles['Special Deck'].collapsed = False
+            me.piles['Special Deck'].visibility = "all"
+
 def countHeros(p):
     heros = 0
     for card in table:

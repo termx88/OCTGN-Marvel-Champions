@@ -312,5 +312,9 @@ changelog = {
         "Wolverine Hero pack added",
         "Storm Hero pack added",
         "Mojo Mania Scenario pack added"     
+        ]),
+    '0000345': ("0.0.3.45", "04 March 2023", [
+        "Gambit Hero pack added",
+        "Rogue Hero pack added" 
         ])
 }

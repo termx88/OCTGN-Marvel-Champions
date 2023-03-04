@@ -165,5 +165,13 @@
             <property name="Type" value="hero_setup" />
             <property name="Owner" value="storm" />
         </card>
+            <card id="939bf149-4cf6-4192-98ba-100000000042" name="Gambit">
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="gambit" />
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-100000000043" name="Rogue">
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="rogue" />
+        </card>
     </cards>
 </set>

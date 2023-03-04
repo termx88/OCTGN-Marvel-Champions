@@ -273,5 +273,13 @@
             <property name="Type" value="encounter_setup" />
             <property name="Owner" value="western"/>
         </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000069" name="Exodus">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="exodus"/>
+        </card>
+        <card id="939bf149-4cf6-4192-98ba-300000000070" name="Reavers">
+            <property name="Type" value="encounter_setup" />
+            <property name="Owner" value="reavers"/>
+        </card>
     </cards>
 </set>
