@@ -116,7 +116,8 @@ Reset the game in order to generate a new deck."""
             pb_choice = askChoice(msg, upb, colorsList, buttons)
             createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuilt[upb[pb_choice-1]]), True, new_owner=hero_id)
 
-    tableSetup()
+    heroSetup()
+    checkSetup()
 
 
 def loadFanMade_Villain(group, x = 0, y = 0):
@@ -215,14 +216,15 @@ Reset the game in order to generate a new deck."""
     mainSchemeCards = [c for c in mainSchemeDeck()]
     villainCards = [c for c in villainDeck()]
 
-    mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0],tableLocations['mainScheme'][1])
-    villainCards[0].moveToTable(villainX(1,0),tableLocations['villain'][1])
-
     villainName = villainCards[0].Name
+    if len(villainName) == 0:
+        villainName = villainCards[0].Owner
     setGlobalVariable("villainSetup",str(villainName))
     vName = getGlobalVariable("villainSetup")   
     shared.encounter.shuffle()
     notify('{} loaded {}, Good Luck!'.format(me, villainName))
+    villainSetup()
+    checkSetup()
 
 
 def loadFanMade_Modular(group, x = 0, y = 0):

@@ -40,7 +40,7 @@ def villainX(villainCount, villain):
 
 def isScheme(cards, x = 0, y = 0):
     for c in cards:
-        if c.Type != 'main_scheme' and c.Type != 'side_scheme':
+        if c.Type != 'main_scheme' and c.Type != 'side_scheme' and c.Type != 'player_side_scheme':
             return False
     return True
 
@@ -474,7 +474,7 @@ def passSharedControl(group, x=0, y=0):
 def readyAll(group = table, x = 0, y = 0):
     mute()
     for c in table:
-        if c.controller == me and c.orientation != Rot0 and isEncounter([c]) != True and c.Type != "encounter" and c.Type != "villain" and c.Type != "main_scheme":
+        if c.controller == me and c.orientation != Rot0 and isEncounter([c]) != True and c.Type != "encounter" and c.Type != "villain" and c.Type != "main_scheme" and c.Type != "player_side_scheme":
             c.orientation = Rot0
     notify("{} readies all their cards.".format(me))
 

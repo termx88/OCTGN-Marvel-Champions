@@ -316,5 +316,10 @@ changelog = {
     '0000345': ("0.0.3.45", "04 March 2023", [
         "Gambit Hero pack added",
         "Rogue Hero pack added" 
+        ]),
+    '0000346': ("0.0.3.46", "31 May 2023", [
+        "Fanmade Hero and Fanmade scenario can be loaded from the Welcome Screen",
+        "Fanmade installation tool added into octgn data folder to make zip installation easier",
+        "New card type added (player side scheme)"
         ])
 }

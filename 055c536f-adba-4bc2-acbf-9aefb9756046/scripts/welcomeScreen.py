@@ -11,8 +11,8 @@ def showWelcomeScreen(group = None, x = 0, y = 0):
         if not welcomeScreenSetting:
             return
 
-    choiceList = ["Load a scenario", "Load a hero (pre-built deck)", "Load a hero (o8d deck)", "Load a hero (marvelcdb url deck)", "Rulebook  ->", "Download card images  ->", "What's new ?", "Report an issue  ->"]
-    colorsList = ["#6300a8"] * 1 + ["#004d99"] * 3 + ["#636363"] * 4
+    choiceList = ["Load a scenario", "Load a scenario (Fanmade)", "Load a hero (pre-built deck)", "Load a hero (o8d deck)", "Load a hero (marvelcdb url deck)", "Load a hero (Fanmade)", "Rulebook  ->", "Download card images  ->", "What's new ?", "Report an issue  ->"]
+    colorsList = ["#6300a8"] * 2 + ["#004d99"] * 4 + ["#636363"] * 4
     buttons = ["Close", "Do not show again", "Always show"]
     msg = """Welcome to Marvel Champions : The Card Game\n
 Here you will find useful information to get started with the game.
@@ -34,36 +34,36 @@ With great power comes great responsibility!"""
         if deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
             showWelcomeScreen()
 
-    # elif choice == 2:
-        # loadFanMade_Villain(table, x = 0, y = 0)
-        # if deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
-            # showWelcomeScreen()
-
     elif choice == 2:
-        loadHero(table, x = 0, y = 0, askMethod = False, choice = 1)
+        loadFanMade_Villain(table, x = 0, y = 0)
+        if deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
+            showWelcomeScreen()
 
     elif choice == 3:
-        loadHero(table, x = 0, y = 0, askMethod = False, choice = 2)
+        loadHero(table, x = 0, y = 0, askMethod = False, choice = 1)
 
     elif choice == 4:
-        loadHero(table, x = 0, y = 0, askMethod = False, choice = 3)
-
-    # elif choice == 6:
-        # loadFanMade_Hero(table, x = 0, y = 0)
+        loadHero(table, x = 0, y = 0, askMethod = False, choice = 2)
 
     elif choice == 5:
+        loadHero(table, x = 0, y = 0, askMethod = False, choice = 3)
+
+    elif choice == 6:
+        loadFanMade_Hero(table, x = 0, y = 0)
+
+    elif choice == 7:
         openUrl(Website + "/rules-reference")
         showWelcomeScreen()
 
-    elif choice == 6:
+    elif choice == 8:
         openUrl(Website + "/imagepacks")
         showWelcomeScreen()
 
-    elif choice == 7:
+    elif choice == 9:
         showChangeLog()
         showWelcomeScreen()
 
-    elif choice == 8:
+    elif choice == 10:
         openUrl(Github)
         showWelcomeScreen()
 

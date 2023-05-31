@@ -281,6 +281,8 @@ def villainSetup(group=table, x = 0, y = 0):
         c.moveTo(encounterDeck())
     for c in mainSchemeCards:
         c.moveTo(mainSchemeDeck())
+    
+    mainSchemeCards = filter(lambda card: card.Type == "main_scheme", mainSchemeDeck())
 
     villainCards = sorted(villainCards)
     villainEnvCards = sorted(filter(lambda card: card.Type == "environment", encounterDeck()))

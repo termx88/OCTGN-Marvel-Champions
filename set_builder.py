@@ -317,6 +317,9 @@ def fillXmlSet(xmlSet, fromFile):
                 elif i['type_code'] == 'side_scheme':
                     xmlCard.set('size', 'SchemeCard')
                     buildXmlProps(i, xmlCard)
+                elif i['type_code'] == 'player_side_scheme':
+                    xmlCard.set('size', 'SchemeCard')
+                    buildXmlProps(i, xmlCard)
                 elif i['faction_code'] == 'encounter':
                     xmlCard.set('size', 'EncounterCard')
                     buildXmlProps(i, xmlCard)
