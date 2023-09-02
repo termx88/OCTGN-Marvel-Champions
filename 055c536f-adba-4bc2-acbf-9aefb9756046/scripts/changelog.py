@@ -321,5 +321,13 @@ changelog = {
         "Fanmade Hero and Fanmade scenario can be loaded from the Welcome Screen",
         "Fanmade installation tool added into octgn data folder to make zip installation easier",
         "New card type added (player side scheme)"
+        ]),
+    '0000360': ("0.0.3.60", "2 September 2023", [
+        "NeXt Evolution added",
+		"Feature: Hero, Villain and Encounters can now be selected either alphabetically or by release date",
+		"Feature: Nemesis sets added as a choice among all other Encounter sets",
+		"Fix: All data updated from marvelcdb",
+		"Fix: Change the way FanMade is loaded. Please re-download ZIP files from GDrive as previous one won't work anymore",
+        "Major updates: A lot of changes have been made to the various scripts in order to improve MC module behaviour, future updates and fanmade integration. Although I conducted a lot of tests, bugs could reappear. Please let me know if this is the case."
         ])
 }

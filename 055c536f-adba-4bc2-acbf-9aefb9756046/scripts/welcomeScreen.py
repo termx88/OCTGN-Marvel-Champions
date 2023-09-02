@@ -30,26 +30,26 @@ With great power comes great responsibility!"""
         setSetting("welcomeScreen", True)
 
     elif choice == 1:
-        loadVillain(table, x = 0, y = 0)
+        loadVillain(table, x = 0, y = 0, setupType = "villain_setup")
         if deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
             showWelcomeScreen()
 
     elif choice == 2:
-        loadFanMade_Villain(table, x = 0, y = 0)
+        loadVillain(table, x = 0, y = 0, setupType = "fm_villain_setup")
         if deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
             showWelcomeScreen()
 
     elif choice == 3:
-        loadHero(table, x = 0, y = 0, askMethod = False, choice = 1)
+        loadHero(table, x = 0, y = 0, askMethod = False, choice = 1, setupType = "hero_setup")
 
     elif choice == 4:
-        loadHero(table, x = 0, y = 0, askMethod = False, choice = 2)
+        loadHero(table, x = 0, y = 0, askMethod = False, choice = 2, setupType = "hero_setup")
 
     elif choice == 5:
-        loadHero(table, x = 0, y = 0, askMethod = False, choice = 3)
+        loadHero(table, x = 0, y = 0, askMethod = False, choice = 3, setupType = "hero_setup")
 
     elif choice == 6:
-        loadFanMade_Hero(table, x = 0, y = 0)
+        loadFanmadeHero(table, x = 0, y = 0)
 
     elif choice == 7:
         openUrl(Website + "/rules-reference")

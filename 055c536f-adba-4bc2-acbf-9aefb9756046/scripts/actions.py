@@ -44,9 +44,21 @@ def isScheme(cards, x = 0, y = 0):
             return False
     return True
 
+def isMainScheme(cards, x = 0, y = 0):
+    for c in cards:
+        if c.Type != 'main_scheme':
+            return False
+    return True
+
 def isSideScheme(cards, x = 0, y = 0):
     for c in cards:
         if c.Type != 'side_scheme':
+            return False
+    return True
+
+def isPlayerScheme(cards, x = 0, y = 0):
+    for c in cards:
+        if c.Type != 'player_side_scheme':
             return False
     return True
 
@@ -88,6 +100,9 @@ def isPermanent(card):
 
 def hasVictory(card):
     return re.search('.*Victory \d+.*', card.properties["Text"], re.IGNORECASE)
+
+def hasDefaultDiscardPile(card):
+    return card.hasProperty("DefaultDiscardPile")
 
 
 #------------------------------------------------------------
@@ -134,6 +149,12 @@ def victoryDisplay():
 
 def setupPile():
     return shared.piles['Setup']
+
+def tempPile(isShared = True):
+    if isShared:
+        return shared.piles['Temporary']
+    else:
+        return me.piles['Temporary']
 
 #------------------------------------------------------------
 # Global variable manipulations function
@@ -346,7 +367,12 @@ def moveCards(args):
 # Game Flow functions
 #------------------------------------------------------------
 
-def dialogBox_Setup(group, type, nameList, title, text, min = 1, max = 1):
+def dialogBox_Setup(group, type, nameList, title, text, min = 1, max = 1, isFanmade = False):
+    if not isFanmade:
+		orderChoice = askChoice("Choose sorting order :", ["Release order", "Alphabetical"]) 
+    else:
+		orderChoice = 2
+    
     if nameList == None:
         setup_cards = queryCard({"Type":type}, True)
     elif type == None:
@@ -356,7 +382,12 @@ def dialogBox_Setup(group, type, nameList, title, text, min = 1, max = 1):
     for i in setup_cards:
         group.create(i, 1)
     update()
-    dlg = cardDlg(group)
+
+    if orderChoice == 2:
+        cardsList = sorted(group, key=lambda c: c.Name)
+        dlg = cardDlg(cardsList)
+    else:
+        dlg = cardDlg(group)
     dlg.title = title
     dlg.text = text
     dlg.min = min
@@ -400,10 +431,8 @@ def startGame(group = None, x = 0, y = 0):
     setFirstPlayer()
     for p in getPlayers():
         p_hand_size = countHandSize(p.piles['Hand'])
-        p.Deck.shuffle()
+        remoteCall(p, "shuffle", [p.piles['Deck']])
         remoteCall(p, "drawMany", [p.piles['Deck'], maxHandSize(p) - p_hand_size, True])
-        if p.getGlobalVariable("heroPlayed") == 'vision':
-            p.counters['Default Card Draw'].value += 1
         remoteCall(p, "addObligationsToEncounter", [p.piles["Nemesis"]])
     update()
     advanceGame()
@@ -412,10 +441,13 @@ def addObligationsToEncounter(group = me.piles["Nemesis"]):
     vName = getGlobalVariable("villainSetup")
     update()
     if vName == 'The Wrecking Crew' or vName == 'Kang': return
+    currentController = encounterDeck().controller
+    encounterDeck().controller = me
     playerOblCard = filter(lambda card: card.Type == 'obligation', group)
     for c in playerOblCard:
         c.moveTo(encounterDeck())
     shuffle(encounterDeck())
+    encounterDeck().controller = currentController
 
 def advanceGame(group = None, x = 0, y = 0):
     # Check if we should pass the turn or just change the phase
@@ -482,10 +514,63 @@ def getPosition(card,x=0,y=0):
     t = getPlayers()
     notify("This cards position is {}".format(card.position))
 
-def createCards(group,list,dict):
+def createCardsFromSet(group, owner, name, isShared = True):
+    cardsFromSet = queryCard({"Owner":owner}, True)
+    gameDifficulty = int(getGlobalVariable("difficulty"))
+    all_cards = []
+    pile = group.name
+    if len(cardsFromSet) == 0:
+        notifyBar("#FF0000", "No Cards found in xml files for {} set.".format(owner))
+        notify("No Cards found in xml files for {} set.".format(owner))
+        return
+    for g in cardsFromSet:
+        tempPile(isShared).create(g, 1)
+    for c in tempPile(isShared):
+        # pile Definition
+        if c.hasProperty("DefaultSetupPile"):
+            pile = c.properties["DefaultSetupPile"]
+        else:
+            pile = group.name
+
+        # standard/expert Definition
+        if c.hasProperty("Standard") and gameDifficulty == 0:
+            standard = eval(c.properties["Standard"])
+        else:
+            standard = True
+        if c.hasProperty("Expert") and gameDifficulty == 1:
+            expert = eval(c.properties["Expert"])
+        else:
+            expert = True
+
+        # quantity Definition
+        if c.hasProperty("Quantity"):
+            quantity = eval(c.properties["Quantity"])
+        else:
+            quantity = 1
+
+        # Create set cards
+        if c.Type[-5:] != "setup" and standard and expert:
+            if isShared:
+                shared.piles[pile].collapsed = False
+                cards = shared.piles[pile].create(c.model, quantity)
+            else:
+                me.piles[pile].collapsed = False
+                cards = me.piles[pile].create(c.model, quantity)
+            if quantity == 1:
+                all_cards.append(cards)
+            else:
+                all_cards.extend(cards)
+    update()
+    deleteCards(tempPile(isShared))
+    notify("Cards from {} set added to {} deck.".format(name, pile))
+
+    return all_cards
+
+def createCards(group, list, dict):
     all_cards = []
     for i in list:
-        cards = group.create(card_mapping[i], dict[i])
+        cardModel = queryCard({"CardNumber":i}, True)
+        cards = group.create(cardModel[0], dict[i])
         if dict[i] == 1:
             all_cards.append(cards)
         else:
@@ -601,7 +686,7 @@ def villainBoost(card, x=0, y=0, who=me):
             notifyBar("#FF0000", "{} encounter pile is empty.".format(getActiveVillain()))
             for c in disEncCards:
                 c.moveTo(encounterDeck())
-            encounterDeck().shuffle()
+            shuffle(encounterDeck())
 
 def infinityGauntletBoost(card, x=0, y=0, who=me):
     mute()
@@ -619,7 +704,7 @@ def infinityGauntletBoost(card, x=0, y=0, who=me):
     boostList.isFaceUp = True
     if len(specialDeck()) == 0:
         notifyBar("#FF0000", "Special pile is empty.")
-        shuffleDiscardIntoDeck(specialDeck())
+        shuffleDiscardIntoDeck(specialDeckDiscard())
 
 def addDamage(card, x = 0, y = 0):
     mute()
@@ -865,7 +950,7 @@ def discard(card, x = 0, y = 0):
     elif isEncounter([card]):
         if isScheme([card]) and getGlobalVariable("villainSetup") == "Red Skull":
             notify("{} sent back to side schemes deck!".format(card))
-            card.moveTo(specialDeckDiscard())
+            card.moveTo(sideDeckDiscard())
         elif hasVictory(card):
             discardChoice = 2
             if card.markers[DamageMarker] == 0 or card.markers[ThreatMarker] != 0 or card.markers[AllPurposeMarker] != 0:
@@ -879,14 +964,17 @@ def discard(card, x = 0, y = 0):
             if discardChoice == 2 and isSideScheme([card]) and getGlobalVariable("villainSetup") == "Hela":
                 vCard = filter(lambda card: card.Type == "villain" and card.alternate == "", table)
                 if len(vCard) > 0:
-                    difficulty = getGlobalVariable("difficulty")
-                    others_hp = 3 if difficulty == "1" else 2
+                    gameDifficulty = getGlobalVariable("difficulty")
+                    others_hp = 3 if gameDifficulty == "1" else 2
                     addMarker(vCard[0], x=0, y=0, qty=others_hp * len(getPlayers()))
+        elif hasDefaultDiscardPile(card):
+            discardPile = card.properties["DefaultDiscardPile"]
+            card.moveTo(shared.piles[discardPile])
         else:
             card.moveTo(encounterDiscardDeck())
     elif card.Owner == 'invocation':
         notify("{} discards {} from {}.".format(me, card, card.group.name))
-        card.moveTo(me.piles["Special Deck Discard"])
+        card.moveTo(me.piles["Special Discard"])
     else:
         pile = card.owner.piles["Deck Discard"]
         who = pile.controller
@@ -899,8 +987,6 @@ def discard(card, x = 0, y = 0):
             remoteCall(who, "doDiscard", [card, pile])
         else:
             doDiscard(card, pile)
-
-    clearMarker(card)
 
 def doDiscard(card, pile):
     card.moveTo(pile)
@@ -929,14 +1015,14 @@ def drawMany(group, count = None, checkHandSize = False):
 def drawCard(group, checkHandSize = False):
     mute()
     # For special deck we shuffle when we need to draw and deck is empty
-    if group.name == 'Special Deck':
+    if group.name == 'Special':
         if len(me.piles[group.name]) == 0:
-            for c in me.piles["Special Deck Discard"]: c.moveTo(c.owner.piles["Special Deck"])
-            me.piles["Special Deck"].shuffle()
+            for c in me.piles["Special Discard"]: c.moveTo(c.owner.piles["Special"])
+            shuffle(me.piles["Special"])
             notifyBar("#0000FF", "Special Deck for player {} has been created from discard and shuffled!".format(me.name))
             rnd(1,1)
 
-        card = me.piles["Special Deck"][0]
+        card = me.piles["Special"][0]
         card.moveToTable(0,0,False)
     # For player deck, we draw and if deck is empty after (or while) drawing, we notify + recreate deck from its discard (shuffle it)
     else:
@@ -976,7 +1062,7 @@ def checkDeckRemainingCards(group):
     if len(me.piles[group.name]) == 0:
         for c in me.piles["Deck Discard"]:
             c.moveTo(me.Deck)
-        me.Deck.shuffle()
+        shuffle(me.Deck)
         notifyBar("#FF0000", "{}'s deck has been created from discard and shuffled!".format(me.name))
         rnd(1,1)
 
@@ -1079,25 +1165,25 @@ def shuffleDiscardIntoDeck(group, x = 0, y = 0):
                 return
         for card in group:
             card.moveTo(me.piles["Deck"])
-        me.piles["Deck"].shuffle()
+        shuffle(me.piles["Deck"])
         notify("{} shuffles their discard pile into their Deck.".format(me))
     if group == encounterDiscardDeck():
-        if len(shared.encounter) > 0:
-            if askChoice("There are still {} card(s) in Encounter Deck. Are you sure you want to shuffle discard pile into this Deck ?".format(len(shared.encounter)), ["Yes", "No"]) != 1:
+        if len(encounterDeck()) > 0:
+            if askChoice("There are still {} card(s) in Encounter Deck. Are you sure you want to shuffle discard pile into this Deck ?".format(len(encounterDeck())), ["Yes", "No"]) != 1:
                 return
         for card in group:
-            card.moveTo(shared.encounter)
-        shared.encounter.shuffle()
+            card.moveTo(encounterDeck())
+        shuffle(encounterDeck())
         notify("{} shuffles the encounter discard pile into the encounter Deck.".format(me))
-    if group == me.piles["Special Deck Discard"]:
+    if group == me.piles["Special Discard"]:
         for card in group:
-            card.moveTo(me.piles["Special Deck"])
-        me.piles["Special Deck"].shuffle()
+            card.moveTo(me.piles["Special"])
+        shuffle(me.piles["Special"])
         notify("{} shuffles the special discard pile into the special Deck.".format(me))
     if group == specialDeckDiscard():
         for card in group:
             card.moveTo(specialDeck())
-        shared.encounter.shuffle()
+        shuffle(encounterDeck())
         notify("{} shuffles the special discard pile into the special Deck.".format(me))
 
 def shuffleSetIntoEncounter(group, x = 0, y = 0):
@@ -1119,14 +1205,14 @@ def shuffleSetIntoEncounter(group, x = 0, y = 0):
             ownerRandom = rnd(0, len(ownerList)-1)
             for card in group:
                 if card.Owner == ownerList[ownerRandom]:
-                    card.moveTo(shared.encounter)
+                    card.moveTo(encounterDeck())
             notify("{} shuffles {} into the Encounter Deck.".format(me, ownerList[ownerRandom]))
         else:
             for card in group:
                 if card.Owner == ownerList[ownerChoice-2]:
-                    card.moveTo(shared.encounter)
+                    card.moveTo(encounterDeck())
             notify("{} shuffles {} into the Encounter Deck.".format(me, ownerList[ownerChoice-2]))
-        shared.encounter.shuffle()
+        shuffle(encounterDeck())
 
     if vName == "Mojo":
         for card in sideDeck():
@@ -1147,19 +1233,25 @@ def shuffleSetIntoEncounter(group, x = 0, y = 0):
                 else:
                     card.moveTo(sideDeckDiscard())
         update()
-        sideDeckDiscard().shuffle()
+        shuffle(sideDeckDiscard())
         for card in sideDeckDiscard():
-            card.moveTo(shared.encounter)
+            card.moveTo(encounterDeck())
 
         if len(ownerList) == 1 + len(getPlayers()):
             update()
-            shared.encounter.shuffle()
+            shuffle(encounterDeck())
             notify("{} shuffles {} into the Encounter Deck.".format(me, ownerToShuffle))
         else:
             notify("{} put {} cards on top of the Encounter Deck.".format(me, ownerToShuffle))
 
 def viewGroup(group, x = 0, y = 0):
     group.lookAt(-1)
+
+def showGroup(group, gShuffle = False):
+    mute()
+    group.collapsed = False
+    if gShuffle:
+        shuffle(group)
 
 def pluralize(num):
    if num == 1:
@@ -1192,6 +1284,7 @@ def moveToVictory(card, x=0, y=0):
     card.moveTo(victoryDisplay())
     notify("{} adds '{}' to the Global Victory Display".format(me, card))
 
+
 #------------------------------------------------------------
 # Global variable manipulations function
 #------------------------------------------------------------
@@ -1217,11 +1310,23 @@ def nextSchemeStage(group=None, x=0, y=0):
     elif vName == 'Mansion Attack':
         msCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
         if len(msCards) > 0:
-            randomScheme = rnd(0, len(msCards)-1) # Returns a random INTEGER value and use it to choose which Loki will be loaded
+            randomScheme = rnd(0, len(msCards)-1)
         for c in table:
             if c.Type == 'main_scheme':
                 x, y = c.position
                 c.moveTo(victoryDisplay())
+                msCards[randomScheme].moveToTable(x, y)
+    elif vName == 'Mister Sinister':
+        msCards = sorted(filter(lambda card: card.Type == "main_scheme" and card.Stage == "2", mainSchemeDeck()), key=lambda c: c.CardNumber)
+        if len(msCards) > 0:
+            randomScheme = rnd(0, len(msCards)-1)
+        else:
+            msCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
+            randomScheme = 0
+        for c in table:
+            if c.Type == 'main_scheme':
+                x, y = c.position
+                c.moveTo(removedFromGameDeck())
                 msCards[randomScheme].moveToTable(x, y)
     else:
         for c in table:
@@ -1398,6 +1503,18 @@ def nextVillainStage(group=None, x=0, y=0):
                 if gameDifficulty == "1":
                     vCards[randomVillain].alternate = "b"
 
+    elif vName == 'Morlock Siege':
+        vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
+        if len(vCards) > 0:
+            randomVillain = rnd(0, len(vCards)-1) # Returns a random INTEGER value and use it to choose which Loki will be loaded
+        for c in table:
+            if c.Type == 'villain':
+                x, y = c.position
+                c.moveTo(victoryDisplay())
+                vCards[randomVillain].moveToTable(x, y)
+                if gameDifficulty == "1":
+                    vCards[randomVillain].alternate = "b"
+
     else:
         for c in table:
             if c.Type == 'villain':
@@ -1519,6 +1636,12 @@ def maxHandSize(p):
     handSize = p.counters["Default Card Draw"].value + additionnal_handSize
     return handSize
 
+def lookForAttribute(card, attrib):
+    """
+    Look for attribute
+    """
+    return re.search('.*' + attrib + '.*', card.properties["Attribute"], re.IGNORECASE) if card.hasProperty("Attribute") else False
+
 def lookForToughness(card):
     """
     Adds a Tough status card to a character if such ability is found in card's text
@@ -1635,7 +1758,7 @@ def setHPOnCharacter(card):
                 switchCards(previous_ironheart[0], new_ironheart[0], h = 1, t = 1, s = 1, c = 1, a = 1)
                 me.setGlobalVariable("cardForm", new_ironheart[0].Type)
                 me.counters['Default Card Draw'].value = num(new_ironheart[0].HandSize)
-                previous_ironheart[0].moveToBottom(me.piles['Special Deck'])
+                previous_ironheart[0].moveToBottom(me.piles['Special'])
                 description_search = re.search('.*Version 3.*', new_ironheart[0].properties["Attribute"], re.IGNORECASE)
                 if description_search and new_ironheart[0].markers[ToughMarker] == 0:
                     tough(new_ironheart[0])
@@ -1648,7 +1771,7 @@ def setHPOnCharacter(card):
         add_others = 0
         if card.Type == "villain" and getGlobalVariable("villainSetup") == "Hela" and card.alternate == "":
             sideSchemeInVictory = filter(lambda card: card.Type == "side_scheme", victoryDisplay())
-            difficulty = getGlobalVariable("difficulty")
-            add_others = (3 if difficulty == "1" else 2) * len(sideSchemeInVictory) * nb_players
+            gameDifficulty = getGlobalVariable("difficulty")
+            add_others = (3 if gameDifficulty == "1" else 2) * len(sideSchemeInVictory) * nb_players
         total_hp = total_base_hp + add_others
         addMarker(card, x=0, y=0, qty=int(total_hp))

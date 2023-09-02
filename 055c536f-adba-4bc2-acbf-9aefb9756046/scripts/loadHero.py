@@ -2,7 +2,11 @@
 # 'Load Hero' event
 #------------------------------------------------------------
 
-def loadHero(group, x = 0, y = 0, askMethod = True, choice = 0):
+def loadFanmadeHero(group, x = 0, y = 0):
+    mute()
+    loadHero(group, x, y, True, 0, "fm_hero_setup")
+
+def loadHero(group, x = 0, y = 0, askMethod = True, choice = 0, setupType = "hero_setup"):
     mute()
     if not deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
         msg = """Cannot generate a deck: You already have cards loaded.\n
@@ -10,26 +14,50 @@ Reset the game in order to generate a new deck."""
         askChoice(msg, [], [], ["Close"])
         return
 
+    if setupType == "fm_hero_setup":
+        fanmade = True
+        cardSelected = dialogBox_Setup(me.piles["Setup"], setupType, None, "Select your Hero", "Select your Hero :", min = 1, max = 1, isFanmade = fanmade)
+        if cardSelected is None: return
+        heroSet = cardSelected[0].Owner
+        heroName = cardSelected[0].Name
+        me.setGlobalVariable("heroPlayed", heroSet)
+    else:
+        fanmade = False
+    update()
+
+    # Choose where to take other aspect cards from
     if askMethod:
-        choice = askChoice("What type of deck do you want to load?", ["An out of the box deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)"])
+        if fanmade:
+            choice = askChoice("Select source for other aspect cards:", ["A downloaded deck (.o8d file)", "A marvelcdb deck (URL)", "A Universal Pre-Built deck"])
+            if choice != 0:
+                choice = choice + 1
+        else:
+            choice = askChoice("Select source for other aspect cards:", ["An out of the box deck", "A downloaded deck (.o8d file)", "A marvelcdb deck (URL)", "A Universal Pre-Built deck"])
 
     if choice == 0: return
+
     if choice == 1:
-        cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", None, "Select your Hero", "Select your Hero :", min = 1, max = 1)
-        if cardsSelected is None:
-            return
-        for card in cardsSelected:
-            deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
-            deckname2 = createCards(me.Deck, pre_built[str(card.Owner)].keys(), pre_built[str(card.Owner)])
-        changeOwner(deckname1, card.Owner)
-        changeOwner(deckname2, card.Owner)
+        cardSelected = dialogBox_Setup(me.piles["Setup"], setupType, None, "Select your Hero", "Select your Hero :", min = 1, max = 1, isFanmade = fanmade)
+        if cardSelected is None: return
+        heroSet = cardSelected[0].Owner
+        heroName = cardSelected[0].Name
+        me.setGlobalVariable("heroPlayed", heroSet)
+        aspectCardsList = createCards(me.Deck, pre_built[heroSet].keys(), pre_built[heroSet])
         deleteCards(me.piles["Setup"])
 
     if choice == 2:
         filename = openFileDlg('', '', 'o8d Files|*.o8d')
-        if filename is None:
-            return        
-        deckname = o8dLoad(filename)
+        if filename == "":
+            whisper("No file chosen. Script will end here. Try to Load your hero again.")
+            return
+
+        aspectCardsList = o8dLoad(filename, fanmade)
+        if not fanmade:
+            cardSelected = me.piles["Setup"].top()
+            heroSet = cardSelected.Owner
+            heroName = cardSelected.Name
+            me.setGlobalVariable("heroPlayed", heroSet)
+        deleteCards(me.piles["Setup"])
 
     if choice == 3:
         url = askString("Please enter the URL of the deck you wish to load.", "")
@@ -37,61 +65,51 @@ Reset the game in order to generate a new deck."""
         if not "view/" in url:
             whisper("Error: Invalid URL.")
             return
-        deckname = createAPICards(url, False)
+        aspectCardsList = createAPICards(url, False)
+        if not fanmade:
+            cardSelected = me.piles["Setup"].top()
+            heroSet = cardSelected.Owner
+            heroName = cardSelected.Name
+            me.setGlobalVariable("heroPlayed", heroSet)
+        deleteCards(me.piles["Setup"])
+
+    if choice == 4:
+        if not fanmade:
+            cardSelected = dialogBox_Setup(me.piles["Setup"], setupType, None, "Select your Hero", "Select your Hero :", min = 1, max = 1, isFanmade = fanmade)
+            if cardSelected is None: return
+            heroSet = cardSelected[0].Owner
+            heroName = cardSelected[0].Name
+            me.setGlobalVariable("heroPlayed", heroSet)
+        universal_prebuilt_List = sorted(universal_prebuilt.keys())
+        prebuilt_Choice = askChoice("What Universal Pre-Built deck do you want to load?", universal_prebuilt_List)
+        aspectCardsList = createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuilt[universal_prebuilt_List[prebuilt_Choice-1]]), True)
+
+    # Set all player variables
+    pList = eval(getGlobalVariable("playerList"))
+    pList.append(me._id)
+    setGlobalVariable("playerList",str(pList))
+    heroesPlayed = eval(getGlobalVariable("heroesPlayed"))
+    heroesPlayed.append(heroSet)
+    setGlobalVariable("heroesPlayed", str(heroesPlayed))
+
+    # Load hero cards
+    heroCards = createCardsFromSet(me.Deck, heroSet, heroName, False)
+    nemesisCards = createCardsFromSet(me.Nemesis, heroSet + "_nemesis", heroName + "'s Nemesis", False)
+
+    # Change Owner for all cards
+    changeOwner(heroCards, heroSet)
+    changeOwner(aspectCardsList, heroSet)
+    if nemesisCards is not None:
+        changeOwner(nemesisCards, heroSet)
 
     heroSetup()
     checkSetup()
-
-def loadPreBuiltDeck(group, x=0, y=0):
-    """
-    https://boardgamegeek.com/geeklist/278797/marvel-champions-universal-pre-built-decks
-    """
-    mute()
-    if not deckNotLoaded(group, checkGroup = [c for c in me.Deck if not isEncounter([c])]):
-        confirm("Cannot generate a deck: You already have cards loaded.  Reset the game in order to generate a new deck.")
-        return
-
-    cardsSelected = dialogBox_Setup(me.piles["Setup"], "hero_setup", None, "Select your Hero", "Select your Hero :", min = 1, max = 1)
-    for card in cardsSelected:
-        deckname1 = createCards(me.Deck, hero_set[str(card.Owner)].keys(), hero_set[str(card.Owner)])
-    changeOwner(deckname1, card.Owner)
-    deleteCards(me.piles["Setup"])
-
-    universal_prebuilt_List = sorted(universal_prebuilt.keys())
-    prebuilt_Choice = askChoice("What Universal Pre-Built deck do you want to load?", universal_prebuilt_List)
-    deckname2 = createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuilt[universal_prebuilt_List[prebuilt_Choice-1]]), True, new_owner=card.Owner)
-
-    heroSetup()
-    checkSetup()
-
-def unloadHeroDeck(group, x=0, y=0):
-    """
-    Remove all cards for one player: in hand, in piles and on table.
-    Highly inspired from SDA OCTGN implementation
-    """
-    mute()
-    for p in me.piles:
-        notify("{} removes cards from {}.".format(me, p))
-        [c.delete() for c in me.piles[p] if c.owner == me]
-
-    notify("Removing cards from {}'s hand.".format(me))
-    [c.delete() for c in me.hand if c.owner == me]
-
-    hero_cards = [c.Owner for c in group if c.owner == me and c.Type in ["hero", "alter_ego"]]
-    if len(hero_cards) == 1:
-        hero_id = hero_cards[0]
-        notify("Removing {}'s cards from table.".format(me))
-        [c.delete() for c in group if c.owner == me and c.Owner in [hero_id, "{}_nemesis".format(hero_id)]]
-        [c.delete() for c in group if c.Type == "first_player"]
-
-        for p in shared.piles:
-            notify("{} removes cards from {}.".format(me, p))
-            [c.delete() for c in shared.piles[p] if c.Owner in [hero_id, "{}_nemesis".format(hero_id)]]
 
 def heroSetup(group=table, x = 0, y = 0):
 
     id = myID() # This ensures we have a unique ID based on our position in the setup order
     heroCount = countHeros(me)
+    heroPlayed = me.getGlobalVariable("heroPlayed")
 
     # Find any Permanent cards
     #permanents = filter(lambda card: "Permanent" in card.Keywords or "Permanent." in card.Text, me.deck)
@@ -105,99 +123,83 @@ def heroSetup(group=table, x = 0, y = 0):
         heroCard = hero[0]
         heroCard.moveToTable(playerX(id),tableLocations['hero'][1])
         heroCard.alternate = 'b'
-        pList = eval(getGlobalVariable("playerList"))
-        pList.append(me._id)
-        setGlobalVariable("playerList",str(pList))
-        heroesPlayed = eval(getGlobalVariable("heroesPlayed"))
-        heroesPlayed.append(heroCard.Owner)
-        setGlobalVariable("heroesPlayed", str(heroesPlayed))
-        me.setGlobalVariable("heroPlayed", str(heroCard.Owner))
         me.counters['Max HP'].value = num(heroCard.HP)
         me.counters['Default Card Draw'].value = num(heroCard.HandSize)
         notify("{} places his Hero on the table".format(me))
 
     if newHero:
-        me.deck.shuffle()
-        if len(me.piles["Nemesis"]) == 0:		 
-            nemesis_Deck = createCards(heroCard.owner.piles["Nemesis"],nemesis[str(heroCard.Owner)].keys(),nemesis[str(heroCard.Owner)])
-            changeOwner(nemesis_Deck, heroCard.Owner)
+        shuffle(me.deck)
 
         #------------------------------------------------------------
         # Specific Hero setup
         #------------------------------------------------------------
 
         # Doctor Strange
-        if str(heroCard.properties["Owner"]) == 'doctor_strange':
-            createCards(me.piles['Special Deck'],special_decks['doctor_strange'].keys(),special_decks['doctor_strange'])
-            me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck Discard'].collapsed = False
+        if heroPlayed == 'doctor_strange':
+            createCardsFromSet(me.piles['Special'], "invocation", "Invocation", False)
+            showGroup(me.piles['Special'], True)
+            showGroup(me.piles['Special Discard'], False)
+            me.piles['Special'].visibility = "all"
 
         # Spectrum
-        if str(heroCard.properties["Owner"]) == 'spectrum':
+        if heroPlayed == 'spectrum':
             for c in filter(lambda card: card.Type == "upgrade", me.Deck):
                 if c.CardNumber == "21002" or c.CardNumber == "21003" or c.CardNumber == "21004":
-                    c.moveTo(me.piles['Special Deck'])
-            me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+                    c.moveTo(me.piles['Special'])
+            showGroup(me.piles['Special'], False)
+            me.piles['Special'].visibility = "all"
 
         # Valkyrie
-        if str(heroCard.properties["Owner"]) == 'valk':
-            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
-                if c.CardNumber == "25002":
-                    c.moveTo(me.piles['Special Deck'])
-            me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+        if heroPlayed == 'valk':
+            for c in filter(lambda card: card.CardNumber == "25002", me.Deck):
+                c.moveTo(me.piles['Special'])
+            showGroup(me.piles['Special'], False)
+            me.piles['Special'].visibility = "all"
 
         # Vision
-        if str(heroCard.properties["Owner"]) == 'vision':
-            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
-                if c.CardNumber == "26002a":
-                    c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+        if heroPlayed == 'vision':
+            me.counters['Default Card Draw'].value += 1
+            for c in filter(lambda card: card.CardNumber == "26002a", me.Deck):
+                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
         # Ironheart
-        if str(heroCard.properties["Owner"]) == 'ironheart':
-            createCards(me.piles['Special Deck'],sorted(special_decks['ironheart'].keys()),special_decks['ironheart'])
-            me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+        if heroPlayed == 'ironheart':
+            showGroup(me.piles['Special'], False)
+            me.piles['Special'].visibility = "all"
 
         # SP//dr
-        if str(heroCard.properties["Owner"]) == 'spdr':
-            createCards(me.piles['Special Deck'],sorted(special_decks['spdr'].keys()),special_decks['spdr'])
-            for c in me.piles['Special Deck']:
+        if heroPlayed == 'spdr':
+            for c in me.piles['Special']:
                 c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
         # Shadowcat
-        if str(heroCard.properties["Owner"]) == 'shadowcat':
-            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
-                if c.CardNumber == "32031a":
-                    c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+        if heroPlayed == 'shadowcat':
+            for c in filter(lambda card: card.CardNumber == "32031a", me.Deck):
+                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
         # Phoenix
-        if str(heroCard.properties["Owner"]) == 'phoenix':
-            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
-                if c.CardNumber == "34002a":
-                    c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
-                    c.markers[AllPurposeMarker] = 4
+        if heroPlayed == 'phoenix':
+            for c in filter(lambda card: card.CardNumber == "34002a", me.Deck):
+                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+                c.markers[AllPurposeMarker] = 4
 
         # Wolverine
-        if str(heroCard.properties["Owner"]) == 'wolverine':
-            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
-                if c.CardNumber == "35002":
-                    c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+        if heroPlayed == 'wolverine':
+            for c in filter(lambda card: card.CardNumber == "35002", me.Deck):
+                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
         # Storm
-        if str(heroCard.properties["Owner"]) == 'storm':
-            createCards(me.piles['Special Deck'],special_decks['storm'].keys(),special_decks['storm'])
-            me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+        if heroPlayed == 'storm':
+            createCardsFromSet(me.piles['Special'], "weather", "Weather", False)
+            showGroup(me.piles['Special'], False)
+            me.piles['Special'].visibility = "all"
 
         # Rogue
-        if str(heroCard.properties["Owner"]) == 'rogue':
-            for c in filter(lambda card: card.Type == "upgrade", me.Deck):
-                if c.CardNumber == "38002":
-                    c.moveTo(me.piles['Special Deck'])
-            me.piles['Special Deck'].collapsed = False
-            me.piles['Special Deck'].visibility = "all"
+        if heroPlayed == 'rogue':
+            for c in filter(lambda card: card.CardNumber == "38002", me.Deck):
+                c.moveTo(me.piles['Special'])
+            showGroup(me.piles['Special'], False)
+            me.piles['Special'].visibility = "all"
 
 def countHeros(p):
     heros = 0
@@ -259,24 +261,45 @@ def o8dLoadAsDict(o8d):
                     full_dict[current_section]["cards"][card_id] = qty
     return full_dict
 
-def o8dLoad(o8d):
+def o8dLoad(o8d, fanmade = False):
     """
     Load a local .o8d file
     Decks downloaded from marvelcdb have only one section named "Cards" with shared="False", so we can directly grab cards from this section
-    """	
+    """
     full_dict = o8dLoadAsDict(o8d)
 
-    hero_id = ""
     all_cards = []
-    for card_id,qty in full_dict["Cards_False"]["cards"].items():
+
+    isAspectCard = False
+    for card_id, qty in full_dict["Cards_False"]["cards"].items():
         cards = me.Deck.create(card_id, qty)
         if qty == 1:
-            all_cards.append(cards)
-            if cards.Type == "hero":
-                hero_id = cards.Owner
+            if cards is None:
+                notify("{} card(s) not found in octgn database. Code from marvelcdb o8d : {}.".format(qty, card_id))
+                continue            
+            if cards.Type == 'hero':
+                if not fanmade:
+                    setupCardModel = queryCard({"Type":"hero_setup", "Owner":cards.Owner}, True)
+                    setupCard = me.Setup.create(setupCardModel[0], 1)
+            isAspectCard = cards.Owner == ""
+            if isAspectCard:
+                all_cards.append(cards)
+            else:
+                cards.delete()
         else:
-            all_cards.extend(cards)
-    changeOwner(all_cards, hero_id)
+            if len(cards) == 0:
+                notify("{} card(s) not found in octgn database. Code from marvelcdb o8d : {}.".format(qty, card_id))
+                continue   
+            if cards[0].Type == 'hero':
+                if not fanmade:
+                    setupCardModel = queryCard({"Type":"hero_setup", "Owner":cards[0].Owner}, True)
+                    setupCard = me.Setup.create(setupCardModel[0], 1)
+            isAspectCard = cards[0].Owner == ""
+            if isAspectCard:
+                all_cards.extend(cards)
+            else:
+                [c.delete() for c in cards]
+    return all_cards
 
 def changeOwner(cards, hero_id):
     """
@@ -286,10 +309,10 @@ def changeOwner(cards, hero_id):
         if card.Owner is None or card.Owner in ["", "basic", "justice", "leadership", "protection", "aggression"]:
             card.Owner = hero_id
 
-def createAPICards(url, filter=False, new_owner=""):
+def createAPICards(url, fanmade = False):
     """
     Create the deck by loading cards from a marvelcdb URL.
-    This function can load the whole deck or only cards that do not belong to the Hero (in this case, parameters 'filter' 
+    This function can load the whole deck or only cards that do not belong to the Hero (in this case, parameters 'filter'
     and 'new_owner' must be specified)
     """
     notify("Looking {} for deck.".format(url))
@@ -306,32 +329,37 @@ def createAPICards(url, filter=False, new_owner=""):
     try:
         deckname = JavaScriptSerializer().DeserializeObject(data)["name"]
         deck = JavaScriptSerializer().DeserializeObject(data)["slots"]
-        hero = JavaScriptSerializer().DeserializeObject(data)["investigator_code"]
+        hero_id = JavaScriptSerializer().DeserializeObject(data)["investigator_code"]
+        if not fanmade:
+            heroCards = queryCard({"Type":"hero", "CardNumber":hero_id}, True)
+            heroCard = me.piles["Setup"].create(heroCards[0], 1)
+            setupCardModel = queryCard({"Type":"hero_setup", "Owner":heroCard.Owner}, True)
+            setupCard = me.Setup.create(setupCardModel[0], 1)
+            heroCard.delete()
         chars_to_remove = ['[',']']
         rx = '[' + re.escape(''.join(chars_to_remove)) + ']'
-        hero_card = me.piles["Setup"].create(card_mapping[hero])
         for id in deck:
             line = re.sub(rx,'',str(id))
             line = line.split(',')
             cardid = line[0]
             qty = int(line[1].strip())
-            card = me.piles["Setup"].create(card_mapping[cardid], qty)
-            if card == None:
-                whisper("Error loading deck: Unknown card found.  Please restart game and try a different deck.")
+            cardModel = queryCard({"CardNumber":cardid}, True)
+            if len(cardModel) == 0:
+                notify("Card not found in octgn database. Code from marvelcdb url : {}.".format(cardid))
+                continue 
+            cards = me.Deck.create(cardModel[0], qty)
             if qty == 1:
-                all_cards.append(card)
+                isAspectCard = cards.Owner == ""
+                if isAspectCard:
+                    all_cards.append(cards)
+                else:
+                    cards.delete()
             else:
-                all_cards.extend(card)
-        # Filter cards to move only aspect cards if filter = True
-        for c in me.piles["Setup"]:
-            if not filter:
-                c.moveTo(me.Deck)
-            elif filter and c.Owner != hero_card.Owner:
-                c.moveTo(me.Deck)
-                c.Owner = new_owner
-                all_cards.remove(c)
-        deleteCards(me.piles["Setup"]) 
-        changeOwner(all_cards, hero_card.Owner)
-        return deckname
+                isAspectCard = cards[0].Owner == ""
+                if isAspectCard:
+                    all_cards.extend(cards)
+                else:
+                    [c.delete() for c in cards]
+        return all_cards
     except ValueError:
         whisper("Error retrieving online deck data, please try again. If you are trying to load a non published deck make sure you have edited your account to select 'Share Your Decks'")

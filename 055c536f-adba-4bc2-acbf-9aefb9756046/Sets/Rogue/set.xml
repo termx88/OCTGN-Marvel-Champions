@@ -3,6 +3,8 @@
   <cards>
     <card name="Rogue" id="eb5252a6-d631-49b7-a562-b88b23038001">
       <property name="CardNumber" value="38001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="hero"/>
       <property name="Owner" value="rogue"/>
       <property name="HandSize" value="5"/>
@@ -11,80 +13,113 @@
       <property name="Defense" value="2"/>
       <property name="HP" value="11"/>
       <property name="Attribute" value="X-Men."/>
-      <property name="Text">&lt;i&gt;Skin Contact&lt;/i&gt; − &lt;b&gt;Action&lt;/b&gt;: Attach Touched to another character. You gain each of the attached character's [[TRAITS]] until the end of the round. (Limit once per round.)\n&lt;b&gt;Forced Response&lt;/b&gt;: After the player phase begins, find Touched and set it aside.</property>
+      <property name="Text">&lt;i&gt;Skin Contact&lt;/i&gt; − &lt;b&gt;Action&lt;/b&gt;: Attach Touched to another character. You gain each of the attached character's [[TRAITS]] until the end of the round. (Limit once per round.)
+&lt;b&gt;Forced Response&lt;/b&gt;: After the player phase begins, find Touched and set it aside.</property>
       <property name="Unique" value="True"/>
       <alternate name="Anna Marie" type="b">
         <property name="CardNumber" value="38001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="alter_ego"/>
         <property name="Owner" value="rogue"/>
         <property name="HandSize" value="6"/>
         <property name="Recovery" value="3"/>
         <property name="HP" value="11"/>
         <property name="Attribute" value="Mutant."/>
-        <property name="Text">&lt;b&gt;Setup&lt;/b&gt;: Set your Touched upgrade aside.\n&lt;i&gt;Withdrawn&lt;/i&gt; − &lt;b&gt;Forced Response&lt;/b&gt;: After you change to this form, set Touched aside.</property>
+        <property name="Text">&lt;b&gt;Setup&lt;/b&gt;: Set your Touched upgrade aside.
+&lt;i&gt;Withdrawn&lt;/i&gt; − &lt;b&gt;Forced Response&lt;/b&gt;: After you change to this form, set Touched aside.</property>
+        <property name="Quote">"You couldn't live mah life."</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
     <card name="Touched" id="eb5252a6-d631-49b7-a562-b88b23038002">
       <property name="CardNumber" value="38002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="rogue"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Condition."/>
-      <property name="Text">If Touched is attached to a:\nMinion − Rogue's attacks gain overkill.\nVillain − Rogue gains retaliate 1.\nAlly − Rogue gains the [[AERIAL]] trait.\nHero − Rogue gains stalwart.</property>
+      <property name="Text">If Touched is attached to a:
+Minion − Rogue's attacks gain overkill.
+Villain − Rogue gains retaliate 1.
+Ally − Rogue gains the [[AERIAL]] trait.
+Hero − Rogue gains stalwart.</property>
     </card>
     <card name="Gambit" id="eb5252a6-d631-49b7-a562-b88b23038003">
       <property name="CardNumber" value="38003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="rogue"/>
       <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Wild" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="X-Men."/>
-      <property name="Text">Gambit enters play with 3 charge counters on him.\n[star]&lt;b&gt;Interrupt&lt;/b&gt;: When Gambit attacks, remove 1 charge counter from him → deal 1 damage to an enemy.</property>
+      <property name="Text">Gambit enters play with 3 charge counters on him.
+[star]&lt;b&gt;Interrupt&lt;/b&gt;: When Gambit attacks, remove 1 charge counter from him → deal 1 damage to an enemy.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Rogue's Jacket" id="eb5252a6-d631-49b7-a562-b88b23038004">
       <property name="CardNumber" value="38004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="rogue"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Item."/>
-      <property name="Text">While Touched is attached to a friendly character, Rogue gets +1 THW.\nWhile Touched is attached to a enemy character, Rogue gets +1 ATK.</property>
+      <property name="Text">While Touched is attached to a friendly character, Rogue gets +1 THW.
+While Touched is attached to a enemy character, Rogue gets +1 ATK.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Goin' Rogue" id="eb5252a6-d631-49b7-a562-b88b23038005">
       <property name="CardNumber" value="38005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="rogue"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Superpower. Thwart."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. If Rogue has:\n• [[AERIAL]], remove 2 additional threat.\n• Retaliate, confuse an enemy.\n• Stalwart, draw 1 card.</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. If Rogue has:
+• [[AERIAL]], remove 2 additional threat.
+• Retaliate, confuse an enemy.
+• Stalwart, draw 1 card.</property>
     </card>
     <card name="Southern Cross" id="eb5252a6-d631-49b7-a562-b88b23038006">
       <property name="CardNumber" value="38006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="rogue"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Attack. Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 6 damage to an enemy. If Rogue has:\n• [[AERIAL]], this attack deals 2 additional damage.\n• Retaliate, stun that enemy.\n• Stalwart, draw 1 card.</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 6 damage to an enemy. If Rogue has:
+• [[AERIAL]], this attack deals 2 additional damage.
+• Retaliate, stun that enemy.
+• Stalwart, draw 1 card.</property>
     </card>
     <card name="Energy Transfer" id="eb5252a6-d631-49b7-a562-b88b23038007">
       <property name="CardNumber" value="38007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="rogue"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Attach Touched to a character other than Rogue and deal 2 damage to that character → heal 2 damage from Rogue and ready her. You gain each of the attached character's ([TRAITS]) until the end of the round.</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Attach Touched to a character other than Rogue and deal 2 damage to that character → heal 2 damage from Rogue and ready her. You gain each of the attached character's [[TRAITS]] until the end of the round.</property>
     </card>
     <card name="Bulletproof Belle" id="eb5252a6-d631-49b7-a562-b88b23038008">
       <property name="CardNumber" value="38008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="rogue"/>
       <property name="Cost" value="1"/>
@@ -94,30 +129,41 @@
     </card>
     <card name="Superpower Adaptation" id="eb5252a6-d631-49b7-a562-b88b23038009">
       <property name="CardNumber" value="38009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="rogue"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: If Touched is attached to a friendly character, search its owner's discard pile for an event that belong's to the same classification as that character (identity-specific, aspect, or basic) → add that event to your hand.</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: If Touched is attached to a friendly character, search its owner's discard pile for an event that belong's to the same classification as that character &lt;i&gt;(identity-specific, aspect, or basic)&lt;/i&gt; → add that event to your hand.</property>
     </card>
     <card name="Iceman" id="eb5252a6-d631-49b7-a562-b88b23038010">
       <property name="CardNumber" value="38010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Mental" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="X-Men."/>
-      <property name="Text">Iceman enters play with 3 freeze counters on him.\n&lt;b&gt;Response&lt;/b&gt;: After a minion enters play, remove 1 freeze counter from Iceman → stun that minion.</property>
+      <property name="Text">Iceman enters play with 3 freeze counters on him.
+&lt;b&gt;Response&lt;/b&gt;: After a minion enters play, remove 1 freeze counter from Iceman → stun that minion.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Karma" id="eb5252a6-d631-49b7-a562-b88b23038011">
       <property name="CardNumber" value="38011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="0"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="0"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="4"/>
       <property name="Resource_Energy" value="1"/>
       <property name="HP" value="1"/>
@@ -127,14 +173,20 @@
     </card>
     <card name="Armor" id="eb5252a6-d631-49b7-a562-b88b23038012">
       <property name="CardNumber" value="38012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Physical" value="1"/>
       <property name="HP" value="2"/>
       <property name="Attribute" value="X-Men."/>
-      <property name="Text">Play only if your identity has the [[X-MEN]] trait.\nToughness.</property>
+      <property name="Text">Play only if your identity has the [[X-MEN]] trait.
+Toughness.</property>
+      <property name="Quote">"Good luck getting through my impenetrable psionic exoskeleton."</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Unflappable" id="eb5252a6-d631-49b7-a562-b88b23038013">
@@ -147,11 +199,14 @@
     </card>
     <card name="Judoka Skill" id="eb5252a6-d631-49b7-a562-b88b23038014">
       <property name="CardNumber" value="38014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Skill."/>
-      <property name="Text">Uses (3 judo counters). Max 1 per player.\n&lt;b&gt;Interrupt&lt;/b&gt;: When you defend against an enemy attack, remove 1 judo counter from here → that enemy gets -2 ATK for that attack.</property>
+      <property name="Text">Uses (3 judo counters). Max 1 per player.
+&lt;b&gt;Interrupt&lt;/b&gt;: When you defend against an enemy attack, remove 1 judo counter from here → that enemy gets -2 ATK for that attack.</property>
     </card>
     <card name="Preemptive Strike" id="eb5252a6-d631-49b7-a562-b88b23038015">
       <property name="CardNumber" value="38015"/>
@@ -163,44 +218,64 @@
     </card>
     <card name="Not Today!" id="eb5252a6-d631-49b7-a562-b88b23038016">
       <property name="CardNumber" value="38016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Defense."/>
-      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When your hero defends against an attack, it gets +2 DEF for that attack, remove 2 threat from a scheme.</property>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When your hero defends against an attack, it gets +2 DEF for that attack. If you take no damage from that attack, remove 2 threat from a scheme.</property>
     </card>
     <card name="Moira MacTaggert" id="eb5252a6-d631-49b7-a562-b88b23038018">
       <property name="CardNumber" value="38018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="support"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Persona."/>
-      <property name="Text">Play only if your identity has the [[MUTANT]] trait.\n&lt;b&gt;Response&lt;/b&gt;: After a [[MUTANT]] alter-ego changes into hero form, exhaust Moira MacTaggert → that hero's controller draws 1 card.</property>
+      <property name="Text">Play only if your identity has the [[MUTANT]] trait.
+&lt;b&gt;Response&lt;/b&gt;: After a [[MUTANT]] alter-ego changes into hero form, exhaust Moira MacTaggert → that hero's controller draws 1 card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="X-Gene" id="eb5252a6-d631-49b7-a562-b88b23038019">
       <property name="CardNumber" value="38019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Wild" value="1"/>
-      <property name="Text">Play only if your identity has the [[MUTANT]] trait. Max 1 per player\n&lt;b&gt;Resource&lt;/b&gt;: Exhaust X-Gene → generate a [wild] resource for an identity-specific event.</property>
+      <property name="Text">Play only if your identity has the [[MUTANT]] trait. Max 1 per player
+&lt;b&gt;Resource&lt;/b&gt;: Exhaust X-Gene → generate a [wild] resource for an identity-specific event.</property>
     </card>
     <card name="Med Lab" id="eb5252a6-d631-49b7-a562-b88b23038028">
       <property name="CardNumber" value="38028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="support"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Location."/>
-      <property name="Text">Max 1 per player.\n&lt;b&gt;Response&lt;/b&gt;: After an ally is defeated by consequential damage, exhaust Med Lab → place it here. (Limit 1 ally at a time.)\n&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Med Lab → play the ally here as if it was in your hand. It enters play exhausted.</property>
+      <property name="Text">Max 1 per player.
+&lt;b&gt;Response&lt;/b&gt;: After an ally is defeated by consequential damage, exhaust Med Lab → place it here. (Limit 1 ally at a time.)
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Med Lab → play the ally here as if it was in your hand. It enters play exhausted.</property>
     </card>
     <card name="Deadly Touch" id="eb5252a6-d631-49b7-a562-b88b23038024" size="EncounterCard">
       <property name="CardNumber" value="38024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="rogue"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Anna Marie player&lt;/i&gt;&lt;/b&gt;
+- If Touched is attached to a friendly character, deal 2 damage to that character. Discard this card.
+- If Touched is not attached to a friendly character, place 2 threat on the main scheme. Discard this card.</property>
     </card>
     <card name="Mystique" id="eb5252a6-d631-49b7-a562-b88b23038025" size="EncounterCard">
       <property name="CardNumber" value="38025"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="rogue_nemesis"/>
       <property name="Attack" value="1"/>
@@ -208,26 +283,39 @@
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Brotherhood of Mutants. Elite."/>
-      <property name="Text">Toughness. Villainous.</property>
+      <property name="Text">Toughness. Villainous.
+&lt;b&gt;Forced Response&lt;/b&gt;: After Mystique engages you, search the encounter deck, discard pile, and set-aside area for a copy of the Misled treachery and shuffle it into your deck.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Mystique's Manipulations" id="eb5252a6-d631-49b7-a562-b88b23038026" size="SchemeCard">
       <property name="CardNumber" value="38026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="rogue_nemesis"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
-      <property name="Attribute" value="Shapeshifter."/>
+      <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: Search the encounter deck and discard pile for a copy of the Misled treachery and shuffle it into your deck.</property>
+      <property name="Quote">While she knows Mystique can't be trusted, Rogue still finds it hard to reject the woman who raised her.</property>
     </card>
     <card name="Misled" id="eb5252a6-d631-49b7-a562-b88b23038027" size="EncounterCard">
       <property name="CardNumber" value="38027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="rogue_nemesis"/>
       <property name="Boost" value="1"/>
+      <property name="Attribute" value="Shapeshifter."/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shuffle this card into your deck. This card gains surge.
+&lt;b&gt;Forced Response&lt;/b&gt;: After this card enters your hand, place 2 threat on the main scheme. &lt;i&gt;(You may discard this card from your hand at the end of the player phase like any other card.)&lt;/i&gt;</property>
     </card>
     <card name="Donald Pierce" id="eb5252a6-d631-49b7-a562-b88b23038029" size="EncounterCard">
       <property name="CardNumber" value="38029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="reavers"/>
       <property name="Attack" value="1"/>
@@ -235,11 +323,14 @@
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Elite. Reaver."/>
-      <property name="Text">Teamwork([[REAVER]]). Villainous.</property>
+      <property name="Text">Teamwork ([[REAVER]]). Villainous.
+&lt;b&gt;Forced Response&lt;/b&gt;: After Donald Pierce engages you, reveal the topmost [[REAVER]] minion from the discard pile.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Skullbuster" id="eb5252a6-d631-49b7-a562-b88b23038030" size="EncounterCard">
       <property name="CardNumber" value="38030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="reavers"/>
       <property name="Attack" value="2"/>
@@ -247,11 +338,15 @@
       <property name="Boost" value="2"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Reaver."/>
-      <property name="Text">Teamwork([[REAVER]]). Toughness.</property>
+      <property name="Text">Teamwork ([[REAVER]]). Toughness.
+&lt;b&gt;Forced Response&lt;/b&gt;: After Skullbuster engages you, place 1 threat on the main scheme for each [[REAVER]] minion engaged with you.</property>
+      <property name="Quote">"Who you gonna call?"</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Bonebreaker" id="eb5252a6-d631-49b7-a562-b88b23038031" size="EncounterCard">
       <property name="CardNumber" value="38031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="reavers"/>
       <property name="Attack" value="3"/>
@@ -259,11 +354,15 @@
       <property name="Boost" value="2"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Reaver."/>
-      <property name="Text">Teamwork([[REAVER]]). Toughness.</property>
+      <property name="Text">Teamwork ([[REAVER]]). Toughness.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: After Bonebreaker engages you, take 1 indirect damage for each [[REAVER]] minion engaged with you.</property>
+      <property name="Quote">"Bonebreaker's ready!"</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Wade Cole" id="eb5252a6-d631-49b7-a562-b88b23038032" size="EncounterCard">
       <property name="CardNumber" value="38032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="reavers"/>
       <property name="Attack" value="2"/>
@@ -271,11 +370,14 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Reaver."/>
-      <property name="Text">Teamwork([[REAVER]]).</property>
+      <property name="Text">Teamwork ([[REAVER]]).
+&lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter deck and discard pile for a copy of the Cybernetic Enhancements attachment and attach it to Wade Cole. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
       <property name="Unique" value="True"/>
     </card>
-    <card name="Meurray Reese" id="eb5252a6-d631-49b7-a562-b88b23038033" size="EncounterCard">
+    <card name="Murray Reese" id="eb5252a6-d631-49b7-a562-b88b23038033" size="EncounterCard">
       <property name="CardNumber" value="38033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="reavers"/>
       <property name="Attack" value="2"/>
@@ -283,25 +385,35 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Reaver."/>
-      <property name="Text">Teamwork([[REAVER]]).</property>
+      <property name="Text">Teamwork ([[REAVER]]).
+&lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter deck and discard pile for a copy of the Cybernetic Enhancements attachment and attach it to Murray Reese. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="The Reavers" id="eb5252a6-d631-49b7-a562-b88b23038034" size="SchemeCard">
       <property name="CardNumber" value="38034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="reavers"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="5"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this scheme discards cards from the encounter deck until a [[REAVER]] minion is discarded, then reveals that minion.</property>
     </card>
     <card name="Cybernetic Enhancements" id="eb5252a6-d631-49b7-a562-b88b23038035" size="EncounterCard">
       <property name="CardNumber" value="38035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="reavers"/>
+      <property name="Attack" value="1"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Tech."/>
-      <property name="Text">Attach to a minion. Otherwise, this card gains surge.\nAttached minion cannot take damage.</property>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After attached minion attacks, discard Cybernetic Enhancements.
+Attach to a minion. Otherwise, this card gains surge.
+Attached minion cannot take damage.</property>
     </card>
   </cards>
 </set>

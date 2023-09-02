@@ -1,401 +1,507 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <set name="SP//dr" id="5b7da011-412e-452a-9edd-24618a8bae2c" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
- <cards>
+  <cards>
     <card name="SP//dr Suit" id="5b7da011-412e-452a-9edd-24618a031001">
       <property name="CardNumber" value="31001a"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="hero"/>
-      <property name="Unique" value="True"/>
+      <property name="Owner" value="spdr"/>
+      <property name="HandSize" value="3"/>
       <property name="Thwart" value="2"/>
       <property name="Attack" value="2"/>
       <property name="Defense" value="2"/>
       <property name="HP" value="14"/>
-      <property name="HandSize" value="3"/>
       <property name="Attribute" value="Active. Web-Warrior."/>
-      <property name="Text" value="&lt;i&gt;Sync Ratio&lt;/i&gt; — &lt;b&gt;Resource:&lt;/b&gt; Exhaust an [Interface] upgrade you control â†’ generate that upgrade's resources."/>
-      <property name="Quote" value="&quot;We're called SP//dr, and we protect the city.&quot;"/>
+      <property name="Text">&lt;i&gt;Sync Ratio&lt;/i&gt; — &lt;b&gt;Resource:&lt;/b&gt; Exhaust an [[Interface]] upgrade you control → generate that upgrade's resources.</property>
+      <property name="Quote">"We're called SP//dr, and we protect the city."</property>
+      <property name="Unique" value="True"/>
       <alternate name="SP//dr Suit" type="b">
         <property name="CardNumber" value="31001b"/>
-        <property name="Owner" value="spdr"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="support"/>
-        <property name="Unique" value="True"/>
+        <property name="Owner" value="spdr"/>
         <property name="HandSize" value="4"/>
         <property name="Attribute" value="Inactive. Tech."/>
-        <property name="Text" value="Permanent. This card's printed text box cannot be treated as if it were blank.&lt;i&gt;Return to Base&lt;/i&gt; — &lt;b&gt;Forced Interrupt:&lt;/b&gt; When you flip to this side, flip SP//dr to Peni Parker. Detach Peni Parker from here, moving all counters on her and cards attached to her to this card."/>
+        <property name="Text">Permanent. This card's printed text box cannot be treated as if it were blank.
+&lt;i&gt;Return to Base&lt;/i&gt; — &lt;b&gt;Forced Interrupt:&lt;/b&gt; When you flip to this side, flip SP//dr to Peni Parker. Detach Peni Parker from here, moving all counters on her and cards attached to her to this card.</property>
+        <property name="Unique" value="True"/>
       </alternate>
     </card>
     <card name="Peni Parker" id="5b7da011-412e-452a-9edd-24618a031002">
       <property name="CardNumber" value="31002a"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Special"/>
       <property name="Type" value="alter_ego"/>
-      <property name="Unique" value="True"/>
+      <property name="Owner" value="spdr"/>
+      <property name="HandSize" value="4"/>
       <property name="Recovery" value="4"/>
       <property name="HP" value="14"/>
-      <property name="HandSize" value="4"/>
       <property name="Attribute" value="Civilian."/>
-      <property name="Text" value="&lt;i&gt;Psychogenetic Compatibility&lt;/i&gt; — &lt;b&gt;Setup:&lt;/b&gt; Put SP//dr Suit into play, [Inactive] side faceup.&lt;i&gt;Maintenance&lt;/i&gt; — &lt;b&gt;Alter-Ego Action:&lt;/b&gt; Exhaust SP//dr Suit â†’ draw 2 cards."/>
+      <property name="Text">&lt;i&gt;Psychogenetic Compatibility&lt;/i&gt; — &lt;b&gt;Setup:&lt;/b&gt; Put SP//dr Suit into play, [[Inactive]] side faceup.
+&lt;i&gt;Maintenance&lt;/i&gt; — &lt;b&gt;Alter-Ego Action:&lt;/b&gt; Exhaust SP//dr Suit → draw 2 cards.</property>
+      <property name="Unique" value="True"/>
       <alternate name="SP//dr" type="b">
         <property name="CardNumber" value="31002b"/>
-        <property name="Owner" value="spdr"/>
+        <property name="Position" value="2"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="upgrade"/>
-        <property name="Unique" value="True"/>
+        <property name="Owner" value="spdr"/>
         <property name="HandSize" value="3"/>
         <property name="Resource_Wild" value="1"/>
         <property name="Attribute" value="Interface. Pilot."/>
-        <property name="Text" value="Permanent. This card's printed text box cannot be treated as if it were blank.&lt;i&gt;Suit Up!&lt;/i&gt; — &lt;b&gt;Forced Interrupt:&lt;/b&gt; When you flip to this side, flip SP//dr Suit to its [Active] side. Attach this card to SP//dr Suit, moving all counters on this cards or cards attached to this card to SP//dr Suit."/>
+        <property name="Text">Permanent. This card's printed text box cannot be treated as if it were blank.
+&lt;i&gt;Suit Up!&lt;/i&gt; — &lt;b&gt;Forced Interrupt:&lt;/b&gt; When you flip to this side, flip SP//dr Suit to its [[Active]] side. Attach this card to SP//dr Suit, moving all counters on this cards or cards attached to this card to SP//dr Suit.</property>
+        <property name="Unique" value="True"/>
       </alternate>
     </card>
     <card name="VEN#m" id="5b7da011-412e-452a-9edd-24618a031003">
       <property name="CardNumber" value="31003"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
-      <property name="Unique" value="True"/>
-      <property name="Cost" value="4"/>
+      <property name="Owner" value="spdr"/>
       <property name="Thwart" value="1"/>
-      <property name="Attack" value="1"/>
-      <property name="HP" value="3"/>
-      <property name="Resource_Energy" value="1"/>
-      <property name="Text" value="[star] VEN#m gets +1 THW and +1 ATK for each sym counter on her.&lt;b&gt;Hero Response:&lt;/b&gt; After VEN#m enters play, place 1 sym counter on her for each resource generated by SP//dr Suit's &quot;Sync Ratio&quot; ability to pay for her."/>
       <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
       <property name="AttackCost" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Text">[star] VEN#m gets +1 THW and +1 ATK for each sym counter on her.
+&lt;b&gt;Hero Response:&lt;/b&gt; After VEN#m enters play, place 1 sym counter on her for each resource generated by SP//dr Suit's "Sync Ratio" ability to pay for her.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="All Systems Go!" id="5b7da011-412e-452a-9edd-24618a031004">
       <property name="CardNumber" value="31004"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Energy" value="1"/>
-      <property name="Text" value="&lt;b&gt;Hero Action:&lt;/b&gt; Choose:- Ready each [Interface] upgrade you control.- Search your deck and discard pile for an [Interface] upgrade and add it to your hand. (Shuffle.)"/>
+      <property name="Text">&lt;b&gt;Hero Action:&lt;/b&gt; Choose:
+- Ready each [[Interface]] upgrade you control.
+- Search your deck and discard pile for an [[Interface]] upgrade and add it to your hand. (Shuffle.)</property>
     </card>
     <card name="Rapid Deployment" id="5b7da011-412e-452a-9edd-24618a031005">
       <property name="CardNumber" value="31005"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Thwart."/>
-      <property name="Text" value="&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. If you paid for this card using a resource generated by SP//dr Suit's &lt;i&gt;&quot;Sync Ratio&quot;&lt;/i&gt; ability, remove 3 threat from a scheme."/>
-      <property name="Quote" value="&quot;We'll protect this city, no matter what.&quot; —SP//dr"/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. If you paid for this card using a resource generated by SP//dr Suit's &lt;i&gt;"Sync Ratio"&lt;/i&gt; ability, remove 3 threat from a scheme.</property>
+      <property name="Quote">"We'll protect this city, no matter what." —SP//dr</property>
     </card>
     <card name="Web-Trap" id="5b7da011-412e-452a-9edd-24618a031006">
       <property name="CardNumber" value="31006"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Attack."/>
-      <property name="Text" value="&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 5 damage to an enemy. If you paid for this card using a resource generated by SP//dr Suit's &lt;i&gt;&quot;Sync Ratio&quot;&lt;/i&gt; ability, stun that enemy."/>
-      <property name="Quote" value="&quot;May wanted SP//dr to be better, to be the best we could. That's why she developed these web-traps!&quot;"/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 5 damage to an enemy. If you paid for this card using a resource generated by SP//dr Suit's &lt;i&gt;"Sync Ratio"&lt;/i&gt; ability, stun that enemy.</property>
+      <property name="Quote">"May wanted SP//dr to be better, to be the best we could. That's why she developed these web-traps!"</property>
     </card>
-    <card name="Autn May &amp; Uncle Ben" id="5b7da011-412e-452a-9edd-24618a031007">
+    <card name="Aunt May &amp; Uncle Ben" id="5b7da011-412e-452a-9edd-24618a031007">
       <property name="CardNumber" value="31007"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="support"/>
-      <property name="Unique" value="True"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Persona."/>
-      <property name="Text" value="&lt;b&gt;Action:&lt;/b&gt; Exhaust Aunt May &amp; Uncle Ben and discard the top 2 cards of your deck (top 3 cards instead if you are in alter-ego form) â†’ add each SP//dr card discarded this way to your hand."/>
+      <property name="Text">&lt;b&gt;Action:&lt;/b&gt; Exhaust Aunt May &amp; Uncle Ben and discard the top 2 cards of your deck (top 3 cards instead if you are in alter-ego form) → add each SP//dr card discarded this way to your hand.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Ejection Protocol" id="5b7da011-412e-452a-9edd-24618a031008">
       <property name="CardNumber" value="31008"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="support"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Tactic."/>
-      <property name="Text" value="&lt;b&gt;Hero Action:&lt;/b&gt; Discard Ejection Protocol â†’ exhaust each [Interface] upgrade you control, set your hit point dial to 6, give your identity a tough status card, and flip to alter-ego form."/>
-      <property name="Quote" value="&quot;Warning! Incomeing threat!&quot;"/>
+      <property name="Text">&lt;b&gt;Hero Action:&lt;/b&gt; Discard Ejection Protocol → exhaust each [[Interface]] upgrade you control, set your hit point dial to 6, give your identity a tough status card, and flip to alter-ego form.</property>
+      <property name="Quote">"Warning! Incoming threat!"</property>
     </card>
     <card name="SP//dr Command" id="5b7da011-412e-452a-9edd-24618a031009">
       <property name="CardNumber" value="31009"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="support"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Location."/>
-      <property name="Text" value="&lt;b&gt;Hero Action:&lt;/b&gt; Exhaust SP//dr Command and an [Interface] upgrade â†’ draw 1 card.&lt;b&gt;Hero Action:&lt;/b&gt; Exhaust SP//dr Command, choose and discard 1 card from your hand â†’ ready an [Interface] upgrade."/>
-      <property name="Quote" value="&quot;Peni, listen to our orders very carefully.&quot;"/>
+      <property name="Text">&lt;b&gt;Hero Action:&lt;/b&gt; Exhaust SP//dr Command and an [[Interface]] upgrade → draw 1 card.
+&lt;b&gt;Hero Action:&lt;/b&gt; Exhaust SP//dr Command, choose and discard 1 card from your hand → ready an [[Interface]] upgrade.</property>
+      <property name="Quote">"Peni, listen to our orders very carefully."</property>
     </card>
     <card name="Host Spider" id="5b7da011-412e-452a-9edd-24618a031010">
       <property name="CardNumber" value="31010"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Wild" value="1"/>
       <property name="Attribute" value="Interface. Spider."/>
-      <property name="Text" value="&lt;b&gt;Hero Action:&lt;/b&gt; Exhaust Host Spider â†’ ready SP//dr Suit."/>
-      <property name="Quote" value="&quot;He trusts you… so will I.&quot; —Peni Parker"/>
+      <property name="Text">&lt;b&gt;Hero Action:&lt;/b&gt; Exhaust Host Spider → ready SP//dr Suit.</property>
+      <property name="Quote">"He trusts youâ€¦ so will I." —Peni Parker</property>
     </card>
     <card name="Psychic Link" id="5b7da011-412e-452a-9edd-24618a031011">
       <property name="CardNumber" value="31011"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Interface. Tech."/>
-      <property name="Text" value="&lt;b&gt;Hero Interrupt:&lt;/b&gt; When SP//dr Suit makes a basic thwart, exhaust Psychic Link â†’ it gets +2 THW for that thwart."/>
-      <property name="Quote" value="&quot;Can we listen to music? It helps us focus.&quot; —Peni Parker"/>
+      <property name="Text">&lt;b&gt;Hero Interrupt:&lt;/b&gt; When SP//dr Suit makes a basic thwart, exhaust Psychic Link → it gets +2 THW for that thwart.</property>
+      <property name="Quote">"Can we listen to music? It helps us focus." —Peni Parker</property>
     </card>
     <card name="Speed-Metal Alloy" id="5b7da011-412e-452a-9edd-24618a031012">
       <property name="CardNumber" value="31012"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Interface. Tech."/>
-      <property name="Text" value="&lt;b&gt;Hero Interrupt:&lt;/b&gt; When SP//dr Suit defends against an attack, exhaust Speed-Metal Alloy â†’ it gets +2 DEF for that defense."/>
-      <property name="Quote" value="&quot;I thought you said it was a suit—this is speed-metal!&quot; —Spider-Ham"/>
+      <property name="Text">&lt;b&gt;Hero Interrupt:&lt;/b&gt; When SP//dr Suit defends against an attack, exhaust Speed-Metal Alloy → it gets +2 DEF for that defense.</property>
+      <property name="Quote">"I thought you said it was a suit—this is speed-metal!" —Spider-Ham</property>
     </card>
     <card name="Web-Fluid Compressor" id="5b7da011-412e-452a-9edd-24618a031013">
       <property name="CardNumber" value="31013"/>
-      <property name="Owner" value="spdr"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
+      <property name="Owner" value="spdr"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Interface. Tech."/>
-      <property name="Text" value="&lt;b&gt;Hero Interrupt:&lt;/b&gt; When SP/dr Suit makes a basic attack, exhaust Web-Fluid Compressor â†’ it gets +2 ATK for that attack."/>
-      <property name="Quote" value="&quot;Progress takes patience. That's why we have to keep working on it.&quot; —Aunt May"/>
+      <property name="Text">&lt;b&gt;Hero Interrupt:&lt;/b&gt; When SP/dr Suit makes a basic attack, exhaust Web-Fluid Compressor → it gets +2 ATK for that attack.</property>
+      <property name="Quote">"Progress takes patience. That's why we have to keep working on it." —Aunt May</property>
     </card>
     <card name="Daredevil" id="5b7da011-412e-452a-9edd-24618a031014">
       <property name="CardNumber" value="31014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
-      <property name="Unique" value="True"/>
-      <property name="Cost" value="2"/>
       <property name="Thwart" value="2"/>
-      <property name="Attack" value="1"/>
-      <property name="HP" value="3"/>
-      <property name="Resource_Physical" value="1"/>
-      <property name="Text" value="&lt;b&gt;Response:&lt;/b&gt; After Daredevil defends against an attack, move 1 damage from him to the attacking enemy."/>
-      <property name="Quote" value="&quot;Quiet breaks, shatters down, so the city reaches out. Listening… Waiting… Another station for a signal, and we're all some kind of noise. Be the good kind, Peni.&quot;"/>
       <property name="ThwartCost" value="2"/>
+      <property name="Attack" value="1"/>
       <property name="AttackCost" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Text">&lt;b&gt;Response:&lt;/b&gt; After Daredevil defends against an attack, move 1 damage from him to the attacking enemy.</property>
+      <property name="Quote">"Quiet breaks, shatters down, so the city reaches out. Listeningâ€¦ Waitingâ€¦ Another station for a signal, and we're all some kind of noise. Be the good kind, Peni."</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Spider-Man Noir" id="5b7da011-412e-452a-9edd-24618a031015">
       <property name="CardNumber" value="31015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
-      <property name="Unique" value="True"/>
-      <property name="Cost" value="3"/>
       <property name="Thwart" value="-1"/>
-      <property name="Attack" value="-1"/>
-      <property name="HP" value="3"/>
-      <property name="Resource_Energy" value="1"/>
-      <property name="Attribute" value="Web-Warrior."/>
-      <property name="Text" value="X is equal to the number of facedown cards attached to Spider-Man Noir.&lt;b&gt;Response:&lt;/b&gt; After you resolve a treachery, if you control another [Web-Warrior] card, attach that treachery facedown here (to a maximum of 3)."/>
       <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="-1"/>
       <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Web-Warrior."/>
+      <property name="Text">X is equal to the number of facedown cards attached to Spider-Man Noir.
+&lt;b&gt;Response:&lt;/b&gt; After you resolve a treachery, if you control another [[Web-Warrior]] card, attach that treachery facedown here (to a maximum of 3).</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Repurpose" id="5b7da011-412e-452a-9edd-24618a031016">
       <property name="CardNumber" value="31016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Skill."/>
-      <property name="Text" value="&lt;b&gt;Hero Action:&lt;/b&gt; Discard a [Tech] upgrade you control â†’ ready your hero and choose THW, ATK, or DEF. Until the end of the round, your hero gets +X to the chosen power, where X is equal to that upgrade's printed cost."/>
+      <property name="Text">&lt;b&gt;Hero Action:&lt;/b&gt; Discard a [[Tech]] upgrade you control → ready your hero and choose THW, ATK, or DEF. Until the end of the round, your hero gets +X to the chosen power, where X is equal to that upgrade's printed cost.</property>
     </card>
     <card name="Thwip! Thwip!" id="5b7da011-412e-452a-9edd-24618a031017">
       <property name="CardNumber" value="31017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Superpower."/>
-      <property name="Text" value="&lt;b&gt;Hero Action:&lt;/b&gt; Deal 1 damage to a [Web-Warrior] character you control â†’ place a total of 2 stun status cards on up to 2 enemies."/>
-      <property name="Quote" value="&quot;You now have the entire afternoon to reconsider your life choices. You're welcome.&quot; —Spider-Man"/>
+      <property name="Text">&lt;b&gt;Hero Action:&lt;/b&gt; Deal 1 damage to a [[Web-Warrior]] character you control → place a total of 2 stun status cards on up to 2 enemies.</property>
+      <property name="Quote">"You now have the entire afternoon to reconsider your life choices. You're welcome." —Spider-Man</property>
     </card>
     <card name="Forcefield Generator" id="5b7da011-412e-452a-9edd-24618a031019">
       <property name="CardNumber" value="31019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Tech."/>
-      <property name="Text" value="Uses (6 energy counters). Max 1 per player.&lt;b&gt;Forced Interrupt:&lt;/b&gt; When you would take any amount of damage, remove that many energy counters from here. For each energy counter removed this way, prevent 1 of that damage."/>
+      <property name="Text">Uses (6 energy counters). Max 1 per player.
+&lt;b&gt;Forced Interrupt:&lt;/b&gt; When you would take any amount of damage, remove that many energy counters from here. For each energy counter removed this way, prevent 1 of that damage.</property>
     </card>
     <card name="Spider-Tingle" id="5b7da011-412e-452a-9edd-24618a031020">
       <property name="CardNumber" value="31020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Superpower."/>
-      <property name="Text" value="&lt;b&gt;Interrupt:&lt;/b&gt; When you would reveal an encounter card, deal 1 damage to a [Web-Warrior] character you control â†’ if that card is a treachery, cancel its &lt;b&gt;&quot;When Revealed&quot;&lt;/b&gt; effects and discard Spider-Tingle."/>
+      <property name="Text">&lt;b&gt;Interrupt:&lt;/b&gt; When you would reveal an encounter card, deal 1 damage to a [[Web-Warrior]] character you control → if that card is a treachery, cancel its &lt;b&gt;"When Revealed"&lt;/b&gt; effects and discard Spider-Tingle.</property>
     </card>
     <card name="Spider-Ham" id="5b7da011-412e-452a-9edd-24618a031021">
       <property name="CardNumber" value="31021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
-      <property name="Unique" value="True"/>
-      <property name="Cost" value="3"/>
       <property name="Thwart" value="2"/>
-      <property name="Attack" value="2"/>
-      <property name="HP" value="3"/>
-      <property name="Resource_Physical" value="1"/>
-      <property name="Attribute" value="Cartoon. Web-Warrior."/>
-      <property name="Text" value="Play only if you control a [Web-Warrior] card.[star]&lt;b&gt;Forced Response:&lt;/b&gt; After Spider-Ham attacks of thwarts, discard the top card of the encounter deck. For each boost icon ([boost]) discarded this way, deal 1 damage to Spider-Ham."/>
       <property name="ThwartCost" value="0"/>
+      <property name="Attack" value="2"/>
       <property name="AttackCost" value="0"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Cartoon. Web-Warrior."/>
+      <property name="Text">Play only if you control a [[Web-Warrior]] card.
+[star]&lt;b&gt;Forced Response:&lt;/b&gt; After Spider-Ham attacks of thwarts, discard the top card of the encounter deck. For each boost icon ([boost]) discarded this way, deal 1 damage to Spider-Ham.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Spider-Man" id="5b7da011-412e-452a-9edd-24618a031022">
       <property name="CardNumber" value="31022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
-      <property name="Unique" value="True"/>
-      <property name="Cost" value="2"/>
       <property name="Thwart" value="1"/>
-      <property name="Attack" value="2"/>
-      <property name="HP" value="2"/>
-      <property name="Resource_Mental" value="1"/>
-      <property name="Attribute" value="Web-Warrior."/>
-      <property name="Text" value="Play only if you control a [Web-Warrior] card.&lt;b&gt;Response:&lt;/b&gt; After you play Spider-Man from your hand, ready an upgrade you control. If that upgrade has the [Tech] trait, draw 1 card."/>
       <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
       <property name="AttackCost" value="2"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Web-Warrior."/>
+      <property name="Text">Play only if you control a [[Web-Warrior]] card.
+&lt;b&gt;Response:&lt;/b&gt; After you play Spider-Man from your hand, ready an upgrade you control. If that upgrade has the [[Tech]] trait, draw 1 card.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Limitless Stamina" id="5b7da011-412e-452a-9edd-24618a031023">
       <property name="CardNumber" value="31023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Superpower."/>
-      <property name="Text" value="Play only if your identity has at least 14 printed hit points.&lt;b&gt;Hero Action:&lt;/b&gt; Ready your hero."/>
-      <property name="Quote" value="&quot;What, you think this fight is almost over?! That was just warm-up practice.&quot; —Thor"/>
+      <property name="Text">Play only if your identity has at least 14 printed hit points.
+&lt;b&gt;Hero Action:&lt;/b&gt; Ready your hero.</property>
+      <property name="Quote">"What, you think this fight is almost over?! That was just warm-up practice." —Thor</property>
     </card>
     <card name="Unshakable" id="5b7da011-412e-452a-9edd-24618a031024">
       <property name="CardNumber" value="31024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Condition. Superpower."/>
-      <property name="Text" value="Play only if your identity has at least 14 printed hit points.Your identity gains steady."/>
-    </card>
-    <card name="Inherited Burden" id="5b7da011-412e-452a-9edd-24618a031025" size="EncounterCard">
-      <property name="CardNumber" value="31025"/>
-      <property name="Owner" value="spdr"/>
-      <property name="Type" value="obligation"/>
-      <property name="Text" value="&lt;b&gt;&lt;i&gt;Give to the Peni Parker player.&lt;i&gt;&lt;b&gt;You may flip to alter-ego form. Choose:- Exhaust Peni Parker â†’ remove Inherited Burden from the game.- Choose and discard 1 [Interface] upgrade you control. Discard this obligation."/>
-      <property name="Boost" value="2"/>
-    </card>
-    <card name="Ginat Monster Attack" id="5b7da011-412e-452a-9edd-24618a031026" size="SchemeCard">
-      <property name="CardNumber" value="31026"/>
-      <property name="Owner" value="spdr_nemesis"/>
-      <property name="Type" value="side_scheme"/>
-      <property name="Text" value="As an additional cost to thwart this scheme, you must spend a [energy] resource."/>
-      <property name="Boost" value="3"/>
-      <property name="Quote" value="M.O.R.B.I.U.S. is laying siege to the city, wreaking havoc and siphoning energy from its power grid."/>
-      <property name="BaseThreat" value="4"/>
-      <property name="BaseThreatFixed" value="True"/>
-      <property name="Scheme_Crisis" value="1"/>
-    </card>
-    <card name="M.O.R.B.I.U.S." id="5b7da011-412e-452a-9edd-24618a031027" size="EncounterCard">
-      <property name="CardNumber" value="31027"/>
-      <property name="Owner" value="spdr_nemesis"/>
-      <property name="Type" value="minion"/>
-      <property name="Scheme" value="2"/>
-      <property name="Attack" value="2"/>
-      <property name="HP" value="6"/>
-      <property name="Attribute" value="Creature."/>
-      <property name="Text" value="&lt;b&gt;Forced Response:&lt;/b&gt; After the engaged hero generates any number of resources, deal an equal amount of damage to that hero.&lt;i&gt;(SP//dr's nemesis minion.)&lt;/i&gt;"/>
-      <property name="Boost" value="2"/>
-      <property name="Quote" value="&quot;This is a threat unlike any you've faced before!&quot; —Uncle Ben"/>
-    </card>
-    <card name="Energy Drain" id="5b7da011-412e-452a-9edd-24618a031028" size="EncounterCard">
-      <property name="CardNumber" value="31028"/>
-      <property name="Owner" value="spdr_nemesis"/>
-      <property name="Type" value="treachery"/>
-      <property name="Text" value="&lt;b&gt;When Revealed (Alter-Ego):&lt;/b&gt; Choose to either spend [energy][energy] resources or exhaust your identity.&lt;b&gt;When Revealed (Hero):&lt;/b&gt; Choose to either spend [energy][energy] or take 3 damage."/>
-      <property name="Boost" value="1"/>
+      <property name="Text">Play only if your identity has at least 14 printed hit points.
+Your identity gains steady.</property>
     </card>
     <card name="Clarity of Purpose" id="5b7da011-412e-452a-9edd-24618a031029">
       <property name="CardNumber" value="31029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Condition."/>
-      <property name="Text" value="Attach to a friendly character. Max 1 per character.&lt;b&gt;Hero Resource:&lt;/b&gt; Exhaust this card and deal 1 damage to attached character â†’ generate a [wild] resource."/>
+      <property name="Text">Attach to a friendly character. Max 1 per character.
+&lt;b&gt;Hero Resource:&lt;/b&gt; Exhaust this card and deal 1 damage to attached character → generate a [wild] resource.</property>
+    </card>
+    <card name="Inherited Burden" id="5b7da011-412e-452a-9edd-24618a031025" size="EncounterCard">
+      <property name="CardNumber" value="31025"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="spdr"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Peni Parker player.&lt;/i&gt;&lt;/b&gt;
+You may flip to alter-ego form. Choose:
+- Exhaust Peni Parker → remove Inherited Burden from the game.
+- Choose and discard 1 [[Interface]] upgrade you control. Discard this obligation.</property>
+    </card>
+    <card name="Giant Monster Attack" id="5b7da011-412e-452a-9edd-24618a031026" size="SchemeCard">
+      <property name="CardNumber" value="31026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="spdr_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">As an additional cost to thwart this scheme, you must spend a [[energy]] resource.</property>
+      <property name="Quote">M.O.R.B.I.U.S. is laying siege to the city, wreaking havoc and siphoning energy from its power grid.</property>
+    </card>
+    <card name="M.O.R.B.I.U.S." id="5b7da011-412e-452a-9edd-24618a031027" size="EncounterCard">
+      <property name="CardNumber" value="31027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="spdr_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Creature."/>
+      <property name="Text">&lt;b&gt;Forced Response:&lt;/b&gt; After the engaged hero generates any number of resources, deal an equal amount of damage to that hero.
+&lt;i&gt;(SP//dr's nemesis minion.)&lt;/i&gt;</property>
+      <property name="Quote">"This is a threat unlike any you've faced before!" —Uncle Ben</property>
+    </card>
+    <card name="Energy Drain" id="5b7da011-412e-452a-9edd-24618a031028" size="EncounterCard">
+      <property name="CardNumber" value="31028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="spdr_nemesis"/>
+      <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed (Alter-Ego):&lt;/b&gt; Choose to either spend [energy][energy] resources or exhaust your identity.
+&lt;b&gt;When Revealed (Hero):&lt;/b&gt; Choose to either spend [energy][energy] or take 3 damage.</property>
     </card>
     <card name="Grand Larceny" id="5b7da011-412e-452a-9edd-24618a031030" size="SchemeCard">
       <property name="CardNumber" value="31030"/>
-      <property name="Owner" value="ironspider_sinister"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
-      <property name="Text" value="Threat cannot be removed from this scheme while a [Criminal] minion is in play."/>
+      <property name="Owner" value="ironspider_sinister"/>
       <property name="Boost" value="3"/>
-      <property name="Quote" value="The Iron Spider's Sinister Six are on an crime spree, robbing every business they come across."/>
       <property name="BaseThreat" value="4"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">Threat cannot be removed from this scheme while a [[Criminal]] minion is in play.</property>
+      <property name="Quote">The Iron Spider's Sinister Six are on an crime spree, robbing every business they come across.</property>
     </card>
     <card name="Bombshell" id="5b7da011-412e-452a-9edd-24618a031031" size="EncounterCard">
       <property name="CardNumber" value="31031"/>
-      <property name="Owner" value="ironspider_sinister"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Unique" value="True"/>
-      <property name="Scheme" value="2"/>
+      <property name="Owner" value="ironspider_sinister"/>
       <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Criminal."/>
-      <property name="Boost" value="0"/>
+      <property name="Text">Divide damage from Bombshell's attack among each character the attacked player controls as evenly as possible.
+Deal 1 indirect damage to each player. Exhaust each character damaged this way.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Electro" id="5b7da011-412e-452a-9edd-24618a031032" size="EncounterCard">
       <property name="CardNumber" value="31032"/>
-      <property name="Owner" value="ironspider_sinister"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Unique" value="True"/>
-      <property name="Scheme" value="1"/>
+      <property name="Owner" value="ironspider_sinister"/>
       <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Criminal."/>
-      <property name="Text" value="[star] Electro gets +1 hit point for each [energy] resource attached to her.[star] &lt;b&gt;Forced Response:&lt;/b&gt; After Electro engages you or activates against you, choose 1 card from your hand with a printed [energy] resource and attach it to her."/>
-      <property name="Boost" value="1"/>
+      <property name="Text">[star] Electro gets +1 hit point for each [energy] resource attached to her.
+[star] &lt;b&gt;Forced Response:&lt;/b&gt; After Electro engages you or activates against you, choose 1 card from your hand with a printed [energy] resource and attach it to her.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Hobgoblin" id="5b7da011-412e-452a-9edd-24618a031033" size="EncounterCard">
       <property name="CardNumber" value="31033"/>
-      <property name="Owner" value="ironspider_sinister"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Unique" value="True"/>
-      <property name="Scheme" value="2"/>
+      <property name="Owner" value="ironspider_sinister"/>
       <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Criminal."/>
-      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;Forced Interrupt:&lt;/b&gt; When Hobgoblin would attack you, discard cards from the top of the encounter deck equal to Hobgoblin's ATK instead. Take 1 indirect damage for each boost icon ([boost]) discarded this way.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Iron Spider" id="5b7da011-412e-452a-9edd-24618a031034" size="EncounterCard">
       <property name="CardNumber" value="31034"/>
-      <property name="Owner" value="ironspider_sinister"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Unique" value="True"/>
-      <property name="Scheme" value="2"/>
+      <property name="Owner" value="ironspider_sinister"/>
       <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Criminal. Elite."/>
-      <property name="Text" value="Guard. Patrol. Retaliate 1. Toughness."/>
-      <property name="Boost" value="3"/>
-      <property name="Quote" value="&quot;Don't make me whoop you.&quot;"/>
+      <property name="Text">Iron Spider's attacks gain overkill.
+Guard. Patrol. Retaliate 1. Toughness.</property>
+      <property name="Quote">"Don't make me whoop you."</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Sandman" id="5b7da011-412e-452a-9edd-24618a031035" size="EncounterCard">
       <property name="CardNumber" value="31035"/>
-      <property name="Owner" value="ironspider_sinister"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Unique" value="True"/>
-      <property name="Scheme" value="1"/>
+      <property name="Owner" value="ironspider_sinister"/>
       <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
       <property name="HP" value="7"/>
       <property name="Attribute" value="Criminal."/>
-      <property name="Text" value="&lt;b&gt;Forced Response:&lt;/b&gt; After Sandman takes any amount of damage from an attack, discard the top 7 cards of the encounter deck."/>
-      <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;Forced Response:&lt;/b&gt; After Sandman takes any amount of damage from an attack, discard the top 7 cards of the encounter deck.
+Discard the top 7 cards of the encounter deck.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Spot" id="5b7da011-412e-452a-9edd-24618a031036" size="EncounterCard">
       <property name="CardNumber" value="31036"/>
-      <property name="Owner" value="ironspider_sinister"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Unique" value="True"/>
-      <property name="Scheme" value="1"/>
+      <property name="Owner" value="ironspider_sinister"/>
       <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Criminal."/>
-      <property name="Text" value="&lt;b&gt;When Defeated:&lt;/b&gt; If Spot was defeated without excess damage, shuffle him into the encounter deck."/>
-      <property name="Boost" value="0"/>
+      <property name="Text">&lt;b&gt;When Defeated:&lt;/b&gt; If Spot was defeated without excess damage, shuffle him into the encounter deck.
+Put this minion into play engaged with you.</property>
+      <property name="Unique" value="True"/>
     </card>
     <card name="Surge in Crime" id="5b7da011-412e-452a-9edd-24618a031037" size="EncounterCard">
       <property name="CardNumber" value="31037"/>
-      <property name="Owner" value="ironspider_sinister"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
-      <property name="Text" value="Surge.Each [Criminal] minion gains surge.&lt;b&gt;Hero Action:&lt;/b&gt; If there are no [Criminal] minions in play, spend 2 resources of any type â†’ discard this card."/>
+      <property name="Owner" value="ironspider_sinister"/>
       <property name="Boost" value="2"/>
+      <property name="Text">Surge.
+Each [[Criminal]] minion gains surge.
+&lt;b&gt;Hero Action:&lt;/b&gt; If there are no [[Criminal]] minions in play, spend 2 resources of any type → discard this card.</property>
     </card>
- </cards>
+  </cards>
 </set>

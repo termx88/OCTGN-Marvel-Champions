@@ -3,41 +3,69 @@
   <cards>
     <card name="The Hood" id="9ddf6141-1223-4b30-b8cf-d73256190eae" size="VillainCard">
       <property name="CardNumber" value="24001"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="the_hood"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="14"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Criminal."/>
+      <property name="Text">&lt;i&gt;Foul Play&lt;/i&gt; - &lt;b&gt;Special:&lt;/b&gt; Discard the top card of the encounter deck. If that card does not belong to The Hood encounter set, deal it to yourself as a facedown encounter card.</property>
+      <property name="Quote">"If you're not with me, you're on your own"</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="The Hood" id="ccae86ac-a7a6-47f6-a995-81340dce0e4f" size="VillainCard">
       <property name="CardNumber" value="24002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="the_hood"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="16"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Criminal."/>
+      <property name="Text">&lt;b&gt;When Defeated:&lt;/b&gt; Choose 1 set-aside modular encounter set at random, then shuffle it into the encounter deck.
+&lt;i&gt;Foul Play&lt;/i&gt; - &lt;b&gt;Special:&lt;/b&gt; Discard the top 2 cards of the encounter deck. Deal the first card discarded this way that does not belong to The Hood encounter set to yourself as a facedown encounter card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="The Hood" id="89b6ae86-aa38-482b-b404-9ce6e8d44365" size="VillainCard">
       <property name="CardNumber" value="24003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="the_hood"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="3"/>
       <property name="HP" value="18"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Criminal."/>
+      <property name="Text">&lt;b&gt;When Defeated:&lt;/b&gt; Choose 1 set-aside modular encounter set at random, then shuffle it into the encounter deck.
+&lt;i&gt;Foul Play&lt;/i&gt; - &lt;b&gt;Special:&lt;/b&gt; Discard the top 2 cards of the encounter deck. Deal each card discarded this way that does not belong to The Hood encounter set to yourself as a facedown encounter card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Making Connections" id="24a8b07f-1245-4ce3-9e98-d5c8477c114f" size="SchemeCard">
       <property name="CardNumber" value="24004a"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="the_hood"/>
+      <property name="Stage" value="1"/>
       <alternate name="Making Connections" type="b" size="SchemeCard">
         <property name="CardNumber" value="24004b"/>
         <property name="Type" value="main_scheme"/>
@@ -47,12 +75,18 @@
         <property name="Threat" value="5"/>
         <property name="EscalationThreat" value="1"/>
         <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Each player must resolve The Hood's "Foul Play" ability in player order.</property>
+        <property name="Quote">The Hood is recruiting an army, convincing various villains that they are stronger together than they are apart.</property>
       </alternate>
     </card>
     <card name="Promised Prosperity" id="0c666736-15ff-42d5-adc6-7e619c6d0cc5" size="SchemeCard">
       <property name="CardNumber" value="24005a"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="the_hood"/>
+      <property name="Stage" value="2"/>
       <alternate name="Promised Prosperity" type="b" size="SchemeCard">
         <property name="CardNumber" value="24005b"/>
         <property name="Type" value="main_scheme"/>
@@ -62,12 +96,17 @@
         <property name="Threat" value="8"/>
         <property name="EscalationThreat" value="1"/>
         <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Each player must resolve The Hood's "Foul Play" ability in player order. For each player who was not dealt at least 1 facedown encounter card this way, place 2 threat here.</property>
       </alternate>
     </card>
     <card name="Crime State" id="335f078d-6dbb-4caf-92f9-d7db70ae6fcb" size="SchemeCard">
       <property name="CardNumber" value="24006a"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="the_hood"/>
+      <property name="Stage" value="3"/>
       <alternate name="Crime State" type="b" size="SchemeCard">
         <property name="CardNumber" value="24006b"/>
         <property name="Type" value="main_scheme"/>
@@ -77,30 +116,49 @@
         <property name="Threat" value="10"/>
         <property name="EscalationThreat" value="1"/>
         <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;[star] Forced Response:&lt;/b&gt; After resolving step one of the villain phase, each player must resolve The Hood's "Foul Play" ability in player order.
+        &lt;b&gt;If this stage is completed, the players lose the game.&lt;/b&gt;</property>
       </alternate>
     </card>
     <card name="Established Dominance" id="ef919a00-c34a-4f9d-a6ca-9fe45a903a88" size="EncounterCard">
       <property name="CardNumber" value="24007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="the_hood"/>
       <property name="Boost" value="2"/>
+      <property name="Text">Attach to your identity.
+&lt;b&gt;Forced Response:&lt;/b&gt; After The Hood activates against you, resolve his "Foul Play" ability
+&lt;b&gt;Alter-Ego Action:&lt;/b&gt; Exhaust your identity and place 2 threat on the main scheme → discard this card.</property>
     </card>
     <card name="The Hood's Mantle" id="f3bb575c-8441-410c-85c9-75cc65df409e" size="EncounterCard">
       <property name="CardNumber" value="24008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="the_hood"/>
-      <property name="Boost" value="0"/>
       <property name="Attribute" value="Armor."/>
+      <property name="Text">Attach to The Hood.
+The Hood gains retaliate 1 and steady. &lt;i&gt;(Steady characters require 2 status cards of the same type to be stunned or confused.)&lt;/i&gt;
+&lt;b&gt;Hero Action:&lt;/b&gt; Spend [energy][mental][physical] resources → discard this card.</property>
     </card>
     <card name="The Hood's Pistol" id="05180ef6-70f4-4416-b771-ad02ad6302f0" size="EncounterCard">
       <property name="CardNumber" value="24009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="the_hood"/>
-      <property name="Boost" value="0"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
       <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to The Hood.
+&lt;b&gt;Hero Action:&lt;/b&gt; Spend [mental][physical] resources → discard this card.
+Reveal this card.</property>
     </card>
     <card name="Madame Masque" id="09768633-7145-4bf2-805c-29f24ed5f458" size="EncounterCard">
       <property name="CardNumber" value="24010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="the_hood"/>
       <property name="Attack" value="2"/>
@@ -108,39 +166,61 @@
       <property name="Boost" value="3"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Criminal. Masters of Evil."/>
+      <property name="Text">Guard.
+&lt;b&gt;When Revealed:&lt;/b&gt; Resolve The Hood's "Foul Play" ability.
+&lt;b&gt;When Defeated:&lt;/b&gt; The defeating player must resolve The Hood's "Foul Play" ability.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Unbridled Ambition" id="5c230f3d-9f0d-4f6c-8b26-61318e435ac6" size="SchemeCard">
       <property name="CardNumber" value="24011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="the_hood"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 2[per_player]</property>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Hinder 2[per_hero]. &lt;i&gt;(When revealed, place 2[per_hero] threat here.)&lt;/i&gt;
+&lt;b&gt;Forced Interrupt:&lt;/b&gt; When the villain phase begins, each player must resolve The Hood's "Foul Play" ability in player order.</property>
     </card>
     <card name="Field Recruitment" id="1dedc24d-0a09-4a5d-ab0d-2211f8f217f3" size="EncounterCard">
       <property name="CardNumber" value="24012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="the_hood"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Choose 1 set-aside modular encounter set at random, then shuffle it into the encounter deck. Resolve The Hood's "Foul Play" ability. Remove this card from the game.
+After this activation ends, resolve The Hood's "Foul Play" ability.</property>
     </card>
     <card name="Upper Hand" id="ab3663bb-67f4-43b3-83fb-290fc1e6e938" size="EncounterCard">
       <property name="CardNumber" value="24013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="the_hood"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed (Alter-Ego):&lt;/b&gt; The Hood schemes. Resolve The Hood's "Foul Play" ability.
+&lt;b&gt;When Revealed (Hero):&lt;/b&gt; The Hood attacks you. Resolve The Hood's "Foul Play" ability.</property>
     </card>
     <card name="Beast Mode" id="ae7f6bad-79b9-4278-9cdc-c9ed4e258f98" size="SchemeCard">
       <property name="CardNumber" value="24014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="beasty_boys"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;Forced Interrupt:&lt;/b&gt; When a stunned or confused friendly character would take any amount of damage, increase that amount by 1.</property>
+      <property name="Quote">"The only good superhero is a dead one." - Griffin</property>
     </card>
     <card name="Griffin" id="c46c7e01-58bb-4787-85e6-cbe7eac76cee" size="EncounterCard">
       <property name="CardNumber" value="24015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="beasty_boys"/>
       <property name="Attack" value="3"/>
@@ -148,10 +228,15 @@
       <property name="Boost" value="2"/>
       <property name="HP" value="7"/>
       <property name="Attribute" value="Brute. Masters of Evil."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After Griffin attacks and damages a character, stun that character.
+Quickstrike.
+&lt;b&gt;When Defeated:&lt;/b&gt; If there is a stunned friendly character in play, shuffle Griffin into the encounter deck.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Mandrill" id="e1cd93ce-e97c-47a0-9d71-dfb7cf097e25" size="EncounterCard">
       <property name="CardNumber" value="24016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="beasty_boys"/>
       <property name="Attack" value="2"/>
@@ -159,16 +244,23 @@
       <property name="Boost" value="2"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Brute. Crossfire's Crew."/>
+      <property name="Text">Mandrill gains retaliate X, where X is equal to the number of confused characters &lt;i&gt;(friendly or enemy)&lt;/i&gt; in play.
+&lt;b&gt;When Revealed:&lt;/b&gt; Confuse each character you control.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Double Trouble" id="eca1a0e9-c4c4-4eb8-8ef9-8b9abbc765d4" size="EncounterCard">
       <property name="CardNumber" value="24017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="beasty_boys"/>
-      <property name="Boost" value="0"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Stun a character you control. Confuse a character you control.
+Resolve this card's "&lt;b&gt;When Revealed&lt;/b&gt;" ability.</property>
     </card>
     <card name="Brothers Grimm" id="2a6dcbcd-c8a0-4b06-8213-c20b66a2b337" size="EncounterCard">
       <property name="CardNumber" value="24018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="brothers_grimm"/>
       <property name="Attack" value="1"/>
@@ -176,46 +268,70 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="8"/>
       <property name="Attribute" value="Masters of Evil. Mystic."/>
+      <property name="Text">[star]&lt;b&gt;Forced Interrupt:&lt;/b&gt; When Brothers Grimm activates against you, discard cards from the top of the encounter deck until an attachment is discarded. Reveal that card.
+After this activation ends, put Brothers Grimm into play engaged with the first player.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Blackbird Pellets" id="4d2e4a0a-4148-4e40-9eae-a46c394f0ba1" size="EncounterCard">
       <property name="CardNumber" value="24019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="brothers_grimm"/>
-      <property name="Boost" value="0"/>
       <property name="Attribute" value="Item."/>
+      <property name="Text">Attach to a [[Mystic]] minion. If you cannot, attach to the villain.
+[star]&lt;b&gt;Forced Response:&lt;/b&gt; After attached enemy activates against you, discard this card → discard 1 card at random from your hand and deal yourself 1 facedown encounter card.</property>
     </card>
     <card name="Corrosive Egg Bomb" id="d4300180-9e71-43ad-b0c3-8390edf5c380" size="EncounterCard">
       <property name="CardNumber" value="24020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="brothers_grimm"/>
       <property name="Boost" value="1"/>
       <property name="Attribute" value="Item."/>
+      <property name="Text">Attach to a [[Mystic]] minion. If you cannot, attach to the villain.
+[star]&lt;b&gt;Forced Response:&lt;/b&gt; After attached enemy activates against you, discard this card → take 3 indirect damage and deal yourself 1 facedown encounter card.</property>
     </card>
     <card name="Paralytic Stardust" id="a389a765-3e40-4a66-b78f-83d53d34eb3a" size="EncounterCard">
       <property name="CardNumber" value="24021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="brothers_grimm"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Item."/>
+      <property name="Text">Attach to a [[Mystic]] minion. If you cannot, attach to the villain.
+[star]&lt;b&gt;Forced Response:&lt;/b&gt; After attached enemy activates against you, discard this card → stun your identity and deal yourself 1 facedown encounter card.</property>
     </card>
     <card name="Unbreakable Thread" id="c5c3480c-967d-4e52-885f-004da7048053" size="EncounterCard">
       <property name="CardNumber" value="24022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="brothers_grimm"/>
       <property name="Boost" value="3"/>
       <property name="Attribute" value="Item."/>
+      <property name="Text">Attach to a [[Mystic]] minion. If you cannot, attach to the villain.
+[star]&lt;b&gt;Forced Response:&lt;/b&gt; After attached enemy activates against you, discard this card → choose and discard 1 ally, support, or upgrade you control and deal yourself 1 facedown encounter card.</property>
     </card>
     <card name="Out for Blood" id="8cbaf154-a53a-423e-82b1-96ea43efea9e" size="SchemeCard">
       <property name="CardNumber" value="24023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="crossfire_crew"/>
-      <property name="Boost" value="0"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Deal 1 damage to the friendly character with the fewest remaining hit points. If that character is defeated this way, repeat this effect.
+Resolve this card's "&lt;b&gt;When Revealed&lt;/b&gt;" ability.</property>
     </card>
     <card name="Controller" id="d1f190a1-3c27-4bb6-9c8d-8d85f9fc66c3" size="EncounterCard">
       <property name="CardNumber" value="24024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="crossfire_crew"/>
       <property name="Attack" value="1"/>
@@ -223,10 +339,14 @@
       <property name="Boost" value="2"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Brute. Crossfire's Crew."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt:&lt;/b&gt; When Controller's attack would deal any amount of damage to a character, increase that amount by that character's ATK.</property>
+      <property name="Quote">"No one avoids wearing my diabolical discs!"</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Corruptor" id="60a8a2e6-05fb-4b57-a961-1649638a1819" size="EncounterCard">
       <property name="CardNumber" value="24025"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="crossfire_crew"/>
       <property name="Attack" value="2"/>
@@ -234,10 +354,14 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Criminal. Crossfire's Crew."/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Exhaust each ally you control. Place 1 threat on the main scheme for each ally exhausted this way.
+Choose and exhaust a character you control.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Crossfire" id="01f7dcf9-55dc-4509-a5ec-268e168d3c7d" size="EncounterCard">
       <property name="CardNumber" value="24026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="crossfire_crew"/>
       <property name="Attack" value="2"/>
@@ -245,10 +369,14 @@
       <property name="Boost" value="3"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Crossfire's Crew. Masters of Evil."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt:&lt;/b&gt; When Crossfire attacks, he attacks the friendly character with the fewest remaining hit points. That attack gains overkill and ranged.
+Quickstrike.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Mister Fear" id="5c1a6df8-c178-4d99-b147-66a40b7c8d3b" size="EncounterCard">
       <property name="CardNumber" value="24027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="crossfire_crew"/>
       <property name="Attack" value="1"/>
@@ -256,48 +384,77 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Criminal. Crossfire's Crew."/>
+      <property name="Text">As an additional cost for the engaged player to ready a hero or ally they control, the player must spend a [mental] resource.
+Discard cards from the top of your deck until you discard an ally.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Caught in the Crossfire" id="77d71c72-8491-4e93-9e36-6a7dcbf19027" size="EncounterCard">
       <property name="CardNumber" value="24028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="crossfire_crew"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Discard cards from the top of the encounter deck until a [[Crossfire's Crew]] minion is discarded. Reveal that minion. Take indirect damage equal to the number of [[Crossfire's Crew]] minions in play.</property>
     </card>
     <card name="Cruel Intentions" id="a8ad0128-af79-4b6e-becf-f1d9752d27ee" size="EncounterCard">
       <property name="CardNumber" value="24029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="expert_ii"/>
       <property name="Boost" value="1"/>
+      <property name="Text">Peril. Surge.
+&lt;b&gt;When Revealed&lt;/b&gt;: Deal each player 1 facedown encounter card. Give the villain 1 facedown boost card.
+Deal yourself 1 facedown encounter card.</property>
     </card>
     <card name="Ruination" id="de93b412-c5e2-432e-aa0a-5b2d9af7ab68" size="EncounterCard">
       <property name="CardNumber" value="24030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="expert_ii"/>
       <property name="Boost" value="4"/>
-    </card>
-    <card name="Slug It Out" id="8563780b-b865-43d1-9e58-9e8b8e1bd188" size="EncounterCard">
-      <property name="CardNumber" value="24031"/>
-      <property name="Type" value="treachery"/>
-      <property name="Owner" value="expert_ii"/>
-      <property name="Boost" value="0"/>
+      <property name="Text">Incite 1. Peril.
+&lt;b&gt;When Revealed&lt;/b&gt;: Discard cards from the top of the encounter deck until a side scheme is discarded. Reveal that card. Place 2 threat on each scheme in play.</property>
     </card>
     <card name="Seek and Destroy" id="899568a6-ee33-4092-80a1-eddf09965bbe" size="EncounterCard">
-      <property name="CardNumber" value="24032"/>
+      <property name="CardNumber" value="24031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="expert_ii"/>
       <property name="Boost" value="3"/>
+      <property name="Text">Incite 1. Peril.
+&lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter deck, discard pile, and set-aside area for your nemesis minion and put it into play engaged with you. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+    </card>
+    <card name="Slug It Out" id="8563780b-b865-43d1-9e58-9e8b8e1bd188" size="EncounterCard">
+      <property name="CardNumber" value="24032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="expert_ii"/>
+      <property name="Text">Peril. Surge.
+&lt;b&gt;When Revealed&lt;/b&gt;: Exhaust your identity. Take 2 damage.
+Deal 1 damage to each character you control. Give the villain 1 additional boost card for this activation.</property>
     </card>
     <card name="Self-Experimentation" id="90c71037-be0f-4304-93ad-79e89eb342bc" size="SchemeCard">
       <property name="CardNumber" value="24033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mister_hyde"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="5"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Search the encounter deck and discard pile for Mister Hyde and reveal him. &lt;i&gt;(Shuffle.)&lt;/i&gt;
+&lt;b&gt;Forced Interrupt:&lt;/b&gt; When a [[Brute]] enemy would take any amount of damage, remove that much threat from this scheme instead.</property>
     </card>
     <card name="Calvin Zabo" id="5af3d445-9c22-497f-982d-36fd05e7a5ff" size="EncounterCard">
       <property name="CardNumber" value="24034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="mister_hyde"/>
       <property name="Attack" value="1"/>
@@ -305,10 +462,14 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Elite. Masters of Evil."/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; If Mister Hyde is in play, discard this card → Mister Hyde attacks you with +2 ATK. That attack gains overkill.
+&lt;b&gt;When Defeated:&lt;/b&gt; Search the encounter deck and discard pile for Mister Hyde and put him into play engaged with the player who was engaged with Calvin Zabo.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Mister Hyde" id="3d2b621c-f80a-4a36-82d6-2174a2d39078" size="EncounterCard">
       <property name="CardNumber" value="24035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="mister_hyde"/>
       <property name="Attack" value="3"/>
@@ -316,44 +477,70 @@
       <property name="Boost" value="3"/>
       <property name="HP" value="10"/>
       <property name="Attribute" value="Brute. Elite. Masters of Evil."/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; If Calvin Zabo is engaged with a player, discard Calvin Zabo → Mister Hyde engages that player. Give Mister Hyde a tough status card and deal 1 damage to each hero and ally in play.</property>
+      <property name="Quote">"I became what I always wanted."</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Hyde Formula" id="e9237c2e-4509-449d-ad5a-cfe219f16ac6" size="EncounterCard">
       <property name="CardNumber" value="24036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="mister_hyde"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; If Calvin Zabo is in play, he schemes with +3 SCH, then he takes 4 damage. If Mister Hyde is in play, give him a tough status card and he attacks you &lt;i&gt;(even if you are in alter-ego form)&lt;/i&gt;. If neither is in play, this card gains surge.</property>
     </card>
     <card name="Flamethrower" id="4fc3d9ad-15f4-4992-b0e2-d8cbeb5664b3" size="EncounterCard">
       <property name="CardNumber" value="24037"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="ransacked_armory"/>
+      <property name="Attack" value="3"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Tech. Weapon."/>
+      <property name="Text">Attached minion's attacks deal indirect damage.
+Attach to the minion with the most remaining hit points. If you cannot, search the encounter deck and discard pile for a minion, put it into play engaged with you, and attach this card to it. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
     </card>
     <card name="Holoshield Generator" id="2aa0584f-d04b-4b6c-8d1d-a6cf29bdac4a" size="EncounterCard">
       <property name="CardNumber" value="24038"/>
+      <property name="Position" value="38"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="ransacked_armory"/>
       <property name="Boost" value="1"/>
       <property name="Attribute" value="Item. Tech."/>
+      <property name="Text">Attach to the minion with the most remaining hit points. If you cannot, search the encounter deck and discard pile for a minion, put it into play engaged with you, and attach this card to it. &lt;i&gt;(Shuffle.)&lt;/i&gt;
+Attached minion gets +4 hit points and gains retaliate 2.</property>
     </card>
     <card name="Jetpack" id="83344536-ce80-4f24-84e6-bbb1cd090879" size="EncounterCard">
       <property name="CardNumber" value="24039"/>
+      <property name="Position" value="39"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="ransacked_armory"/>
       <property name="Boost" value="1"/>
       <property name="Attribute" value="Item. Tech."/>
+      <property name="Text">Attach to the minion with the most remaining hit points. If you cannot, this card gains surge.
+&lt;b&gt;Forced Interrupt:&lt;/b&gt; When attached minion would take any amount of damage from an attack, discard the top card of the encounter deck. Reduce damage from that attack by the number of boost icons ([boost]) discarded this way.</property>
     </card>
     <card name="Tech Gauntlets" id="34fdd8ae-436f-4e4c-9b7b-f321eac43b6d" size="EncounterCard">
       <property name="CardNumber" value="24040"/>
+      <property name="Position" value="40"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="ransacked_armory"/>
+      <property name="Attack" value="1"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Tech. Weapon."/>
+      <property name="Text">Attached minion's attacks gain overkill.
+Attach to the minion with the most remaining hit points. If you cannot, this card gains surge.
+Attach minion gets +3 hit points.</property>
     </card>
     <card name="Armored Guard" id="7deb3b63-831d-42ef-b765-d6c11ae7a479" size="EncounterCard">
       <property name="CardNumber" value="24041"/>
+      <property name="Position" value="41"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="ransacked_armory"/>
       <property name="Attack" value="1"/>
@@ -361,30 +548,40 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Mercenary."/>
-      <property name="Text">Toughness.</property>
+      <property name="Text">Guard. &lt;i&gt;(While this minion is engaged with you, you cannot attack the villain.)&lt;/i&gt;
+Toughness. &lt;i&gt;(This character enters play with a tough status card.)&lt;/i&gt;</property>
     </card>
     <card name="Crime Pays" id="52fed6ef-5fb4-4510-b9f9-575cc5a8d53e" size="SchemeCard">
       <property name="CardNumber" value="24042"/>
+      <property name="Position" value="42"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="sinister_syndicate"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Search the encounter deck for a [[Criminal]] minion and put it into play engaged with you. &lt;i&gt;(Shuffle.)&lt;/i&gt; If no minion was put into play this way, this cards gains surge.</property>
     </card>
     <card name="Beetle" id="81f2bafd-4fe9-443e-9bd1-3f3eb0a240c7" size="EncounterCard">
       <property name="CardNumber" value="24043"/>
+      <property name="Position" value="43"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sinister_syndicate"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
-      <property name="Boost" value="0"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Criminal."/>
+      <property name="Text">&lt;b&gt;Forced Response:&lt;/b&gt; After Beetle attacks and damages you, discard the lowest-cost upgrade you control.
+Choose and discard an upgrade you control.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Boomerang" id="45eb89d2-8c95-4c86-bdb0-8235dd25caf5" size="EncounterCard">
       <property name="CardNumber" value="24044"/>
+      <property name="Position" value="44"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sinister_syndicate"/>
       <property name="Attack" value="1"/>
@@ -392,32 +589,42 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Criminal. Masters of Evil."/>
+      <property name="Text">&lt;b&gt;Forced Response:&lt;/b&gt; After Boomerang attacks you, deal 1 damage to each ally you control.
+Deal 2 damage to an ally you control.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Shocker" id="f152b45c-5d33-45c1-954c-87bafab65d91" size="EncounterCard">
       <property name="CardNumber" value="24045"/>
+      <property name="Position" value="45"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sinister_syndicate"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
-      <property name="Boost" value="0"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Criminal. Masters of Evil."/>
+      <property name="Text">&lt;b&gt;Forced Response:&lt;/b&gt; After Shocker is attacked, stun the attacking character.
+Stun the character you control with the highest ATK value.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Speed Demon" id="59a8f5e6-4e2b-42e8-b7ca-704a1eded905" size="EncounterCard">
       <property name="CardNumber" value="24046"/>
+      <property name="Position" value="46"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sinister_syndicate"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
-      <property name="Boost" value="0"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Criminal."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt:&lt;/b&gt; When a character attacks Speed Demon, Speed Demon attacks that character. &lt;i&gt;(Resolve Speed Demon's attack first.)&lt;/i&gt;
+Discard the lowest-cost support you control.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="White Rabbit" id="db9f7a63-4a5a-456e-82fc-f84f5665228c" size="EncounterCard">
       <property name="CardNumber" value="24047"/>
+      <property name="Position" value="47"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sinister_syndicate"/>
       <property name="Attack" value="2"/>
@@ -425,198 +632,293 @@
       <property name="Boost" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Criminal."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt:&lt;/b&gt; When White Rabbit attacks you, discard 1 card at random from your hand.
+Choose and discard 1 identity-specific card from your hand.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Sinister Onslaught" id="98179f55-2ceb-43fe-8956-4f4f862fa37a" size="EncounterCard">
       <property name="CardNumber" value="24048"/>
+      <property name="Position" value="48"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="sinister_syndicate"/>
-      <property name="Boost" value="0"/>
+      <property name="Text">&lt;b&gt;When Revealed (Alter-Ego):&lt;/b&gt; Each [[Criminal]] enemy in play schemes. If no enemy schemed this way, this card gains surge.
+&lt;b&gt;When Revealed (Hero):&lt;/b&gt; Each [[Criminal]] enemy in play attacks you. If no enemy attacked this way, this card gains surge.</property>
     </card>
     <card name="Formidable Foe" id="9d1cc110-1771-49b6-807f-c414f8483e6e" size="EncounterCard">
       <property name="CardNumber" value="24049a"/>
+      <property name="Position" value="49"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="standard_ii"/>
-      <property name="Text">Standard Mode Only.&lt;br&gt;
-Permanent. Setup.&lt;br&gt;
-The villain gains steady. (Steady characters require 2 status cards of the same type to be stunned or confused.)</property>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Standard Mode Only.&lt;/i&gt;&lt;/b&gt;
+Permanent. Setup.
+The villain gains steady. &lt;i&gt;(Steady characters require 2 status cards of the same type to be stunned or confused.)&lt;/i&gt;</property>
       <alternate name="Formidable Foe" type="b" size="EncounterCard">
         <property name="CardNumber" value="24049b"/>
         <property name="Type" value="environment"/>
         <property name="Owner" value="standard_ii"/>
-        <property name="Text">Expert Mode Only.&lt;br&gt;
-Permanent. Setup.&lt;br&gt;
-Each enemy gains steady. (Steady characters require 2 status cards of the same type to be stunned or confused.)</property>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Expert Mode Only.&lt;/i&gt;&lt;/b&gt;
+Permanent. Setup.
+Each enemy gains steady. &lt;i&gt;(Steady characters require 2 status cards of the same type to be stunned or confused.)&lt;/i&gt;</property>
       </alternate>
     </card>
     <card name="Dark Dealings" id="5379069c-b94b-4211-847b-9ad0e5da8e81" size="EncounterCard">
       <property name="CardNumber" value="24050"/>
+      <property name="Position" value="50"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="standard_ii"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; The villain schemes with +1 SCH.
+Give the villain 1 additional boost card for this activation.</property>
     </card>
     <card name="Mob Mentality" id="98bb4975-fdb7-42f0-b6e4-6c411ba87891" size="EncounterCard">
       <property name="CardNumber" value="24051"/>
+      <property name="Position" value="51"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="standard_ii"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed (Alter-Ego):&lt;/b&gt; Discard the top 7 cards from the encounter deck. Put the first minion discarded this way into play engaged with you.
+&lt;b&gt;When Revealed (Hero):&lt;/b&gt; The villain and each minion engaged with you attacks you. This card gains surge.</property>
     </card>
     <card name="Overwhelming Force" id="bfc8fe55-bf8f-4643-b965-bc2cdc683cc7" size="EncounterCard">
       <property name="CardNumber" value="24052"/>
+      <property name="Position" value="52"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="standard_ii"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Discard the highest-cost upgrade or support you control. If no card was discarded this way, this card gains surge.
+Give the villain 1 additional boost card for this activation.</property>
     </card>
     <card name="Shadow of the Past" id="98435f84-db7d-429f-93c9-e2824bbc722f" size="EncounterCard">
       <property name="CardNumber" value="24053"/>
+      <property name="Position" value="53"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="standard_ii"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Reveal your set-aside nemesis minion and put it into play engaged with you. Reveal your set-aside nemesis side scheme and put it into play. Shuffle the rest of your set-aside nemesis encounter set into the encounter deck. If your nemesis minion does not enter the game this way, this card gains surge.</property>
     </card>
     <card name="Total Annihilation" id="666699f7-3f01-4907-90d6-37c621388f2e" size="EncounterCard">
       <property name="CardNumber" value="24054"/>
+      <property name="Position" value="54"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="standard_ii"/>
       <property name="Boost" value="1"/>
+      <property name="Text">Surge.
+&lt;b&gt;When Revealed (Hero)&lt;/b&gt;: The villain attacks you. That attack gains overkill.
+If the villain is attacking, this attack gains overkill.</property>
     </card>
     <card name="Feisty Heist" id="6f479ba0-24f6-423e-8d97-79a614150649" size="SchemeCard">
       <property name="CardNumber" value="24055"/>
+      <property name="Position" value="55"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="state_of_emergency"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Discard the highest-cost card from your hand.</property>
+      <property name="Quote">The villains have somehow identified an unmarked van transporting priceless artifacts.</property>
     </card>
     <card name="Disaster at the Docks" id="5dac1386-3be2-42e6-bf91-fa8d64b878eb" size="SchemeCard">
       <property name="CardNumber" value="24056"/>
+      <property name="Position" value="56"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="state_of_emergency"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Take 3 indirect damage.</property>
+      <property name="Quote">A container ship has run ashore and is now sitting on the dock of the bay.</property>
     </card>
     <card name="Offshore Inferno" id="5899dba3-043d-4f6a-b3e6-5404fc151cf3" size="SchemeCard">
       <property name="CardNumber" value="24057"/>
+      <property name="Position" value="57"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="state_of_emergency"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Discard the lowest-cost card you control.</property>
+      <property name="Quote">A raging fire has engulfed a coastal oil rig, trapping much of the crew.</property>
     </card>
     <card name="Hot Pursuit" id="1b4a4c79-85a1-494f-889a-acde69c93c23" size="SchemeCard">
       <property name="CardNumber" value="24058"/>
+      <property name="Position" value="58"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="state_of_emergency"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Discard cards from the top of the encounter deck until a minion is discard. Put that minion into play engaged with you.</property>
     </card>
     <card name="Citywide Crisis" id="c2c551f3-04cd-4f00-96b7-961c25bca69e" size="EncounterCard">
       <property name="CardNumber" value="24059"/>
+      <property name="Position" value="59"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="state_of_emergency"/>
-      <property name="Boost" value="0"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Resolve each "&lt;b&gt;When Revealed&lt;/b&gt;" ability on each side scheme in play. If no "&lt;b&gt;When Revealed&lt;/b&gt;" ability was resolved this way, place 2 threat on each scheme.
+Resolve this card's "&lt;b&gt;When Revealed&lt;/b&gt;" ability.</property>
     </card>
     <card name="Back-Alley Enclave" id="6f18cf13-fc69-43d1-b3ee-bddaedee2e31" size="EncounterCard">
       <property name="CardNumber" value="24060"/>
+      <property name="Position" value="60"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="streets_of_mayhem"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Location. Setting."/>
+      <property name="Text">Surge.&lt;b&gt;When Revealed:&lt;/b&gt; Discard each other [[Setting]] environment in play.
+Each character in play gets +1 ATK.</property>
     </card>
     <card name="Secret Lair" id="a98ca710-9a7d-49d5-8dff-0735142604cf" size="EncounterCard">
       <property name="CardNumber" value="24061"/>
+      <property name="Position" value="61"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="streets_of_mayhem"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Location. Setting."/>
+      <property name="Text">Surge.&lt;b&gt;When Revealed:&lt;/b&gt; Discard each other [[Setting]] environment in play.
+Each enemy in play gains 1 acceleration icon ([acceleration]).
+Each hero and ally in play gets +1 THW.</property>
     </card>
     <card name="Sewer Tunnels" id="ffc5f096-63ac-4c6f-bbdc-29ce42f3a4a2" size="EncounterCard">
       <property name="CardNumber" value="24062"/>
+      <property name="Position" value="62"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="streets_of_mayhem"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Location. Setting."/>
+      <property name="Text">Surge.&lt;b&gt;When Revealed:&lt;/b&gt; Discard each other [[Setting]] environment in play.
+Each character in play gains retaliate 1.</property>
     </card>
     <card name="Warehouse District" id="1e90a8ef-4a41-4644-ba2d-da32d13f2885" size="EncounterCard">
       <property name="CardNumber" value="24063"/>
+      <property name="Position" value="63"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="streets_of_mayhem"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Location. Setting."/>
+      <property name="Text">Surge.&lt;b&gt;When Revealed:&lt;/b&gt; Discard each other [[Setting]] environment in play.
+Each character in play gains steady. &lt;i&gt;(Steady characters require 2 status cards of the same type to be stunned or confused.)&lt;/i&gt;</property>
     </card>
     <card name="Top Talent" id="8ebcb82c-6821-422b-9593-cf7b845a4d5b" size="SchemeCard">
       <property name="CardNumber" value="24064"/>
+      <property name="Position" value="64"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
-      <property name="Owner" value="wrecking_crew"/>
+      <property name="Owner" value="wrecking_crew_modular"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 2[per_player]</property>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Hinder 2[per_hero]. &lt;i&gt;(When revealed, place 2[per_hero] threat here.)&lt;/i&gt;
+The villain and each [[Elite]] minion gain retaliate 1.</property>
+      <property name="Quote">The Wrecking Crew is on a rampage, using their magically-powered muscles to cause chaos and destruction.</property>
     </card>
     <card name="Wrecker" id="9b0bfde9-ee72-4d81-954f-5e55a2c5a12c" size="EncounterCard">
       <property name="CardNumber" value="24065"/>
+      <property name="Position" value="65"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Owner" value="wrecking_crew"/>
+      <property name="Owner" value="wrecking_crew_modular"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="Boost" value="3"/>
       <property name="HP" value="8"/>
       <property name="Attribute" value="Brute. Elite."/>
+      <property name="Text">While Wrecker is attacking, he gets +2 ATK if the attack is undefended.
+Villainous. &lt;i&gt;(When this minion activates, give it a boost card.)&lt;/i&gt;</property>
+      <property name="Quote">"You're just dead meat waitin' tp be tenderized!"</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Villainous.</property>
     </card>
     <card name="Bulldozer" id="eff60741-35d3-4fa9-af92-80ae0ab0b449" size="EncounterCard">
       <property name="CardNumber" value="24066"/>
+      <property name="Position" value="66"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Owner" value="wrecking_crew"/>
+      <property name="Owner" value="wrecking_crew_modular"/>
       <property name="Attack" value="3"/>
       <property name="Scheme" value="1"/>
       <property name="Boost" value="2"/>
       <property name="HP" value="7"/>
       <property name="Attribute" value="Brute. Elite."/>
+      <property name="Text">Bulldozer's attacks gain overkill.
+Villainous. &lt;i&gt;(When this minion activates, give it a boost card.)&lt;/i&gt;</property>
+      <property name="Quote">"Nothing stands in the path of the Bulldozer!"</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Villainous.</property>
     </card>
     <card name="Piledriver" id="147e7ddd-d07d-459f-bf66-fd0872be505b" size="EncounterCard">
       <property name="CardNumber" value="24067"/>
+      <property name="Position" value="67"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Owner" value="wrecking_crew"/>
+      <property name="Owner" value="wrecking_crew_modular"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="Boost" value="2"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Brute. Elite."/>
+      <property name="Text">Retaliate 1.
+Villainous. &lt;i&gt;(When this minion activates, give it a boost card.)&lt;/i&gt;</property>
+      <property name="Quote">"These fists were made for crushin'... and that's just what they'll do."</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Villainous.</property>
     </card>
     <card name="Thunderball" id="e0d73acf-2569-4be8-9f6d-6ceb2783fd77" size="EncounterCard">
       <property name="CardNumber" value="24068"/>
+      <property name="Position" value="68"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
-      <property name="Owner" value="wrecking_crew"/>
+      <property name="Owner" value="wrecking_crew_modular"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="3"/>
       <property name="Boost" value="3"/>
       <property name="HP" value="7"/>
       <property name="Attribute" value="Brute. Elite."/>
+      <property name="Text">&lt;b&gt;Forced Response:&lt;/b&gt; After Thunderball attacks you, deal 1 damage to each character you control.
+Villainous. &lt;i&gt;(When this minion activates, give it a boost card.)&lt;/i&gt;</property>
+      <property name="Quote">"Bring it on! It's wrecking time!"</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Villainous.</property>
     </card>
     <card name="Combined Effort" id="0a2bfc45-6460-41ba-8ed7-c87345fd692a" size="EncounterCard">
       <property name="CardNumber" value="24069"/>
+      <property name="Position" value="69"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
-      <property name="Owner" value="wrecking_crew"/>
+      <property name="Owner" value="wrecking_crew_modular"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Each [[Elite]] minion in play activates against the player it is engaged with. If no minion activated this way, this card gains surge.
+For each [[Elite]] minion in play, this card gets +1 boost icon ([boost]) for this activation.</property>
     </card>
     <card name="Magic Muscle" id="4c82e60e-b9af-497d-8983-0dc7e6e5aa2e" size="EncounterCard">
       <property name="CardNumber" value="24070"/>
+      <property name="Position" value="70"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
-      <property name="Owner" value="wrecking_crew"/>
+      <property name="Owner" value="wrecking_crew_modular"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Give each [[Brute]] enemy in play a tough status card. If no tough status card was given this way, discard cards from the top of the encounter deck until a [[Brute]] minion is discarded and reveal that minion.</property>
+      <property name="Quote">"Hey, stop, that tickles."</property>
     </card>
   </cards>
 </set>

@@ -3,6 +3,8 @@
   <cards>
     <card name="Gambit" id="f3ee0950-3220-468c-9735-3b1dcb037001">
       <property name="CardNumber" value="37001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="hero"/>
       <property name="Owner" value="gambit"/>
       <property name="HandSize" value="5"/>
@@ -11,10 +13,13 @@
       <property name="Defense" value="3"/>
       <property name="HP" value="9"/>
       <property name="Attribute" value="Thief. X-Men."/>
-      <property name="Text">&lt;i&gt;Charge de Card&lt;/i&gt; − &lt;b&gt;Action&lt;/b&gt;: Place 1 charge counter here. (Limit once per round).\n&lt;i&gt;Throw de Card&lt;/i&gt; − &lt;b&gt;Interrupt&lt;/b&gt;: When you play an [[ATTACK]] event, remove up to 3 charge counters from here → that event deal +1 damage for each counter removed.</property>
+      <property name="Text">&lt;i&gt;Charge de Card&lt;/i&gt; − &lt;b&gt;Action&lt;/b&gt;: Place 1 charge counter here. (Limit once per round).
+&lt;i&gt;Throw de Card&lt;/i&gt; − &lt;b&gt;Interrupt&lt;/b&gt;: When you play an [[ATTACK]] event, remove up to 3 charge counters from here → that event deal +1 damage for each counter removed.</property>
       <property name="Unique" value="True"/>
       <alternate name="Remy Lebeau" type="b">
         <property name="CardNumber" value="37001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="alter_ego"/>
         <property name="Owner" value="gambit"/>
         <property name="HandSize" value="6"/>
@@ -27,19 +32,27 @@
     </card>
     <card name="Rogue" id="f3ee0950-3220-468c-9735-3b1dcb037002">
       <property name="CardNumber" value="37002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="gambit"/>
       <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="4"/>
       <property name="Resource_Wild" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Aerial. X-Men."/>
-      <property name="Text">Reduce the cost to play Rogue by 1 for each charge counter on your identity.\nToughness.</property>
+      <property name="Text">Reduce the cost to play Rogue by 1 for each charge counter on your identity.
+Toughness.</property>
+      <property name="Quote">"I can't take that crazy Cajun anywhere!"</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="The Thieves Guild" id="f3ee0950-3220-468c-9735-3b1dcb037003">
       <property name="CardNumber" value="37003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="support"/>
       <property name="Owner" value="gambit"/>
       <property name="Cost" value="1"/>
@@ -50,44 +63,60 @@
     </card>
     <card name="Gambit's Staff" id="f3ee0950-3220-468c-9735-3b1dcb037004">
       <property name="CardNumber" value="37004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="gambit"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Item. Weapon."/>
       <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When an enemy attacks, exhaust Gambit's Staff → deal 1 damage to that enemy.</property>
+      <property name="Quote">"You want to fight wit' Gambit, eh?" −Gambit</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Gambit's Guild Armor" id="f3ee0950-3220-468c-9735-3b1dcb037005">
       <property name="CardNumber" value="37005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="gambit"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Armor. Item."/>
-      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After Gambit defends against an attack and takes no damage, exxhaust Gambit's Guild Armor → ready Gambit.</property>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After Gambit defends against an attack and takes no damage, exhaust Gambit's Guild Armor → ready Gambit.</property>
+      <property name="Quote">Members of the Thieves Guild wear custom armor to protect themselves from assassins.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Charged Card" id="f3ee0950-3220-468c-9735-3b1dcb037006">
       <property name="CardNumber" value="37006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="gambit"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Attack. Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 4 damage to an enemy. For this attack, If Gambit's &lt;i&gt;"Throw de Card"&lt;/i&gt; ability removed at least :\n• 1 counter, this attack gains ranged.\n• 2 counters, this attack also gains piercing.\n• 3 counters, this attack also gains overkill.</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 4 damage to an enemy. For this attack, If Gambit's &lt;i&gt;"Throw de Card"&lt;/i&gt; ability removed at least:
+• 1 counter, this attack gains ranged.
+• 2 counters, this attack also gains piercing.
+• 3 counters, this attack also gains overkill.</property>
     </card>
     <card name="Royal Flush" id="f3ee0950-3220-468c-9735-3b1dcb037007">
       <property name="CardNumber" value="37007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="gambit"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Attack. Superpower."/>
       <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Place 1 charge counter on Gambit. Deal 0 damage to an enemy. Deal 0 damage to an enemy. Deal 0 damage to an enemy.</property>
+      <property name="Quote">"Cover your eyes, mes amis. Dis hand gon' be fire!" −Gambit</property>
     </card>
     <card name="Natural Agility" id="f3ee0950-3220-468c-9735-3b1dcb037008">
       <property name="CardNumber" value="37008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="gambit"/>
       <property name="Cost" value="0"/>
@@ -97,15 +126,20 @@
     </card>
     <card name="Creole Charmer" id="f3ee0950-3220-468c-9735-3b1dcb037009">
       <property name="CardNumber" value="37009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="gambit"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Thwart."/>
-      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. If this removes the last threat from that scheme, confise the villain.</property>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. If this removes the last threat from that scheme, confuse the villain.</property>
+      <property name="Quote">"How can I be de thief when you de one stole my heart, chÃ©re?" −Gambit</property>
     </card>
     <card name="Molecular Acceleration" id="f3ee0950-3220-468c-9735-3b1dcb037010">
       <property name="CardNumber" value="37010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="resource"/>
       <property name="Owner" value="gambit"/>
       <property name="Resource_Physical" value="1"/>
@@ -114,37 +148,53 @@
     </card>
     <card name="Bishop" id="f3ee0950-3220-468c-9735-3b1dcb037011">
       <property name="CardNumber" value="37011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="0"/>
+      <property name="AttackCost" value="2"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Energy" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="X-Men."/>
-      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After an enemy attacks you, place 1 energy counter here.\n[star]&lt;b&gt;Interrupt&lt;/b&gt;: When Bishop attacks, remove each energy counter from him → for each counter discarded this way, he gets +2 ATK for this attack (to a maximum of +6 ATK).</property>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After an enemy attacks you, place 1 energy counter here.
+[star]&lt;b&gt;Interrupt&lt;/b&gt;: When Bishop attacks, remove each energy counter from him → for each counter discarded this way, he gets +2 ATK for this attack (to a maximum of +6 ATK).</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Dazzler" id="f3ee0950-3220-468c-9735-3b1dcb037012">
       <property name="CardNumber" value="37012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="4"/>
       <property name="Resource_Energy" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="X-Men."/>
       <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Dazzler enters play, confuse an enemy.</property>
+      <property name="Quote">"All that noise. This city is a symphony, and I'm her speaker."</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Operative Skill" id="f3ee0950-3220-468c-9735-3b1dcb037013">
       <property name="CardNumber" value="37013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Skill."/>
-      <property name="Text">Uses (3 operative counters). Max 1 per player.\n&lt;b&gt;Interrupt&lt;/b&gt;: When you thwart, remove 1 operative counter from here → that thwart removes 1 additionnal threat.</property>
+      <property name="Text">Uses (3 operative counters). Max 1 per player.
+&lt;b&gt;Interrupt&lt;/b&gt;: When you thwart, remove 1 operative counter from here → that thwart removes 1 additional threat.</property>
     </card>
     <card name="Stealth Strike" id="f3ee0950-3220-468c-9735-3b1dcb037014">
       <property name="CardNumber" value="37014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="3"/>
       <property name="Attribute" value="Attack."/>
@@ -152,20 +202,30 @@
     </card>
     <card name="Breaking and Entering" id="f3ee0950-3220-468c-9735-3b1dcb037015">
       <property name="CardNumber" value="37015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Thwart."/>
-      <property name="Text">Play only if your identity has the [[SPY]] or [[THIEF]] trait.\n&lt;b&gt;Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme.</property>
+      <property name="Text">Play only if your identity has the [[SPY]] or [[THIEF]] trait.
+&lt;b&gt;Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme.</property>
     </card>
     <card name="Beauty and the Thief" id="f3ee0950-3220-468c-9735-3b1dcb037019">
       <property name="CardNumber" value="37019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Attack. Thwart."/>
-      <property name="Text">Team-Up (Gambit and Rogue). Max 1 per deck.&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack/thwart)&lt;/i&gt;: Deal 4 damage to an enemy. Remove 4 threat from a scheme.</property>
+      <property name="Text">Team-Up (Gambit and Rogue). Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack/thwart)&lt;/i&gt;: Deal 4 damage to an enemy. Remove 4 threat from a scheme.</property>
     </card>
     <card name="Hit and Run" id="f3ee0950-3220-468c-9735-3b1dcb037020">
       <property name="CardNumber" value="37020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="3"/>
       <property name="Attribute" value="Attack. Thwart."/>
@@ -173,53 +233,81 @@
     </card>
     <card name="Mutant Education" id="f3ee0950-3220-468c-9735-3b1dcb037021">
       <property name="CardNumber" value="37021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
-      <property name="Text">Play only if your identity has the [[MUTANT]] trait.\n&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Choose up to 2 identity-specific cards in your discard pile and shuffle them into your deck. If X-Mansion is in play, draw 1 card.</property>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">Play only if your identity has the [[MUTANT]] trait.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Choose up to 2 identity-specific cards in your discard pile and shuffle them into your deck. If X-Mansion is in play, draw 1 card.</property>
     </card>
     <card name="War Room" id="f3ee0950-3220-468c-9735-3b1dcb037030">
       <property name="CardNumber" value="37030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="support"/>
       <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Location."/>
-      <property name="Text">Max 1 per player.\n&lt;b&gt;Response&lt;/b&gt;: After an ally attacks and defeats a minion, exhaust War Room → remove 1 threat from a scheme.</property>
+      <property name="Text">Max 1 per player.
+&lt;b&gt;Response&lt;/b&gt;: After an ally attacks and defeats a minion, exhaust War Room → remove 1 threat from a scheme.</property>
     </card>
     <card name="X-Men Instruction" id="f3ee0950-3220-468c-9735-3b1dcb037031">
       <property name="CardNumber" value="37031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
-      <property name="Text">Play only if your identity has the [[MUTANT]] trait.\n&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Choose up to 2 [[X-MEN]] allies in your discard pile and shuffle them into your deck. If X-Mansion is in play, draw 1 card.</property>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">Play only if your identity has the [[MUTANT]] trait.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Choose up to 2 [[X-MEN]] allies in your discard pile and shuffle them into your deck. If X-Mansion is in play, draw 1 card.</property>
     </card>
     <card name="Guild Business" id="f3ee0950-3220-468c-9735-3b1dcb037025" size="EncounterCard">
       <property name="CardNumber" value="37025"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="gambit"/>
       <property name="Boost" value="2"/>
       <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Remy LeBeau player.&lt;/i&gt;&lt;/b&gt;
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Remy LeBeau and spend a [energy] resource → remove Guild Business from the game.</property>
     </card>
     <card name="Belladonna" id="f3ee0950-3220-468c-9735-3b1dcb037026" size="EncounterCard">
       <property name="CardNumber" value="37026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="gambit_nemesis"/>
       <property name="Attack" value="3"/>
       <property name="Scheme" value="2"/>
       <property name="Boost" value="3"/>
       <property name="HP" value="5"/>
-      <property name="Attribute" value="Assassin.Elite."/>
-      <property name="Text">Quickstrike. Toughness.</property>
+      <property name="Attribute" value="Assassin. Elite."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After Belladonna attacks and defeats a character, place 2 threat on the main scheme.
+&lt;i&gt;(Gambit's nemesis minion.)&lt;/i&gt;
+Quickstrike. Toughness.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="The Assassins Guild" id="f3ee0950-3220-468c-9735-3b1dcb037027" size="SchemeCard">
       <property name="CardNumber" value="37027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="gambit_nemesis"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="4"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After an [[ASSASSIN]] minion attacks and defeats a character, place 2 threat here.</property>
+      <property name="Quote">The Assassins Guild has sworn to kill Gambit and the rest of the Thieves Guild.</property>
     </card>
     <card name="Guild Assassin" id="f3ee0950-3220-468c-9735-3b1dcb037028" size="EncounterCard">
       <property name="CardNumber" value="37028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="gambit_nemesis"/>
       <property name="Attack" value="2"/>
@@ -227,44 +315,68 @@
       <property name="Boost" value="2"/>
       <property name="HP" value="2"/>
       <property name="Attribute" value="Assassin."/>
-      <property name="Text">Quickstrike.</property>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After Guild Assassin attacks and defeats a character, place 1 threat on the main scheme.
+Quickstrike.</property>
     </card>
     <card name="Assassination Attempt" id="f3ee0950-3220-468c-9735-3b1dcb037029" size="EncounterCard">
       <property name="CardNumber" value="37029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="gambit_nemesis"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Each [[ASSASSIN]] minion attacks you &lt;i&gt;(even if you are in alter-ego form)&lt;/i&gt;. If there are no [[ASSASSIN]] minions in play, search the encounter deck and discard pile for an [[ASSASSIN]] minion and reveal it.</property>
     </card>
     <card name="Exodus" id="f3ee0950-3220-468c-9735-3b1dcb037032" size="EncounterCard">
       <property name="CardNumber" value="37032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="exodus"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="1"/>
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
-      <property name="Text">Retaliate 1. Villanous.</property>
+      <property name="Attribute" value="Acolyte. Elite. Psionic."/>
+      <property name="Text">Retaliate 1. Villanous.
+&lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter deck and discard pile for the Psionic Shield attachment and attach it to Exodus. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <property name="Quote">"I serve proudly in the house and name of Magneto!"</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Herald of Avalon" id="f3ee0950-3220-468c-9735-3b1dcb037033" size="SchemeCard">
       <property name="CardNumber" value="37033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="exodus"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="6"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this scheme searches the encounter deck and discard pile for Exodus and reveals him. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <property name="Quote">Exodus sees Magneto as the savior of mutantkind and serves as his herald.</property>
     </card>
     <card name="Psionic Shield" id="f3ee0950-3220-468c-9735-3b1dcb037034" size="EncounterCard">
       <property name="CardNumber" value="37034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="exodus"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
       <property name="Boost" value="2"/>
+      <property name="Text">Attach to a minion. Otherwise, Psionic Shield gains surge.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When attached minion would leave play, instead heal all damage from that minion and put it back into play. Then, discard this attachment.</property>
     </card>
     <card name="Acolyte Frenzy" id="f3ee0950-3220-468c-9735-3b1dcb037035" size="EncounterCard">
       <property name="CardNumber" value="37035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="exodus"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Each [[ACOLYTE]] minion engaged with you activates against you. If you are not engaged with an [[ACOLYTE]] minion, this card gains surge.
+You are stunned and confused.</property>
     </card>
   </cards>
 </set>

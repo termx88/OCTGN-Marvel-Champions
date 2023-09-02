@@ -1,0 +1,1905 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set name="NeXt Evolution" id="104e1218-df9b-43f7-93e0-ca2ef997967d" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+ <cards>
+    <card name="Cable" id="104e1218-df9b-43f7-93e0-ca2ef9040001">
+      <property name="CardNumber" value="40001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="cable"/>
+      <property name="HandSize" value="5"/>
+      <property name="HP" value="12"/>
+      <alternate name="Cable" type="b">
+        <property name="CardNumber" value="40001b"/>
+        <property name="Position" value="1"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="cable"/>
+        <property name="HandSize" value="6"/>
+        <property name="HP" value="12"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040002">
+      <property name="CardNumber" value="40002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040003">
+      <property name="CardNumber" value="40003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040004">
+      <property name="CardNumber" value="40004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040005">
+      <property name="CardNumber" value="40005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040006" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Owner" value="cable"/>
+      <property name="BaseThreat" value="5"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Victory 0."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040007">
+      <property name="CardNumber" value="40007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040008">
+      <property name="CardNumber" value="40008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040009">
+      <property name="CardNumber" value="40009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040010">
+      <property name="CardNumber" value="40010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040011">
+      <property name="CardNumber" value="40011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040012">
+      <property name="CardNumber" value="40012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040013">
+      <property name="CardNumber" value="40013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040014">
+      <property name="CardNumber" value="40014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040015">
+      <property name="CardNumber" value="40015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040016">
+      <property name="CardNumber" value="40016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="2"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040017">
+      <property name="CardNumber" value="40017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040018" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Text" value="Victory 0."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040019" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="Text" value="Victory 0."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040020" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="Text" value="Victory 0."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040021">
+      <property name="CardNumber" value="40021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040022">
+      <property name="CardNumber" value="40022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="support"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040023">
+      <property name="CardNumber" value="40023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040024">
+      <property name="CardNumber" value="40024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040025">
+      <property name="CardNumber" value="40025"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040026">
+      <property name="CardNumber" value="40026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040027" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Text" value="Victory 0."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040028">
+      <property name="CardNumber" value="40028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="resource"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040029">
+      <property name="CardNumber" value="40029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040030">
+      <property name="CardNumber" value="40030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040031" size="EncounterCard">
+      <property name="CardNumber" value="40031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="cable"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040032" size="EncounterCard">
+      <property name="CardNumber" value="40032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="cable_nemesis"/>
+      <property name="HP" value="5"/>
+      <property name="Text" value="Villainous."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040033" size="SchemeCard">
+      <property name="CardNumber" value="40033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="cable_nemesis"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040034" size="EncounterCard">
+      <property name="CardNumber" value="40034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="cable_nemesis"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040035" size="EncounterCard">
+      <property name="CardNumber" value="40035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="cable_nemesis"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040036" size="EncounterCard">
+      <property name="CardNumber" value="40036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="cable_nemesis"/>
+    </card>
+    <card name="Domino" id="104e1218-df9b-43f7-93e0-ca2ef9040037">
+      <property name="CardNumber" value="40037a"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="domino"/>
+      <property name="HandSize" value="5"/>
+      <property name="HP" value="9"/>
+      <alternate name="" type="b">
+        <property name="CardNumber" value="40037b"/>
+        <property name="Position" value="37"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="domino"/>
+        <property name="HandSize" value="6"/>
+        <property name="HP" value="9"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040038">
+      <property name="CardNumber" value="40038"/>
+      <property name="Position" value="38"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="domino"/>
+      <property name="HP" value="2"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040039">
+      <property name="CardNumber" value="40039"/>
+      <property name="Position" value="39"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="domino"/>
+      <property name="HP" value="3"/>
+      <property name="Text" value="Toughness."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040040">
+      <property name="CardNumber" value="40040"/>
+      <property name="Position" value="40"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040041">
+      <property name="CardNumber" value="40041"/>
+      <property name="Position" value="41"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040042">
+      <property name="CardNumber" value="40042"/>
+      <property name="Position" value="42"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040043">
+      <property name="CardNumber" value="40043"/>
+      <property name="Position" value="43"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="resource"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040044">
+      <property name="CardNumber" value="40044"/>
+      <property name="Position" value="44"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040045">
+      <property name="CardNumber" value="40045"/>
+      <property name="Position" value="45"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040046">
+      <property name="CardNumber" value="40046"/>
+      <property name="Position" value="46"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040047">
+      <property name="CardNumber" value="40047"/>
+      <property name="Position" value="47"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040048">
+      <property name="CardNumber" value="40048"/>
+      <property name="Position" value="48"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040049">
+      <property name="CardNumber" value="40049"/>
+      <property name="Position" value="49"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040050">
+      <property name="CardNumber" value="40050"/>
+      <property name="Position" value="50"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040051">
+      <property name="CardNumber" value="40051"/>
+      <property name="Position" value="51"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040052">
+      <property name="CardNumber" value="40052"/>
+      <property name="Position" value="52"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040053">
+      <property name="CardNumber" value="40053"/>
+      <property name="Position" value="53"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040054" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40054"/>
+      <property name="Position" value="54"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="Text" value="Victory 0."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040055">
+      <property name="CardNumber" value="40055"/>
+      <property name="Position" value="55"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040056">
+      <property name="CardNumber" value="40056"/>
+      <property name="Position" value="56"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040057">
+      <property name="CardNumber" value="40057"/>
+      <property name="Position" value="57"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040058">
+      <property name="CardNumber" value="40058"/>
+      <property name="Position" value="58"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040059" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40059"/>
+      <property name="Position" value="59"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="Text" value="Victory 0."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040060">
+      <property name="CardNumber" value="40060"/>
+      <property name="Position" value="60"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="resource"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040061">
+      <property name="CardNumber" value="40061"/>
+      <property name="Position" value="61"/>
+      <property name="Quantity" value="1"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040062">
+      <property name="CardNumber" value="40062"/>
+      <property name="Position" value="62"/>
+      <property name="Quantity" value="1"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040063">
+      <property name="CardNumber" value="40063"/>
+      <property name="Position" value="63"/>
+      <property name="Quantity" value="1"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040064">
+      <property name="CardNumber" value="40064"/>
+      <property name="Position" value="64"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040065" size="EncounterCard">
+      <property name="CardNumber" value="40065"/>
+      <property name="Position" value="65"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="domino"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040066" size="EncounterCard">
+      <property name="CardNumber" value="40066"/>
+      <property name="Position" value="66"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="domino_nemesis"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040067" size="SchemeCard">
+      <property name="CardNumber" value="40067"/>
+      <property name="Position" value="67"/>
+      <property name="Quantity" value="1"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="domino_nemesis"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040068" size="EncounterCard">
+      <property name="CardNumber" value="40068"/>
+      <property name="Position" value="68"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="domino_nemesis"/>
+      <property name="HP" value="1"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040069" size="EncounterCard">
+      <property name="CardNumber" value="40069"/>
+      <property name="Position" value="69"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="domino_nemesis"/>
+    </card>
+    <card name="Arclight" id="104e1218-df9b-43f7-93e0-ca2ef9040070" size="VillainCard">
+      <property name="CardNumber" value="40070a"/>
+      <property name="Position" value="70"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="marauders"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="10"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <alternate name="Arclight" size="VillainCard" type="b">
+        <property name="CardNumber" value="40070b"/>
+        <property name="Position" value="70"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="marauders"/>
+        <property name="Stage" value="1"/>
+        <property name="HP" value="13"/>
+        <property name="HP_Per_Hero" value="True"/>
+      </alternate>
+    </card>
+    <card name="Le Casseur" id="104e1218-df9b-43f7-93e0-ca2ef9040071" size="VillainCard">
+      <property name="CardNumber" value="40071a"/>
+      <property name="Position" value="71"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="marauders"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="11"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <alternate name="Le Casseur" size="VillainCard" type="b">
+        <property name="CardNumber" value="40071b"/>
+        <property name="Position" value="71"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="marauders"/>
+        <property name="Stage" value="1"/>
+        <property name="HP" value="14"/>
+        <property name="HP_Per_Hero" value="True"/>
+      </alternate>
+    </card>
+    <card name="Chimera" id="104e1218-df9b-43f7-93e0-ca2ef9040072" size="VillainCard">
+      <property name="CardNumber" value="40072a"/>
+      <property name="Position" value="72"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="marauders"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="11"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <alternate name="Chimera" size="VillainCard" type="b">
+        <property name="CardNumber" value="40072b"/>
+        <property name="Position" value="72"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="marauders"/>
+        <property name="Stage" value="1"/>
+        <property name="HP" value="14"/>
+        <property name="HP_Per_Hero" value="True"/>
+      </alternate>
+    </card>
+    <card name="Greycrow" id="104e1218-df9b-43f7-93e0-ca2ef9040073" size="VillainCard">
+      <property name="CardNumber" value="40073a"/>
+      <property name="Position" value="73"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="marauders"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="9"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <alternate name="Greycrow" size="VillainCard" type="b">
+        <property name="CardNumber" value="40073b"/>
+        <property name="Position" value="73"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="marauders"/>
+        <property name="Stage" value="1"/>
+        <property name="HP" value="12"/>
+        <property name="HP_Per_Hero" value="True"/>
+      </alternate>
+    </card>
+    <card name="Harpon" id="104e1218-df9b-43f7-93e0-ca2ef9040074" size="VillainCard">
+      <property name="CardNumber" value="40074a"/>
+      <property name="Position" value="74"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="marauders"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="10"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <alternate name="Harpon" size="VillainCard" type="b">
+        <property name="CardNumber" value="40074b"/>
+        <property name="Position" value="74"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="marauders"/>
+        <property name="Stage" value="1"/>
+        <property name="HP" value="13"/>
+        <property name="HP_Per_Hero" value="True"/>
+      </alternate>
+    </card>
+    <card name="Riptide" id="104e1218-df9b-43f7-93e0-ca2ef9040075" size="VillainCard">
+      <property name="CardNumber" value="40075a"/>
+      <property name="Position" value="75"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="marauders"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="9"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <alternate name="Riptide" size="VillainCard" type="b">
+        <property name="CardNumber" value="40075b"/>
+        <property name="Position" value="75"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="marauders"/>
+        <property name="Stage" value="1"/>
+        <property name="HP" value="12"/>
+        <property name="HP_Per_Hero" value="True"/>
+      </alternate>
+    </card>
+    <card name="Vertigo" id="104e1218-df9b-43f7-93e0-ca2ef9040076" size="VillainCard">
+      <property name="CardNumber" value="40076a"/>
+      <property name="Position" value="76"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="marauders"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="9"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <alternate name="Vertigo" size="VillainCard" type="b">
+        <property name="CardNumber" value="40076b"/>
+        <property name="Position" value="76"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="marauders"/>
+        <property name="Stage" value="1"/>
+        <property name="HP" value="12"/>
+        <property name="HP_Per_Hero" value="True"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040077" size="SchemeCard">
+      <property name="CardNumber" value="40077a"/>
+      <property name="Position" value="77"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="morlock_siege"/>
+      <property name="Stage" value="1"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40077b"/>
+        <property name="Position" value="77"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="morlock_siege"/>
+        <property name="Stage" value="1"/>
+        <property name="BaseThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040078" size="SchemeCard">
+      <property name="CardNumber" value="40078a"/>
+      <property name="Position" value="78"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="morlock_siege"/>
+      <property name="Stage" value="2"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40078b"/>
+        <property name="Position" value="78"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="morlock_siege"/>
+        <property name="Stage" value="2"/>
+        <property name="BaseThreat" value="0"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040079">
+      <property name="CardNumber" value="40079"/>
+      <property name="Position" value="79"/>
+      <property name="Quantity" value="4"/>
+      <property name="DefaultSetupPile" value="Side"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="morlock_siege"/>
+      <property name="Text" value="Victory -1."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040080" size="EncounterCard">
+      <property name="CardNumber" value="40080"/>
+      <property name="Position" value="80"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="morlock_siege"/>
+      <property name="Text" value="Surge."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040081" size="EncounterCard">
+      <property name="CardNumber" value="40081a"/>
+      <property name="Position" value="81"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="morlock_siege"/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40081b"/>
+        <property name="Position" value="81"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="morlock_siege"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040082" size="EncounterCard">
+      <property name="CardNumber" value="40082"/>
+      <property name="Position" value="82"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="morlock_siege"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040083" size="EncounterCard">
+      <property name="CardNumber" value="40083"/>
+      <property name="Position" value="83"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="morlock_siege"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040084" size="SchemeCard">
+      <property name="CardNumber" value="40084"/>
+      <property name="Position" value="84"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="morlock_siege"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040085" size="SchemeCard">
+      <property name="CardNumber" value="40085"/>
+      <property name="Position" value="85"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="morlock_siege"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040086" size="SchemeCard">
+      <property name="CardNumber" value="40086"/>
+      <property name="Position" value="86"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="morlock_siege"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040087" size="SchemeCard">
+      <property name="CardNumber" value="40087"/>
+      <property name="Position" value="87"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="morlock_siege"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Assault."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040088" size="EncounterCard">
+      <property name="CardNumber" value="40088"/>
+      <property name="Position" value="88"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="morlock_siege"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040089" size="EncounterCard">
+      <property name="CardNumber" value="40089"/>
+      <property name="Position" value="89"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="morlock_siege"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040090" size="EncounterCard">
+      <property name="CardNumber" value="40090"/>
+      <property name="Position" value="90"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="military_grade"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040091" size="EncounterCard">
+      <property name="CardNumber" value="40091"/>
+      <property name="Position" value="91"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="military_grade"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040092" size="EncounterCard">
+      <property name="CardNumber" value="40092"/>
+      <property name="Position" value="92"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="military_grade"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040093" size="SchemeCard">
+      <property name="CardNumber" value="40093"/>
+      <property name="Position" value="93"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="military_grade"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Hinder 1[per_hero]."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040094" size="EncounterCard">
+      <property name="CardNumber" value="40094"/>
+      <property name="Position" value="94"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_slayers"/>
+      <property name="HP" value="5"/>
+      <property name="Text" value="Retaliate 1."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040095" size="EncounterCard">
+      <property name="CardNumber" value="40095"/>
+      <property name="Position" value="95"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_slayers"/>
+      <property name="HP" value="5"/>
+      <property name="Text" value="Guard."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040096" size="EncounterCard">
+      <property name="CardNumber" value="40096"/>
+      <property name="Position" value="96"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_slayers"/>
+      <property name="HP" value="5"/>
+      <property name="Text" value="Patrol."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040097" size="EncounterCard">
+      <property name="CardNumber" value="40097"/>
+      <property name="Position" value="97"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_slayers"/>
+      <property name="HP" value="4"/>
+      <property name="Text" value="Retaliate 1."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040098" size="EncounterCard">
+      <property name="CardNumber" value="40098"/>
+      <property name="Position" value="98"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_slayers"/>
+      <property name="HP" value="5"/>
+      <property name="Text" value="Guard."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040099" size="EncounterCard">
+      <property name="CardNumber" value="40099"/>
+      <property name="Position" value="99"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_slayers"/>
+      <property name="HP" value="4"/>
+      <property name="Text" value="Patrol."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040100" size="EncounterCard">
+      <property name="CardNumber" value="40100"/>
+      <property name="Position" value="100"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_slayers"/>
+      <property name="HP" value="4"/>
+      <property name="Text" value="Guard."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040101" size="SchemeCard">
+      <property name="CardNumber" value="40101"/>
+      <property name="Position" value="101"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mutant_slayers"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040102" size="EncounterCard">
+      <property name="CardNumber" value="40102"/>
+      <property name="Position" value="102"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mutant_slayers"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040103" size="SchemeCard">
+      <property name="CardNumber" value="40103a"/>
+      <property name="Position" value="103"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="on_the_run"/>
+      <property name="Stage" value="1"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40103b"/>
+        <property name="Position" value="103"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="on_the_run"/>
+        <property name="Stage" value="1"/>
+        <property name="BaseThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040104" size="SchemeCard">
+      <property name="CardNumber" value="40104a"/>
+      <property name="Position" value="104"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="on_the_run"/>
+      <property name="Stage" value="2"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40104b"/>
+        <property name="Position" value="104"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="on_the_run"/>
+        <property name="Stage" value="2"/>
+        <property name="BaseThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040105" size="EncounterCard">
+      <property name="CardNumber" value="40105a"/>
+      <property name="Position" value="105"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="on_the_run"/>
+      <property name="Text" value="Permanent."/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40105b"/>
+        <property name="Position" value="105"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="on_the_run"/>
+        <property name="Text" value="Permanent."/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040106" size="EncounterCard">
+      <property name="CardNumber" value="40106"/>
+      <property name="Position" value="106"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="on_the_run"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040107" size="EncounterCard">
+      <property name="CardNumber" value="40107"/>
+      <property name="Position" value="107"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="on_the_run"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040108" size="SchemeCard">
+      <property name="CardNumber" value="40108"/>
+      <property name="Position" value="108"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="on_the_run"/>
+      <property name="BaseThreat" value="1"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040109" size="SchemeCard">
+      <property name="CardNumber" value="40109"/>
+      <property name="Position" value="109"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="on_the_run"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040110" size="EncounterCard">
+      <property name="CardNumber" value="40110"/>
+      <property name="Position" value="110"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="on_the_run"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040111" size="EncounterCard">
+      <property name="CardNumber" value="40111"/>
+      <property name="Position" value="111"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="on_the_run"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040112" size="EncounterCard">
+      <property name="CardNumber" value="40112"/>
+      <property name="Position" value="112"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="nasty_boys"/>
+      <property name="HP" value="4"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040113" size="EncounterCard">
+      <property name="CardNumber" value="40113"/>
+      <property name="Position" value="113"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="nasty_boys"/>
+      <property name="HP" value="3"/>
+      <property name="Text" value="Surge."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040114" size="EncounterCard">
+      <property name="CardNumber" value="40114"/>
+      <property name="Position" value="114"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="nasty_boys"/>
+      <property name="HP" value="4"/>
+      <property name="Text" value="Retaliate 1."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040115" size="EncounterCard">
+      <property name="CardNumber" value="40115"/>
+      <property name="Position" value="115"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="nasty_boys"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040116" size="EncounterCard">
+      <property name="CardNumber" value="40116"/>
+      <property name="Position" value="116"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="nasty_boys"/>
+      <property name="HP" value="5"/>
+      <property name="Text" value="Toughness."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040117" size="SchemeCard">
+      <property name="CardNumber" value="40117"/>
+      <property name="Position" value="117"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="nasty_boys"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040118" size="VillainCard">
+      <property name="CardNumber" value="40118"/>
+      <property name="Position" value="118"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="juggernaut"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
+      <property name="HP" value="18"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040119" size="VillainCard">
+      <property name="CardNumber" value="40119"/>
+      <property name="Position" value="119"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="juggernaut"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="21"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040120" size="VillainCard">
+      <property name="CardNumber" value="40120"/>
+      <property name="Position" value="120"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="juggernaut"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="25"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040121" size="SchemeCard">
+      <property name="CardNumber" value="40121a"/>
+      <property name="Position" value="121"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="juggernaut"/>
+      <property name="Stage" value="1"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40121b"/>
+        <property name="Position" value="121"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="juggernaut"/>
+        <property name="Stage" value="1"/>
+        <property name="BaseThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040122" size="EncounterCard">
+      <property name="CardNumber" value="40122a"/>
+      <property name="Position" value="122"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="juggernaut"/>
+      <property name="Text" value="Permanent."/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40122b"/>
+        <property name="Position" value="122"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="juggernaut"/>
+        <property name="Text" value="Permanent."/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040123" size="EncounterCard">
+      <property name="CardNumber" value="40123"/>
+      <property name="Position" value="123"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="juggernaut"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040124" size="SchemeCard">
+      <property name="CardNumber" value="40124"/>
+      <property name="Position" value="124"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="juggernaut"/>
+      <property name="BaseThreat" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040125" size="EncounterCard">
+      <property name="CardNumber" value="40125"/>
+      <property name="Position" value="125"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="juggernaut"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040126" size="EncounterCard">
+      <property name="CardNumber" value="40126"/>
+      <property name="Position" value="126"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="juggernaut"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040127" size="EncounterCard">
+      <property name="CardNumber" value="40127"/>
+      <property name="Position" value="127"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="juggernaut"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040128" size="EncounterCard">
+      <property name="CardNumber" value="40128"/>
+      <property name="Position" value="128"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="juggernaut"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040129" size="EncounterCard">
+      <property name="CardNumber" value="40129"/>
+      <property name="Position" value="129"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="juggernaut"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040130">
+      <property name="CardNumber" value="40130"/>
+      <property name="Position" value="130"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="hope_summers"/>
+      <property name="Text" value="Setup."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040131" size="SchemeCard">
+      <property name="CardNumber" value="40131"/>
+      <property name="Position" value="131"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="hope_summers"/>
+      <property name="BaseThreat" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040132" size="EncounterCard">
+      <property name="CardNumber" value="40132"/>
+      <property name="Position" value="132"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="black_tom_cassidy"/>
+      <property name="HP" value="6"/>
+      <property name="Text" value="Villainous."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040133" size="EncounterCard">
+      <property name="CardNumber" value="40133"/>
+      <property name="Position" value="133"/>
+      <property name="Quantity" value="4"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="black_tom_cassidy"/>
+      <property name="HP" value="3"/>
+      <property name="Text" value="Guard. Quickstrike."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040134" size="SchemeCard">
+      <property name="CardNumber" value="40134"/>
+      <property name="Position" value="134"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="black_tom_cassidy"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Hinder 2[per_hero]."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040135" size="EncounterCard">
+      <property name="CardNumber" value="40135"/>
+      <property name="Position" value="135"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="black_tom_cassidy"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040136" size="VillainCard">
+      <property name="CardNumber" value="40136"/>
+      <property name="Position" value="136"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
+      <property name="HP" value="14"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040137" size="VillainCard">
+      <property name="CardNumber" value="40137"/>
+      <property name="Position" value="137"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="17"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040138" size="VillainCard">
+      <property name="CardNumber" value="40138"/>
+      <property name="Position" value="138"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="21"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040139" size="SchemeCard">
+      <property name="CardNumber" value="40139a"/>
+      <property name="Position" value="139"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="Stage" value="1"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40139b"/>
+        <property name="Position" value="139"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mister_sinister"/>
+        <property name="Stage" value="1"/>
+        <property name="BaseThreat" value="0"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040140" size="SchemeCard">
+      <property name="CardNumber" value="40140a"/>
+      <property name="Position" value="140"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="Stage" value="2"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40140b"/>
+        <property name="Position" value="140"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mister_sinister"/>
+        <property name="Stage" value="2"/>
+        <property name="BaseThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040141" size="SchemeCard">
+      <property name="CardNumber" value="40141a"/>
+      <property name="Position" value="141"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="Stage" value="2"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40141b"/>
+        <property name="Position" value="141"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mister_sinister"/>
+        <property name="Stage" value="2"/>
+        <property name="BaseThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040142" size="SchemeCard">
+      <property name="CardNumber" value="40142a"/>
+      <property name="Position" value="142"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="Stage" value="2"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40142b"/>
+        <property name="Position" value="142"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mister_sinister"/>
+        <property name="Stage" value="2"/>
+        <property name="BaseThreat" value="1"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040143" size="SchemeCard">
+      <property name="CardNumber" value="40143a"/>
+      <property name="Position" value="143"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="Stage" value="3"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40143b"/>
+        <property name="Position" value="143"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="mister_sinister"/>
+        <property name="Stage" value="3"/>
+        <property name="BaseThreat" value="0"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040144" size="EncounterCard">
+      <property name="CardNumber" value="40144"/>
+      <property name="Position" value="144"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="mister_sinister"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040145" size="EncounterCard">
+      <property name="CardNumber" value="40145"/>
+      <property name="Position" value="145"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mister_sinister"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040146" size="SchemeCard">
+      <property name="CardNumber" value="40146"/>
+      <property name="Position" value="146"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mister_sinister"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Hinder 1[per_hero]."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040147" size="EncounterCard">
+      <property name="CardNumber" value="40147"/>
+      <property name="Position" value="147"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mister_sinister"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040148" size="EncounterCard">
+      <property name="CardNumber" value="40148"/>
+      <property name="Position" value="148"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mister_sinister"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040149" size="EncounterCard">
+      <property name="CardNumber" value="40149"/>
+      <property name="Position" value="149"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mister_sinister"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040150" size="EncounterCard">
+      <property name="CardNumber" value="40150"/>
+      <property name="Position" value="150"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mister_sinister"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040151" size="EncounterCard">
+      <property name="CardNumber" value="40151"/>
+      <property name="Position" value="151"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="flight"/>
+      <property name="Text" value="Setup. Permanent."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040152" size="EncounterCard">
+      <property name="CardNumber" value="40152"/>
+      <property name="Position" value="152"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="flight"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040153" size="EncounterCard">
+      <property name="CardNumber" value="40153"/>
+      <property name="Position" value="153"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="flight"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040154" size="EncounterCard">
+      <property name="CardNumber" value="40154"/>
+      <property name="Position" value="154"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="flight"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040155" size="EncounterCard">
+      <property name="CardNumber" value="40155"/>
+      <property name="Position" value="155"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="super_strength"/>
+      <property name="Text" value="Setup. Permanent."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040156" size="EncounterCard">
+      <property name="CardNumber" value="40156"/>
+      <property name="Position" value="156"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="super_strength"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040157" size="EncounterCard">
+      <property name="CardNumber" value="40157"/>
+      <property name="Position" value="157"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="super_strength"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040158" size="EncounterCard">
+      <property name="CardNumber" value="40158"/>
+      <property name="Position" value="158"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="super_strength"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040159" size="EncounterCard">
+      <property name="CardNumber" value="40159"/>
+      <property name="Position" value="159"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="telepathy"/>
+      <property name="Text" value="Setup. Permanent."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040160" size="EncounterCard">
+      <property name="CardNumber" value="40160"/>
+      <property name="Position" value="160"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="telepathy"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040161" size="EncounterCard">
+      <property name="CardNumber" value="40161"/>
+      <property name="Position" value="161"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="telepathy"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040162" size="EncounterCard">
+      <property name="CardNumber" value="40162"/>
+      <property name="Position" value="162"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="telepathy"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040163" size="VillainCard">
+      <property name="CardNumber" value="40163"/>
+      <property name="Position" value="163"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040164" size="VillainCard">
+      <property name="CardNumber" value="40164"/>
+      <property name="Position" value="164"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="17"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040165" size="VillainCard">
+      <property name="CardNumber" value="40165"/>
+      <property name="Position" value="165"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
+      <property name="HP" value="20"/>
+      <property name="HP_Per_Hero" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040166" size="SchemeCard">
+      <property name="CardNumber" value="40166a"/>
+      <property name="Position" value="166"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="Stage" value="1"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40166b"/>
+        <property name="Position" value="166"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="stryfe"/>
+        <property name="Stage" value="1"/>
+        <property name="BaseThreat" value="0"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040167" size="SchemeCard">
+      <property name="CardNumber" value="40167a"/>
+      <property name="Position" value="167"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="Stage" value="2"/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40167b"/>
+        <property name="Position" value="167"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="stryfe"/>
+        <property name="Stage" value="2"/>
+        <property name="BaseThreat" value="0"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040168" size="SchemeCard">
+      <property name="CardNumber" value="40168a"/>
+      <property name="Position" value="168"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Permanent. Hinder 6[per_hero]."/>
+      <alternate name="" size="SchemeCard" type="b">
+        <property name="CardNumber" value="40168b"/>
+        <property name="Position" value="168"/>
+        <property name="Type" value="side_scheme"/>
+        <property name="Owner" value="stryfe"/>
+        <property name="BaseThreat" value="3"/>
+        <property name="BaseThreatFixed" value="True"/>
+        <property name="Text" value="Victory 1."/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040169" size="EncounterCard">
+      <property name="CardNumber" value="40169"/>
+      <property name="Position" value="169"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="stryfe"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040170" size="EncounterCard">
+      <property name="CardNumber" value="40170"/>
+      <property name="Position" value="170"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="stryfe"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040171" size="EncounterCard">
+      <property name="CardNumber" value="40171"/>
+      <property name="Position" value="171"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="stryfe"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040172" size="EncounterCard">
+      <property name="CardNumber" value="40172"/>
+      <property name="Position" value="172"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="stryfe"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040173" size="EncounterCard">
+      <property name="CardNumber" value="40173"/>
+      <property name="Position" value="173"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="stryfe"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040174" size="EncounterCard">
+      <property name="CardNumber" value="40174"/>
+      <property name="Position" value="174"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="Text" value="Guard. Patrol. Toughness."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040175" size="SchemeCard">
+      <property name="CardNumber" value="40175"/>
+      <property name="Position" value="175"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="BaseThreat" value="2"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040176" size="SchemeCard">
+      <property name="CardNumber" value="40176"/>
+      <property name="Position" value="176"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="stryfe"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040177" size="EncounterCard">
+      <property name="CardNumber" value="40177"/>
+      <property name="Position" value="177"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="stryfe"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040178" size="EncounterCard">
+      <property name="CardNumber" value="40178"/>
+      <property name="Position" value="178"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="stryfe"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040179" size="EncounterCard">
+      <property name="CardNumber" value="40179"/>
+      <property name="Position" value="179"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="stryfe"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040180" size="EncounterCard">
+      <property name="CardNumber" value="40180"/>
+      <property name="Position" value="180"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="extreme_measures"/>
+      <property name="HP" value="4"/>
+      <property name="Text" value="Patrol."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040181" size="EncounterCard">
+      <property name="CardNumber" value="40181"/>
+      <property name="Position" value="181"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="extreme_measures"/>
+      <property name="HP" value="5"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040182" size="EncounterCard">
+      <property name="CardNumber" value="40182"/>
+      <property name="Position" value="182"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="extreme_measures"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040183" size="EncounterCard">
+      <property name="CardNumber" value="40183"/>
+      <property name="Position" value="183"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="extreme_measures"/>
+      <property name="HP" value="5"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040184" size="SchemeCard">
+      <property name="CardNumber" value="40184"/>
+      <property name="Position" value="184"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="extreme_measures"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Hinder 2[per_hero]."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040185" size="EncounterCard">
+      <property name="CardNumber" value="40185"/>
+      <property name="Position" value="185"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_insurrection"/>
+      <property name="HP" value="3"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040186" size="EncounterCard">
+      <property name="CardNumber" value="40186"/>
+      <property name="Position" value="186"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_insurrection"/>
+      <property name="HP" value="6"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040187" size="EncounterCard">
+      <property name="CardNumber" value="40187"/>
+      <property name="Position" value="187"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_insurrection"/>
+      <property name="HP" value="4"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040188" size="EncounterCard">
+      <property name="CardNumber" value="40188"/>
+      <property name="Position" value="188"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mutant_insurrection"/>
+      <property name="HP" value="5"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040189" size="SchemeCard">
+      <property name="CardNumber" value="40189"/>
+      <property name="Position" value="189"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mutant_insurrection"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Assault."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040190" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40190a"/>
+      <property name="Position" value="190"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="BaseThreat" value="4"/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40190b"/>
+        <property name="Position" value="190"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="next_evol_campaign"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040191" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40191a"/>
+      <property name="Position" value="191"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="BaseThreat" value="4"/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40191b"/>
+        <property name="Position" value="191"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="next_evol_campaign"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040192" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40192a"/>
+      <property name="Position" value="192"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="BaseThreat" value="4"/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40192b"/>
+        <property name="Position" value="192"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="next_evol_campaign"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040193" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40193a"/>
+      <property name="Position" value="193"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="BaseThreat" value="4"/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40193b"/>
+        <property name="Position" value="193"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="next_evol_campaign"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040194" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40194a"/>
+      <property name="Position" value="194"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="BaseThreat" value="4"/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40194b"/>
+        <property name="Position" value="194"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="next_evol_campaign"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040195" size="PlayerSchemeCard">
+      <property name="CardNumber" value="40195a"/>
+      <property name="Position" value="195"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="BaseThreat" value="4"/>
+      <alternate name="" size="EncounterCard" type="b">
+        <property name="CardNumber" value="40195b"/>
+        <property name="Position" value="195"/>
+        <property name="Type" value="environment"/>
+        <property name="Owner" value="next_evol_campaign"/>
+      </alternate>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040196">
+      <property name="CardNumber" value="40196"/>
+      <property name="Position" value="196"/>
+      <property name="Quantity" value="4"/>
+      <property name="Type" value="resource"/>
+      <property name="Owner" value="next_evol_campaign"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040197">
+      <property name="CardNumber" value="40197"/>
+      <property name="Position" value="197"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="next_evol_campaign"/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040198" size="EncounterCard">
+      <property name="CardNumber" value="40198"/>
+      <property name="Position" value="198"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="HP" value="3"/>
+      <property name="Text" value="Surge."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040199" size="EncounterCard">
+      <property name="CardNumber" value="40199"/>
+      <property name="Position" value="199"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="HP" value="1"/>
+      <property name="Text" value="Surge."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040200" size="EncounterCard">
+      <property name="CardNumber" value="40200"/>
+      <property name="Position" value="200"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="HP" value="3"/>
+      <property name="Text" value="Surge."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040201" size="EncounterCard">
+      <property name="CardNumber" value="40201"/>
+      <property name="Position" value="201"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="HP" value="3"/>
+      <property name="Text" value="Surge."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040202" size="SchemeCard">
+      <property name="CardNumber" value="40202"/>
+      <property name="Position" value="202"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text" value="Surge."/>
+    </card>
+    <card name="" id="104e1218-df9b-43f7-93e0-ca2ef9040203" size="EncounterCard">
+      <property name="CardNumber" value="40203"/>
+      <property name="Position" value="203"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="next_evol_campaign"/>
+      <property name="Text" value="Surge."/>
+    </card>
+    <card name="Hope Summers" id="104e1218-df9b-43f7-93e0-ca2ef9040204">
+      <property name="CardNumber" value="40204"/>
+      <property name="Position" value="204"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="HP" value="3"/>
+    </card>
+ </cards>
+</set>

@@ -1,74 +1,121 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <set name="Mojo Mania" id="56b64e85-e416-4ec5-83e2-4bbd16acf52c" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
   <cards>
-    <card name="MaGog (A)" id="56b64e85-e416-4ec5-83e2-4bbd16039001" size="VillainCard">
+    <card name="MaGog" id="56b64e85-e416-4ec5-83e2-4bbd16039001" size="VillainCard">
       <property name="CardNumber" value="39001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="magog"/>
+      <property name="Stage" value="0"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="10"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Brute."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After MaGog attacks and damages a character, place 1 ratings counter on The Champion.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When MaGog would be defeated, reset his hit points to 10[per_hero] instead. Place 3[per_hero] ratings counters on The Challengers and deal each player 1 facedown encounter card.</property>
       <property name="Unique" value="True"/>
-      <alternate name="MaGog (B)" type="b" size="VillainCard">
+      <alternate name="MaGog" type="b" size="VillainCard">
         <property name="CardNumber" value="39001b"/>
         <property name="Type" value="villain"/>
         <property name="Owner" value="magog"/>
+        <property name="Stage" value="0"/>
         <property name="Attack" value="3"/>
         <property name="Scheme" value="1"/>
         <property name="HP" value="10"/>
         <property name="HP_Per_Hero" value="True"/>
         <property name="Attribute" value="Brute."/>
+        <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After MaGog attacks and damages a character, place 2 ratings counters on The Champion.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When MaGog would be defeated, reset his hit points to 10[per_hero] instead. Place 2[per_hero] ratings counters on The Challengers and deal each player 1 facedown encounter card.</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
-    <card name="Melee in the Mojo-seum (1A)" id="56b64e85-e416-4ec5-83e2-4bbd16039002" size="SchemeCard">
+    <card name="Melee in the Mojo-seum" id="56b64e85-e416-4ec5-83e2-4bbd16039002" size="SchemeCard">
       <property name="CardNumber" value="39002a"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="magog"/>
-      <alternate name="Melee in the Mojo-seum (1B)" type="b" size="SchemeCard">
+      <property name="Stage" value="1"/>
+      <property name="Text">&lt;b&gt;Contents&lt;/b&gt;: MaGog (A) &lt;i&gt;(MaGog (B) instead for expert mode)&lt;/i&gt;. MaGog and Standard encounter sets. One modular encounter set &lt;i&gt;(1 random modular set from the&lt;/i&gt; MojoMania &lt;i&gt;scenario pack)&lt;/i&gt;.
+&lt;b&gt;Setup&lt;/b&gt;: Put The Champion environment card and The Challengers environment card into play, each with its [[BOOING CROWD]] side faceup.</property>
+      <alternate name="Melee in the Mojo-seum" type="b" size="SchemeCard">
         <property name="CardNumber" value="39002b"/>
+        <property name="Position" value="2"/>
+        <property name="Quantity" value="1"/>
+        <property name="DefaultSetupPile" value="Scheme"/>
         <property name="Type" value="main_scheme"/>
         <property name="Owner" value="magog"/>
+        <property name="Stage" value="1"/>
         <property name="BaseThreat" value="1"/>
+        <property name="BaseThreatFixed" value="False"/>
         <property name="Threat" value="6"/>
         <property name="EscalationThreat" value="2"/>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">The players cannot win the game unless they wow the crowd as The Challengers.
+[star] &lt;b&gt;Forced Interrupt&lt;/b&gt;: When this scheme would be completed, place 2[per_hero] ratings counters on The Champion and remove all threat from here instead.</property>
+        <property name="Quote">Teleported into a bizarre arena, you must fight for the audience's entertainment...and your lives!</property>
       </alternate>
     </card>
-    <card name="The Champion (Booing Crowd)" id="56b64e85-e416-4ec5-83e2-4bbd16039003" size="EncounterCard">
+    <card name="The Champion" id="56b64e85-e416-4ec5-83e2-4bbd16039003" size="EncounterCard">
       <property name="CardNumber" value="39003a"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="magog"/>
       <property name="Attribute" value="Booing Crowd."/>
-      <alternate name="The Champion (Cheering Crowd)" type="b" size="EncounterCard">
+      <property name="Text">If there are at least 5[per_hero] ratings counters here, flip this environment &lt;i&gt;(without removing ratings counters)&lt;/i&gt;.</property>
+      <property name="Quote">"In this corner, we have your ninety-nine time defending Mojoverse champion, the mighty MaGog!"</property>
+      <alternate name="The Champion" type="b" size="EncounterCard">
         <property name="CardNumber" value="39003b"/>
+        <property name="Position" value="3"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="environment"/>
         <property name="Owner" value="magog"/>
         <property name="Attribute" value="Cheering Crowd."/>
+        <property name="Text">Underdogs — &lt;b&gt;Forced Response&lt;/b&gt;: After The Champion flips to this side, each player draws 1 card.
+&lt;b&gt;If there are at least 10[per_hero] ratings counters here, MaGog wins again and the players lose the game.&lt;/b&gt;</property>
       </alternate>
     </card>
-    <card name="The Challengers (Booing Crowd)" id="56b64e85-e416-4ec5-83e2-4bbd16039004" size="EncounterCard">
+    <card name="The Challengers" id="56b64e85-e416-4ec5-83e2-4bbd16039004" size="EncounterCard">
       <property name="CardNumber" value="39004a"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="magog"/>
       <property name="Attribute" value="Booing Crowd."/>
-      <alternate name="The Challengers (Cheering Crowd)" type="b" size="EncounterCard">
+      <property name="Text">If there are at least 5[per_hero] ratings counters here, flip this environment &lt;i&gt;(without removing ratings counters)&lt;/i&gt;.
+&lt;i&gt;(The players wow the crowd by placing ratings counters here.)&lt;/i&gt;</property>
+      <property name="Quote">"And in this corner, hailing from the tiny, insignificant planet of Earth, we have our challengers!" — Mojo</property>
+      <alternate name="The Challengers" type="b" size="EncounterCard">
         <property name="CardNumber" value="39004b"/>
+        <property name="Position" value="4"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="environment"/>
         <property name="Owner" value="magog"/>
         <property name="Attribute" value="Cheering Crowd."/>
+        <property name="Text">Tag Team — &lt;b&gt;Forced Response&lt;/b&gt;: After The Challengers flips to this side, search the encounter deck and discard pile for Surprise Contender and put it into play engaged with the first player. If it is already in play, give it a tough status card.
+&lt;b&gt;If there are at least 10[per_hero] ratings counters here, you wow the crowd and the players win the game.&lt;/b&gt;</property>
       </alternate>
     </card>
     <card name="Jolt of Adrenaline" id="56b64e85-e416-4ec5-83e2-4bbd16039005" size="EncounterCard">
       <property name="CardNumber" value="39005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="magog"/>
       <property name="Attribute" value="Condition."/>
-      <property name="Text">Attach to MaGog.\nMaGog gains retaliate 1 and stalwart.</property>
+      <property name="Text">Attach to MaGog.nMaGog gains retaliate 1 and stalwart.</property>
     </card>
     <card name="Surge of Aggression" id="56b64e85-e416-4ec5-83e2-4bbd16039006" size="EncounterCard">
       <property name="CardNumber" value="39006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="magog"/>
       <property name="Attribute" value="Condition."/>
@@ -76,6 +123,8 @@
     </card>
     <card name="Surprise Contender" id="56b64e85-e416-4ec5-83e2-4bbd16039007" size="EncounterCard">
       <property name="CardNumber" value="39007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="magog"/>
       <property name="Attack" value="2"/>
@@ -89,127 +138,218 @@
     </card>
     <card name="Pump Up the Crowd" id="56b64e85-e416-4ec5-83e2-4bbd16039008" size="SchemeCard">
       <property name="CardNumber" value="39008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="magog"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="2"/>
     </card>
     <card name="Break a Leg" id="56b64e85-e416-4ec5-83e2-4bbd16039009" size="EncounterCard">
       <property name="CardNumber" value="39009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="magog"/>
       <property name="Boost" value="2"/>
     </card>
     <card name="Defend the Title" id="56b64e85-e416-4ec5-83e2-4bbd16039010" size="EncounterCard">
       <property name="CardNumber" value="39010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="magog"/>
       <property name="Boost" value="1"/>
     </card>
     <card name="Stage Fright" id="56b64e85-e416-4ec5-83e2-4bbd16039011" size="EncounterCard">
       <property name="CardNumber" value="39011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="magog"/>
     </card>
-    <card name="Spiral I (Escaped)" id="56b64e85-e416-4ec5-83e2-4bbd16039012" size="VillainCard">
+    <card name="Spiral" id="56b64e85-e416-4ec5-83e2-4bbd16039012" size="VillainCard">
       <property name="CardNumber" value="39012a"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="spiral"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
+      <property name="Attack" value="None"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="13"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Escaped. Mystic."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Spiral would attack, she schemes instead.
+Spiral cannot take damage or be stunned. Threat cannot be removed from the main scheme.</property>
       <property name="Unique" value="True"/>
-      <alternate name="Spiral I (Cornered)" type="b" size="VillainCard">
+      <alternate name="Spiral" type="b" size="VillainCard">
         <property name="CardNumber" value="39012b"/>
+        <property name="Position" value="12"/>
+        <property name="Quantity" value="1"/>
+        <property name="DefaultSetupPile" value="Villain"/>
         <property name="Type" value="villain"/>
         <property name="Owner" value="spiral"/>
+        <property name="Stage" value="1"/>
+        <property name="Standard" value="True"/>
+        <property name="Expert" value="False"/>
         <property name="Attack" value="1"/>
         <property name="Scheme" value="1"/>
         <property name="HP" value="13"/>
         <property name="HP_Per_Hero" value="True"/>
         <property name="Attribute" value="Cornered. Mystic."/>
+        <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After Spiral activates, place 1 teleport counter here.
+&lt;b&gt;Forced Response&lt;/b&gt;: After Spiral activates, place 1 teleport counter here.
+If there are at least 3[per_hero] teleport counters here, remove all of them and flip Spiral.</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
-    <card name="Spiral II (Escaped)" id="56b64e85-e416-4ec5-83e2-4bbd16039013" size="VillainCard">
+    <card name="Spiral" id="56b64e85-e416-4ec5-83e2-4bbd16039013" size="VillainCard">
       <property name="CardNumber" value="39013a"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="spiral"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="Attack" value="None"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="15"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Escaped. Mystic."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Spiral would attack, she schemes instead.
+Spiral cannot take damage or be stunned. Threat cannot be removed from the main scheme.</property>
       <property name="Unique" value="True"/>
-      <alternate name="Spiral II (Cornered)" type="b" size="VillainCard">
+      <alternate name="Spiral" type="b" size="VillainCard">
         <property name="CardNumber" value="39013b"/>
+        <property name="Position" value="13"/>
+        <property name="Quantity" value="1"/>
+        <property name="DefaultSetupPile" value="Villain"/>
         <property name="Type" value="villain"/>
         <property name="Owner" value="spiral"/>
+        <property name="Stage" value="2"/>
+        <property name="Standard" value="True"/>
+        <property name="Expert" value="True"/>
         <property name="Attack" value="2"/>
         <property name="Scheme" value="2"/>
         <property name="HP" value="15"/>
         <property name="HP_Per_Hero" value="True"/>
         <property name="Attribute" value="Cornered. Mystic."/>
+        <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After Spiral activates, place 1 teleport counter here.
+&lt;b&gt;Forced Response&lt;/b&gt;: After Spiral activates, place 1 teleport counter here.
+If there are at least 2[per_hero] teleport counters here, remove all of them and flip Spiral.</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
-    <card name="Spiral III (Escaped)" id="56b64e85-e416-4ec5-83e2-4bbd16039014" size="VillainCard">
+    <card name="Spiral" id="56b64e85-e416-4ec5-83e2-4bbd16039014" size="VillainCard">
       <property name="CardNumber" value="39014a"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="spiral"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
+      <property name="Attack" value="None"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="17"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Escaped. Mystic."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Spiral would attack, she schemes instead.
+Spiral cannot take damage or be stunned. Threat cannot be removed from the main scheme.</property>
       <property name="Unique" value="True"/>
-      <alternate name="Spiral III (Cornered)" type="b" size="VillainCard">
+      <alternate name="Spiral" type="b" size="VillainCard">
         <property name="CardNumber" value="39014b"/>
+        <property name="Position" value="14"/>
+        <property name="Quantity" value="1"/>
+        <property name="DefaultSetupPile" value="Villain"/>
         <property name="Type" value="villain"/>
         <property name="Owner" value="spiral"/>
+        <property name="Stage" value="3"/>
+        <property name="Standard" value="False"/>
+        <property name="Expert" value="True"/>
         <property name="Attack" value="3"/>
         <property name="Scheme" value="2"/>
         <property name="HP" value="17"/>
         <property name="HP_Per_Hero" value="True"/>
         <property name="Attribute" value="Cornered. Mystic."/>
+        <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After Spiral activates, place 1 teleport counter here.
+&lt;b&gt;Forced Response&lt;/b&gt;: After Spiral activates, place 1 teleport counter here.
+If there are at least 3[per_hero] teleport counters here, remove all of them and flip Spiral.
+&lt;b&gt;When Revealed&lt;/b&gt;: Spiral attacks each player in player order &lt;i&gt;(even in alter-ego form)&lt;/i&gt;.</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
-    <card name="Across the Mojoverse (1A)" id="56b64e85-e416-4ec5-83e2-4bbd16039015" size="SchemeCard">
+    <card name="Across the Mojoverse" id="56b64e85-e416-4ec5-83e2-4bbd16039015" size="SchemeCard">
       <property name="CardNumber" value="39015a"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="spiral"/>
-      <alternate name="Across the Mojoverse (1B)" type="b" size="SchemeCard">
+      <property name="Stage" value="1"/>
+      <property name="Text">&lt;b&gt;Contents&lt;/b&gt;: Spiral (I) and Spiral (II) &lt;i&gt;(Spiral (II) and Spiral (III) instead for expert mode)&lt;/i&gt;. Spiral and Standard encounter sets. Three modular encounter sets from the MojoMania scenario pack.
+&lt;b&gt;Setup&lt;/b&gt;: Put The Search for Spiral side scheme and 1 random [[SHOW]] environment into play. Shuffle each other [[SHOW]] environment together with the Cornered! treachery to create the show deck. &lt;i&gt;(See rulebook p. 11)&lt;/i&gt;. Flip Spiral to her [[ESCAPED]] side.</property>
+      <alternate name="Across the Mojoverse" type="b" size="SchemeCard">
         <property name="CardNumber" value="39015b"/>
+        <property name="Position" value="15"/>
+        <property name="Quantity" value="1"/>
+        <property name="DefaultSetupPile" value="Scheme"/>
         <property name="Type" value="main_scheme"/>
         <property name="Owner" value="spiral"/>
+        <property name="Stage" value="1"/>
         <property name="BaseThreat" value="1"/>
+        <property name="BaseThreatFixed" value="False"/>
         <property name="Threat" value="15"/>
         <property name="EscalationThreat" value="1"/>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When a [[SHOW]] environment would be discarded, place it on the bottom of the show deck instead.
+&lt;b&gt;If this stage is completed, the players lose the game.&lt;/b&gt;</property>
+        <property name="Quote">If you want to return home, you'll need the help of the teleporting sorceress, Spiral. But she will need some convincing.</property>
       </alternate>
     </card>
     <card name="The Search for Spiral" id="56b64e85-e416-4ec5-83e2-4bbd16039016" size="SchemeCard">
       <property name="CardNumber" value="39016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="spiral"/>
       <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Text">Permanent.</property>
     </card>
     <card name="Cornered!" id="56b64e85-e416-4ec5-83e2-4bbd16039017" size="EncounterCard">
       <property name="CardNumber" value="39017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="spiral"/>
     </card>
     <card name="Spiral's Swords" id="56b64e85-e416-4ec5-83e2-4bbd16039018" size="EncounterCard">
       <property name="CardNumber" value="39018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="spiral"/>
       <property name="Boost" value="3"/>
       <property name="Attribute" value="Weapon."/>
-      <property name="Text">Attach to Spiral.\nUses (3 sword counters).</property>
+      <property name="Text">Attach to Spiral.
+Uses (3 sword counters).</property>
     </card>
     <card name="Erratic Teleportation" id="56b64e85-e416-4ec5-83e2-4bbd16039019" size="EncounterCard">
       <property name="CardNumber" value="39019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="spiral"/>
       <property name="Boost" value="1"/>
@@ -217,74 +357,127 @@
     </card>
     <card name="The Show Must Go On" id="56b64e85-e416-4ec5-83e2-4bbd16039020" size="EncounterCard">
       <property name="CardNumber" value="39020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="spiral"/>
       <property name="Boost" value="3"/>
     </card>
     <card name="Well-Armed" id="56b64e85-e416-4ec5-83e2-4bbd16039021" size="EncounterCard">
       <property name="CardNumber" value="39021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="spiral"/>
       <property name="Boost" value="1"/>
     </card>
-    <card name="Mojo I" id="56b64e85-e416-4ec5-83e2-4bbd16039022" size="VillainCard">
+    <card name="Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039022" size="VillainCard">
       <property name="CardNumber" value="39022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="mojo"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="16"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Spineless."/>
+      <property name="Text">&lt;b&gt;Forced Response (Hero)&lt;/b&gt;: After your turn ends, discard the top 3 cards of the encounter deck. Place 1 threat on your hero for each card discarded this way that does not belong to the Mojo encounter set.</property>
       <property name="Unique" value="True"/>
     </card>
-    <card name="Mojo II" id="56b64e85-e416-4ec5-83e2-4bbd16039023" size="VillainCard">
+    <card name="Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039023" size="VillainCard">
       <property name="CardNumber" value="39023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="mojo"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="3"/>
       <property name="HP" value="18"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Spineless."/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Place 2 threat on each friendly character.
+&lt;b&gt;Forced Response (Hero)&lt;/b&gt;: After your turn ends, discard the top 4 cards of the encounter deck. Place 1 threat on your hero for each card discarded this way that does not belong to the Mojo encounter set.</property>
       <property name="Unique" value="True"/>
     </card>
-    <card name="Mojo III" id="56b64e85-e416-4ec5-83e2-4bbd16039024" size="VillainCard">
+    <card name="Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039024" size="VillainCard">
       <property name="CardNumber" value="39024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="mojo"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="4"/>
       <property name="HP" value="25"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Spineless."/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Place 3 threat on each friendly character.
+&lt;b&gt;Forced Response (Hero)&lt;/b&gt;: After your turn ends, discard the top 5 cards of the encounter deck. Place 1 threat on your hero for each card discarded this way that does not belong to the Mojo encounter set.</property>
       <property name="Unique" value="True"/>
     </card>
-    <card name="MojoMania (1A)" id="56b64e85-e416-4ec5-83e2-4bbd16039025" size="SchemeCard">
+    <card name="MojoMania" id="56b64e85-e416-4ec5-83e2-4bbd16039025" size="SchemeCard">
       <property name="CardNumber" value="39025a"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="mojo"/>
-      <alternate name="MojoMania (1B)" type="b" size="SchemeCard">
+      <property name="Stage" value="1"/>
+      <property name="Text">&lt;b&gt;Contents&lt;/b&gt;: Mojo (I) and Mojo (II) &lt;i&gt;(Mojo (II) and Mojo (III) instead for expert mode)&lt;/i&gt;. Mojo and Standard encounter sets.
+&lt;b&gt;Setup&lt;/b&gt;: Choose 1 modular set, plus 1[per_hero] additional modular sets, from the MojoMania scenario pack and set them aside. Put the Wheel of Genres environment into play, [[SPINNING]] side faceup.</property>
+      <alternate name="MojoMania" type="b" size="SchemeCard">
         <property name="CardNumber" value="39025b"/>
+        <property name="Position" value="25"/>
+        <property name="Quantity" value="1"/>
+        <property name="DefaultSetupPile" value="Scheme"/>
         <property name="Type" value="main_scheme"/>
         <property name="Owner" value="mojo"/>
+        <property name="Stage" value="1"/>
         <property name="BaseThreat" value="10"/>
+        <property name="BaseThreatFixed" value="False"/>
         <property name="Threat" value="25"/>
         <property name="EscalationThreat" value="1"/>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Choose 1 set-aside encounter set at random, reveal its [[SHOW]] environment and shuffle its remaining cards into the encounter deck.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When a character flips or leaves play, move all threat from that character to this scheme.
+&lt;b&gt;If this stage is completed, the players lose the game.&lt;/b&gt;</property>
       </alternate>
     </card>
-    <card name="Wheel of Genres (Spinning)" id="56b64e85-e416-4ec5-83e2-4bbd16039026" size="EncounterCard">
+    <card name="Wheel of Genres" id="56b64e85-e416-4ec5-83e2-4bbd16039026" size="EncounterCard">
       <property name="CardNumber" value="39026a"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="mojo"/>
-      <alternate name="Wheel of Genres (Stopped)" type="b" size="EncounterCard">
+      <property name="Attribute" value="Spinning."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After the encounter deck resets, &lt;b&gt;if there are no set-aside modular encounter sets remaining, the players lose the game&lt;/b&gt;. Otherwise, flip this card.</property>
+      <property name="Quote">"The ratings are stagnating. Time to shake things up with a crossover episode!" — Mojo</property>
+      <alternate name="Wheel of Genres" type="b" size="EncounterCard">
         <property name="CardNumber" value="39026b"/>
+        <property name="Position" value="26"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="environment"/>
         <property name="Owner" value="mojo"/>
+        <property name="Attribute" value="Stopped."/>
+        <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: At the start of step three of the villain phase (deal encounter cards), randomly choose 1 set-aside modular set and reveal its [[SHOW]] environment. Shuffle the rest of that modular set and place it on top of the encounter deck. Deal the first player 2 facedown encounter cards and flip this card.</property>
       </alternate>
     </card>
     <card name="Major Domo" id="56b64e85-e416-4ec5-83e2-4bbd16039027" size="EncounterCard">
       <property name="CardNumber" value="39027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="mojo"/>
       <property name="Boost" value="3"/>
@@ -293,13 +486,18 @@
     </card>
     <card name="Stinger Tail" id="56b64e85-e416-4ec5-83e2-4bbd16039028" size="EncounterCard">
       <property name="CardNumber" value="39028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="mojo"/>
       <property name="Attribute" value="Weapon."/>
-      <property name="Text">Attach to Mojo.\n Mojo gains retaliate 2.</property>
+      <property name="Text">Attach to Mojo.
+ Mojo gains retaliate 2.</property>
     </card>
     <card name="Supporting Actor" id="56b64e85-e416-4ec5-83e2-4bbd16039029" size="EncounterCard">
       <property name="CardNumber" value="39029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="mojo"/>
       <property name="Attack" value="1"/>
@@ -310,6 +508,8 @@
     </card>
     <card name="Paparazzi" id="56b64e85-e416-4ec5-83e2-4bbd16039030" size="EncounterCard">
       <property name="CardNumber" value="39030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="mojo"/>
       <property name="Boost" value="2"/>
@@ -317,85 +517,115 @@
     </card>
     <card name="Undercover Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039031" size="SchemeCard">
       <property name="CardNumber" value="39031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mojo"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
       <property name="Text">Hinder 2[per_hero].</property>
     </card>
     <card name="Curtain Call" id="56b64e85-e416-4ec5-83e2-4bbd16039032" size="EncounterCard">
       <property name="CardNumber" value="39032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="mojo"/>
     </card>
     <card name="Director's Directions" id="56b64e85-e416-4ec5-83e2-4bbd16039033" size="EncounterCard">
       <property name="CardNumber" value="39033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="mojo"/>
       <property name="Boost" value="1"/>
     </card>
     <card name="Top Billing" id="56b64e85-e416-4ec5-83e2-4bbd16039034" size="EncounterCard">
       <property name="CardNumber" value="39034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="mojo"/>
     </card>
     <card name="Dial M for Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039035" size="EncounterCard">
       <property name="CardNumber" value="39035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="crime"/>
       <property name="Boost" value="1"/>
       <property name="Attribute" value="Setting. Show."/>
-      <property name="Text">Each other encounter card gains incite 1.\nEach friendly character gets +1 THW.</property>
+      <property name="Text">Each other encounter card gains incite 1.
+Each friendly character gets +1 THW.</property>
     </card>
     <card name="Build the Case" id="56b64e85-e416-4ec5-83e2-4bbd16039036" size="EncounterCard">
       <property name="CardNumber" value="39036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="crime"/>
       <property name="Boost" value="1"/>
     </card>
     <card name="Crime Scene Investigation" id="56b64e85-e416-4ec5-83e2-4bbd16039037" size="SchemeCard">
       <property name="CardNumber" value="39037"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="crime"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="5"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Text">Hinder 1[per_hero].</property>
     </card>
     <card name="Law &amp; Order" id="56b64e85-e416-4ec5-83e2-4bbd16039038" size="SchemeCard">
       <property name="CardNumber" value="39038"/>
+      <property name="Position" value="38"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="crime"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="5"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Text">Hinder 1[per_hero].</property>
     </card>
     <card name="Dragnet" id="56b64e85-e416-4ec5-83e2-4bbd16039039" size="SchemeCard">
       <property name="CardNumber" value="39039"/>
+      <property name="Position" value="39"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="crime"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="5"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Text">Hinder 1[per_hero].</property>
     </card>
     <card name="Elementary, My Dear Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039040" size="EncounterCard">
       <property name="CardNumber" value="39040"/>
+      <property name="Position" value="40"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="crime"/>
     </card>
     <card name="A Game of Mojo's" id="56b64e85-e416-4ec5-83e2-4bbd16039041" size="EncounterCard">
       <property name="CardNumber" value="39041"/>
+      <property name="Position" value="41"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="fantasy"/>
       <property name="Boost" value="1"/>
+      <property name="Scheme_Boost" value="1"/>
       <property name="Attribute" value="Setting. Show."/>
     </card>
     <card name="Dragon" id="56b64e85-e416-4ec5-83e2-4bbd16039042" size="EncounterCard">
       <property name="CardNumber" value="39042"/>
+      <property name="Position" value="42"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="fantasy"/>
       <property name="Attack" value="3"/>
@@ -408,6 +638,8 @@
     </card>
     <card name="Goblin" id="56b64e85-e416-4ec5-83e2-4bbd16039043" size="EncounterCard">
       <property name="CardNumber" value="39043"/>
+      <property name="Position" value="43"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="fantasy"/>
       <property name="Attack" value="1"/>
@@ -418,6 +650,8 @@
     </card>
     <card name="Troll" id="56b64e85-e416-4ec5-83e2-4bbd16039044" size="EncounterCard">
       <property name="CardNumber" value="39044"/>
+      <property name="Position" value="44"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="fantasy"/>
       <property name="Attack" value="2"/>
@@ -429,18 +663,26 @@
     </card>
     <card name="Fetch Quest" id="56b64e85-e416-4ec5-83e2-4bbd16039045" size="SchemeCard">
       <property name="CardNumber" value="39045"/>
+      <property name="Position" value="45"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="fantasy"/>
       <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Text">Surge.</property>
     </card>
     <card name="Mana Drain" id="56b64e85-e416-4ec5-83e2-4bbd16039046" size="EncounterCard">
       <property name="CardNumber" value="39046"/>
+      <property name="Position" value="46"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="fantasy"/>
     </card>
     <card name="The Mojo Files" id="56b64e85-e416-4ec5-83e2-4bbd16039047" size="EncounterCard">
       <property name="CardNumber" value="39047"/>
+      <property name="Position" value="47"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="horror"/>
       <property name="Boost" value="1"/>
@@ -449,6 +691,8 @@
     </card>
     <card name="Bandolier of Stakes" id="56b64e85-e416-4ec5-83e2-4bbd16039048" size="EncounterCard">
       <property name="CardNumber" value="39048"/>
+      <property name="Position" value="48"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="horror"/>
       <property name="Attribute" value="Item."/>
@@ -456,6 +700,8 @@
     </card>
     <card name="Cultist" id="56b64e85-e416-4ec5-83e2-4bbd16039049" size="EncounterCard">
       <property name="CardNumber" value="39049"/>
+      <property name="Position" value="49"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="horror"/>
       <property name="Attack" value="1"/>
@@ -466,6 +712,8 @@
     </card>
     <card name="The Kraken" id="56b64e85-e416-4ec5-83e2-4bbd16039050" size="EncounterCard">
       <property name="CardNumber" value="39050"/>
+      <property name="Position" value="50"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="horror"/>
       <property name="Attack" value="2"/>
@@ -478,6 +726,8 @@
     </card>
     <card name="Vampire" id="56b64e85-e416-4ec5-83e2-4bbd16039051" size="EncounterCard">
       <property name="CardNumber" value="39051"/>
+      <property name="Position" value="51"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="horror"/>
       <property name="Attack" value="2"/>
@@ -488,6 +738,8 @@
     </card>
     <card name="Werewolf Pack" id="56b64e85-e416-4ec5-83e2-4bbd16039052" size="EncounterCard">
       <property name="CardNumber" value="39052"/>
+      <property name="Position" value="52"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="horror"/>
       <property name="Attack" value="3"/>
@@ -498,6 +750,8 @@
     </card>
     <card name="Mojo Runner" id="56b64e85-e416-4ec5-83e2-4bbd16039053" size="EncounterCard">
       <property name="CardNumber" value="39053"/>
+      <property name="Position" value="53"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="sci-fi"/>
       <property name="Boost" value="1"/>
@@ -506,6 +760,8 @@
     </card>
     <card name="Avalanche 9.0" id="56b64e85-e416-4ec5-83e2-4bbd16039054" size="EncounterCard">
       <property name="CardNumber" value="39054"/>
+      <property name="Position" value="54"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sci-fi"/>
       <property name="Attack" value="3"/>
@@ -516,6 +772,8 @@
     </card>
     <card name="Blob 3.14" id="56b64e85-e416-4ec5-83e2-4bbd16039055" size="EncounterCard">
       <property name="CardNumber" value="39055"/>
+      <property name="Position" value="55"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sci-fi"/>
       <property name="Attack" value="1"/>
@@ -526,6 +784,8 @@
     </card>
     <card name="Magneto 2.6" id="56b64e85-e416-4ec5-83e2-4bbd16039056" size="EncounterCard">
       <property name="CardNumber" value="39056"/>
+      <property name="Position" value="56"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sci-fi"/>
       <property name="Attack" value="1"/>
@@ -537,6 +797,8 @@
     </card>
     <card name="Pyro 4.0" id="56b64e85-e416-4ec5-83e2-4bbd16039057" size="EncounterCard">
       <property name="CardNumber" value="39057"/>
+      <property name="Position" value="57"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sci-fi"/>
       <property name="Attack" value="2"/>
@@ -546,6 +808,8 @@
     </card>
     <card name="Toad 2.0" id="56b64e85-e416-4ec5-83e2-4bbd16039058" size="EncounterCard">
       <property name="CardNumber" value="39058"/>
+      <property name="Position" value="58"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="sci-fi"/>
       <property name="Attack" value="2"/>
@@ -556,14 +820,20 @@
     </card>
     <card name="ICE-Teroid M" id="56b64e85-e416-4ec5-83e2-4bbd16039059" size="SchemeCard">
       <property name="CardNumber" value="39059"/>
+      <property name="Position" value="59"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="sci-fi"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Text">Each minion gains guard and patrol.</property>
     </card>
     <card name="Mojo in the Middle" id="56b64e85-e416-4ec5-83e2-4bbd16039060" size="EncounterCard">
       <property name="CardNumber" value="39060"/>
+      <property name="Position" value="60"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="sitcom"/>
       <property name="Boost" value="1"/>
@@ -572,29 +842,39 @@
     </card>
     <card name="Family Matters" id="56b64e85-e416-4ec5-83e2-4bbd16039061" size="EncounterCard">
       <property name="CardNumber" value="39061"/>
+      <property name="Position" value="61"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="sitcom"/>
       <property name="Boost" value="3"/>
     </card>
     <card name="Growing Pains" id="56b64e85-e416-4ec5-83e2-4bbd16039062" size="EncounterCard">
       <property name="CardNumber" value="39062"/>
+      <property name="Position" value="62"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="sitcom"/>
     </card>
     <card name="The Odd Couple" id="56b64e85-e416-4ec5-83e2-4bbd16039063" size="EncounterCard">
       <property name="CardNumber" value="39063"/>
+      <property name="Position" value="63"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="sitcom"/>
       <property name="Boost" value="1"/>
     </card>
     <card name="The One with the Breakup" id="56b64e85-e416-4ec5-83e2-4bbd16039064" size="EncounterCard">
       <property name="CardNumber" value="39064"/>
+      <property name="Position" value="64"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="sitcom"/>
       <property name="Boost" value="2"/>
     </card>
     <card name="Watch Me Play" id="56b64e85-e416-4ec5-83e2-4bbd16039065" size="EncounterCard">
       <property name="CardNumber" value="39065"/>
+      <property name="Position" value="65"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="sitcom"/>
       <property name="Boost" value="2"/>
@@ -602,6 +882,8 @@
     </card>
     <card name="Wild Wild Mojo" id="56b64e85-e416-4ec5-83e2-4bbd16039066" size="EncounterCard">
       <property name="CardNumber" value="39066"/>
+      <property name="Position" value="66"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="western"/>
       <property name="Boost" value="1"/>
@@ -609,6 +891,8 @@
     </card>
     <card name="Dead or Alive" id="56b64e85-e416-4ec5-83e2-4bbd16039067" size="EncounterCard">
       <property name="CardNumber" value="39067"/>
+      <property name="Position" value="67"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="western"/>
       <property name="Boost" value="2"/>
@@ -616,6 +900,8 @@
     </card>
     <card name="Card Shark" id="56b64e85-e416-4ec5-83e2-4bbd16039068" size="EncounterCard">
       <property name="CardNumber" value="39068"/>
+      <property name="Position" value="68"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="western"/>
       <property name="Attack" value="3"/>
@@ -626,6 +912,8 @@
     </card>
     <card name="Gunslinger" id="56b64e85-e416-4ec5-83e2-4bbd16039069" size="EncounterCard">
       <property name="CardNumber" value="39069"/>
+      <property name="Position" value="69"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="western"/>
       <property name="Attack" value="2"/>
@@ -637,14 +925,21 @@
     </card>
     <card name="A Game of Cards" id="56b64e85-e416-4ec5-83e2-4bbd16039070" size="EncounterCard">
       <property name="CardNumber" value="39070"/>
+      <property name="Position" value="70"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="western"/>
       <property name="Boost" value="1"/>
     </card>
     <card name="Longshot" id="56b64e85-e416-4ec5-83e2-4bbd16039071" size="EncounterCard">
       <property name="CardNumber" value="39071"/>
+      <property name="Position" value="71"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="longshot"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="HP" value="3"/>
     </card>
   </cards>
 </set>

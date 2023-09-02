@@ -3,6 +3,8 @@
   <cards>
     <card name="Spectrum" id="a43deb5e-355b-4308-9c07-d7ff6366cd8a">
       <property name="CardNumber" value="21001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="hero"/>
       <property name="Owner" value="spectrum"/>
       <property name="HandSize" value="5"/>
@@ -11,10 +13,12 @@
       <property name="Defense" value="1"/>
       <property name="HP" value="11"/>
       <property name="Attribute" value="Aerial. Avenger."/>
-      <property name="Text">&lt;i&gt;Energy Transformation&lt;/i&gt; - &lt;b&gt;Forced Response:&lt;/b&gt; After you change to this form, choose a facedown energy form upgrade -&gt; flip that card faceup to change to that energy form.</property>
+      <property name="Text">&lt;i&gt;Energy Transformation&lt;/i&gt; - &lt;b&gt;Forced Response:&lt;/b&gt; After you change to this form, choose a facedown energy form upgrade → flip that card faceup to change to that energy form.</property>
       <property name="Quote">"The name is Monica, or Spectrum if you're nasty."</property>
       <alternate name="Monica Rambeau" type="b">
         <property name="CardNumber" value="21001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="alter_ego"/>
         <property name="Owner" value="spectrum"/>
         <property name="HandSize" value="6"/>
@@ -28,6 +32,8 @@
     </card>
     <card name="Gamma" id="57d7233d-48c0-4b82-b171-a41c76740c58">
       <property name="CardNumber" value="21002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="spectrum"/>
       <property name="Resource_Physical" value="1"/>
@@ -37,6 +43,8 @@ Spectrum gets +2 ATK.
     </card>
     <card name="Photon" id="5e15bae5-f88a-4fcb-b003-85ada6a3974d">
       <property name="CardNumber" value="21003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="spectrum"/>
       <property name="Resource_Mental" value="1"/>
@@ -46,6 +54,8 @@ Spectrum gets +2 THW.
     </card>
     <card name="Pulsar" id="3689c80d-0bd7-4848-8e6a-9860fca79da7">
       <property name="CardNumber" value="21004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="spectrum"/>
       <property name="Resource_Energy" value="1"/>
@@ -55,6 +65,8 @@ Spectrum gets +2 DEF.
     </card>
     <card name="Blue Marvel" id="59155153-c3ab-471f-8256-03c004799f57">
       <property name="CardNumber" value="21005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="spectrum"/>
       <property name="Thwart" value="2"/>
@@ -71,55 +83,67 @@ Spectrum gets +2 DEF.
     </card>
     <card name="Energy Duplication" id="e75679d2-cf9e-4a38-bb0a-c4a7040de7e4">
       <property name="CardNumber" value="21006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="spectrum"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Wild" value="1"/>
       <property name="Attribute" value="Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Resource:&lt;/b&gt; Exhaust Energy Duplication -&gt; generate the printed resource on your faceup energy form upgrade.</property>
+      <property name="Text">&lt;b&gt;Hero Resource:&lt;/b&gt; Exhaust Energy Duplication → generate the printed resource on your faceup energy form upgrade.</property>
       <property name="Quote">"I can take the form of any type of energy I want."-Spectrum</property>
     </card>
     <card name="Gamma Blast" id="abd94aba-5e67-46de-8d26-9129441b8198">
       <property name="CardNumber" value="21007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="spectrum"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Attack. Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; (attack): Change to Gamma energy form and deal 7 damage to an enemy. If you were already in Gamma energy form, this attack gains overkill.</property>
-      <property name="Quote">"I wouldn't make me angry either." - Spectrum</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Change to Gamma energy form and deal 7 damage to an enemy. If you were already in Gamma energy form, this attack gains overkill.</property>
+      <property name="Quote">"I wouldn't make me angry either." — Spectrum</property>
     </card>
     <card name="Photon Speed" id="b0135b06-a7fb-46b5-a699-10321e34929c">
       <property name="CardNumber" value="21008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="spectrum"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Thwart. Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; (thwart): Change to Photon energy form and remove 4 threat from a scheme. If you were already in Photon energy form, ignore crisis icon for this thwart.</property>
-      <property name="Quote">"Looking for these?" - Spectrum</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Change to Photon energy form and remove 4 threat from a scheme. If you were already in Photon energy form, ignore crisis icon for this thwart.</property>
+      <property name="Quote">"Looking for these?" — Spectrum</property>
     </card>
     <card name="Pulsar Shield" id="dc0d3450-4c41-45da-b5ec-4f4f4b4c1ff9">
       <property name="CardNumber" value="21009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="spectrum"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Defense. Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; (defense): When Spectrum defends, change to Pulsar energy form and ready Spectrum. If you were already in Pulsar energy form, she gains retaliate 1 until the end of the phase.</property>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When Spectrum defends, change to Pulsar energy form and ready Spectrum. If you were already in Pulsar energy form, she gains retaliate 1 until the end of the phase.</property>
     </card>
     <card name="Speed of Light" id="d140dc55-1775-437b-a757-73dcbc91945b">
       <property name="CardNumber" value="21010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="spectrum"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Wild" value="1"/>
       <property name="Attribute" value="Superpower."/>
       <property name="Text">&lt;b&gt;Hero Action:&lt;/b&gt; Change energy forms and draw 1 card.</property>
-      <property name="Quote">"Be there in a flash." - Spectrum</property>
+      <property name="Quote">"Be there in a flash." — Spectrum</property>
     </card>
     <card name="Captain America" id="9485a827-2104-4478-8524-66eca7c6cec0">
       <property name="CardNumber" value="21011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
       <property name="ThwartCost" value="1"/>
@@ -135,6 +159,8 @@ Reduce the cost to play Captain America by 1 for each [[avenger]] character you 
     </card>
     <card name="Power Man" id="596d89f5-a63c-4f7e-9763-a9dc9ae93f3c">
       <property name="CardNumber" value="21012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="ThwartCost" value="1"/>
@@ -145,11 +171,13 @@ Reduce the cost to play Captain America by 1 for each [[avenger]] character you 
       <property name="HP" value="3"/>
       <property name="Attribute" value="Avenger."/>
       <property name="Text">Power Man enters play with 2 chi counters on him.
-&lt;b&gt;Action&lt;/b&gt;: Discard any number of chi counters from Power Man -&gt; he gets +2 ATK for each chi counter discarded this way until the end of the phase.</property>
+&lt;b&gt;Action&lt;/b&gt;: Discard any number of chi counters from Power Man → he gets +2 ATK for each chi counter discarded this way until the end of the phase.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="White Tiger" id="4c6e2031-5212-49d7-be93-00783b589b18">
       <property name="CardNumber" value="21013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
       <property name="ThwartCost" value="1"/>
@@ -164,6 +192,8 @@ Reduce the cost to play Captain America by 1 for each [[avenger]] character you 
     </card>
     <card name="Kaluu" id="d00a562d-02c9-4559-a92a-65dfd74f4203">
       <property name="CardNumber" value="21014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="ThwartCost" value="1"/>
@@ -173,11 +203,13 @@ Reduce the cost to play Captain America by 1 for each [[avenger]] character you 
       <property name="Resource_Energy" value="1"/>
       <property name="HP" value="2"/>
       <property name="Attribute" value="Avenger. Mystic."/>
-      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Kaluu enters play, search the top 5 cards of your deck for an event -&gt; add that event to your hand. Shuffle your deck.</property>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Kaluu enters play, search the top 5 cards of your deck for an event → add that event to your hand. Shuffle your deck.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Mighty Avengers" id="44ee89d6-917b-4989-a665-61150442d7a9">
       <property name="CardNumber" value="21015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="support"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Energy" value="1"/>
@@ -187,19 +219,25 @@ If each of your characters has the Avengers trait, each ally you control gets +1
     </card>
     <card name="Mass Attack" id="fbdaf129-619a-444a-9dba-9911bbe93b9f">
       <property name="CardNumber" value="21016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Attack."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust 3 allies you control that shares a Trait with your hero -&gt; deal X damage to an enemy, where X is the total ATK of those allies and your hero.</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust 3 allies you control that shares a Trait with your hero → deal X damage to an enemy, where X is the total ATK of those allies and your hero.</property>
     </card>
     <card name="Band Together" id="ed746929-b0d4-4d1a-86ef-049e16cf5033">
       <property name="CardNumber" value="21018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="resource"/>
       <property name="Text">This card generates [wild] for each ally you control (to a maximum of 3)</property>
     </card>
     <card name="Blade" id="c2a503da-c6b4-4783-8a75-b5647ca09374">
       <property name="CardNumber" value="21019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="Attack" value="2"/>
@@ -212,14 +250,19 @@ If each of your characters has the Avengers trait, each ally you control gets +1
     </card>
     <card name="Ready to Rumble" id="197d14ac-f3ab-44a5-b0c9-7ba45b3dbeb5">
       <property name="CardNumber" value="21022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Condition."/>
       <property name="Text">Play under any player's control. Max 1 per player.
-&lt;b&gt;Hero Response&lt;/b&gt;: After you change form, discard this card -&gt; ready your hero.</property>
+&lt;b&gt;Hero Response&lt;/b&gt;: After you change form, discard this card → ready your hero.</property>
     </card>
     <card name="Adam Warlock" id="5fbbd328-5283-4a1f-9215-77f28ac8c493">
       <property name="CardNumber" value="21031a"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="hero"/>
       <property name="Owner" value="warlock"/>
       <property name="HandSize" value="5"/>
@@ -229,13 +272,15 @@ If each of your characters has the Avengers trait, each ally you control gets +1
       <property name="HP" value="11"/>
       <property name="Attribute" value="Guardian. Mystic."/>
       <property name="Text">&lt;i&gt;Battle Mage&lt;/i&gt; - &lt;b&gt;Action&lt;/b&gt;: Discard 1 card from your hand. Limit once per phase. If that card is:
--Aggression: Deal 2 damage to an enemy.
--Justice: Remove 2 threat from a scheme.
--Protection: Heal 1 damage from an ally.
--Leadership: Give a hero +1 THW, +1 ATK and +1 DEF this round.</property>
+- Aggression - Deal 2 damage to an enemy.
+- Justice - Remove 2 threat from a scheme.
+- Protection - Heal 1 damage from an ally.
+- Leadership - Give a hero +1 THW, +1 ATK and +1 DEF this round.</property>
       <property name="Unique" value="True"/>
       <alternate name="Adam Warlock" type="b">
         <property name="CardNumber" value="21031b"/>
+        <property name="Position" value="31"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="alter_ego"/>
         <property name="Owner" value="warlock"/>
         <property name="HandSize" value="6"/>
@@ -243,12 +288,14 @@ If each of your characters has the Avengers trait, each ally you control gets +1
         <property name="HP" value="11"/>
         <property name="Attribute" value="Mystic."/>
         <property name="Text">&lt;i&gt;Avatar of Life&lt;/i&gt; - During deck-building, your deck must include an equal number of cards from all 4 aspects. You cannot include more than 1 copy of any non-Adam Warlock card.
-&lt;b&gt;Action&lt;/b&gt;: Discard a card from your hand -&gt; remove a status card from Adam Warlock.</property>
+&lt;b&gt;Action&lt;/b&gt;: Discard a card from your hand → remove a status card from Adam Warlock.</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
     <card name="Pip the Troll" id="d42f7ae2-9238-44ec-9683-a293b9dc9280">
       <property name="CardNumber" value="21032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="warlock"/>
       <property name="Thwart" value="1"/>
@@ -260,42 +307,50 @@ If each of your characters has the Avengers trait, each ally you control gets +1
       <property name="HP" value="2"/>
       <property name="Attribute" value="Mystic."/>
       <property name="Text">Toughness.
-While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When a player is attacked, spend[energy][mental] resources -&gt; put Pip the Troll into play under that player's controller."</property>
+While Pip the Troll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When a player is attacked, spend[energy][mental] resources → put Pip the Troll into play under that player's controller."</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Soul World" id="ae4d80a3-a781-4e50-a4a3-5b91933bc913">
       <property name="CardNumber" value="21033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="support"/>
       <property name="Owner" value="warlock"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Location."/>
       <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After your deck runs out of cards, place 1 soul counter here.
-&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Soul World and remove 1 soul counter from it -&gt; heal all damage from your identity.</property>
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Soul World and remove 1 soul counter from it → heal all damage from your identity.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Karmic Staff" id="31526edc-36e1-4fee-91f4-ef40c11043d2">
       <property name="CardNumber" value="21034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="warlock"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Artifact. Item."/>
-      <property name="Text">&lt;b&gt;Resource&lt;/b&gt;: Exhaust Karmic Staff -&gt; generate a [wild] resource</property>
+      <property name="Text">&lt;b&gt;Resource&lt;/b&gt;: Exhaust Karmic Staff → generate a [wild] resource</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Warlock's Cape" id="8af6fe85-962f-40a6-9cb1-1e0379f5f2f7">
       <property name="CardNumber" value="21035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="warlock"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Item."/>
-      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After you resolve Adam Warlock's "Battle Mage" ability, exhaust Warlock's Cape -&gt; ready Adam Warlock's</property>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After you resolve Adam Warlock's "Battle Mage" ability, exhaust Warlock's Cape → ready Adam Warlock's</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Cosmic Ward" id="9112a7d4-1121-4eae-9ab2-1180841a9399">
       <property name="CardNumber" value="21036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="warlock"/>
       <property name="Cost" value="1"/>
@@ -305,6 +360,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Mystic Senses" id="89f168e1-36b9-4380-919f-498b20bd935f">
       <property name="CardNumber" value="21037"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="warlock"/>
       <property name="Cost" value="2"/>
@@ -314,33 +371,41 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Karmic Blast" id="6c05b39c-7c72-4767-b0b6-b0c6c0e6998e">
       <property name="CardNumber" value="21038"/>
+      <property name="Position" value="38"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="warlock"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Attack. Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; (attack): Deal 4 damage to an enemy and discard up to 4 cards from the top of your deck -&gt; deal 1 additional damage to that enemy for each different aspect discarded this way (Aggression, Justice, Leadership and Protection)</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 4 damage to an enemy and discard up to 4 cards from the top of your deck → deal 1 additional damage to that enemy for each different aspect discarded this way (Aggression, Justice, Leadership and Protection)</property>
     </card>
     <card name="Cosmic Awareness" id="0b7936e6-6ea0-40af-aad4-ef568b725843">
       <property name="CardNumber" value="21039"/>
+      <property name="Position" value="39"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="warlock"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Thwart. Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; (thwart): Remove 3 threat from a scheme and discard up to 4 cards from the top of your deck -&gt; remove 1 additional threat from that scheme for each different aspect discarded this way (Aggression, Justice, Leadership and Protection)</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme and discard up to 4 cards from the top of your deck → remove 1 additional threat from that scheme for each different aspect discarded this way (Aggression, Justice, Leadership and Protection)</property>
     </card>
     <card name="Quantum Magic" id="c401910d-f176-46e3-bd16-bbcff2921b41">
       <property name="CardNumber" value="21040"/>
+      <property name="Position" value="40"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="warlock"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Spell."/>
-      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Choose a card in your discard pile -&gt; add that card to your hand</property>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Choose a card in your discard pile → add that card to your hand</property>
     </card>
     <card name="Marvel Boy" id="1488fbbe-4cfd-45db-8493-b25d47f143c6">
       <property name="CardNumber" value="21041"/>
+      <property name="Position" value="41"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="0"/>
       <property name="ThwartCost" value="1"/>
@@ -350,11 +415,13 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
       <property name="Resource_Physical" value="1"/>
       <property name="HP" value="2"/>
       <property name="Attribute" value="Guardian. Kree."/>
-      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When Marvel Boy attacks, spend a [physics] resource -&gt; this attack gains piercing and ranged</property>
+      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When Marvel Boy attacks, spend a [physics] resource → this attack gains piercing and ranged</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="In-Betweener" id="8e82c64a-5aeb-490f-ac1a-91ed12253344">
       <property name="CardNumber" value="21042"/>
+      <property name="Position" value="42"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
@@ -365,15 +432,19 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Magic Attack" id="a585b4fe-1e79-46f8-a59d-d645a49101d4">
       <property name="CardNumber" value="21043"/>
+      <property name="Position" value="43"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Attack. Spell."/>
       <property name="Text">Play only if your identity has the Mystic trait. Max 1 per deck.
-&lt;b&gt;Hero Action&lt;/b&gt; (attack): Choose an enemy and discard up yo 5 cards from the top of your deck -&gt; deal 1 damage to that enemy for each card discarded this way.</property>
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Choose an enemy and discard up to 5 cards from the top of your deck → deal 1 damage to that enemy for each card discarded this way.</property>
     </card>
     <card name="Audacity" id="5eff1a95-a88f-4608-ab0a-70efe2ee1a0e">
       <property name="CardNumber" value="21046"/>
+      <property name="Position" value="46"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="resource"/>
       <property name="Resource_Wild" value="1"/>
       <property name="Text">Max 1 per deck.
@@ -381,6 +452,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Quasar" id="4b5a4920-c895-44e3-8d1c-587eb99666f2">
       <property name="CardNumber" value="21047"/>
+      <property name="Position" value="47"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="ThwartCost" value="1"/>
@@ -395,6 +468,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Living Tribunal" id="5ec043d9-ca31-4ae9-bb55-df2261685511">
       <property name="CardNumber" value="21048"/>
+      <property name="Position" value="48"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
@@ -405,15 +480,19 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Zone of Silence" id="d6d14a8b-4dd9-49e6-b237-61a93ba2146b">
       <property name="CardNumber" value="21050"/>
+      <property name="Position" value="50"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Spell. Thwart."/>
       <property name="Text">Play only if your identity has the Mystic trait. Max 1 per deck.
-&lt;b&gt;Hero Action&lt;/b&gt; (thwart): Choose a scheme and discard up to 4 cards from the top of your deck -&gt; remove 1 threat from that scheme for each card discarded this way.</property>
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Choose a scheme and discard up to 4 cards from the top of your deck → remove 1 threat from that scheme for each card discarded this way.</property>
     </card>
     <card name="Determination" id="3b36448f-e676-4d84-9967-fda482eff070">
       <property name="CardNumber" value="21052"/>
+      <property name="Position" value="52"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="resource"/>
       <property name="Resource_Wild" value="1"/>
       <property name="Text">Max 1 per deck.
@@ -421,6 +500,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Major Victory" id="529df565-6c1f-4393-aff6-f64e22f27c11">
       <property name="CardNumber" value="21053"/>
+      <property name="Position" value="53"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="ThwartCost" value="1"/>
@@ -430,11 +511,13 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
       <property name="Resource_Mental" value="1"/>
       <property name="HP" value="2"/>
       <property name="Attribute" value="Guardian."/>
-      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When Major Victory is defeated, choose a friendly Guardian character -&gt; ready that character.</property>
+      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When Major Victory is defeated, choose a friendly Guardian character → ready that character.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Eternity" id="02826f77-6dc0-48d9-820d-17c008135b09">
       <property name="CardNumber" value="21054"/>
+      <property name="Position" value="54"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
@@ -445,15 +528,19 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Summoning Spell" id="723523a2-08d0-4e97-bd64-d3358e9f3cb2">
       <property name="CardNumber" value="21055"/>
+      <property name="Position" value="55"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Spell."/>
       <property name="Text">Play only if your identity has the Mystic trait. Max 1 per deck.
-&lt;b&gt;Hero Action&lt;/b&gt;: Discard cards from the top of your deck until you discard an ally -&gt; put that ally into play under your control.</property>
+&lt;b&gt;Hero Action&lt;/b&gt;: Discard cards from the top of your deck until you discard an ally → put that ally into play under your control.</property>
     </card>
     <card name="Innovation" id="4a08dfa2-ed3c-4451-a5fd-0f91c44d4107">
       <property name="CardNumber" value="21058"/>
+      <property name="Position" value="58"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="resource"/>
       <property name="Resource_Wild" value="1"/>
       <property name="Text">Max 1 per deck.
@@ -461,6 +548,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Charlie-27" id="d86cd6b8-da85-49c2-b70a-e6da387a6a95">
       <property name="CardNumber" value="21059"/>
+      <property name="Position" value="59"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="ThwartCost" value="1"/>
@@ -475,6 +564,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="The Gardener" id="84e03b4e-b89a-42b8-9573-03ec7a9cae96">
       <property name="CardNumber" value="21060"/>
+      <property name="Position" value="60"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Physical" value="1"/>
@@ -485,15 +576,19 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Shield Spell" id="7f474c15-26fd-4963-b73d-07f58ffa2d4e">
       <property name="CardNumber" value="21061"/>
+      <property name="Position" value="61"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Defense. Spell."/>
       <property name="Text">Play only if your identity has the Mystic trait. Max 1 per deck.
-&lt;b&gt;Hero Interrupt&lt;/b&gt; (defense): When you would take any amount of damage from an attack, discard that many cards from the top of your deck -&gt; prevent all damae from this attack.</property>
+&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When you would take any amount of damage from an attack, discard that many cards from the top of your deck → prevent all damage from this attack.</property>
     </card>
     <card name="Preservation" id="86aa5c22-5f26-4e7c-b5c4-ddfbcaf4d476">
       <property name="CardNumber" value="21064"/>
+      <property name="Position" value="64"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="resource"/>
       <property name="Resource_Wild" value="1"/>
       <property name="Text">Max 1 per deck.
@@ -501,6 +596,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Martinex" id="654900ac-f104-4a22-ad0f-4c9322a61a17">
       <property name="CardNumber" value="21065"/>
+      <property name="Position" value="65"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="ThwartCost" value="1"/>
@@ -515,13 +612,18 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Secure the Landing Pad" id="075dd8d0-7264-4c11-8540-f5c5f22ebeb3" size="SchemeCard">
       <property name="CardNumber" value="21180a"/>
+      <property name="Position" value="180"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]</property>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Hinder 1[per_hero]</property>
       <alternate name="Cosmo" type="b" size="EncounterCard">
         <property name="CardNumber" value="21180b"/>
+        <property name="Position" value="180"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="ally"/>
         <property name="Owner" value="mts_campaign"/>
         <property name="Thwart" value="2"/>
@@ -533,22 +635,31 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Security Breach" id="a8836673-9e0b-405f-b15f-49511e879809" size="SchemeCard">
       <property name="CardNumber" value="21181"/>
+      <property name="Position" value="181"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 2[per_player]. Victory 2.</property>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Boost" value="1"/>
+      <property name="Text">Hinder 2[per_hero]. Victory 2.</property>
     </card>
     <card name="Save the Shawarma Place" id="784b24f8-ab69-446f-a709-33ea06645ebf" size="SchemeCard">
       <property name="CardNumber" value="21182a"/>
+      <property name="Position" value="182"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]</property>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Hinder 1[per_hero]</property>
       <alternate name="Black Swan" type="b" size="EncounterCard">
         <property name="CardNumber" value="21182b"/>
+        <property name="Position" value="182"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="minion"/>
         <property name="Owner" value="mts_campaign"/>
         <property name="Attack" value="2"/>
@@ -562,6 +673,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Shawarma" id="c9fe2c83-ea8b-479d-a5b2-da837f497576">
       <property name="CardNumber" value="21183"/>
+      <property name="Position" value="183"/>
+      <property name="Quantity" value="4"/>
       <property name="Type" value="resource"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="Resource_Mental" value="1"/>
@@ -570,49 +683,67 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Hack Sanctuary's Computer" id="714fb29e-5753-47e5-bf53-c0df1ef10957" size="SchemeCard">
       <property name="CardNumber" value="21184a"/>
+      <property name="Position" value="184"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]</property>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">Hinder 1[per_hero]</property>
       <alternate name="Defensive Protocols" type="b" size="SchemeCard">
         <property name="CardNumber" value="21184b"/>
+        <property name="Position" value="184"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="side_scheme"/>
         <property name="Owner" value="mts_campaign"/>
         <property name="BaseThreat" value="2"/>
         <property name="BaseThreatFixed" value="True"/>
-        <property name="Text">Hinder 2[per_player]. Victory 2.</property>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">Hinder 2[per_hero]. Victory 2.</property>
       </alternate>
     </card>
     <card name="System Shock" id="29211890-776b-4af4-adbd-bc10acd45762" size="EncounterCard">
       <property name="CardNumber" value="21185"/>
+      <property name="Position" value="185"/>
+      <property name="Quantity" value="4"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="mts_campaign"/>
     </card>
     <card name="Find the Norn Stones" id="3fc97389-95a5-4dcc-ab8f-3aa95497ed21" size="SchemeCard">
       <property name="CardNumber" value="21186a"/>
+      <property name="Position" value="186"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
       <alternate name="Retrieve Odin's Armor" type="b" size="SchemeCard">
         <property name="CardNumber" value="21186b"/>
+        <property name="Position" value="186"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="side_scheme"/>
         <property name="Owner" value="mts_campaign"/>
         <property name="BaseThreat" value="2"/>
         <property name="BaseThreatFixed" value="True"/>
-        <property name="Text">Hinder 2[per_player]. Victory 1.</property>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">Hinder 2[per_hero]. Victory 1.</property>
       </alternate>
     </card>
     <card name="Norn Stone" id="0084b4da-a938-4abd-9d2f-b91ed84f95e6">
       <property name="CardNumber" value="21187a"/>
+      <property name="Position" value="187"/>
+      <property name="Quantity" value="4"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="Attribute" value="Asgard. Artifact."/>
       <alternate name="Norn Stone" type="b">
         <property name="CardNumber" value="21187b"/>
+        <property name="Position" value="187"/>
+        <property name="Quantity" value="4"/>
         <property name="Type" value="upgrade"/>
         <property name="Owner" value="mts_campaign"/>
         <property name="Attribute" value="Asgard. Artifact."/>
@@ -620,18 +751,26 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Summoned Back" id="987e00ab-a948-47e5-99d6-1530de2b1f77" size="EncounterCard">
       <property name="CardNumber" value="21188"/>
+      <property name="Position" value="188"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="Boost" value="3"/>
     </card>
     <card name="Open the Dungeons" id="a146df6c-ad1e-47e4-be61-d3afe281e6a5" size="SchemeCard">
       <property name="CardNumber" value="21189a"/>
+      <property name="Position" value="189"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Boost" value="1"/>
       <alternate name="Jormungand" type="b" size="EncounterCard">
         <property name="CardNumber" value="21189b"/>
+        <property name="Position" value="189"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="attachment"/>
         <property name="Owner" value="mts_campaign"/>
         <property name="Scheme_Acceleration" value="1"/>
@@ -641,6 +780,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Lady Sif" id="fe77df83-8a7b-4276-a731-a0a86432cdd9">
       <property name="CardNumber" value="21190"/>
+      <property name="Position" value="190"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="Thwart" value="2"/>
@@ -652,6 +793,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Fandral" id="5dc03f9b-b1d3-49a6-9f00-7ea867084676">
       <property name="CardNumber" value="21191"/>
+      <property name="Position" value="191"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="Thwart" value="3"/>
@@ -663,6 +806,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Hogun" id="8b9a9fd3-e243-4443-969f-eb5769874bb5">
       <property name="CardNumber" value="21192"/>
+      <property name="Position" value="192"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="Thwart" value="1"/>
@@ -674,6 +819,8 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Volstagg" id="c66be24b-5558-45b2-9c9a-f0cfc883dcd4">
       <property name="CardNumber" value="21193"/>
+      <property name="Position" value="193"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="mts_campaign"/>
       <property name="Thwart" value="1"/>
@@ -685,15 +832,20 @@ While Pip theTroll is in your hand, he gains "&lt;b&gt;Interrupt&lt;/b&gt;: When
     </card>
     <card name="Loss of Control" id="709e69e1-e406-408a-8ff7-594c1a75c3b1" size="EncounterCard">
       <property name="CardNumber" value="21026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="spectrum"/>
       <property name="Boost" value="2"/>
       <property name="Text">&lt;b&gt;Give to the Monica Rambeau player.&lt;/b&gt;
 You cannot change energy forms.
-&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Monica Rambeau -&gt; remove Loss of Control from the game.</property>
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Monica Rambeau → remove Loss of Control from the game.</property>
     </card>
     <card name="Radioactive Man" id="3df37185-31d8-45c8-bab5-f61b5a5a2c96" size="EncounterCard">
       <property name="CardNumber" value="21027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="spectrum_nemesis"/>
       <property name="Attack" value="1"/>
@@ -707,25 +859,32 @@ You cannot change energy forms.
     </card>
     <card name="Reactor Meltdown" id="776dc6c9-5bc3-4e23-8263-a3c217eef117" size="SchemeCard">
       <property name="CardNumber" value="21028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="spectrum_nemesis"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
       <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: Deal 1 damage to each friendly character in play.</property>
     </card>
     <card name="Sap Power" id="3050051e-a486-4c0c-8569-cf26ffb969de" size="EncounterCard">
       <property name="CardNumber" value="21029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="spectrum_nemesis"/>
       <property name="Boost" value="2"/>
       <property name="Text">Attach to your identity.
 &lt;b&gt;Forced Response&lt;/b&gt;After your turn ends, take 1 damage.
-&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Spend [energy][energy] resources -&gt; discard this card.</property>
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Spend [energy][energy] resources → discard this card.</property>
     </card>
     <card name="Radioactive Blast" id="97222825-1335-494d-b4c2-9692b72806e3" size="EncounterCard">
       <property name="CardNumber" value="21030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="spectrum_nemesis"/>
       <property name="Boost" value="1"/>
@@ -734,16 +893,21 @@ You cannot change energy forms.
     </card>
     <card name="Regeneration Cycle" id="18bbfdfd-05b9-409e-bc07-c9c72ebb3d42" size="EncounterCard">
       <property name="CardNumber" value="21066"/>
+      <property name="Position" value="66"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="warlock"/>
       <property name="Boost" value="2"/>
       <property name="Text">&lt;b&gt;Give to Adam Warlock player.&lt;/b&gt;
 You may flip to alter-ego. Choose:
--Exhaust your alter-ego -&gt; remove this card from the game.
+-Exhaust your alter-ego → remove this card from the game.
 -Discard the top 5 cards of your deck. Place 1 threat on the main scheme for each different aspect cards discarded this way. Discard this obligation.</property>
     </card>
     <card name="The Magus" id="0dee272a-56df-4355-825a-ca198985c9fd" size="EncounterCard">
       <property name="CardNumber" value="21067"/>
+      <property name="Position" value="67"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="warlock_nemesis"/>
       <property name="Attack" value="2"/>
@@ -758,37 +922,50 @@ Quickstrike. Toughness.</property>
     </card>
     <card name="Universal Church of Truth" id="c9201da6-2d34-49f0-8241-26d6efb2b0b7" size="SchemeCard">
       <property name="CardNumber" value="21068"/>
+      <property name="Position" value="68"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="warlock_nemesis"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
       <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After a player resets their deck, exhaust that player identity and stun it.
 &lt;b&gt;Boost&lt;/b&gt;: Reveal this card.</property>
     </card>
-    <card name="Zealot of thuth" id="1c5e678e-9214-4b41-afb5-b6a1764fd2d5" size="EncounterCard">
+    <card name="Zealot of Truth" id="1c5e678e-9214-4b41-afb5-b6a1764fd2d5" size="EncounterCard">
       <property name="CardNumber" value="21069"/>
+      <property name="Position" value="69"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="warlock_nemesis"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="4"/>
-      <property name="Attribute" value="Mystic"/>
-      <property name="Text">Threat cannot be removed from the Church of thuth side scheme.
+      <property name="Attribute" value="Mystic."/>
+      <property name="Text">Threat cannot be removed from the Universal Church of Truth side scheme.
 &lt;b&gt;Boost&lt;/b&gt;: Put Zealot of Truth into play engaged with you.</property>
     </card>
     <card name="Cosmic Inquisition" id="19ccb76a-4a95-4b15-82af-c1ddfdc67dd3" size="EncounterCard">
       <property name="CardNumber" value="21070"/>
+      <property name="Position" value="70"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="warlock_nemesis"/>
       <property name="Boost" value="2"/>
       <property name="Text">Incite 2.
-&lt;b&gt;When Revealed&lt;/b&gt;: If the Universal Church of Truth side scheme is in play, discard the top 10 cards of your deck. Otherwise, search the encouter deck, discard pile, and set-aside area for Universal Church of Truth and reveal it. Shuffle the encouter deck.</property>
+&lt;b&gt;When Revealed&lt;/b&gt;: If the Universal Church of Truth side scheme is in play, discard the top 10 cards of your deck. Otherwise, search the encounter deck, discard pile, and set-aside area for Universal Church of Truth and reveal it. Shuffle the encounter deck.</property>
     </card>
     <card name="Ebony Maw" id="f5ebd140-77da-4d97-a3bb-ff780d6a696d" size="VillainCard">
       <property name="CardNumber" value="21071"/>
+      <property name="Position" value="71"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="ebony_maw"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="14"/>
@@ -800,8 +977,14 @@ Quickstrike. Toughness.</property>
     </card>
     <card name="Ebony Maw" id="8e9da375-0812-499b-adf1-30f625cacb2b" size="VillainCard">
       <property name="CardNumber" value="21072"/>
+      <property name="Position" value="72"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="ebony_maw"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="18"/>
@@ -813,8 +996,14 @@ Quickstrike. Toughness.</property>
     </card>
     <card name="Ebony Maw" id="0861cc9f-10c9-4138-aff7-283557b85707" size="VillainCard">
       <property name="CardNumber" value="21073"/>
+      <property name="Position" value="73"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="ebony_maw"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="3"/>
       <property name="HP" value="23"/>
@@ -826,8 +1015,12 @@ Quickstrike. Toughness.</property>
     </card>
     <card name="Attack on Knowhere" id="7fb53a59-eff6-4e45-95af-460d7f13a3ee" size="SchemeCard">
       <property name="CardNumber" value="21074a"/>
+      <property name="Position" value="74"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="ebony_maw"/>
+      <property name="Stage" value="1"/>
       <property name="Text">&lt;b&gt;Contents:&lt;/b&gt; Ebony Maw (I) and Ebony Maw (II). &lt;i&gt;(Ebony Maw (II) and Ebony Maw (III) instead for expert mode.)&lt;/i&gt; Ebony Maw and Standard encounter sets. Two modular encounter set &lt;i&gt;(Armies of Titan and Black Order).&lt;/i&gt;</property>
       <property name="Quote">&lt;b&gt;Ebony Maw leads an assault on knowhere in order to capture the Power Stone stored within.&lt;/b&gt;</property>
       <alternate name="Attack on Knowhere" type="b" size="SchemeCard">
@@ -844,8 +1037,12 @@ Quickstrike. Toughness.</property>
     </card>
     <card name="The Power Stone" id="da735271-448d-4e85-b5a4-5790c04eda4b" size="SchemeCard">
       <property name="CardNumber" value="21075a"/>
+      <property name="Position" value="75"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="ebony_maw"/>
+      <property name="Stage" value="2"/>
       <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Shuffle the encounter discard pile into the encounter deck. Each player discards cards from the top of the encounter deck until they discard a [[Spell]] card and puts that card into play in their play area.</property>
       <alternate name="The Power Stone" type="b" size="SchemeCard">
         <property name="CardNumber" value="21075b"/>
@@ -862,46 +1059,56 @@ Quickstrike. Toughness.</property>
     </card>
     <card name="Fireball" id="d96a2a68-0048-4df7-88ca-45ee4b27baec" size="EncounterCard">
       <property name="CardNumber" value="21076"/>
+      <property name="Position" value="76"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Spell."/>
       <property name="Text">Surge.
 Enters play with 4 invocation counters on it.
-&lt;b&gt;Forced Response:&lt;/b&gt; After the last invocation counter is removed from Fireball, discard it â†’ deal 4 damage to your identity.</property>
+&lt;b&gt;Forced Response:&lt;/b&gt; After the last invocation counter is removed from Fireball, discard it → deal 4 damage to your identity.</property>
     </card>
     <card name="Manipulation" id="b7dd977a-a9f8-4ac4-86b3-72473ebd501e" size="EncounterCard">
       <property name="CardNumber" value="21077"/>
+      <property name="Position" value="77"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Spell."/>
       <property name="Text">Surge.
 Enters play with 2 invocation counters on it.
-&lt;b&gt;Forced Response:&lt;/b&gt; After the last invocation counter is removed from Manipulation, discard it â†’ discard 1 card at random from your hand. You are confused.</property>
+&lt;b&gt;Forced Response:&lt;/b&gt; After the last invocation counter is removed from Manipulation, discard it → discard 1 card at random from your hand. You are confused.</property>
     </card>
     <card name="Pacification" id="beac988e-f34c-429f-9911-e036b259a48f" size="EncounterCard">
       <property name="CardNumber" value="21078"/>
+      <property name="Position" value="78"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Spell."/>
       <property name="Text">Surge.
 Enters play with 3 invocation counters on it.
-&lt;b&gt;Forced Response:&lt;/b&gt; After the last invocation counter is removed from Pacification, discard it â†’ exhaust each upgrade you control. You are stunned.</property>
+&lt;b&gt;Forced Response:&lt;/b&gt; After the last invocation counter is removed from Pacification, discard it → exhaust each upgrade you control. You are stunned.</property>
     </card>
     <card name="Rubblestorm" id="a55843c8-84be-4b99-a3e7-87c3ffdb588c" size="EncounterCard">
       <property name="CardNumber" value="21079"/>
+      <property name="Position" value="79"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Spell."/>
       <property name="Text">Surge.
 Enters play with 3 invocation counters on it.
-&lt;b&gt;Forced Response:&lt;/b&gt; After the last invocation counter is removed from Rubblestorm, discard it â†’ deal 2 damage to each character you control.</property>
+&lt;b&gt;Forced Response:&lt;/b&gt; After the last invocation counter is removed from Rubblestorm, discard it → deal 2 damage to each character you control.</property>
     </card>
     <card name="Agent of Thanos" id="2499d769-8365-40f7-8639-977be42b5f24" size="EncounterCard">
       <property name="CardNumber" value="21080"/>
+      <property name="Position" value="80"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="1"/>
@@ -910,6 +1117,8 @@ Enters play with 3 invocation counters on it.
     </card>
     <card name="Channeling Trance" id="f896a4d8-c6cb-4f29-8b4d-c93635df92b1" size="EncounterCard">
       <property name="CardNumber" value="21081"/>
+      <property name="Position" value="81"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="1"/>
@@ -917,6 +1126,8 @@ Enters play with 3 invocation counters on it.
     </card>
     <card name="Abjuration" id="17e67050-31b0-4f3f-9b0d-9f37674dff45" size="EncounterCard">
       <property name="CardNumber" value="21082"/>
+      <property name="Position" value="82"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="3"/>
@@ -926,27 +1137,34 @@ Prevent all damage to Ebony Maw.
     </card>
     <card name="Restrained" id="5df0e88a-8323-40a4-8387-6a09bdc12b62" size="EncounterCard">
       <property name="CardNumber" value="21083"/>
+      <property name="Position" value="83"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="2"/>
       <property name="Text">Attach to a friendly character with the highest ATK and exhaust it.
 Attached character cannot ready.
-&lt;b&gt;Hero Action:&lt;/b&gt; Spend [energy][physical] resources â†’ discard this card.</property>
-      <property name="Quote">"Shh. That's enough from you." - Ebony Maw</property>
+&lt;b&gt;Hero Action:&lt;/b&gt; Spend [energy][physical] resources → discard this card.</property>
+      <property name="Quote">"Shh. That's enough from you." — Ebony Maw</property>
     </card>
     <card name="Reactor Overload" id="4ad7692c-28a4-4c7f-9607-2238ad1b71e1" size="SchemeCard">
       <property name="CardNumber" value="21084"/>
+      <property name="Position" value="84"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="ebony_maw"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
       <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Each player must choose to either take 2 damage or place 2 threat here.</property>
       <property name="Quote">&lt;b&gt;&lt;i&gt;The Maw's troops have stormed Knowhere's engine room and set the station to overload.&lt;/i&gt;&lt;/b&gt;</property>
     </card>
     <card name="Black Dwarf" id="dcb44a4c-d8cb-4833-9ec2-b20f36c9f68a" size="EncounterCard">
       <property name="CardNumber" value="21085"/>
+      <property name="Position" value="85"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="black_order"/>
       <property name="Attack" value="3"/>
@@ -954,10 +1172,13 @@ Attached character cannot ready.
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Black Order. Elite."/>
+      <property name="Text">[star] Black Dwarf's attack gain overkill.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Supergiant" id="9f126935-0308-4d54-820c-f27eaf02bcab" size="EncounterCard">
       <property name="CardNumber" value="21086"/>
+      <property name="Position" value="86"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="black_order"/>
       <property name="Attack" value="2"/>
@@ -965,120 +1186,194 @@ Attached character cannot ready.
       <property name="Boost" value="2"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Black Order. Elite."/>
+      <property name="Text">Quickstrike.
+&lt;b&gt;Forced Response:&lt;/b&gt; After supergiant attacks and damages a character, that character is stunned.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="The Black Order" id="7fbfa36b-c625-4711-afc9-db1403d0bf34" size="SchemeCard">
       <property name="CardNumber" value="21087"/>
+      <property name="Position" value="87"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="black_order"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">While a [[Black Order]] minion is in play, threat cannot be removed from this side scheme.</property>
     </card>
     <card name="Blood to Spare" id="6e56f0fc-c515-4e82-8081-9b35bd5c362a" size="EncounterCard">
       <property name="CardNumber" value="21088"/>
+      <property name="Position" value="88"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="black_order"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Each minion engaged with a player activates against that player. Each player who is not engaged with a minion searches the encounter deck and discard pile for a [[Black Order]] minion and puts it into play engaged with them. Shuffle the encounter deck.</property>
     </card>
     <card name="Black Order Infantry" id="447abe71-0ef7-441d-9177-e25eb22eff8c" size="EncounterCard">
       <property name="CardNumber" value="21089"/>
+      <property name="Position" value="89"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="armies_of_titan"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">Guard.
+&lt;b&gt;When Defeated:&lt;/b&gt; Give the villain a tough status card.
+Give the villain a tough status card.</property>
     </card>
     <card name="Outrider" id="2b038f77-4aab-4910-a05b-ca24c53bb08d" size="EncounterCard">
       <property name="CardNumber" value="21090"/>
+      <property name="Position" value="90"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="armies_of_titan"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="2"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Discard 1 card at random from your hand.
+Discard 1 card at random from your hand.</property>
     </card>
     <card name="Landing Craft" id="a7a8a678-bb80-46f9-8b5c-ccbc2d129ae5" size="SchemeCard">
       <property name="CardNumber" value="21091"/>
+      <property name="Position" value="91"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="armies_of_titan"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Defeated:&lt;/b&gt; Discard cards from the top of the encounter deck until a minion is discarded. Put that minion into play engaged with the player who defeated this scheme.</property>
     </card>
     <card name="Proxima Midnight" id="0af7888f-3578-4348-b965-8dcaebf4475f" size="VillainCard">
       <property name="CardNumber" value="21092"/>
+      <property name="Position" value="92"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="9"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt:&lt;/b&gt; When Proxima Midnight attacks you, choose to either deal 1 damage to Avenger's Tower, or Proxima Midnight gets +2 ATK for this attack.
+&lt;b&gt;Proxima Midnight cannot be defeated while Corvus Glaive has any hit points remaining.&lt;/b&gt;</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Proxima Midnight" id="e14d083e-52f9-4ee9-bfd1-1132fcac5886" size="VillainCard">
       <property name="CardNumber" value="21093"/>
+      <property name="Position" value="93"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="3"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="12"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">[star]&lt;b&gt;Forced Interrupt:&lt;/b&gt; When Proxima Midnight attacks you, choose to either deal 1 damange to Avenger's Tower, or Proxima Midnight gets +2 ATK for this attack.
+&lt;b&gt; Proxima Midnight cannot be defeated while Corvus Glaive has any hit points remaining &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Proxima Midnight" id="22e7f441-7fc4-4c95-9317-8c5d5aea258e" size="VillainCard">
       <property name="CardNumber" value="21094"/>
+      <property name="Position" value="94"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="3"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="15"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">[star]&lt;b&gt;Forced Interrupt:&lt;/b&gt; When Proxima Midnight attacks you, choose to either deal 1 damange to Avenger's Tower, or Proxima Midnight gets +2 ATK for this attack.
+&lt;b&gt; Proxima Midnight cannot be defeated while Corvus Glaive has any hit points remaining &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Corvus Glaive" id="b2fecb49-9a22-461c-825c-0928e402a9ad" size="VillainCard">
       <property name="CardNumber" value="21095"/>
+      <property name="Position" value="95"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="8"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">[star]&lt;b&gt;Forced Interrupt:&lt;/b&gt; After Corvus Glaive makes an undefended attack, discard the top card of the encounter deck → deal 1 damage to Avenger's Tower for each boost icon ([boost]) on that card.
+&lt;b&gt;Corvus Glaive cannot be defeated while Proxima Midnight has any hit points remaining.&lt;/b&gt;</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Corvus Glaive" id="61e5cac6-882b-4376-ba95-36d2d188bdb6" size="VillainCard">
       <property name="CardNumber" value="21096"/>
+      <property name="Position" value="96"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="11"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">[star]&lt;b&gt;Forced Interrupt:&lt;/b&gt; After Corvus Glaive makes an undefended attack, discard the top card of the encounter deck → deal 1 damange to Avenger's Tpwer for each boost icon [[boost]] on that card.
+&lt;b&gt; Corvus Glaive cannot be defeated while Proxima Midnight has any hit points remaining &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Corvus Glaive" id="d80958fd-6b84-4798-9287-8ef7d8a03fac" size="VillainCard">
       <property name="CardNumber" value="21097"/>
+      <property name="Position" value="97"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="3"/>
       <property name="HP" value="14"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">[star]&lt;b&gt;Forced Interrupt:&lt;/b&gt; After Corvus Glaive makes an undefended attack, discard the top card of the encounter deck → deal 1 damange to Avenger's Tpwer for each boost icon [[boost]] on that card.
+&lt;b&gt; Corvus Glaive cannot be defeated while Proxima Midnight has any hit points remaining &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Under Siege" id="c0771a09-7c76-4e7a-97e2-9e4e73a57fc6" size="SchemeCard">
       <property name="CardNumber" value="21098a"/>
+      <property name="Position" value="98"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Stage" value="1"/>
       <alternate name="Under Siege" type="b" size="SchemeCard">
         <property name="CardNumber" value="21098b"/>
         <property name="Type" value="main_scheme"/>
@@ -1088,12 +1383,18 @@ Attached character cannot ready.
         <property name="Threat" value="6"/>
         <property name="EscalationThreat" value="1"/>
         <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;&lt;i&gt;Proxima Midnight's Scheme.&lt;/i&gt;&lt;/b&gt;
+&lt;b&gt;Forced Interrupt:&lt;/b&gt; When this stage would be completed, remove all the threat from this stage instead. Then, deal 6[per_hero] damage to Avengers Tower.</property>
       </alternate>
     </card>
     <card name="The Armies of Thanos" id="7d421149-6cb6-496f-b818-1ad8e8e05e28" size="SchemeCard">
       <property name="CardNumber" value="21099a"/>
+      <property name="Position" value="99"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Stage" value="1"/>
       <alternate name="The Armies of Thanos" type="b" size="SchemeCard">
         <property name="CardNumber" value="21099b"/>
         <property name="Type" value="main_scheme"/>
@@ -1103,27 +1404,42 @@ Attached character cannot ready.
         <property name="Threat" value="6"/>
         <property name="EscalationThreat" value="1"/>
         <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;&lt;i&gt;Corvus Glaive's Scheme.&lt;/i&gt;&lt;/b&gt;
+&lt;b&gt;Forced Interrupt:&lt;/b&gt; When this stage would be completed, remove all the threat from this stage instead. Then, deal each player 1 facedown encounter card.</property>
       </alternate>
     </card>
     <card name="Avengers Tower" id="5feae2d4-9f22-4145-a07d-4bd0f873a569" size="EncounterCard">
       <property name="CardNumber" value="21100a"/>
+      <property name="Position" value="100"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="tower_defense"/>
       <property name="Attribute" value="Stronghold."/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Discard each other Avengers Tower from play.
+&lt;b&gt;Forced Response:&lt;/b&gt; After damage is placed here, if there is at least 9[per player] damage here, the players lose the game.</property>
       <alternate name="Avengers Tower" type="b" size="EncounterCard">
         <property name="CardNumber" value="21100b"/>
         <property name="Type" value="environment"/>
         <property name="Owner" value="tower_defense"/>
         <property name="Attribute" value="Damaged."/>
+        <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Discard each other Avengers Tower from play.
+        &lt;b&gt;Forced Response:&lt;/b&gt; After damage is placed here, if there is at least 9[per player] damage here, the players lose the game.</property>
       </alternate>
     </card>
     <card name="Focused Defense" id="42290570-2eab-44ae-9db8-c6122094f7e2" size="EncounterCard">
       <property name="CardNumber" value="21101"/>
+      <property name="Position" value="101"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Text">Permanent.
+The villain who matches the attached scheme is the active villain.
+&lt;b&gt;Forced Response:&lt;/b&gt; After the player phase ends, attach this card to the other main scheme.</property>
     </card>
     <card name="Black Order Besieger" id="4ceab8f8-f9d8-4522-bab4-31fd6b305ff3" size="EncounterCard">
       <property name="CardNumber" value="21102"/>
+      <property name="Position" value="102"/>
+      <property name="Quantity" value="4"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="tower_defense"/>
       <property name="Attack" value="2"/>
@@ -1131,101 +1447,163 @@ Attached character cannot ready.
       <property name="Boost" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Black Order."/>
+      <property name="Text">&lt;b&gt;Forced Response:&lt;/b&gt; After Black Order Besieger engages you, choose to either deal 1 damage to Avengers Tower or deal 2 damage to your identity.</property>
     </card>
     <card name="Proxima's Spear" id="dfd264e0-a22f-4a71-bf14-fad69c5e4aae" size="EncounterCard">
       <property name="CardNumber" value="21103"/>
+      <property name="Position" value="103"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="tower_defense"/>
       <property name="Boost" value="3"/>
       <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to Proxima Midnght.
+&lt;b&gt;Hero Action:&lt;/b&gt; Take 1 damage and spend [energy] [mental] resources → discard this card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Corvus Glaive" id="bfede6d2-96e8-485a-a07e-072b03ca3cf3" size="EncounterCard">
       <property name="CardNumber" value="21104"/>
+      <property name="Position" value="104"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="tower_defense"/>
       <property name="Boost" value="3"/>
       <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to Corvus Glaive.
+Corvus Glaive gains retaliate 1.
+&lt;b&gt;Hero Action:&lt;/b&gt; Take 1 damage and spend [energy] [physical] resources → discard this card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Direct Assault" id="5da2ba9a-d5a8-4333-8847-dbf2a788ff57" size="EncounterCard">
       <property name="CardNumber" value="21105"/>
+      <property name="Position" value="105"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="tower_defense"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Tactic."/>
+      <property name="Text">Attach to the villain who is not the active villain.</property>
     </card>
     <card name="Proxima's Power" id="07fb7600-dea1-4241-87bb-e7028eeaef72" size="EncounterCard">
       <property name="CardNumber" value="21106"/>
+      <property name="Position" value="106"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Proxima Midnight activates against you.
+Add the other villain's SCH and ATK to this villain's SCH and ATK for this activation.</property>
     </card>
     <card name="Corvus's Cunning" id="07091acb-8088-4854-8e3f-f0ca6c120bca" size="EncounterCard">
       <property name="CardNumber" value="21107"/>
+      <property name="Position" value="107"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Corvus Glaive activates against you.
+Add the other villain's SCH and ATK to this villain's SCH and ATK for this activation.</property>
     </card>
     <card name="Bound by Blood" id="beff6594-c2f8-4f72-922d-4c805c3d8a86" size="EncounterCard">
       <property name="CardNumber" value="21108"/>
+      <property name="Position" value="108"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="tower_defense"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Heal 2 damage from each villain. Give each villain a tough status card.
+Heal 2 damage from the active villain and give it a tough status card.</property>
     </card>
     <card name="Rain Fire" id="da438813-cbb7-4084-b251-7ba185c2c4ad" size="EncounterCard">
       <property name="CardNumber" value="21109"/>
+      <property name="Position" value="109"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="tower_defense"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt; When Revealed: &lt;/b&gt; Deal 3 damage to Avengers Tower
+[star] &lt;b&gt; Boost: &lt;/b&gt; If damage from this attack deafeats an ally, deal 3 damage to Avengers tower</property>
     </card>
     <card name="City Under Attack" id="ba8928ad-240a-4f19-b981-fec021e3c7d8" size="SchemeCard">
       <property name="CardNumber" value="21110"/>
+      <property name="Position" value="110"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="tower_defense"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
-      <property name="Text">Hinder 1[per_player]</property>
+      <property name="Text">Hinder 1[per_hero].
+&lt;b&gt;When Defeated:&lt;/b&gt; The player who defeated this scheme draws 1 card.
+Hinder 1[per_hero]</property>
     </card>
     <card name="Thanos" id="923ec297-d8ed-48e6-9dc4-4f07c2989123" size="VillainCard">
       <property name="CardNumber" value="21111"/>
+      <property name="Position" value="111"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="thanos"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="16"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order. Titan."/>
+      <property name="Text">Stalwart. &lt;i&gt;(This character cannot be stunned or confused.)&lt;/i&gt;
+&lt;b&gt;Forced Response:&lt;/b&gt; After the [[infinity stone]] deck runs out, give Thanos 1 facedown boost card.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Stalwart.</property>
     </card>
     <card name="Thanos" id="f7ee10f5-96e6-4750-a981-2af1bc7359e0" size="VillainCard">
       <property name="CardNumber" value="21112"/>
+      <property name="Position" value="112"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="thanos"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="3"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="23"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order. Titan."/>
+      <property name="Text">Stalwart. Toughness.
+&lt;b&gt;When Revealed:&lt;b/&gt; Search the encounter deck and discard pile for Thanos's Helmet and reveal it. &lt;i&gt;(Shuffle.)&lt;/i&gt;
+&lt;b&gt;Forced Response:&lt;/b&gt; After the [[infinity stone]] deck runs out, give Thanos 1 facedown boost card.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Stalwart. Toughness.</property>
     </card>
     <card name="Thanos" id="4eaaf0a1-02ad-4c84-a09a-0e0885095694" size="VillainCard">
       <property name="CardNumber" value="21113"/>
+      <property name="Position" value="113"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="thanos"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="4"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="28"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Black Order. Titan."/>
+      <property name="Text">Stalwart. Toughness.
+&lt;b&gt;When Revealed:&lt;b/&gt; Search the encounter deck and discard pile for Thanos's Helmet and reveal it. &lt;i&gt;(Shuffle.)&lt;/i&gt;
+&lt;b&gt;Forced Response:&lt;/b&gt; After the [[infinity stone]] deck runs out, give Thanos 1 facedown boost card.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Stalwart. Toughness.</property>
     </card>
     <card name="The Infinity Stones" id="2986f3a3-e1cd-437b-9ee7-f90a71ec0fa9" size="SchemeCard">
       <property name="CardNumber" value="21114a"/>
+      <property name="Position" value="114"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="thanos"/>
+      <property name="Stage" value="1"/>
+      <property name="Text">&lt;b&gt;Contents:&lt;/b&gt; Thanos I and Thanos II &lt;i&gt;(Thanos II and Thanos III for expert mode)&lt;/i&gt;. Thanos, Infinity Gaultlet and Standard sets. Two modular sets &lt;i&gt;(Black Order and Children of Thanos)&lt;/i&gt;. See rules insert for The Infinity Gauntlet rules.</property>
       <alternate name="The Infinity Stones" type="b" size="SchemeCard">
         <property name="CardNumber" value="21114b"/>
         <property name="Type" value="main_scheme"/>
@@ -1239,8 +1617,12 @@ Attached character cannot ready.
     </card>
     <card name="Balance the Scales" id="2e8b479f-70a5-4040-bc83-40929baf5a01" size="SchemeCard">
       <property name="CardNumber" value="21115a"/>
+      <property name="Position" value="115"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="thanos"/>
+      <property name="Stage" value="2"/>
       <alternate name="Balance the Scales" type="b" size="SchemeCard">
         <property name="CardNumber" value="21115b"/>
         <property name="Type" value="main_scheme"/>
@@ -1250,91 +1632,141 @@ Attached character cannot ready.
         <property name="Threat" value="12"/>
         <property name="EscalationThreat" value="1"/>
         <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Each player shuffles their discard pile into their deck. Each player removes the top half of their deck (rounded down) from the game.</property>
       </alternate>
     </card>
     <card name="Sanctuary" id="a8e9ed1b-e91b-4546-bdbe-fb7150aad9a8" size="SchemeCard">
       <property name="CardNumber" value="21116"/>
+      <property name="Position" value="116"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="thanos"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]. Victory 1.</property>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Hinder 1[per_hero]. Victory 1.
+Thanos cannot take damage.&lt;b&gt; When Defeated:&lt;/b&gt; Each player may spend up to 3 [physical] resources from their hand. Deal 2 damage to Thanos for each [physical] resource spent this way. This damage ignores the tough status card.
+Hinder 1[per_hero]</property>
     </card>
     <card name="Thanos's Armor" id="9694950d-c2ac-49a4-ad2d-59b6a0cd8143" size="EncounterCard">
       <property name="CardNumber" value="21117"/>
+      <property name="Position" value="117"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="thanos"/>
       <property name="Boost" value="3"/>
       <property name="Attribute" value="Armor."/>
+      <property name="Text">Attach to Thanos.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Thanos would take any amount of damage, reduce that amount by 1.
+&lt;b&gt;Hero Response:&lt;b&gt; After a hero makes a basic attack against Thanos, spend [energy] [physical] resources → discard this card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Thanos's Helmet" id="873c5989-dab2-4313-b7ec-41cc3f4171d2" size="EncounterCard">
       <property name="CardNumber" value="21118"/>
+      <property name="Position" value="118"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="thanos"/>
       <property name="Boost" value="3"/>
       <property name="Attribute" value="Armor."/>
+      <property name="Text">Attach to Thanos.
+Thanos gains retaliate 1.&lt;b&gt;Hero Response&lt;/b&gt;: After a hero makes a basic attack against Thanos, spend [mental] [strength] resources → discard this card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Master of the Stones" id="692312d4-f079-4377-adf3-fa3b907b7949" size="EncounterCard">
       <property name="CardNumber" value="21119"/>
+      <property name="Position" value="119"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="thanos"/>
       <property name="Boost" value="1"/>
+      <property name="Text">Attach to Thanos. [star] &lt;b&gt;Forced Interrupt:&lt;/b&gt; When Thanos activates, put the top card of the [[infinity stone]] deck into play. At the end of this activation, discard Master of the Stones.</property>
     </card>
     <card name="Avatar of Death" id="8e872f76-4923-499e-a936-57ed909394dd" size="EncounterCard">
       <property name="CardNumber" value="21120"/>
+      <property name="Position" value="120"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="thanos"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed (Alter-Ego)&lt;/b&gt;: Thanos schemes.
+&lt;b&gt;When Revealed (Hero)&lt;/b&gt;: Thanos attacks you. That attack gains overkill and piercing.</property>
     </card>
     <card name="Deviant Syndrome" id="0b936a9d-91fe-4a3b-a6b9-4392e258a080" size="EncounterCard">
       <property name="CardNumber" value="21121"/>
+      <property name="Position" value="121"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="thanos"/>
+      <property name="Text">Incite 1.
+&lt;b&gt;When Revealed&lt;/b&gt;: Give Thanos a tough status card. If you cannot, place 2 threat on the main scheme.
+Give Thanos a tough status card.</property>
     </card>
     <card name="&quot;I Am Inevitable&quot;" id="25b982c6-c6c1-4159-884a-e465dfd84a45" size="EncounterCard">
       <property name="CardNumber" value="21122"/>
+      <property name="Position" value="122"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="thanos"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt;Give Thanos 1 facedown boost card.
+Discard the top card of the [[infinity stone]] deck. Apply its boost icons ([boost]) for this activation as if it were a boost card.</property>
     </card>
     <card name="The Mad Titan" id="b8bf4353-46ee-47d9-9259-03bf4bb93ca4" size="EncounterCard">
       <property name="CardNumber" value="21123"/>
+      <property name="Position" value="123"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="thanos"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Put the top card of the infinity stone deck into play.
+If damage from this attack defeats an ally, put the top card of the infinity stone deck into play</property>
     </card>
     <card name="The Titan's Throne" id="359f51cb-7e74-498c-909a-bedb1ce4e39f" size="SchemeCard">
       <property name="CardNumber" value="21124"/>
+      <property name="Position" value="124"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="thanos"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed:&lt;/b&gt; Put the top card of the [[infinity stone]] deck into play.
+If damage from this attack defeats an ally, put the top card of the [[infinity stone]] deck into play.</property>
     </card>
     <card name="Corvus Glaive" id="a651d9c2-33f8-4368-95ae-6aa08437aecf" size="EncounterCard">
       <property name="CardNumber" value="21125"/>
+      <property name="Position" value="125"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="children_of_thanos"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Black Order. Elite."/>
+      <property name="Text">Retaliate 1. Toughness.
+[star]&lt;b&gt;Boost:&lt;/b&gt; Discard an ally or support you control.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Retaliate 1. Toughness.</property>
     </card>
     <card name="Proxima Midnight" id="d3315712-05f4-44d3-93bc-be741c48fdbf" size="EncounterCard">
       <property name="CardNumber" value="21126"/>
+      <property name="Position" value="126"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="children_of_thanos"/>
       <property name="Attack" value="3"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Black Order. Elite."/>
+      <property name="Text">[star] Proxima Midnight's attacks gain piercing.
+Discard an ally or upgrade you control.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Ebony Maw" id="7b94bee3-75ae-4255-9db3-de5ebd239b81" size="EncounterCard">
       <property name="CardNumber" value="21127"/>
+      <property name="Position" value="127"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="children_of_thanos"/>
       <property name="Attack" value="1"/>
@@ -1342,115 +1774,168 @@ Attached character cannot ready.
       <property name="Boost" value="1"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Black Order. Elite."/>
+      <property name="Text">Villainous (When this minion activates, give it a boost card.)
+Give this enemy 1 additional boost card</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Villainous.</property>
     </card>
     <card name="Tribute" id="6899d51d-dc58-4ff4-80af-7a08c2545732" size="SchemeCard">
       <property name="CardNumber" value="21128"/>
+      <property name="Position" value="128"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="children_of_thanos"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">&lt;b&gt;When Defeated:&lt;/b&gt; Deal the player who defeated this scheme a facedown encounter card</property>
     </card>
     <card name="Infinity Gauntlet" id="b81de592-aacf-45d9-b664-b4a2df40caaa" size="EncounterCard">
       <property name="CardNumber" value="21129"/>
+      <property name="Position" value="129"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="infinity_gauntlet"/>
       <property name="Attribute" value="Artifact. Weapon."/>
+      <property name="Text">Permanent. setup
+[star] &lt;b&gt; Forced Response: &lt;/b&gt; After attached villain activates, resolve the &lt;b&gt; Special &lt;/b&gt; ability of each [[infinity stone]] in play. Otherwise, put the top card of the [[infinity stone]] deck into play.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Mind Stone" id="d271d72f-7509-450f-aa0f-69223e140c64" size="EncounterCard">
       <property name="CardNumber" value="21130"/>
+      <property name="Position" value="130"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="infinity_gauntlet"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Infinity Stone."/>
+      <property name="Text">&lt;b&gt; Special: &lt;/b&gt; You are confused. If you were already confused, discard 1 card at random from your hand. Place this card in the [[infinity stone]] deck discard pile.</property>
     </card>
     <card name="Power Stone" id="4e93aad4-b374-4c62-91ce-5d3e2d5a0e83" size="EncounterCard">
       <property name="CardNumber" value="21131"/>
+      <property name="Position" value="131"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="infinity_gauntlet"/>
       <property name="Boost" value="3"/>
       <property name="Attribute" value="Infinity Stone."/>
+      <property name="Text">&lt;b&gt; Special: &lt;/b&gt; You are stunned. If you were already stunned, take 3 damage. Place this card in the [[infinity stone]] deck discard pile.</property>
     </card>
     <card name="Reality Stone" id="86f034de-4522-43e5-9696-4a006994dc18" size="EncounterCard">
       <property name="CardNumber" value="21132"/>
+      <property name="Position" value="132"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="infinity_gauntlet"/>
       <property name="Boost" value="3"/>
       <property name="Attribute" value="Infinity Stone."/>
+      <property name="Text">&lt;b&gt; Special: &lt;/b&gt; Discard an ally, upgrade, or support you control. Place this card in the [[infinity stone]] deck discard pile.</property>
     </card>
     <card name="Soul Stone" id="bfb05d27-8050-4390-8a88-367c28d5c353" size="EncounterCard">
       <property name="CardNumber" value="21133"/>
+      <property name="Position" value="133"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="infinity_gauntlet"/>
       <property name="Boost" value="1"/>
       <property name="Attribute" value="Infinity Stone."/>
+      <property name="Text">&lt;b&gt; Special: &lt;/b&gt; Heal 3 damage from the villain and give it a facedown boost card. Place this card in the [[infinity stone]] deck discard pile.</property>
     </card>
     <card name="Space Stone" id="5037091e-ec9e-4e1a-b160-ff43a8947378" size="EncounterCard">
       <property name="CardNumber" value="21134"/>
+      <property name="Position" value="134"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="infinity_gauntlet"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Infinity Stone."/>
+      <property name="Text">&lt;b&gt; Special: &lt;/b&gt; Discard cards from the top of the encounter deck until a minion is discarded → put that minion into play engaged with your. Place this card in the [[infinity stone]] deck discard pile.</property>
     </card>
     <card name="Time Stone" id="c1de9c61-303c-4043-a9c4-04bf14ff5960" size="EncounterCard">
       <property name="CardNumber" value="21135"/>
+      <property name="Position" value="135"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="environment"/>
       <property name="Owner" value="infinity_gauntlet"/>
       <property name="Boost" value="4"/>
       <property name="Attribute" value="Infinity Stone."/>
+      <property name="Text">&lt;b&gt; Special: &lt;/b&gt; Discard the top 4 cards of your deck and place 1 threat on the main scheme for each different card type discarded this way. Place this card in the [[infinity stone]] deck discard pile.</property>
     </card>
     <card name="Hela" id="4fcc84da-28e1-4d4f-9aa1-33c7ce2a430f" size="VillainCard">
       <property name="CardNumber" value="21136a"/>
+      <property name="Position" value="136"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="hela"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="8"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">[star] Hela gets +1 SCH, +1 ATK and +2[per_hero] hit points for each side scheme in victory display.
+&lt;b&gt; When Hela is defeated, if Odin is not attached to the main scheme, you win the game &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
       <alternate name="Hela" type="b" size="VillainCard">
         <property name="CardNumber" value="21136b"/>
         <property name="Type" value="villain"/>
         <property name="Owner" value="hela"/>
+        <property name="Stage" value="1"/>
         <property name="Attack" value="0"/>
         <property name="Scheme" value="0"/>
         <property name="HP" value="0"/>
         <property name="HP_Per_Hero" value="True"/>
-        <property name="Attribute" value="Asgard. Mystic."/>
+        <property name="Attribute" value="Asgard. Wounded."/>
+        <property name="Text">Hela cannot be defeated.
+&lt;b&gt; Forced Response: &lt;/b&gt; After a side scheme is defeated, flip Hela to her [[mystic]] side.</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
     <card name="Hela" id="01359a66-4d39-4386-89ab-d4772db295cb" size="VillainCard">
       <property name="CardNumber" value="21137a"/>
+      <property name="Position" value="137"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="hela"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="9"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">[star] Hela gets +1 SCH, +1 ATK and +3[per_hero] hit points for each side scheme in victory display.
+&lt;b&gt; When Hela is defeated, if Odin is not attached to the main scheme, you win the game &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
       <alternate name="Hela" type="b" size="VillainCard">
         <property name="CardNumber" value="21137b"/>
         <property name="Type" value="villain"/>
         <property name="Owner" value="hela"/>
+        <property name="Stage" value="2"/>
         <property name="Attack" value="1"/>
         <property name="Scheme" value="1"/>
         <property name="HP" value="0"/>
         <property name="HP_Per_Hero" value="True"/>
-        <property name="Attribute" value="Asgard. Mystic."/>
+        <property name="Attribute" value="Asgard. Wounded."/>
+        <property name="Text">Hela cannot be defeated.
+&lt;b&gt; Forced Response: &lt;/b&gt; After a side scheme is defeated, flip Hela to her [[mystic]] side.</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
     <card name="Odin's Torment" id="6b11b387-d7e5-4060-99a5-af2b29c9c46d" size="SchemeCard">
       <property name="CardNumber" value="21138a"/>
+      <property name="Position" value="138"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="hela"/>
+      <property name="Stage" value="1"/>
       <alternate name="Odin's Torment" type="b" size="SchemeCard">
         <property name="CardNumber" value="21138b"/>
         <property name="Type" value="main_scheme"/>
@@ -1460,10 +1945,15 @@ Attached character cannot ready.
         <property name="Threat" value="18"/>
         <property name="EscalationThreat" value="1"/>
         <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt; Forced Interrupt: &lt;/b&gt; When Hela would be defeated, if Odin is attached to this scheme, discard each attachment from Hela and flip her to her [[wounded]] side instead.
+&lt;b&gt; If this scheme is completed, the players lose the game. &lt;/b&gt;</property>
       </alternate>
     </card>
     <card name="Odin" id="14f09cf3-dc31-409b-842c-edf0de59638a" size="EncounterCard">
       <property name="CardNumber" value="21139a"/>
+      <property name="Position" value="139"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="hela"/>
       <property name="Thwart" value="2"/>
@@ -1471,6 +1961,8 @@ Attached character cannot ready.
       <property name="Cost" value="0"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Asgard. Captive."/>
+      <property name="Text">While Odin is not attached to the main scheme, he gains: The first player gains control of Odin. Odin cannot have cards attached and does not count against ally limit.
+&lt;b&gt; If Odin leaves play, the player lose the game. &lt;b&gt;</property>
       <property name="Unique" value="True"/>
       <alternate name="Odin" type="b" size="EncounterCard">
         <property name="CardNumber" value="21139b"/>
@@ -1481,40 +1973,65 @@ Attached character cannot ready.
         <property name="Cost" value="0"/>
         <property name="HP" value="6"/>
         <property name="Attribute" value="Asgard. King."/>
+        <property name="Text">The first player gains control of Odin.
+Odin cannot have encounter cards attached and does not count agains the ally limit.
+&lt;b&gt; Forced Interrupt: &lt;/b&gt; When Odin leaves play, remove him from the game</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
     <card name="Gnipahellir" id="4004a445-81a0-45ab-a4a2-dd0af176ded9" size="SchemeCard">
       <property name="CardNumber" value="21140"/>
+      <property name="Position" value="140"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="hela"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]. Victory 2.</property>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
-    </card>
-    <card name="Gjallerbru" id="b13e6ed2-cf77-49bc-a2f0-19c438476512" size="SchemeCard">
-      <property name="CardNumber" value="21141"/>
-      <property name="Type" value="side_scheme"/>
-      <property name="Owner" value="hela"/>
-      <property name="Boost" value="3"/>
-      <property name="BaseThreat" value="3"/>
-      <property name="Text">Hinder 1[per_player]. Victory 3.</property>
-      <property name="BaseThreatFixed" value="True"/>
+      <property name="Text">Hinder 1[per_hero]. Victory 2.
+&lt;b&gt; When Defeated: &lt;/b&gt; The first player reveals Gjallerbru and Skurg, and puts them into play. Deal each other player 1 facedown encounter card.
+Hinder 1[per_hero]</property>
     </card>
     <card name="Hall of Nastrond" id="e6f40a9e-3a80-4b28-bfaf-c8fc3c6be072" size="SchemeCard">
-      <property name="CardNumber" value="21142"/>
+      <property name="CardNumber" value="21141"/>
+      <property name="Position" value="141"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="hela"/>
       <property name="Boost" value="4"/>
       <property name="BaseThreat" value="4"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]. Victory 4.</property>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">Hinder 1[per_hero]. Victory 4.
+&lt;b&gt; When Defeated: &lt;/b&gt; The first player detaches Odin from the main scheme and takes control of him. Deal each player 1 facedown encounter card.
+Hinder 1[per_hero]</property>
+    </card>
+    <card name="Gjallerbru" id="b13e6ed2-cf77-49bc-a2f0-19c438476512" size="SchemeCard">
+      <property name="CardNumber" value="21142"/>
+      <property name="Position" value="142"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="hela"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Boost" value="1"/>
+      <property name="Text">Hinder 1[per_hero]. Victory 3.
+&lt;b&gt; When Defeated: &lt;/b&gt; The first player reveals Hall of Nastrond and Nidhogg, and puts them into play. Deal each other player 1 facedown encounter card.
+Hinder 1[per_hero]</property>
     </card>
     <card name="Garm" id="c42cb275-bfa3-4262-a1b4-21b82daf8fac" size="EncounterCard">
       <property name="CardNumber" value="21143"/>
+      <property name="Position" value="143"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="hela"/>
       <property name="Attack" value="2"/>
@@ -1523,11 +2040,16 @@ Attached character cannot ready.
       <property name="HP" value="4"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Creature. Elite."/>
+      <property name="Text">Toughness. Victory 2.
+Garm engages the first player.
+&lt;b&gt; Threat cannot be removed from Gnipahellir. &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Toughness. Victory 2.</property>
     </card>
     <card name="Skurge" id="0e20745a-218a-4808-80dd-3ec0e69e4905" size="EncounterCard">
       <property name="CardNumber" value="21144"/>
+      <property name="Position" value="144"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="hela"/>
       <property name="Attack" value="3"/>
@@ -1536,11 +2058,17 @@ Attached character cannot ready.
       <property name="HP" value="5"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Asgard. Elite."/>
+      <property name="Text">Skurge's attacks gain piercing.
+Toughness. Victory 3.
+Skurge engages the first player.
+&lt;b&gt; Threat cannot be removed from Gjallerbru. &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Toughness. Victory 3.</property>
     </card>
     <card name="Nidhogg" id="76c7c57e-aa2e-4532-bbc4-7f3a4594f7da" size="EncounterCard">
       <property name="CardNumber" value="21145"/>
+      <property name="Position" value="145"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="hela"/>
       <property name="Attack" value="4"/>
@@ -1549,49 +2077,80 @@ Attached character cannot ready.
       <property name="HP" value="6"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Creature. Elite."/>
+      <property name="Text">Nidhogg's attacks gain overkill.
+Toughness. Victory 4.
+Nidhogg engages the first player.
+&lt;b&gt; Threat cannot be removed from Hall of Nastrond. &lt;/b&gt;</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Toughness. Victory 4.</property>
     </card>
     <card name="Nightsword" id="9d45e20c-6945-4d07-a2e2-5ad9e1ad6626" size="EncounterCard">
       <property name="CardNumber" value="21146"/>
+      <property name="Position" value="146"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="hela"/>
       <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to Hela.
+[star] Hela's attacks gain piercing.
+Attach Nightsword to Hela.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Hela's Crown" id="7e2c8564-6ccf-49d8-8b2a-12a89fe29c30" size="EncounterCard">
       <property name="CardNumber" value="21147"/>
+      <property name="Position" value="147"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="hela"/>
       <property name="Attribute" value="Item."/>
+      <property name="Text">Attach to Hela.
+[star]&lt;b&gt; Forced Response: &lt;b&gt; After Hela schemes, give her a facedown boost card.
+Attach Hela's Crown to Hela.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Hela's Cloak" id="c28b8526-c82e-4a72-b3bf-67fbf45b6bce" size="EncounterCard">
       <property name="CardNumber" value="21148"/>
+      <property name="Position" value="148"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="hela"/>
       <property name="Attribute" value="Armor."/>
+      <property name="Text">Attach to Hela.
+Hela gains stalwart.
+[star]&lt;b&gt;Boost:&lt;/b&gt; Attach Hela's Cloack to Hela.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Hela's Domain" id="e4627e9e-1407-4a52-8d93-5c89f5eda677" size="EncounterCard">
       <property name="CardNumber" value="21149"/>
+      <property name="Position" value="149"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="hela"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt; When Revealed: &lt;/b&gt; Place 1 threat on the main scheme. Place 1 additional threat on the main scheme for each side scheme in the victory display.
+[star]&lt;b&gt;Boost:&lt;/b&gt; If damage from this attach defeats an ally, place 2 threat on the main scheme.</property>
     </card>
     <card name="The Queen of Hel" id="6bf7a4e5-d798-4a04-8d0b-a93e08956af6" size="EncounterCard">
       <property name="CardNumber" value="21150"/>
+      <property name="Position" value="150"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="hela"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt; When Revealed (Alter-Ego): &lt;/b&gt; Hela schemes. Place 1 threat on each side scheme.
+&lt;b&gt; When Revealed (Hero): &lt;/b&gt; Hela attacks you. Place 1 threat on each side scheme.</property>
     </card>
     <card name="The Wastes of Niffleheim" id="3d545ebf-acc6-4afc-9f73-c627c10187bc" size="EncounterCard">
       <property name="CardNumber" value="21151"/>
+      <property name="Position" value="151"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="hela"/>
+      <property name="Text">&lt;b&gt; When Revealed: &lt;/b&gt; Take 1 indirect damage. Take 1 additional indirect damage for each side scheme in the victory display.</property>
     </card>
     <card name="Draugr" id="39bbd2d5-1ab8-4568-b0be-5e4e9b837912" size="EncounterCard">
       <property name="CardNumber" value="21152"/>
+      <property name="Position" value="152"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="legions_of_hel"/>
       <property name="Attack" value="1"/>
@@ -1599,31 +2158,46 @@ Attached character cannot ready.
       <property name="Boost" value="1"/>
       <property name="HP" value="3"/>
       <property name="Attribute" value="Undead."/>
+      <property name="Text">Guard.
+&lt;b&gt; When Revealed:&lt;/b&gt; Choose to either take 1 damage or place 1 threat on the main scheme.</property>
     </card>
     <card name="Fallen Warrior" id="1ce9c993-5758-40d9-9d5f-bf0df9110dd5" size="EncounterCard">
       <property name="CardNumber" value="21153"/>
+      <property name="Position" value="153"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="legions_of_hel"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Condition."/>
+      <property name="Text">Treat attached ally as an [[Undead]] minion with a blank text box. Attached minions SCH is equal to its printed THW and it does not take consequential damage.
+&lt;b&gt; When Revealed: &lt;/b&gt; Discard cards from top of your deck until you discard an ally. Put that ally into play engaged with you with Fallen Warrior attached to it</property>
     </card>
     <card name="No Place for the Living" id="daa145f0-835f-4961-b01c-5fb874d60da8" size="EncounterCard">
       <property name="CardNumber" value="21154"/>
+      <property name="Position" value="154"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="legions_of_hel"/>
       <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt; When Revealed: &lt;/b&gt; Each player must choose to either discard the upgrade or support they control with the highest cost, or take damage equal to the total number of upgrades and supports they control.</property>
     </card>
     <card name="Legions of Hel" id="b59baf3c-d858-4fc4-8045-4bbfb7011ccb" size="SchemeCard">
       <property name="CardNumber" value="21155"/>
+      <property name="Position" value="155"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="legions_of_hel"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">&lt;b&gt; When Revealed: &lt;/b&gt; Place 2 additional threat here for each [[undead]] minion in play. If there are no [[undead]] minions in play, this card gains surge.</property>
     </card>
     <card name="Laufey" id="cc4bd48d-0ac6-464a-bd26-32b6fa7ee477" size="EncounterCard">
       <property name="CardNumber" value="21156"/>
+      <property name="Position" value="156"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="frost_giants"/>
       <property name="Attack" value="4"/>
@@ -1631,11 +2205,14 @@ Attached character cannot ready.
       <property name="Boost" value="4"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Elite. Giant."/>
+      <property name="Text">Toughness.
+&lt;b&gt;Forced Response:&lt;/b&gt; After Laufey attacks and damages a character, stun that character.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Toughness.</property>
     </card>
     <card name="Frost Giant" id="9dd1cde6-95ed-4796-a404-a6ee83b7af6f" size="EncounterCard">
       <property name="CardNumber" value="21157"/>
+      <property name="Position" value="157"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="frost_giants"/>
       <property name="Attack" value="3"/>
@@ -1643,91 +2220,146 @@ Attached character cannot ready.
       <property name="Boost" value="1"/>
       <property name="HP" value="4"/>
       <property name="Attribute" value="Giant."/>
-      <property name="Text">Toughness.</property>
+      <property name="Text">Toughness. (This character enters play with a tough status card.)
+If the villain is attacking and this attack deals damage to a character, stun that character.</property>
     </card>
     <card name="Frozen" id="7a621b16-e240-427a-8197-6bdf7c39f223" size="EncounterCard">
       <property name="CardNumber" value="21158"/>
+      <property name="Position" value="158"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="frost_giants"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Condition."/>
+      <property name="Text">Attack to your identity
+Attached identity cannot ready.
+&lt;b&gt;Alter-Ego Action: &lt;/b&gt; Spend [energy] [physical] resources → discard this card.</property>
     </card>
     <card name="Unnatural Storm" id="d910511f-f370-470d-b27d-cfc21dc35e3c" size="SchemeCard">
       <property name="CardNumber" value="21159"/>
+      <property name="Position" value="159"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="frost_giants"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Heroes and allies cannot be readied by player card effects.
+&lt;b&gt; When Revealed:&lt;/b&gt; Exhaust each ally in play.</property>
     </card>
     <card name="Loki" id="f750ccc7-88f6-4fa5-947d-c19c599eb04b" size="VillainCard">
       <property name="CardNumber" value="21160"/>
+      <property name="Position" value="160"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="loki"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="20"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">Victory 1.
+Loki cannot take damage while a side scheme is in play.
+&lt;b&gt; When Defeated: &lt;/b&gt; Discard cards from the top of the encounter deck until a side scheme is discarded. Reveal that side scheme.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Victory 1.</property>
     </card>
     <card name="Loki" id="9f2c5ebc-0175-485c-8f1a-d9cbaae96e5e" size="VillainCard">
       <property name="CardNumber" value="21161"/>
+      <property name="Position" value="161"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="loki"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="20"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">Retaliate 1. Victory 1.
+&lt;b&gt; When Defeated: &lt;/b&gt; Discard cards from the top of the encounter deck until a side scheme is discarded. Reveal that side scheme.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Retaliate 1. Victory 1.</property>
     </card>
     <card name="Loki" id="aaab48af-c265-4fd9-858f-4b9f3207b9cd" size="VillainCard">
       <property name="CardNumber" value="21162"/>
+      <property name="Position" value="162"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="loki"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="3"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="20"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">Stalwart. Victory 1.
+&lt;b&gt; When Defeated: &lt;/b&gt; Discard cards from the top of the encounter deck until a side scheme is discarded. Reveal that side scheme.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Stalwart. Victory 1.</property>
     </card>
     <card name="Loki" id="9ef361a8-0916-4df9-93c5-b81dd666af66" size="VillainCard">
       <property name="CardNumber" value="21163"/>
+      <property name="Position" value="163"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="loki"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="3"/>
       <property name="HP" value="20"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">Stalwart. Victory 1.
+&lt;b&gt; When Defeated: &lt;/b&gt; Discard cards from the top of the encounter deck until a side scheme is discarded. Reveal that side scheme.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Stalwart. Victory 1.</property>
     </card>
     <card name="Loki" id="0bfa3943-bf1b-437c-bcd2-ec5fde5b0a20" size="VillainCard">
       <property name="CardNumber" value="21164"/>
+      <property name="Position" value="164"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Villain"/>
       <property name="Type" value="villain"/>
       <property name="Owner" value="loki"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="20"/>
       <property name="HP_Per_Hero" value="True"/>
       <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">Loki's attacks gain piercing.
+Victory 1.
+&lt;b&gt; When Defeated: &lt;/b&gt; Discard cards from the top of the encounter deck until a side scheme is discarded. Reveal that side scheme.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Victory 1.</property>
     </card>
     <card name="All Hail King Loki" id="7ea906b4-2bab-47df-9416-f3e6db6345cf" size="SchemeCard">
       <property name="CardNumber" value="21165a"/>
+      <property name="Position" value="165"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
       <property name="Type" value="main_scheme"/>
       <property name="Owner" value="loki"/>
+      <property name="Stage" value="1"/>
+      <property name="Text">&lt;b&gt; Contents: &lt;b&gt; Loki, infinity Gauntlet, and standard encounter sets. Two modular encounter sets. (Enchantress and Frost Giants).
+&lt;b&gt; Setup: &lt;/b&gt; Set each copy of the Loki villain aside, out of play. Put the War in asgard side scheme into play. Shuffle the encounter deck. Reveal 1 set-aside Loki villain at random. Reveal the top card of the [[infinity stone]] deck.</property>
       <alternate name="All Hail King Loki" type="b" size="SchemeCard">
         <property name="CardNumber" value="21165b"/>
         <property name="Type" value="main_scheme"/>
         <property name="Owner" value="loki"/>
+        <property name="Stage" value="1"/>
         <property name="BaseThreat" value="1"/>
         <property name="BaseThreatFixed" value="False"/>
         <property name="Threat" value="12"/>
@@ -1737,92 +2369,141 @@ Attached character cannot ready.
     </card>
     <card name="Casket of Ancient Winters" id="7a901c55-eb24-44f8-8303-d5ae3bea286d" size="SchemeCard">
       <property name="CardNumber" value="21166"/>
+      <property name="Position" value="166"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="loki"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="4"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]</property>
-      <property name="Scheme_Boost" value="1"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Hinder 1[per_hero]
+&lt;b&gt; When Defeated: &lt;/b&gt; Reveal the top card of the [[infinity stone]] deck. Swap Loki with a random set-aside Loki villain.
+Hinder 1[per_hero]</property>
     </card>
     <card name="War in Asgard" id="3a615d6b-5acf-42ae-b2da-3f68797b8af3" size="SchemeCard">
       <property name="CardNumber" value="21167"/>
+      <property name="Position" value="167"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="loki"/>
       <property name="Boost" value="1"/>
       <property name="BaseThreat" value="6"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]</property>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
+      <property name="Scheme_Boost" value="1"/>
+      <property name="Text">Hinder 1[per_hero]
+&lt;b&gt; When Defeated: &lt;/b&gt; Reveal the top card of the [[infinity stone]] deck. Swap Loki with a random set-aside Loki villain.
+Hinder 1[per_hero]</property>
     </card>
     <card name="Madness on Midgard" id="57691063-02c5-4ffc-8a1f-39cc639b59cb" size="SchemeCard">
       <property name="CardNumber" value="21168"/>
+      <property name="Position" value="168"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="loki"/>
       <property name="Boost" value="2"/>
       <property name="BaseThreat" value="5"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]</property>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">Hinder 1[per_hero]
+&lt;b&gt; When Defeated: &lt;/b&gt; Reveal the top card of the [[infinity stone]] deck. Swap Loki with a random set-aside Loki villain.
+Hinder 1[per_hero]</property>
     </card>
     <card name="Open the Bifrost" id="02efd977-6da9-4f71-a8b2-b7dfae4280b6" size="SchemeCard">
       <property name="CardNumber" value="21169"/>
+      <property name="Position" value="169"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="loki"/>
       <property name="Boost" value="4"/>
       <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="True"/>
-      <property name="Text">Hinder 1[per_player]</property>
+      <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">Hinder 1[per_hero]
+&lt;b&gt; When Defeated: &lt;/b&gt; Reveal the top card of the [[infinity stone]] deck. Swap Loki with a random set-aside Loki villain.</property>
     </card>
     <card name="Loki's Staff" id="7fa93e98-1e02-4b4a-9f07-b4c6f6d51266" size="EncounterCard">
       <property name="CardNumber" value="21170"/>
+      <property name="Position" value="170"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="loki"/>
-      <property name="Scheme_Hazard" value="1"/>
       <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to Loki.
+&lt;b&gt; Hero Response: &lt;/b&gt; After you make a baisc attack against Loki, spend [energy] [physical] resources → discard this card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Loki's Crown" id="5c7f2927-b4c3-4385-8698-f14f04c49c08" size="EncounterCard">
       <property name="CardNumber" value="21171"/>
+      <property name="Position" value="171"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="loki"/>
       <property name="Attribute" value="Item."/>
+      <property name="Text">Attach to Loki.
+&lt;b&gt; Hero Response: &lt;/b&gt; After you make a baisc attack against Loki, spend [mental] [physical] resources → discard this card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Loki's Cape" id="366dc34c-fd51-4c7a-96dd-cf37de70872f" size="EncounterCard">
       <property name="CardNumber" value="21172"/>
+      <property name="Position" value="172"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="loki"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Armor."/>
+      <property name="Text">Attach to Loki.
+&lt;b&gt; Forced Response: &lt;/b&gt; After Loki is swapped with a set-aside Loki villain, give him a tough status card.
+&lt;b&gt; Hero Response: &lt;/b&gt; After you make a baisc attack against Loki, spend [energy] [mental] resources → discard this card.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Master of Illusions" id="37ff5c37-e7c5-4692-8c40-1f227a91ebe6" size="EncounterCard">
       <property name="CardNumber" value="21173"/>
+      <property name="Position" value="173"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="loki"/>
       <property name="Boost" value="1"/>
       <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to Loki.
+&lt;b&gt; Forced Response: &lt;/b&gt; When Loki would take damage from an attack, discard the top card of the encounter deck. If that card is a treachery, prevent all damage from this attack and discard this card.</property>
     </card>
     <card name="Devious Sorcery" id="a1171282-4d10-4f95-a661-e0d42d2ad4fa" size="EncounterCard">
       <property name="CardNumber" value="21174"/>
+      <property name="Position" value="174"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="loki"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt; When Revealed (Alter-Ego): &lt;/b&gt; You are stunned. If you were already stunned, place 2 threat on the main scheme.
+&lt;b&gt; When Revealed (Hero): &lt;/b&gt; You are stunned. If you were already stunned, take 2 damage.</property>
     </card>
-    <card name="Inifinite Mischief" id="394562a9-1efe-4a9c-9a1c-40e9714ac911" size="EncounterCard">
+    <card name="Infinite Mischief" id="394562a9-1efe-4a9c-9a1c-40e9714ac911" size="EncounterCard">
       <property name="CardNumber" value="21175"/>
+      <property name="Position" value="175"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="loki"/>
+      <property name="Text">&lt;b&gt; When Revealed: &lt;/b&gt; Shuffle the [[infinity stone]] deck discard pile into the [[infinity stone]] deck and reveal the top card.
+Discard the top card of the [[infinity stone]] deck. Apply it's boost icons [boost] for this activation as if it were a boost card.</property>
     </card>
     <card name="The Trickster" id="fca57976-37b5-48dd-a676-03bbcdac8ab9" size="EncounterCard">
       <property name="CardNumber" value="21176"/>
+      <property name="Position" value="176"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="loki"/>
+      <property name="Text">&lt;b&gt; When Revealed: &lt;/b&gt; Swap Loki with a random set-aside Loki villain. Loki activates agains you.
+Give Loki an additional boost card and a tough status card.</property>
     </card>
     <card name="Enchantress" id="fdff62e0-4b0b-4c34-9182-d1ccf2606d46" size="EncounterCard">
       <property name="CardNumber" value="21177"/>
+      <property name="Position" value="177"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="enchantress"/>
       <property name="Attack" value="1"/>
@@ -1830,21 +2511,31 @@ Attached character cannot ready.
       <property name="Boost" value="2"/>
       <property name="HP" value="5"/>
       <property name="Attribute" value="Asgard. Elite."/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter deck, discard pile, and set-aside area for a copy of Seduced and attach it to your identity. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Beguiled" id="e75618ad-722d-4ff8-8475-a6e99ec61ffa" size="EncounterCard">
       <property name="CardNumber" value="21178"/>
+      <property name="Position" value="178"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="enchantress"/>
       <property name="Boost" value="1"/>
       <property name="Attribute" value="Condition."/>
+      <property name="Text">Treat attached ally as an [[Enthralled]] minion with a blank text box. Attached minion's SCH is equal to its printed THW and it does not take consequential damage.
+&lt;b&gt;When Revealed&lt;/b&gt;: Attach to the ally with the highest cost without Beguiled attached. Attached ally engages its controller. Otherwise, this card gains surge.</property>
     </card>
     <card name="Seduced" id="33e8f90b-c6e8-4675-bd1f-d32e6ee99ce5" size="EncounterCard">
       <property name="CardNumber" value="21179"/>
+      <property name="Position" value="179"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="enchantress"/>
       <property name="Boost" value="2"/>
       <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to your identity.
+You cannot make basic attacks or play [[Attack]] events.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Spend [energy] [mental] resources → discard this card.</property>
     </card>
   </cards>
 </set>

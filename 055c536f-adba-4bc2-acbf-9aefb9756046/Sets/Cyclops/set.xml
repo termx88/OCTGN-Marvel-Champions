@@ -3,6 +3,8 @@
   <cards>
     <card name="Cyclops" id="7da2a29c-3abd-4e3b-b36e-9f140c033001">
       <property name="CardNumber" value="33001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="hero"/>
       <property name="Owner" value="cyclops"/>
       <property name="HandSize" value="5"/>
@@ -11,26 +13,33 @@
       <property name="Defense" value="2"/>
       <property name="HP" value="10"/>
       <property name="Attribute" value="X-Men."/>
-      <property name="Text">&lt;i&gt;Optic Blast&lt;/i&gt; − &lt;b&gt;Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Spend one resource of any type → deal 3 damage to an enemy with an upgrade attached. (Limit once per round).</property>
+      <property name="Text">&lt;i&gt;Optic Blast&lt;/i&gt; - &lt;b&gt;Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Spend one resource of any type → deal 3 damage to an enemy with an upgrade attached. (Limit once per round).</property>
       <property name="Unique" value="True"/>
       <alternate name="Scott Summers" type="b">
         <property name="CardNumber" value="33001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
         <property name="Type" value="alter_ego"/>
         <property name="Owner" value="cyclops"/>
         <property name="HandSize" value="6"/>
         <property name="Recovery" value="3"/>
         <property name="HP" value="10"/>
         <property name="Attribute" value="Mutant."/>
-        <property name="Text">You may include [[X-MEN]] allies from any aspect in your deck.\n&lt;i&gt;Constant Training&lt;/i&gt; − &lt;b&gt;Action&lt;/b&gt;: Search your deck for a [[TACTIC]] upgrade and add it to your hand. (Limit once per round).</property>
+        <property name="Text">You may include [[X-MEN]] allies from any aspect in your deck.
+&lt;i&gt;Constant Training&lt;/i&gt; - &lt;b&gt;Action&lt;/b&gt;: Search your deck for a [[TACTIC]] upgrade and add it to your hand. (Limit once per round).</property>
         <property name="Unique" value="True"/>
       </alternate>
     </card>
     <card name="Phoenix" id="7da2a29c-3abd-4e3b-b36e-9f140c033002">
       <property name="CardNumber" value="33002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="cyclops"/>
       <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Wild" value="1"/>
       <property name="HP" value="3"/>
@@ -40,6 +49,8 @@
     </card>
     <card name="Ruby Quartz Visor" id="7da2a29c-3abd-4e3b-b36e-9f140c033003">
       <property name="CardNumber" value="33003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="cyclops"/>
       <property name="Cost" value="2"/>
@@ -50,52 +61,71 @@
     </card>
     <card name="Field Commander" id="7da2a29c-3abd-4e3b-b36e-9f140c033004">
       <property name="CardNumber" value="33004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="cyclops"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Title."/>
-      <property name="Text">You take the first turn during player phase. &lt;i&gt;(When your turn is done, play proceeds in player order, starting with the first player. You do not take another turn.)&lt;/i&gt;\nEach Cyclops upgrade attached to a minion loses the temporary keyword.</property>
+      <property name="Text">You take the first turn during the player phase. &lt;i&gt;(When your turn is done, play proceeds in player order, starting with the first player. You do not take another turn.)&lt;/i&gt;
+Each Cyclops upgrade attached to a minion loses the temporary keyword.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Exploit Weakness" id="7da2a29c-3abd-4e3b-b36e-9f140c033005">
       <property name="CardNumber" value="33005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="cyclops"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Tactic."/>
-      <property name="Text">Attach to an enemy. Max 1 per enemy.\nTemporary.\nIncrease the amount of damage attached enemy takes from each attack by 1.</property>
+      <property name="Text">Attach to an enemy. Max 1 per enemy.
+Temporary.
+Increase the amount of damage attached enemy takes from each attack by 1.</property>
     </card>
     <card name="Practiced Defense" id="7da2a29c-3abd-4e3b-b36e-9f140c033006">
       <property name="CardNumber" value="33006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="cyclops"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Attribute" value="Tactic."/>
-      <property name="Text">Attach to an enemy. Max 1 per enemy.\nTemporary.\nAttached enemy gets -1 ATK.</property>
+      <property name="Text">Attach to an enemy. Max 1 per enemy.
+Temporary.
+Attached enemy gets -1 ATK.</property>
     </card>
     <card name="Priority Target" id="7da2a29c-3abd-4e3b-b36e-9f140c033007">
       <property name="CardNumber" value="33007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="cyclops"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Tactic."/>
-      <property name="Text">Attach to an enemy. Max 1 per enemy.\nTemporary.\n&lt;b&gt;Interrupt&lt;/b&gt;: When attached enemy is defeated, the player who defeated it draws 2 cards.</property>
+      <property name="Text">Attach to an enemy. Max 1 per enemy.
+Temporary.
+&lt;b&gt;Interrupt&lt;/b&gt;: When attached enemy is defeated, the player who defeated it draws 2 cards.</property>
     </card>
     <card name="Full Blast" id="7da2a29c-3abd-4e3b-b36e-9f140c033008">
       <property name="CardNumber" value="33008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="cyclops"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Superpower."/>
-      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When you use your &lt;i&gt;"Optic Blast"&lt;/i&gt; ability, exhaust Cyclops → this attack deals 8 additionnal damage and gains overkill.</property>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When you use your &lt;i&gt;"Optic Blast"&lt;/i&gt; ability, exhaust Cyclops → this attack deals 8 additional damage and gains overkill.</property>
     </card>
-    <card name="Rocket Beam" id="7da2a29c-3abd-4e3b-b36e-9f140c033009">
+    <card name="Ricochet Beam" id="7da2a29c-3abd-4e3b-b36e-9f140c033009">
       <property name="CardNumber" value="33009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="cyclops"/>
       <property name="Cost" value="2"/>
@@ -103,20 +133,26 @@
       <property name="Attribute" value="Attack. Superpower."/>
       <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 3 damage to an enemy. Deal 3 damage to an enemy with an upgrade attached.</property>
     </card>
-    <card name="Tactical Brillance" id="7da2a29c-3abd-4e3b-b36e-9f140c033010">
+    <card name="Tactical Brilliance" id="7da2a29c-3abd-4e3b-b36e-9f140c033010">
       <property name="CardNumber" value="33010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="cyclops"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Thwart."/>
-      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Dremove 3 threat from a scheme. Choose a [[TACTIC]] card in your discard pile and add it to your hand.</property>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. Choose a [[TACTIC]] card in your discard pile and add it to your hand.</property>
     </card>
     <card name="Beast" id="7da2a29c-3abd-4e3b-b36e-9f140c033011">
       <property name="CardNumber" value="33011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="4"/>
       <property name="Resource_Mental" value="1"/>
       <property name="HP" value="3"/>
@@ -126,9 +162,13 @@
     </card>
     <card name="Dust" id="7da2a29c-3abd-4e3b-b36e-9f140c033012">
       <property name="CardNumber" value="33012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Energy" value="1"/>
       <property name="HP" value="3"/>
@@ -138,9 +178,13 @@
     </card>
     <card name="Rockslide" id="7da2a29c-3abd-4e3b-b36e-9f140c033013">
       <property name="CardNumber" value="33013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="3"/>
+      <property name="AttackCost" value="2"/>
       <property name="Cost" value="4"/>
       <property name="Resource_Physical" value="1"/>
       <property name="HP" value="6"/>
@@ -150,9 +194,13 @@
     </card>
     <card name="Blindfold" id="7da2a29c-3abd-4e3b-b36e-9f140c033014">
       <property name="CardNumber" value="33014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="0"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Physical" value="1"/>
       <property name="HP" value="2"/>
@@ -162,22 +210,30 @@
     </card>
     <card name="Danger Room Training" id="7da2a29c-3abd-4e3b-b36e-9f140c033015">
       <property name="CardNumber" value="33015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Attribute" value="Training."/>
-      <property name="Text">Attach to an [[X-MEN]] ally. Max 1 [[TRAINING]] upgrade per ally.\nAttached ally gets +1 THW,  +1 ATK and +1 hot point.</property>
+      <property name="Text">Attach to an [[X-MEN]] ally. Max 1 [[TRAINING]] upgrade per ally.
+Attached ally gets +1 THW, +1 ATK, and +1 hit point.</property>
     </card>
     <card name="Coordinated Attack" id="7da2a29c-3abd-4e3b-b36e-9f140c033016">
       <property name="CardNumber" value="33016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Tactic."/>
-      <property name="Text">Attach to an minion. Max 1 per minion.\nEach ally takes -1 consequential damage ([consequential]) when attacking attached minion.</property>
+      <property name="Text">Attach to a minion. Max 1 per minion.
+Each ally takes -1 consequential damage ([consequential]) when attacking attached minion.</property>
     </card>
     <card name="Teamwork" id="7da2a29c-3abd-4e3b-b36e-9f140c033017">
       <property name="CardNumber" value="33017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Energy" value="1"/>
@@ -186,15 +242,22 @@
     </card>
     <card name="Effective Leadership" id="7da2a29c-3abd-4e3b-b36e-9f140c033018">
       <property name="CardNumber" value="33018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="resource"/>
       <property name="Resource_Wild" value="1"/>
-      <property name="Text">Max 2 per deck.\n&lt;b&gt;Interrupt&lt;/b&gt;: When you spend this card to play an ally, that ally gets +1 THW and +1 ATK until the end of the phase.</property>
+      <property name="Text">Max 2 per deck.
+&lt;b&gt;Interrupt&lt;/b&gt;: When you spend this card to play an ally, that ally gets +1 THW and +1 ATK until the end of the phase.</property>
     </card>
     <card name="Angel" id="7da2a29c-3abd-4e3b-b36e-9f140c033019">
       <property name="CardNumber" value="33019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
       <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Mental" value="1"/>
       <property name="HP" value="3"/>
@@ -204,15 +267,20 @@
     </card>
     <card name="Utopia" id="7da2a29c-3abd-4e3b-b36e-9f140c033020">
       <property name="CardNumber" value="33020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="support"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Location. X-Men."/>
-      <property name="Text">If each of your allies has the [[X-MEN]] trait, increase your ally limit by 1.</property>
+      <property name="Text">If each of your allies has the [[X-MEN]] trait, increase your ally limit by 1.
+&lt;b&gt;Response:&lt;/b&gt; After an [[X-MEN]] ally enters play, exhaust Utopia → ready an [[X-MEN]] character.</property>
       <property name="Unique" value="True"/>
     </card>
     <card name="Danger Room" id="7da2a29c-3abd-4e3b-b36e-9f140c033021">
       <property name="CardNumber" value="33021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="support"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
@@ -222,6 +290,8 @@
     </card>
     <card name="Game Time" id="7da2a29c-3abd-4e3b-b36e-9f140c033022">
       <property name="CardNumber" value="33022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Energy" value="1"/>
@@ -230,47 +300,76 @@
     </card>
     <card name="Psychic Rapport" id="7da2a29c-3abd-4e3b-b36e-9f140c033023">
       <property name="CardNumber" value="33023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
-      <property name="Text">Team-Up (Cyclops and  Phoenix). Max 1 per deck.\n&lt;b&gt;Hero Action&lt;/b&gt;: Ready Cyclops and Phoenix. Choose to either return a Cyclops card from your discard pile to your hand or place 2 power counters on Phoenix Force.</property>
+      <property name="Text">Team-Up (Cyclops and Phoenix). Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt;: Ready Cyclops and Phoenix. Choose to either return a Cyclops card from your discard pile to your hand or place 2 power counters on Phoenix Force.</property>
     </card>
     <card name="Marked" id="7da2a29c-3abd-4e3b-b36e-9f140c033032">
       <property name="CardNumber" value="33032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Tactic."/>
-      <property name="Text">Attach to an minion. Max 1 per minion.\nAttacks against attached minion gain overkill.</property>
+      <property name="Text">Attach to a minion. Max 1 per minion.
+Attacks against attached minion gain overkill.</property>
     </card>
     <card name="Befuddle" id="7da2a29c-3abd-4e3b-b36e-9f140c033033">
       <property name="CardNumber" value="33033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Tactic."/>
-      <property name="Text">Attach to an minion. Max 1 per minion.\&lt;b&gt;Interrupt&lt;/b&gt;: When a character makes a basic attack against attached minion, that character uses THW instead of their ATK.</property>
+      <property name="Text">Attach to a minion. Max 1 per minion.
+&lt;b&gt;Interrupt&lt;/b&gt;: When a character makes a basic attack against attached minion, that character uses their THW instead of their ATK.</property>
     </card>
     <card name="Pinned Down" id="7da2a29c-3abd-4e3b-b36e-9f140c033034">
       <property name="CardNumber" value="33034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Tactic."/>
-      <property name="Text">Attach to an minion. Max 1 per minion.\nAttached minion gets -2 ATK.</property>
+      <property name="Text">Attach to a minion. Max 1 per minion.
+Attached minion gets -2 ATK.</property>
     </card>
     <card name="Honorary X-Men" id="7da2a29c-3abd-4e3b-b36e-9f140c033035">
       <property name="CardNumber" value="33035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="3"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
       <property name="Attribute" value="Title."/>
-      <property name="Text">Play only if your identity has the [[X-MEN]] trait.\nAttach to a friendly character.\nAttached character gets +1 hit point and gains the [[X-MEN]] trait.</property>
+      <property name="Text">Play only if your identity has the [[X-MEN]] trait.
+Attach to a friendly character. Max 1 per character.
+Attached character gets +1 hit point and gains the [[X-MEN]] trait.</property>
     </card>
     <card name="Lost Visor" id="7da2a29c-3abd-4e3b-b36e-9f140c033027" size="EncounterCard">
       <property name="CardNumber" value="33027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="cyclops"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Scott Summers player.&lt;/i&gt;&lt;/b&gt;
+Search your hand, deck, discard pile, and play area for Ruby Quartz Visor and place it facedown under this card.
+Cyclops cannot attack.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Scott Summers → add Ruby Quartz Visor to your hand and remove Lost Visor from the game.</property>
     </card>
     <card name="Mister Sinister" id="7da2a29c-3abd-4e3b-b36e-9f140c033028" size="EncounterCard">
       <property name="CardNumber" value="33028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="cyclops_nemesis"/>
       <property name="Attack" value="1"/>
@@ -278,27 +377,43 @@
       <property name="Boost" value="2"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Elite. Marauder."/>
+      <property name="Text">Stalwart. Toughness. Villainous.
+You are stunned. If you are already stunned, take 2 damage.</property>
       <property name="Unique" value="True"/>
-      <property name="Text">Stalwart. Toughness. Villainous.</property>
     </card>
     <card name="Genetic Manipulation" id="7da2a29c-3abd-4e3b-b36e-9f140c033029" size="SchemeCard">
       <property name="CardNumber" value="33029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="cyclops_nemesis"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: Search the encounter deck and discard pile for Gene Therapy and reveal it. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
     </card>
     <card name="Gene Therapy" id="7da2a29c-3abd-4e3b-b36e-9f140c033030" size="EncounterCard">
       <property name="CardNumber" value="33030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="2"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="cyclops_nemesis"/>
+      <property name="Attack" value="2"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When attached enemy attacks, the attack gains overkill and piercing. At the end of this attack, discard Gene Therapy.
+Attach to the enemy with the lowest printed ATK without a copy of Gene Therapy attached. Otherwise, this card gains surge.</property>
     </card>
     <card name="Concussive Force" id="7da2a29c-3abd-4e3b-b36e-9f140c033031" size="EncounterCard">
       <property name="CardNumber" value="33031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="cyclops_nemesis"/>
       <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed (Alter-Ego)&lt;/b&gt;: If Mister Sinister is in play, he schemes. Otherwise, place 2 threat on the main scheme.
+&lt;b&gt;When Revealed (Hero)&lt;/b&gt;: If Mister Sinister is in play, he attacks you. Otherwise, take 2 damage.</property>
     </card>
   </cards>
 </set>
