@@ -1,1 +1,0 @@
-- Vérifier que toutes les cartes d'aspects n'ont pas d'attribut Owner

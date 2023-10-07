@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Psylocke" id="f7eaac08-b459-4b76-a5e4-a87bce22e990" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Psylocke" id="f7eaac08-b459-4b76-a5e4-a87bce041001">
+      <property name="CardNumber" value="41001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="HandSize" value="4"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Psionic. X-Force."/>
+      <property name="Text">[star] &lt;i&gt;Psi-Energy Control&lt;/i&gt; — &lt;b&gt;Interrupt&lt;/b&gt;: When you use one of Psylocke's basic powers &lt;i&gt;(THW, ATK, or DEF)&lt;/i&gt;, flip 1 [[PSI-ENERGY]] upgrade.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Betsy Braddock" type="b">
+        <property name="CardNumber" value="41001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="psylocke"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Mutant. Psionic."/>
+        <property name="Text">&lt;i&gt;Psionic Manifestation&lt;/i&gt; — &lt;b&gt;Setup&lt;/b&gt;: Put your 2 [[PSI-ENERGY]] upgrades into play, Psi-Knife side faceup.
+&lt;b&gt;Action&lt;/b&gt;: Exhaust 1 [[PSI-ENERGY]] upgrade → shuffle 1 [[PSIONIC]] card from your discard pile into your deck.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Psi-Knife" id="f7eaac08-b459-4b76-a5e4-a87bce041002">
+      <property name="CardNumber" value="41002a"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="2"/>
+      <property name="DefaultSetupPile" value="Special"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Psi-Energy. Weapon."/>
+      <property name="Text">Permanent.
+Psylocke gets +1 THW.
+&lt;b&gt;Hero Resource&lt;/b&gt;: Exhaust Psi-Knife → generate a [mental] resource. You may flip this card.</property>
+      <alternate name="Psi-Katana" type="b">
+        <property name="CardNumber" value="41002b"/>
+        <property name="Position" value="2"/>
+        <property name="Quantity" value="2"/>
+        <property name="Type" value="upgrade"/>
+        <property name="Owner" value="psylocke"/>
+        <property name="Resource_Physical" value="1"/>
+        <property name="Attribute" value="Psi-Energy. Weapon."/>
+        <property name="Text">Permanent. Restricted.
+Psylocke gets +1 ATK and her basic attacks gain piercing.
+&lt;b&gt;Hero Resource&lt;/b&gt;: Exhaust Psi-Katana → generate a [physical] resource. You may flip this card.</property>
+      </alternate>
+    </card>
+    <card name="Angel" id="f7eaac08-b459-4b76-a5e4-a87bce041003">
+      <property name="CardNumber" value="41003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Aerial. X-Force."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play Angel from your hand, ready your identity.</property>
+      <property name="Quote">"Did someone call for a pick-me-up?"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Flurry of Blades" id="f7eaac08-b459-4b76-a5e4-a87bce041004">
+      <property name="CardNumber" value="41004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack. Psionic."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 2 damage to an enemy. For each Psi-Knife you control, choose an enemy and confuse it. For each Psi-Katana you control, choose an enemy and deal 2 damage to it.</property>
+    </card>
+    <card name="Mental Detection" id="f7eaac08-b459-4b76-a5e4-a87bce041005">
+      <property name="CardNumber" value="41005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Psionic. Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 1 threat from a scheme. For each Psi-Knife you control, remove 2 additional threat from that scheme. For each Psi-Katana you control, draw 1 card.</property>
+    </card>
+    <card name="Psionic Redirect" id="f7eaac08-b459-4b76-a5e4-a87bce041006">
+      <property name="CardNumber" value="41006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Defense. Psionic."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When you would take any amount of damage from an enemy attack, prevent 2 of that damage. For each Psi-Katana you control, prevent 2 additional damage. For each Psi-Knife you control, confuse that enemy.</property>
+    </card>
+    <card name="Telepathic Suggestion" id="f7eaac08-b459-4b76-a5e4-a87bce041007">
+      <property name="CardNumber" value="41007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Psionic."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When you reveal a card from the encounter deck, cancel its "&lt;b&gt;When Revealed&lt;/b&gt;" effects. For each Psi-Katana you control, choose an enemy and deal 2 damage to it. For each Psi-Knife you control, choose a scheme and remove 1 threat from it.</property>
+    </card>
+    <card name="Training Regimen" id="f7eaac08-b459-4b76-a5e4-a87bce041008">
+      <property name="CardNumber" value="41008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Training."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Exhaust Training Regiment → search your deck for a [[SKILL]] card and add it to your hand. &lt;i&gt;(Shuffle.)&lt;/i&gt; If you are in hero form, discard 1 card from your hand.</property>
+      <property name="Quote">"Practice makes perfect." — Psylocke</property>
+    </card>
+    <card name="Martial Arts Training" id="f7eaac08-b459-4b76-a5e4-a87bce041009">
+      <property name="CardNumber" value="41009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">Psylocke gets +1 DEF.
+&lt;b&gt;Hero Response&lt;/b&gt;: After Psylocke defends against an attack, discard Martial Arts Training → ready Psylocke.</property>
+    </card>
+    <card name="Psionic Training" id="f7eaac08-b459-4b76-a5e4-a87bce041010">
+      <property name="CardNumber" value="41010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">Psylocke ignores the guard and patrol keywords.
+&lt;b&gt;Hero Response&lt;/b&gt;: After Psylocke thwarts, discard Psionic Training → confuse an enemy.</property>
+    </card>
+    <card name="Weapons Training" id="f7eaac08-b459-4b76-a5e4-a87bce041011">
+      <property name="CardNumber" value="41011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">Psylocke gains retaliate 1.
+&lt;b&gt;Hero Response&lt;/b&gt;: After Psylocke attacks, discard Weapons Training → ready each [[WEAPON]] upgrade you control.</property>
+    </card>
+    <card name="Captain Britain" id="f7eaac08-b459-4b76-a5e4-a87bce041012">
+      <property name="CardNumber" value="41012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="3"/>
+      <property name="ThwartCost" value="2"/>
+      <property name="Attack" value="3"/>
+      <property name="AttackCost" value="2"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Aerial. Excalibur."/>
+      <property name="Text">Captain Britain takes -1 consequential damage after he thwarts a side scheme or attacks a minion.</property>
+      <property name="Quote">"I'll be your champion, now and forever."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Cypher" id="f7eaac08-b459-4b76-a5e4-a87bce041013">
+      <property name="CardNumber" value="41013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="X-Force."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Cypher attacks and damages a confused enemy, draw 1 card.</property>
+      <property name="Quote">"Your body language told me everything I needed to know to beat you."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Concussive Blow" id="f7eaac08-b459-4b76-a5e4-a87bce041014">
+      <property name="CardNumber" value="41014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Confuse an enemy. If you paid for this card using a [physical] resource, deal 3 damage to that enemy.</property>
+    </card>
+    <card name="Upside the Head" id="f7eaac08-b459-4b76-a5e4-a87bce041015">
+      <property name="CardNumber" value="41015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After your hero makes a basic attack and damages an enemy, confuse that enemy. If that enemy is already confused, stun it instead.</property>
+    </card>
+    <card name="Lay the Trap" id="f7eaac08-b459-4b76-a5e4-a87bce041016" size="PlayerSchemeCard">
+      <property name="CardNumber" value="41016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Victory 0.
+&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this scheme deals 5[per_hero] damage to the villain.</property>
+      <property name="Quote">"You go low, I'll go high."
+"I always go low."
+"Fine, go high."
+"I like going low."
+ — Wolverine and Deadpool</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Float Like a Butterfly" id="f7eaac08-b459-4b76-a5e4-a87bce041017">
+      <property name="CardNumber" value="41017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">Play under any player's control.
+Max 1 per player.
+&lt;b&gt;Interrupt&lt;/b&gt;: When a character you control attacks a confused enemy, increase the amount of damage that attack deals to that enemy by 1.</property>
+    </card>
+    <card name="Pete Wisdom" id="f7eaac08-b459-4b76-a5e4-a87bce041018">
+      <property name="CardNumber" value="41018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="3"/>
+      <property name="ThwartCost" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Force."/>
+      <property name="Text">Play only if your identity has the [[X-FORCE]] trait.
+&lt;b&gt;Response&lt;/b&gt;: After you resolve the "&lt;b&gt;When Revealed&lt;/b&gt;" effects of a treachery card, heal 1 damage from Pete Wisdom.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Directed Force" id="f7eaac08-b459-4b76-a5e4-a87bce041019">
+      <property name="CardNumber" value="41019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When your hero makes an attack that has a keyword &lt;i&gt;(overkill, piercing, or ranged)&lt;/i&gt;, that attack deals 2 additional damage. (Max 1 per attack.)</property>
+    </card>
+    <card name="Soaring Hearts" id="f7eaac08-b459-4b76-a5e4-a87bce041020">
+      <property name="CardNumber" value="41020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Aerial. Psionic."/>
+      <property name="Text">Team-Up (Angel and Psylocke). Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt;: Search your discard pile for an identity-specific event and add it to your hand. Ready Angel and Psylocke.</property>
+    </card>
+    <card name="IPAC" id="f7eaac08-b459-4b76-a5e4-a87bce041022">
+      <property name="CardNumber" value="41022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Vehicle. X-Force."/>
+      <property name="Text">Play only if your identity has the [[X-FORCE]] trait.
+&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust IPAC and deal 1 facedown encounter card to a player → that player draws 2 cards.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="X-Bunker" id="f7eaac08-b459-4b76-a5e4-a87bce041023">
+      <property name="CardNumber" value="41023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Location. X-Force."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Exhaust X-Bunker and choose a player whose identity has the [[MUTANT]] trait → that player searches the top X cards of their deck for any card, where X is the number of side schemes in the victory display, and adds that card to their hand. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Telepathy" id="f7eaac08-b459-4b76-a5e4-a87bce041024">
+      <property name="CardNumber" value="41024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Psionic. Superpower."/>
+      <property name="Text">Play only if your identity has the [[PSIONIC]] trait. Max 1 per player.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Exhaust Telepathy and spend [mental][mental] resources → remove 2 threat from a scheme.</property>
+    </card>
+    <card name="Psi-Bow Attack" id="f7eaac08-b459-4b76-a5e4-a87bce041030">
+      <property name="CardNumber" value="41030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack. Psionic."/>
+      <property name="Text">Play only if your hero has the [[PSIONIC]] trait.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 4 damage to an enemy. This attack gains ranged.</property>
+    </card>
+    <card name="Domino" id="f7eaac08-b459-4b76-a5e4-a87bce041031">
+      <property name="CardNumber" value="41031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Posse. X-Force."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you use one of Domino's basic powers, swap a card in your hand with the top card of your deck.</property>
+      <property name="Quote">"Do you feel lucky, punk?"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Psi-Flail Strike" id="f7eaac08-b459-4b76-a5e4-a87bce041032">
+      <property name="CardNumber" value="41032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack. Psionic."/>
+      <property name="Text">Play only if your hero has the [[PSIONIC]] trait.
+&lt;b&gt;Hero Response&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: After you defend against an enemy attack, deal 3 damage to that enemy and stun it.</property>
+    </card>
+    <card name="Telekinesis" id="f7eaac08-b459-4b76-a5e4-a87bce041033">
+      <property name="CardNumber" value="41033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Psionic. Superpower."/>
+      <property name="Text">Play only if your hero has the [[PSIONIC]] trait. Max 1 per player.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Exhaust Telekinesis and spend [mental][mental] resources → deal 3 damage to an enemy.</property>
+    </card>
+    <card name="Body Swapped" id="f7eaac08-b459-4b76-a5e4-a87bce041025" size="EncounterCard">
+      <property name="CardNumber" value="41025"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="psylocke"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Betsy Braddock player.&lt;/i&gt;&lt;/b&gt;
+You cannot flip your Psi-Katana upgrades.
+&lt;b&gt;When Revealed&lt;/b&gt;: Flip each of your [[PSI-ENERGY]] upgrades to its Psi-Katana side and exhaust it.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Discard 1 [[PSIONIC]] card from your hand → discard this obligation.</property>
+    </card>
+    <card name="Chimera" id="f7eaac08-b459-4b76-a5e4-a87bce041026" size="EncounterCard">
+      <property name="CardNumber" value="41026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="psylocke_nemesis"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Marauder. Psionic."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Chimera activates against you, she gets +X SCH and +X ATK for this activation. X is the number of [mental] resources on cards you control.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Chimera activates against you, she gets +X SCH and +X ATK for this activation. X is the number of [mental] resources on cards you control.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Interdimensional Plunder" id="f7eaac08-b459-4b76-a5e4-a87bce041027" size="SchemeCard">
+      <property name="CardNumber" value="41027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="psylocke_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Place 1 threat here for each upgrade in play.</property>
+      <property name="Quote">"Of all the dimensions I've pillaged, this is one of the nicer ones." — Chimera</property>
+    </card>
+    <card name="Psionic Illusion" id="f7eaac08-b459-4b76-a5e4-a87bce041028" size="EncounterCard">
+      <property name="CardNumber" value="41028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="psylocke_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Psionic."/>
+      <property name="Text">Attach to your identity.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When you attack an enemy, name a resource type, then discard the top card of your deck. If that card does not have a resource of the named type, change the target of this attack to a friendly character of your choice and discard this card.</property>
+    </card>
+    <card name="Telekinetic Dragon" id="f7eaac08-b459-4b76-a5e4-a87bce041029" size="EncounterCard">
+      <property name="CardNumber" value="41029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="psylocke_nemesis"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Take X indirect damage, where X is the number of [mental] resources on cards you control. If X is 0, this card gains surge.
+Choose to either spend a [mental] resource or confuse your identity.</property>
+    </card>
+  </cards>
+</set>

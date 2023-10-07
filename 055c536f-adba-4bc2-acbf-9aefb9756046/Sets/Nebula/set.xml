@@ -233,7 +233,7 @@ Discard cards from the top of your deck until you discard a [[technique]] upgrad
     <card name="Daughters of Thanos" id="7363a432-d878-4122-9092-45b019fc551d">
       <property name="CardNumber" value="22022"/>
       <property name="Position" value="22"/>
-      <property name="Quantity" value="2"/>
+      <property name="Quantity" value="1"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Wild" value="1"/>

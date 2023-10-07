@@ -329,5 +329,11 @@ changelog = {
 		"Fix: All data updated from marvelcdb",
 		"Fix: Change the way FanMade is loaded. Please re-download ZIP files from GDrive as previous one won't work anymore",
         "Major updates: A lot of changes have been made to the various scripts in order to improve MC module behaviour, future updates and fanmade integration. Although I conducted a lot of tests, bugs could reappear. Please let me know if this is the case."
+        ]),
+    '0000363': ("0.0.3.63", "1 October 2023", [
+        "Psylocke Hero pack added",
+        "Angel Hero pack added",
+        "NeXt Evolution data updated",
+        "This update also fix some bugs and errors introduced with v3.60 update"
         ])
 }

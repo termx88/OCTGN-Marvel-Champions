@@ -158,7 +158,7 @@ def heroSetup(group=table, x = 0, y = 0):
 
         # Vision
         if heroPlayed == 'vision':
-            me.counters['Default Card Draw'].value += 1
+            # me.counters['Default Card Draw'].value += 1
             for c in filter(lambda card: card.CardNumber == "26002a", me.Deck):
                 c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
@@ -200,6 +200,13 @@ def heroSetup(group=table, x = 0, y = 0):
                 c.moveTo(me.piles['Special'])
             showGroup(me.piles['Special'], False)
             me.piles['Special'].visibility = "all"
+
+        # Psylocke
+        if heroPlayed == 'psylocke':
+            i = 1
+            for c in filter(lambda card: card.CardNumber == "41002a", me.Special):
+                c.moveToTable(playerX(id)+(70*i),tableLocations['hero'][1])
+                i += 1
 
 def countHeros(p):
     heros = 0

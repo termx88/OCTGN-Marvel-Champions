@@ -794,7 +794,7 @@ While in hero form, Rocket Raccoon gets +1 ATK.</property>
       <property name="Position" value="178"/>
       <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
-      <property name="Owner" value="challenge"/>
+      <property name="Owner" value="gmw_campaign_challenge"/>
       <property name="BaseThreat" value="0"/>
       <property name="BaseThreatFixed" value="False"/>
       <property name="EscalationThreatFixed" value="False"/>
@@ -804,10 +804,8 @@ Victory 1. &lt;i&gt;(When defeated, add this card to the victory display.)&lt;/i
 &lt;b&gt;When Defeated&lt;/b&gt;: Each player may draw 1 card.</property>
       <alternate name="Badoon Blitz" type="b" size="SchemeCard">
         <property name="CardNumber" value="16178b"/>
-        <property name="Position" value="178"/>
-        <property name="Quantity" value="1"/>
         <property name="Type" value="side_scheme"/>
-        <property name="Owner" value="challenge"/>
+        <property name="Owner" value="gmw_campaign_challenge"/>
         <property name="BaseThreat" value="0"/>
         <property name="BaseThreatFixed" value="False"/>
         <property name="EscalationThreatFixed" value="False"/>
@@ -822,7 +820,7 @@ Hinder 4[per_hero]. Victory 1.
       <property name="Position" value="179"/>
       <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
-      <property name="Owner" value="challenge"/>
+      <property name="Owner" value="gmw_campaign_challenge"/>
       <property name="BaseThreat" value="0"/>
       <property name="BaseThreatFixed" value="False"/>
       <property name="EscalationThreatFixed" value="False"/>
@@ -831,10 +829,8 @@ Hinder 3[per_hero]. Victory 1.
 &lt;b&gt;When Defeated&lt;/b&gt;: Place the top card of each player's deck faceup into the Collection.</property>
       <alternate name="Gallery of Splendor" type="b" size="SchemeCard">
         <property name="CardNumber" value="16179b"/>
-        <property name="Position" value="179"/>
-        <property name="Quantity" value="1"/>
         <property name="Type" value="side_scheme"/>
-        <property name="Owner" value="challenge"/>
+        <property name="Owner" value="gmw_campaign_challenge"/>
         <property name="BaseThreat" value="0"/>
         <property name="BaseThreatFixed" value="False"/>
         <property name="EscalationThreatFixed" value="False"/>
@@ -849,7 +845,7 @@ Hinder 4[per_hero]. Victory 1.
       <property name="Position" value="180"/>
       <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
-      <property name="Owner" value="challenge"/>
+      <property name="Owner" value="gmw_campaign_challenge"/>
       <property name="BaseThreat" value="0"/>
       <property name="BaseThreatFixed" value="False"/>
       <property name="EscalationThreatFixed" value="False"/>
@@ -858,10 +854,8 @@ Hinder 3[per_hero]. Victory 1.
 &lt;b&gt;When Defeated&lt;/b&gt;: Deal 1 damage to each player.</property>
       <alternate name="&quot;There is No Escape&quot;" type="b" size="SchemeCard">
         <property name="CardNumber" value="16180b"/>
-        <property name="Position" value="180"/>
-        <property name="Quantity" value="1"/>
         <property name="Type" value="side_scheme"/>
-        <property name="Owner" value="challenge"/>
+        <property name="Owner" value="gmw_campaign_challenge"/>
         <property name="BaseThreat" value="0"/>
         <property name="BaseThreatFixed" value="False"/>
         <property name="EscalationThreatFixed" value="False"/>
@@ -876,7 +870,7 @@ Hinder 4[per_hero]. Victory 1.
       <property name="Position" value="181"/>
       <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
-      <property name="Owner" value="challenge"/>
+      <property name="Owner" value="gmw_campaign_challenge"/>
       <property name="BaseThreat" value="0"/>
       <property name="BaseThreatFixed" value="False"/>
       <property name="EscalationThreatFixed" value="False"/>
@@ -885,10 +879,8 @@ Hinder 3[per_hero]. Victory 1.
 &lt;b&gt;When Defeated&lt;/b&gt;: Place 2 evasion counters on Nebula's Ship.</property>
       <alternate name="Guerrilla Tactics" type="b" size="SchemeCard">
         <property name="CardNumber" value="16181b"/>
-        <property name="Position" value="181"/>
-        <property name="Quantity" value="1"/>
         <property name="Type" value="side_scheme"/>
-        <property name="Owner" value="challenge"/>
+        <property name="Owner" value="gmw_campaign_challenge"/>
         <property name="BaseThreat" value="0"/>
         <property name="BaseThreatFixed" value="False"/>
         <property name="EscalationThreatFixed" value="False"/>
@@ -904,7 +896,7 @@ Hinder 4[per_hero]. Victory 1.
       <property name="Position" value="182"/>
       <property name="Quantity" value="1"/>
       <property name="Type" value="side_scheme"/>
-      <property name="Owner" value="challenge"/>
+      <property name="Owner" value="gmw_campaign_challenge"/>
       <property name="BaseThreat" value="0"/>
       <property name="BaseThreatFixed" value="False"/>
       <property name="EscalationThreatFixed" value="False"/>
@@ -913,10 +905,8 @@ Hinder 4[per_hero]. Victory 1.
 Hinder 3[per_hero]. Victory 1.</property>
       <alternate name="Kree Supremacy" type="b" size="SchemeCard">
         <property name="CardNumber" value="16182b"/>
-        <property name="Position" value="182"/>
-        <property name="Quantity" value="1"/>
         <property name="Type" value="side_scheme"/>
-        <property name="Owner" value="challenge"/>
+        <property name="Owner" value="gmw_campaign_challenge"/>
         <property name="BaseThreat" value="0"/>
         <property name="BaseThreatFixed" value="False"/>
         <property name="EscalationThreatFixed" value="False"/>
@@ -1476,6 +1466,8 @@ If there are 3[per_hero] or fewer cards in The Collection, put the top card of y
       <property name="Type" value="villain"/>
       <property name="Owner" value="collector2"/>
       <property name="Stage" value="0"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="1"/>
       <property name="Scheme" value="1"/>
       <property name="HP" value="8"/>
@@ -1513,6 +1505,8 @@ Collector gets +X SCH and +X ATK, where X is equal to the main scheme's current 
       <property name="Type" value="villain"/>
       <property name="Owner" value="collector2"/>
       <property name="Stage" value="0"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="10"/>

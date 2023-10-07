@@ -498,9 +498,11 @@
             <property name="Owner" value="domino_nemesis" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-300000009046" name="Nemesis: Psylocke">
+            <property name="Type" value="encounter_setup" />
             <property name="Owner" value="psylocke_nemesis" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-300000009047" name="Nemesis: Angel">
+            <property name="Type" value="encounter_setup" />
             <property name="Owner" value="angel_nemesis" />
         </card>
             <card id="055c536f-adba-4bc2-acbf-300000009048" name="Nemesis: X-23">

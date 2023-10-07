@@ -96,7 +96,7 @@ def isEncounter(cards, x = 0, y = 0):
     return True
 
 def isPermanent(card):
-    return re.search('.*Permanent.*', card.properties["Text"], re.IGNORECASE)
+    return re.search('.*Permanent.*', card.properties["Text"])
 
 def hasVictory(card):
     return re.search('.*Victory \d+.*', card.properties["Text"], re.IGNORECASE)
@@ -441,13 +441,10 @@ def addObligationsToEncounter(group = me.piles["Nemesis"]):
     vName = getGlobalVariable("villainSetup")
     update()
     if vName == 'The Wrecking Crew' or vName == 'Kang': return
-    currentController = encounterDeck().controller
-    encounterDeck().controller = me
     playerOblCard = filter(lambda card: card.Type == 'obligation', group)
     for c in playerOblCard:
         c.moveTo(encounterDeck())
     shuffle(encounterDeck())
-    encounterDeck().controller = currentController
 
 def advanceGame(group = None, x = 0, y = 0):
     # Check if we should pass the turn or just change the phase
@@ -976,17 +973,28 @@ def discard(card, x = 0, y = 0):
         notify("{} discards {} from {}.".format(me, card, card.group.name))
         card.moveTo(me.piles["Special Discard"])
     else:
-        pile = card.owner.piles["Deck Discard"]
-        who = pile.controller
-
-        notify("{} discards {} from {}.".format(me, card, card.group.name))
-        card.moveTo(me.piles["Deck Discard"])
-
-        if who != me:
-            card.setController(who)
-            remoteCall(who, "doDiscard", [card, pile])
+        if hasVictory(card):
+            discardChoice = 2
+            if card.markers[DamageMarker] == 0 or card.markers[ThreatMarker] != 0 or card.markers[AllPurposeMarker] != 0:
+                discardChoice = askChoice("Do you want to discard it or add it to Victory Display ?", ["Discard Pile", "Victory Pile"])
+                if discardChoice == 1:
+                    discardPile = me.piles["Deck Discard"]
+            if discardChoice == 2:
+                discardPile = victoryDisplay()
+                notify("{} has 'Victory' keyword and is then sent to Victory Display!".format(card))
+            card.moveTo(discardPile)
         else:
-            doDiscard(card, pile)
+            pile = card.owner.piles["Deck Discard"]
+            who = pile.controller
+
+            notify("{} discards {} from {}.".format(me, card, card.group.name))
+            card.moveTo(me.piles["Deck Discard"])
+
+            if who != me:
+                card.setController(who)
+                remoteCall(who, "doDiscard", [card, pile])
+            else:
+                doDiscard(card, pile)
 
 def doDiscard(card, pile):
     card.moveTo(pile)
@@ -1326,13 +1334,14 @@ def nextSchemeStage(group=None, x=0, y=0):
         for c in table:
             if c.Type == 'main_scheme':
                 x, y = c.position
+                currentAcceleration = c.markers[AccelerationMarker]
                 c.moveTo(removedFromGameDeck())
                 msCards[randomScheme].moveToTable(x, y)
+                msCards[randomScheme].markers[AccelerationMarker] = currentAcceleration
     else:
         for c in table:
             if c.Type == 'main_scheme' and len(mainSchemeDeck()) > 0:
-                x = c.position[0]
-                y = c.position[1]
+                x, y = c.position
                 currentScheme = num(c.CardNumber[:-1])
                 currentAcceleration = c.markers[AccelerationMarker]
                 c.moveToBottom(removedFromGameDeck())
@@ -1343,6 +1352,22 @@ def nextSchemeStage(group=None, x=0, y=0):
                 card.anchor = False
                 card.markers[AccelerationMarker] = currentAcceleration
                 notify("{} advances scheme to '{}'".format(me, card))
+
+    if vName == 'Morlock Siege':
+        if card.CardNumber == "40078a": # Stage 2 main scheme
+            # Hide treachery shuffled in encounter deck
+            treacheryCard = filter(lambda card: card.CardNumber == "40080", sideDeck())
+            treacheryCard[0].moveTo(encounterDeck())
+            notifyBar("#FF0000", "Hide! treachery card has been shuffled into the encounter deck.")
+            shuffle(encounterDeck())
+            # Morlock Ally controlled by each player
+            morlockCard = filter(lambda card: card.CardNumber == "40079", sideDeck())
+            for i in range(0, len(getPlayers())):
+                if len(getPlayers()) == 1:
+                    morlockCard[i].moveToTable(playerX(i)-35, 0)
+                    morlockCard[1].moveToTable(playerX(i)+35, 0)
+                else:
+                    morlockCard[i].moveToTable(playerX(i), 0)
 
 def nextVillainStage(group=None, x=0, y=0):
     mute()

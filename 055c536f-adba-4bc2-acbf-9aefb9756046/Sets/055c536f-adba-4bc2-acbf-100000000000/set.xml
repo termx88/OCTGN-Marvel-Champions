@@ -182,9 +182,11 @@
             <property name="Owner" value="domino" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-100000000046" name="Psylocke">
+            <property name="Type" value="hero_setup" />
             <property name="Owner" value="psylocke" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-100000000047" name="Angel">
+            <property name="Type" value="hero_setup" />
             <property name="Owner" value="angel" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-100000000048" name="X-23">

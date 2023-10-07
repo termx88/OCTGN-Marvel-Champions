@@ -2139,15 +2139,22 @@ The first player controls Jubilee. She does not count against your ally limit.
       <property name="Quantity" value="2"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="mansion_attack"/>
-      <property name="Boost" value="2"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Protect the Students" id="47d34c5d-5319-45a9-a2d6-1fb975032136" size="SchemeCard">
+      <property name="CardNumber" value="32136"/>
+      <property name="Position" value="136"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mansion_attack"/>
       <property name="BaseThreat" value="2"/>
       <property name="BaseThreatFixed" value="True"/>
       <property name="Scheme_Crisis" value="1"/>
       <property name="Text">Hinder 2[per_hero].</property>
     </card>
-    <card name="Protect the Students" id="47d34c5d-5319-45a9-a2d6-1fb975032136" size="SchemeCard">
-      <property name="CardNumber" value="32136"/>
-      <property name="Position" value="136"/>
+    <card name="Under Siege" id="47d34c5d-5319-45a9-a2d6-1fb975032137" size="SchemeCard">
+      <property name="CardNumber" value="32137"/>
+      <property name="Position" value="137"/>
       <property name="Quantity" value="2"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="mansion_attack"/>
@@ -2156,15 +2163,6 @@ The first player controls Jubilee. She does not count against your ally limit.
       <property name="BaseThreatFixed" value="False"/>
       <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
-    </card>
-    <card name="Under Siege" id="47d34c5d-5319-45a9-a2d6-1fb975032137" size="SchemeCard">
-      <property name="CardNumber" value="32137"/>
-      <property name="Position" value="137"/>
-      <property name="Quantity" value="2"/>
-      <property name="Type" value="side_scheme"/>
-      <property name="Owner" value="mansion_attack"/>
-      <property name="BaseThreatFixed" value="False"/>
-      <property name="EscalationThreatFixed" value="False"/>
     </card>
     <card name="Magneto I" id="47d34c5d-5319-45a9-a2d6-1fb975032138" size="VillainCard">
       <property name="CardNumber" value="32138"/>
