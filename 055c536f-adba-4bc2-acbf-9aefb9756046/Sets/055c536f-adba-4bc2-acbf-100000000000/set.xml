@@ -190,9 +190,11 @@
             <property name="Owner" value="angel" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-100000000048" name="X-23">
+            <property name="Type" value="hero_setup" />
             <property name="Owner" value="x23" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-100000000049" name="Deadpool">
+            <property name="Type" value="hero_setup" />
             <property name="Owner" value="deadpool" />
         </card>
     </cards>

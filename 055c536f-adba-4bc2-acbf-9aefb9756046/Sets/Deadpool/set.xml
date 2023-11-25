@@ -1,0 +1,715 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Deadpool" id="03bdcc46-22c1-4a7f-8ca7-e212d52c301a" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Deadpool" id="03bdcc46-22c1-4a7f-8ca7-e212d5044001">
+      <property name="CardNumber" value="44001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="1"/>
+      <property name="HP" value="9"/>
+      <property name="Attribute" value="Deadpool Corps. X-Force."/>
+      <property name="Text">&lt;i&gt;The Regeneratin' Degenerate&lt;/i&gt; — &lt;b&gt;Forced Interrupt&lt;/b&gt;: When you would be defeated, instead set your hit point dial to 1, change to alter-ego form, and add 1 acceleration token to the main scheme.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Wade Wilson" type="b">
+        <property name="CardNumber" value="44001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="deadpool"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="8"/>
+        <property name="HP" value="9"/>
+        <property name="Attribute" value="Mercenary. Mutant."/>
+        <property name="Text">&lt;i&gt;Break the Fourth Wall&lt;/i&gt; — &lt;b&gt;Action&lt;/b&gt;: Discard a card from your hand → search your deck for a Deadpool event and add it to your hand. (Limit once per round.)</property>
+        <property name="Quote">"Sometimes I'm a mutant, sometimes I'm not. Depends on who you ask."</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Cable" id="03bdcc46-22c1-4a7f-8ca7-e212d5044002">
+      <property name="CardNumber" value="44002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Psionic. X-Force."/>
+      <property name="Text">[star] Cable gets +1 THW and +1 ATK for each acceleration token on the main scheme (to a maximum of +3 THW and +3 ATK.)</property>
+      <property name="Quote">"Wade, you are my best bud!"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Exhausting Personality" id="03bdcc46-22c1-4a7f-8ca7-e212d5044003">
+      <property name="CardNumber" value="44003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Choose:
+• Place 1 acceleration token on the main scheme → stun and confuse the villain.
+• Exhaust a player's identity → that player draws 1 card for each acceleration token on the main scheme.</property>
+    </card>
+    <card name="Maximum Effort" id="03bdcc46-22c1-4a7f-8ca7-e212d5044004">
+      <property name="CardNumber" value="44004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Take any amount of damage up to your remaining hit points → deal an equal amount of damage to an enemy.</property>
+      <property name="Quote">"This is gonna hurt me as much as it hurts you." — Deadpool</property>
+    </card>
+    <card name="Metaknowledge" id="03bdcc46-22c1-4a7f-8ca7-e212d5044005">
+      <property name="CardNumber" value="44005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When an encounter card is revealed, cancel all of its effects and discard it. Take 1 damage for each icon ([star] and [boost]) in that card's boost area.</property>
+      <property name="Quote">"It says here I defeat you with a wedgie." — Deadpool</property>
+    </card>
+    <card name="&quot;Yoo-Hoo!&quot;" id="03bdcc46-22c1-4a7f-8ca7-e212d5044006">
+      <property name="CardNumber" value="44006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Take any amount of damage up to your remaining hit points → remove an equal amount of threat from a scheme.</property>
+      <property name="Quote">"You boys mind me dropping in?" — Deadpool</property>
+    </card>
+    <card name="Montage" id="03bdcc46-22c1-4a7f-8ca7-e212d5044007">
+      <property name="CardNumber" value="44007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="resource"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">This card generates 1 additional [wild] resource for each acceleration token on the main scheme (to a maximum of 3 additional resources).</property>
+    </card>
+    <card name="Chimichanga Truck" id="03bdcc46-22c1-4a7f-8ca7-e212d5044008">
+      <property name="CardNumber" value="44008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After an identity makes a basic recovery, exhaust Chimichanga Truck → ready that identity.</property>
+      <property name="Quote">"Did someone say, 'Chimichanga'? Nevermind. That was just the sound of my skull and braine healing." — Deadpool</property>
+    </card>
+    <card name="Armed to the Teeth" id="03bdcc46-22c1-4a7f-8ca7-e212d5044009">
+      <property name="CardNumber" value="44009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play Armed to the Teeth, search your collection for 1 [[WEAPON]] upgrade from any aspect and attach it facedown here.
+&lt;b&gt;Action&lt;/b&gt;: Exhaust Armed to the Teeth → swap the card attached here with a [[WEAPON]] upgrade you control.</property>
+    </card>
+    <card name="Deadpool's Katana" id="03bdcc46-22c1-4a7f-8ca7-e212d5044010">
+      <property name="CardNumber" value="44010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Restriced.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Exhaust Deadpool's Katana and take 1 damage → deal 2 damage to an enemy. This attack gains piercing.</property>
+    </card>
+    <card name="It Ain't Over..." id="03bdcc46-22c1-4a7f-8ca7-e212d5044011">
+      <property name="CardNumber" value="44011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to the main scheme.
+Increase the target threat value of attached scheme by 2 for each acceleration token on it.</property>
+      <property name="Quote">"I've got you right where I want you." — Deadpool</property>
+    </card>
+    <card name="This Card is Fire" id="03bdcc46-22c1-4a7f-8ca7-e212d5044012">
+      <property name="CardNumber" value="44012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After your turn ends, if this card is in your hand, take 1 damage.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal X damage to an enemy. X is the amount of damage you have sustained.</property>
+    </card>
+    <card name="Dogpool" id="03bdcc46-22c1-4a7f-8ca7-e212d5044013">
+      <property name="CardNumber" value="44013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="0"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Attribute" value="Deadpool Corps."/>
+      <property name="Text">Retaliate 1. Toughness.
+&lt;b&gt;When Defeated&lt;/b&gt;: Deal 1 damage to an enemy.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Headpool" id="03bdcc46-22c1-4a7f-8ca7-e212d5044014">
+      <property name="CardNumber" value="44014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="1"/>
+      <property name="Attribute" value="Deadpool Corps. Zombie."/>
+      <property name="Text">[star] &lt;b&gt;Response&lt;/b&gt;: After Headpool attacks and damages a minion, that minion attacks another enemy of your choice.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Kidpool" id="03bdcc46-22c1-4a7f-8ca7-e212d5044015">
+      <property name="CardNumber" value="44015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Attribute" value="Deadpool Corps."/>
+      <property name="Text">[star] Kidpool's attacks gain piercing.</property>
+      <property name="Quote">"Congratulations on having me in your deck."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Lady Deadpool" id="03bdcc46-22c1-4a7f-8ca7-e212d5044016">
+      <property name="CardNumber" value="44016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Deadpool Corps."/>
+      <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: Defeat a non-[[ELITE]] minion.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Barely a Scratch" id="03bdcc46-22c1-4a7f-8ca7-e212d5044017">
+      <property name="CardNumber" value="44017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Defense."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When you would take any amount of damage from an attack, prevent 1 of that damage for each [crisis], [acceleration], [amplify], and [hazard] in play.</property>
+    </card>
+    <card name="Cutupper" id="03bdcc46-22c1-4a7f-8ca7-e212d5044018">
+      <property name="CardNumber" value="44018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 5 damage to an enemy. Stun that enemy.</property>
+      <property name="Quote">SQUEAK!</property>
+    </card>
+    <card name="Da Bomb" id="03bdcc46-22c1-4a7f-8ca7-e212d5044019">
+      <property name="CardNumber" value="44019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="6"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Text">Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt;: Deal 10 damage to the villain. Deal 1 damage to each enemy and hero for each [crisis], [acceleration], [amplify], and [hazard] in play.</property>
+    </card>
+    <card name="Get Rage-y" id="03bdcc46-22c1-4a7f-8ca7-e212d5044020">
+      <property name="CardNumber" value="44020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Text">Max 1 per deck.
+&lt;b&gt;Action&lt;/b&gt;: Ready an ally. That ally gets +1 ATK until the end of the phase.</property>
+      <property name="Quote">"You call that a pull-up?" — Sergeant Deadpool</property>
+    </card>
+    <card name="&quot;I Got This&quot;" id="03bdcc46-22c1-4a7f-8ca7-e212d5044021">
+      <property name="CardNumber" value="44021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: If the following icons are on 1 or more cards in play:
+[crisis] — Deal 3 damage to an enemy.
+[acceleration] — Remove 2 threat from a scheme.
+[amplify] — Ready an ally you control.
+[hazard] — Draw 1 card.</property>
+    </card>
+    <card name="Not my Responsibility" id="03bdcc46-22c1-4a7f-8ca7-e212d5044022">
+      <property name="CardNumber" value="44022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">Max 1 per deck.
+&lt;b&gt;Interrupt&lt;/b&gt;: When any amount of threat would be placed on a scheme, you or your ally takes it as damage instead.</property>
+    </card>
+    <card name="'Pool Inspection" id="03bdcc46-22c1-4a7f-8ca7-e212d5044023">
+      <property name="CardNumber" value="44023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="6"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Thwart."/>
+      <property name="Text">Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 5 threat from the main scheme, ignoring the crisis icon ([crisis]). Remove 1 threat from each scheme for each [crisis], [acceleration], [amplify], and [hazard] in play.</property>
+      <property name="Quote">"This pool is a disaster!" — Deadpool</property>
+    </card>
+    <card name="Live Dangerously" id="03bdcc46-22c1-4a7f-8ca7-e212d5044024" size="PlayerSchemeCard">
+      <property name="CardNumber" value="44024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">Victory 0.
+Each identity gets +2 hand size.</property>
+      <property name="Quote">"♫ Nothing can cause me pain! Not even an oncoming tr...♪" — Deadpool</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Self Confidence" id="03bdcc46-22c1-4a7f-8ca7-e212d5044025">
+      <property name="CardNumber" value="44025"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Text">Max 1 per deck.
+Double the number of resources this card generates if your identity has sustained less than 5 damage (triple the resources instead if you have sustained no damage).</property>
+    </card>
+    <card name="Self Control" id="03bdcc46-22c1-4a7f-8ca7-e212d5044026">
+      <property name="CardNumber" value="44026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">Max 1 per deck.
+Double the number of resources this card generates if your identity has sustained less than 5 damage (triple the resources instead if you have sustained no damage).</property>
+    </card>
+    <card name="Self Preservation" id="03bdcc46-22c1-4a7f-8ca7-e212d5044027">
+      <property name="CardNumber" value="44027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">Max 1 per deck.
+Double the number of resources this card generates if your identity has sustained less than 5 damage (triple the resources instead if you have sustained no damage).</property>
+    </card>
+    <card name="Git Gud" id="03bdcc46-22c1-4a7f-8ca7-e212d5044028">
+      <property name="CardNumber" value="44028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">Reduce the cost to play Git Gud by 2 if you did not win your previous game of &lt;i&gt;Marvel Champions&lt;/i&gt;.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When a player would be defeated, they set their hit point dial to 1 and change to alter-ego form instead. Remove this card from the game.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Healing Factor" id="03bdcc46-22c1-4a7f-8ca7-e212d5044029">
+      <property name="CardNumber" value="44029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">Max 1 per player.
+&lt;b&gt;Response&lt;/b&gt;: After the player phase begins, exhaust Healing Factor → heal 2 damage from your identity.</property>
+      <property name="Quote">"Now I'm the best at whatever it is Wolverine does." — Deadpool</property>
+    </card>
+    <card name="Stick-To-Itiveness" id="03bdcc46-22c1-4a7f-8ca7-e212d5044030">
+      <property name="CardNumber" value="44030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt;: Spend a [physical] resource and exhaust this card → ready your hero.</property>
+      <property name="Quote">"Acquiesce? I don't know the meaning of the word." — Deadpool</property>
+    </card>
+    <card name="Bob, Agent of Hydra" id="03bdcc46-22c1-4a7f-8ca7-e212d5044043">
+      <property name="CardNumber" value="44043"/>
+      <property name="Position" value="43"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Attribute" value="Hydra."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Bob, Agent of Hydra enters play, deal 2 damage to an enemy or remove 1 threat from a scheme.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Negasonic Teenage Warhead" id="03bdcc46-22c1-4a7f-8ca7-e212d5044044">
+      <property name="CardNumber" value="44044"/>
+      <property name="Position" value="44"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Attribute" value="Psionic. X-Force."/>
+      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When a treachery is revealed, deal 2 damage to Negasonic Teenage Warhead → cancel that treachery's "&lt;b&gt;When Revealed&lt;/b&gt;" effects.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Pandapool" id="03bdcc46-22c1-4a7f-8ca7-e212d5044045">
+      <property name="CardNumber" value="44045"/>
+      <property name="Position" value="45"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="0"/>
+      <property name="Attack" value="3"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Attribute" value="Deadpool Corps."/>
+      <property name="Text">Toughness.</property>
+      <property name="Quote">What's black and white and red all over?</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Break Time" id="03bdcc46-22c1-4a7f-8ca7-e212d5044046">
+      <property name="CardNumber" value="44046"/>
+      <property name="Position" value="46"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">Alliance. Max 1 per deck.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Take a group break. Leave the table. Read a comic book. When you come back to the game, heal 1 damage from each identity for every minute you were away from the game.</property>
+    </card>
+    <card name="Get in Front of Me!" id="03bdcc46-22c1-4a7f-8ca7-e212d5044047">
+      <property name="CardNumber" value="44047"/>
+      <property name="Position" value="47"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">Max 1 per deck.
+&lt;b&gt;Hero Interrupt&lt;/b&gt;: When a treachery card is revealed from the encounter deck, cancel its &lt;b&gt;"When Revealed"&lt;/b&gt; effects. The villain attacks you instead. If an ally or another hero defends this attack, draw 1 card.</property>
+    </card>
+    <card name="Mulligan" id="03bdcc46-22c1-4a7f-8ca7-e212d5044048">
+      <property name="CardNumber" value="44048"/>
+      <property name="Position" value="48"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">You cannot play this card if you have played another card this phase.
+&lt;b&gt;Action&lt;/b&gt;: Discard your hand. Draw a new hand. &lt;i&gt;(Draw up to your hand size.)&lt;/i&gt;</property>
+      <property name="Quote">"This hand could be so much better!" — Deadpool</property>
+    </card>
+    <card name="Deadpool Corps Ship" id="03bdcc46-22c1-4a7f-8ca7-e212d5044049">
+      <property name="CardNumber" value="44049"/>
+      <property name="Position" value="49"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Vehicle."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Exhaust Deadpool Corps Ship and deal yourself 1 facedown encounter card → put a 'Pool ally into play from your hand.</property>
+      <property name="Quote">This spaceship serves as the Deadpool Corps' mobile base of operations.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Plot Convenience" id="03bdcc46-22c1-4a7f-8ca7-e212d5044050">
+      <property name="CardNumber" value="44050"/>
+      <property name="Position" value="50"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Exhaust Plot Convenience → choose:
+• Attach 1 aspect card from your hand facedown here (to a maximum of 3).
+• Add 1 card attached facedown here to your hand.
+Any player may trigger this ability.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Ambush" id="03bdcc46-22c1-4a7f-8ca7-e212d5044051">
+      <property name="CardNumber" value="44051"/>
+      <property name="Position" value="51"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Attribute" value="Tactic."/>
+      <property name="Text">Attach to a side scheme. Max 1 per side scheme.
+&lt;b&gt;Interrupt&lt;/b&gt;: When attached side scheme is defeated, discard a non-[[ELITE]] minion.</property>
+    </card>
+    <card name="Bazooka" id="03bdcc46-22c1-4a7f-8ca7-e212d5044052">
+      <property name="CardNumber" value="44052"/>
+      <property name="Position" value="52"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Restricted. Max 2 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Discard Bazooka → deal 1 damage to an enemy for each [crisis], [acceleration], [amplify], and [hazard] in play. This attack gains ranged.</property>
+    </card>
+    <card name="Blackout" id="03bdcc46-22c1-4a7f-8ca7-e212d5044053">
+      <property name="CardNumber" value="44053"/>
+      <property name="Position" value="53"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Metagame."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Spend 1 resource of any type → move 1 threat from a scheme to an empty space above that matches the spent resource. If all spaces above are filled, discard this card and confuse the villain.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Distraction" id="03bdcc46-22c1-4a7f-8ca7-e212d5044054">
+      <property name="CardNumber" value="44054"/>
+      <property name="Position" value="54"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">Attach to a non-[[ELITE]] minion. Max 1 per minion.
+Attached minion cannot activate.</property>
+    </card>
+    <card name="Laser Swords" id="03bdcc46-22c1-4a7f-8ca7-e212d5044055">
+      <property name="CardNumber" value="44055"/>
+      <property name="Position" value="55"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Counts as 2 restricted cards. Max 1 per deck.
+Your hero gets +1 ATK for each [crisis], [acceleration], [amplify], and [hazard] in play (to a maximum of +4 ATK).</property>
+      <property name="Quote">"Fwoom, Ksh! Fwoom, Kssssh!" — Kidpool</property>
+    </card>
+    <card name="Rock, Paper, Scissors" id="03bdcc46-22c1-4a7f-8ca7-e212d5044056">
+      <property name="CardNumber" value="44056"/>
+      <property name="Position" value="56"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Metagame."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust this card, choose 1 card in your hand, and discard the top card of your deck → using the diagram above, if a printed resource on the chosen card beats &lt;i&gt;(points to)&lt;/i&gt; a printed resource on the discarded card, add the discarded card to your hand.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Tic-Tac-Toe" id="03bdcc46-22c1-4a7f-8ca7-e212d5044057">
+      <property name="CardNumber" value="44057"/>
+      <property name="Position" value="57"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Metagame."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Spend 1 resource of any type → move 1 damage from a character to an empty space above matching the spent resource. If there are 3 damage tokens in a line, deal all damage on this card to an enemy and discard this card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="War" id="03bdcc46-22c1-4a7f-8ca7-e212d5044058">
+      <property name="CardNumber" value="44058"/>
+      <property name="Position" value="58"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Metagame."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust War → discard the top card of the encounter deck. Take 1 damage for each icon ([star] and [boost]) in the boost area of that card. Discard the top card of your deck. Deal damage to an enemy equal to that card's cost.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="The Merc with the Mouth" id="03bdcc46-22c1-4a7f-8ca7-e212d5044032" size="EncounterCard">
+      <property name="CardNumber" value="44032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="deadpool"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Wade Wilson player.&lt;/i&gt;&lt;/b&gt;
+Exhaust each ally you control. Allies you control cannot ready. Other players cannot resolve player card abilities during your turn.
+&lt;b&gt;Forced Response&lt;/b&gt;: After the player phase ends, if you have not talked this phase, discard this card.</property>
+      <property name="Quote">"Was it something I said!" — Deadpool</property>
+    </card>
+    <card name="Butler" id="03bdcc46-22c1-4a7f-8ca7-e212d5044033" size="EncounterCard">
+      <property name="CardNumber" value="44033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="deadpool_nemesis"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Scientist."/>
+      <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Butler schemes, place that threat on Involuntary Procedures, if able.
+&lt;i&gt;(Deadpool's nemesis minion.)&lt;/i&gt;
+You are confused</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Involuntary Procedures" id="03bdcc46-22c1-4a7f-8ca7-e212d5044034" size="SchemeCard">
+      <property name="CardNumber" value="44034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="deadpool_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After Deadpool takes any amount of damage, place 1 threat here. Then, if there is 10 or more threat here, remove this card from the game.</property>
+      <property name="Quote">Butler seeks to cure his sister's cancer using Deadpool's regenerative abilities.</property>
+    </card>
+    <card name="Tabula Rasa 16" id="03bdcc46-22c1-4a7f-8ca7-e212d5044035" size="EncounterCard">
+      <property name="CardNumber" value="44035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="deadpool_nemesis"/>
+      <property name="Text">Attach to your identity.
+Treat your identity's printed text box as blank &lt;i&gt;(except for [[TRAITS]])&lt;/i&gt;.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Spend [mental][mental] resources → discard this card.
+Attach Tabula Rasa 16 to your identity.</property>
+      <property name="Quote">Butler used this drug to erase Deadpool's memory of Butler's medical experiments.</property>
+    </card>
+    <card name="Mutated Soldier" id="03bdcc46-22c1-4a7f-8ca7-e212d5044036" size="EncounterCard">
+      <property name="CardNumber" value="44036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="deadpool_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Mutate. Soldier."/>
+      <property name="Text">Toughness.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Mutated Soldier activates, heal all damage from it.</property>
+      <property name="Quote">Butler funded his research by developing super soldiers for foreign governments.</property>
+    </card>
+    <card name="Crisis of Infinite Deadpools" id="03bdcc46-22c1-4a7f-8ca7-e212d5044037" size="EncounterCard">
+      <property name="CardNumber" value="44037"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="dreadpool"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Reveal the set-aside Dreadpool minion and Dreadful Deeds side scheme. Shuffle the rest of the set-aside Dreadpool encounter set into the encounter deck. Remove this card from the game.</property>
+    </card>
+    <card name="Dreadpool" id="03bdcc46-22c1-4a7f-8ca7-e212d5044038" size="EncounterCard">
+      <property name="CardNumber" value="44038"/>
+      <property name="Position" value="38"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="dreadpool"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Assassin. Elite."/>
+      <property name="Text">Dreadpool engages the first player.
+&lt;b&gt;When Defeated&lt;/b&gt;: Deal Dreadpool to the player who defeated him as a facedown encounter card.</property>
+      <property name="Quote">"What I do...I do for the cause. But I still feel bad about it...usually."</property>
+    </card>
+    <card name="Dreadful Deeds" id="03bdcc46-22c1-4a7f-8ca7-e212d5044039" size="SchemeCard">
+      <property name="CardNumber" value="44039"/>
+      <property name="Position" value="39"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="dreadpool"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Place 2 threat here for each player who controls 1 or more 'Pool (pink) cards.</property>
+      <property name="Quote">Dreadpool believes the only way to end his suffering is to kill every being in all of the multiverse.</property>
+    </card>
+    <card name="Anti-Regeneration Ray" id="03bdcc46-22c1-4a7f-8ca7-e212d5044040" size="EncounterCard">
+      <property name="CardNumber" value="44040"/>
+      <property name="Position" value="40"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="dreadpool"/>
+      <property name="Attack" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to Dreadpool. Otherwise, attach to the villain.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When attached character attacks a non-villain character, threat the attacked character's text box as if it were blank (except for [[TRAITS]]) until the end of the attack.
+&lt;b&gt;Hero Action&lt;/b&gt;: Spend [energy][mental][physical] resources → attach this card to your identity.</property>
+    </card>
+    <card name="'Pool-ized" id="03bdcc46-22c1-4a7f-8ca7-e212d5044041" size="EncounterCard">
+      <property name="CardNumber" value="44041"/>
+      <property name="Position" value="41"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="dreadpool"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">Treat attached ally as a [['POOL]] minion with a blank text box. Attached minion's SCH is equal to its printed THW and it does not take consequential damage.
+&lt;b&gt;When Revealed&lt;/b&gt;: Attach to the ally with the highest cost without 'Pool-ized attached. Otherwise, this card gains surge.</property>
+    </card>
+    <card name="Metacidal Tendencies" id="03bdcc46-22c1-4a7f-8ca7-e212d5044042" size="EncounterCard">
+      <property name="CardNumber" value="44042"/>
+      <property name="Position" value="42"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="dreadpool"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Deal 2 damage to each [[DEADPOOL CORPS]] character (3 damage instead if Dreadpool is in play). If no damage was dealt this way, place 1 acceleration token on the main scheme.</property>
+    </card>
+  </cards>
+</set>

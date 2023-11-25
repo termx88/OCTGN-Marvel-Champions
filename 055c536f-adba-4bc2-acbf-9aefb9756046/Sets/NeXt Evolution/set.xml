@@ -2474,6 +2474,7 @@ You are stunned.</property>
       <property name="CardNumber" value="40151"/>
       <property name="Position" value="151"/>
       <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="flight"/>
       <property name="Attack" value="1"/>
@@ -2521,6 +2522,7 @@ If the villain is attacking, this attack gains piercing.</property>
       <property name="CardNumber" value="40155"/>
       <property name="Position" value="155"/>
       <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="super_strength"/>
       <property name="Attack" value="1"/>
@@ -2566,6 +2568,7 @@ Reduce the amount of damage attached villain takes from each attack by 1.
       <property name="CardNumber" value="40159"/>
       <property name="Position" value="159"/>
       <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="telepathy"/>
       <property name="Scheme" value="1"/>

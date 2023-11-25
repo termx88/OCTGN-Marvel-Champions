@@ -506,9 +506,11 @@
             <property name="Owner" value="angel_nemesis" />
         </card>
             <card id="055c536f-adba-4bc2-acbf-300000009048" name="Nemesis: X-23">
+            <property name="Type" value="encounter_setup" />
             <property name="Owner" value="x23_nemesis" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-300000009049" name="Nemesis: Deadpool">
+            <property name="Type" value="encounter_setup" />
             <property name="Owner" value="deadpool_nemesis" />
         </card>
     </cards>

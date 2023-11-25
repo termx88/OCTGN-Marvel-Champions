@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="X-23" id="75156e6a-46eb-4164-9986-e466213e2c4d" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="X-23" id="75156e6a-46eb-4164-9986-e46621043001">
+      <property name="CardNumber" value="43001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="x23"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="X-Force."/>
+      <property name="Text">&lt;i&gt;Living Weapon&lt;/i&gt; — &lt;b&gt;Response&lt;/b&gt;: After X-23 takes any amount of damage, ready X-23. (Limit once per phase.)</property>
+      <property name="Quote">"The Facility created me to kill, but I choose to fight to protect life."</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Laura Kinney" type="b">
+        <property name="CardNumber" value="43001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="x23"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="6"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Mutant."/>
+        <property name="Text">&lt;i&gt;Shhnk!&lt;/i&gt; — &lt;b&gt;Setup&lt;/b&gt;: Put X-23's Claws into play.
+&lt;b&gt;Action&lt;/b&gt;: Shuffle either the Honey Badger ally or the Sisterly Bond event from your discard pile into your deck → draw 1 card. (Limit once per round.)</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="X-23's Claws" id="75156e6a-46eb-4164-9986-e46621043002">
+      <property name="CardNumber" value="43002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="x23"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Permanent.
+&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust X-23's Claws and take 2 damage → X-23 gets +2 ATK until the end of the round.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Honey Badger" id="75156e6a-46eb-4164-9986-e46621043003">
+      <property name="CardNumber" value="43003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="x23"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="X-Men."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After Honey Badger takes any amount of damage, ready X-23.</property>
+      <property name="Quote">"You don't scare me. And I won't let you mess with my friends anymore!"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Animal Instinct" id="75156e6a-46eb-4164-9986-e46621043004">
+      <property name="CardNumber" value="43004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When X-23 makes a basic thwart, she gets +X THW for this thwart, where X is equal to her ATK.</property>
+      <property name="Quote">X-23 inherited Wolverine's superhuman senses...as well as his charming personality.</property>
+    </card>
+    <card name="Claw Mastery" id="75156e6a-46eb-4164-9986-e46621043005">
+      <property name="CardNumber" value="43005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">Max 1 per round.
+&lt;b&gt;Hero Action&lt;/b&gt;: Until the end of the round, X-23 gets +2 ATK (and her attacks gain overkill while Honey Badger is in play).</property>
+    </card>
+    <card name="Regenerative Longevity" id="75156e6a-46eb-4164-9986-e46621043006">
+      <property name="CardNumber" value="43006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Heal a total of 4 damage from your identity and Honey Badger.</property>
+      <property name="Quote">"If what doesn't kill you makes you stronger, I should have Colossus-level strength by now." — X-23</property>
+    </card>
+    <card name="Sisterly Bond" id="75156e6a-46eb-4164-9986-e46621043007">
+      <property name="CardNumber" value="43007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When Honey Badger thwarts or attacks, add X-23's matching power to Honey Badger's power for this use.</property>
+      <property name="Quote">"High five!" — Honey Badger</property>
+    </card>
+    <card name="Sisterhood" id="75156e6a-46eb-4164-9986-e46621043008">
+      <property name="CardNumber" value="43008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Exhaust Sisterhood and discard an X-23 card from your hand → search your deck and discard pile for Honey Badger and add her to your hand. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <property name="Quote">Laura and Gabby's bond is stronger than genetics.</property>
+    </card>
+    <card name="Adamantium Lacing" id="75156e6a-46eb-4164-9986-e46621043009">
+      <property name="CardNumber" value="43009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Text">You get +2 hit points.
+X-23 gains retaliate 1 and her basic attacks gain piercing.</property>
+      <property name="Quote">X-23's claws are coated with the metal adamantium, making them incredibly sharp and nearly indestructible.</property>
+    </card>
+    <card name="Grim Resolve" id="75156e6a-46eb-4164-9986-e46621043010">
+      <property name="CardNumber" value="43010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">&lt;b&gt;Resource&lt;/b&gt;: Exhaust this card and take 1 damage → generate a [wild] resource.</property>
+      <property name="Quote">"Is that all you got?" — X-23</property>
+    </card>
+    <card name="Pain Tolerance" id="75156e6a-46eb-4164-9986-e46621043011">
+      <property name="CardNumber" value="43011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play an X-23 card &lt;i&gt;(including this one)&lt;/i&gt;, heal 1 damage from your identity.</property>
+      <property name="Quote">"Barely felt a thing." — X-23</property>
+    </card>
+    <card name="Puncture Wound" id="75156e6a-46eb-4164-9986-e46621043012">
+      <property name="CardNumber" value="43012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="2"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="x23"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to an enemy that X-23 or Honey Badger attacked this turn.
+Attached enemy gets -1 ATK.
+&lt;b&gt;Forced Response&lt;/b&gt;: After the player phase begins, discard this card and deal 3 damage to attached enemy.</property>
+    </card>
+    <card name="Boom Boom" id="75156e6a-46eb-4164-9986-e46621043013">
+      <property name="CardNumber" value="43013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="X-Force."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Exhaust Boom Boom → add 1 boom counter to her. Then, you may discard Boom Boom to deal 1 damage to each enemy for each boom counter on her.</property>
+      <property name="Quote">"Tick...tick...tick..."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Rictor" id="75156e6a-46eb-4164-9986-e46621043014">
+      <property name="CardNumber" value="43014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="X-Force."/>
+      <property name="Text">[star] &lt;b&gt;Response&lt;/b&gt;: After Rictor attacks, discard the top card of your deck. Deal 1 damage to each minion engaged with you for each resource on the discarded card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Shatterstar" id="75156e6a-46eb-4164-9986-e46621043015">
+      <property name="CardNumber" value="43015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="X-Force."/>
+      <property name="Text">[star] &lt;b&gt;Interrupt&lt;/b&gt;: When Shatterstar attacks a minion, engage that minion. If you are already engaged with that minion, Shatterstar gets +1 ATK from this attack.</property>
+      <property name="Quote">A skilled swordfighter, Shatterstar can even cut openings in space to teleport vast distances.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Critical Hit" id="75156e6a-46eb-4164-9986-e46621043016">
+      <property name="CardNumber" value="43016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">Play only if there is a side scheme in the victory display.
+&lt;b&gt;Hero Response&lt;/b&gt;: After you attack an enemy, stun it.</property>
+    </card>
+    <card name="Moment of Triumph" id="75156e6a-46eb-4164-9986-e46621043017">
+      <property name="CardNumber" value="43017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">&lt;b&gt;Hero Response:&lt;/b&gt; After you attack and defeat an enemy, heal 1 damage from your hero for each point of excess damage dealt to that enemy by that attack.</property>
+    </card>
+    <card name="Keep Them Busy" id="75156e6a-46eb-4164-9986-e46621043018" size="PlayerSchemeCard">
+      <property name="CardNumber" value="43018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Victory 0.
+Assault. &lt;i&gt;(Basic thwarts against this scheme use ATK instead of THW.)&lt;/i&gt;
+&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this scheme removes 5[per_hero] threat from the main scheme.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="&quot;Now I'm Mad&quot;" id="75156e6a-46eb-4164-9986-e46621043019">
+      <property name="CardNumber" value="43019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Play under any player's control. Max 1 per player.
+While your hero's remaining hit points are less than half your hero's starting hit points, your hero gets +1 ATK and -1 THW.</property>
+    </card>
+    <card name="The Direct Approach" id="75156e6a-46eb-4164-9986-e46621043020">
+      <property name="CardNumber" value="43020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Tactic."/>
+      <property name="Text">Attach to a non-permanent side scheme. Limit 1 per side scheme.
+Attached scheme gains assault. &lt;i&gt;(Basic thwarts against this scheme use ATK instead of THW.)&lt;/i&gt;</property>
+    </card>
+    <card name="Specialized Training" id="75156e6a-46eb-4164-9986-e46621043021" size="PlayerSchemeCard">
+      <property name="CardNumber" value="43021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="BaseThreat" value="5"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Victory 0.
+&lt;b&gt;When Defeated&lt;/b&gt;: Each player who does not control a [[SPECIALIZATION]] upgrade chooses 1 set-aside [[SPECIALIZATION]] upgrade and puts it into play under their control.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Combat Specialist" id="75156e6a-46eb-4164-9986-e46621043034">
+      <property name="CardNumber" value="43034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Specialization."/>
+      <property name="Text">Linked (Specialized Training).
+Your hero gets +1 ATK.
+&lt;b&gt;Hero Response&lt;/b&gt;: After your hero performs a basic attack, exhaust this card → draw 1 card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Defense Specialist" id="75156e6a-46eb-4164-9986-e46621043035">
+      <property name="CardNumber" value="43035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Specialization."/>
+      <property name="Text">Linked (Specialized Training).
+Your hero gets +1 DEF.
+&lt;b&gt;Hero Response&lt;/b&gt;: After your hero performs a basic defense, exhaust this card → draw 1 card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Front Line Specialist" id="75156e6a-46eb-4164-9986-e46621043036">
+      <property name="CardNumber" value="43036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Specialization."/>
+      <property name="Text">Linked (Specialized Training).
+Your hero gets +4 hit points.
+&lt;b&gt;Response&lt;/b&gt;: After your identity takes damage from an enemy attack, exhaust this card → draw 1 card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Surveillance Specialist" id="75156e6a-46eb-4164-9986-e46621043037">
+      <property name="CardNumber" value="43037"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Specialization."/>
+      <property name="Text">Linked (Specialized Training).
+Your hero gets +1 THW.
+&lt;b&gt;Hero Response&lt;/b&gt;: After your hero performs a basic thwart, exhaust this card → draw 1 card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Predictable Ploy" id="75156e6a-46eb-4164-9986-e46621043038">
+      <property name="CardNumber" value="43038"/>
+      <property name="Position" value="38"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Text">Play only if there is a side scheme in the victory display.
+&lt;b&gt;Hero Interrupt&lt;/b&gt;: When a treachery card is revealed from the encounter deck, cancel its "&lt;b&gt;When Revealed&lt;/b&gt;" effects.</property>
+    </card>
+    <card name="Rally the Troops" id="75156e6a-46eb-4164-9986-e46621043039" size="PlayerSchemeCard">
+      <property name="CardNumber" value="43039"/>
+      <property name="Position" value="39"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="player_side_scheme"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Victory 0.
+&lt;b&gt;When Defeated&lt;/b&gt;: Heal 2 damage from each ally.</property>
+      <property name="Quote">"Press on, team! Victory is in sight!" — Cyclops</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Anticipated Attack" id="75156e6a-46eb-4164-9986-e46621043040">
+      <property name="CardNumber" value="43040"/>
+      <property name="Position" value="40"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Defense."/>
+      <property name="Text">Play only if there is a side scheme in the victory display.
+&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When an enemy initiates an attack, give your hero a tough status card.</property>
+    </card>
+    <card name="Self-Isolation" id="75156e6a-46eb-4164-9986-e46621043028" size="EncounterCard">
+      <property name="CardNumber" value="43028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="x23"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Laura Kinney player.&lt;/i&gt;&lt;/b&gt;
+Search your hand, deck, discard pile, and play area for Honey Badger and place her facedown under this obligation. If you cannot, discard this card and deal yourself 1 facedown encounter card.
+&lt;b&gt;Response&lt;/b&gt;: After you make a basic recovery, discard this obligation and Honey Badger.</property>
+    </card>
+    <card name="Lady Deathstrike" id="75156e6a-46eb-4164-9986-e46621043029" size="EncounterCard">
+      <property name="CardNumber" value="43029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="x23_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Elite. Reaver."/>
+      <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this minion discards the top card of the encounter deck and takes 1 indirect damage for each boost icon ([boost]) on that card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="In the Name of Vengence" id="75156e6a-46eb-4164-9986-e46621043030" size="SchemeCard">
+      <property name="CardNumber" value="43030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="x23_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Each enemy gains retaliate 1.</property>
+      <property name="Quote">"Cute kid. Be a shame if something was to happen to her." — Lady Deathstrike</property>
+    </card>
+    <card name="Cybermods" id="75156e6a-46eb-4164-9986-e46621043031" size="EncounterCard">
+      <property name="CardNumber" value="43031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="x23_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Tech."/>
+      <property name="Text">Attach to Lady Deathstrike. If you cannot, discard cards from the top of the encounter deck until a minion is discarded. Put that minion into play engaged with you and attach this card to it.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When attached minion would be discarded, shuffle it into the encounter deck instead.</property>
+    </card>
+    <card name="Critical Wound" id="75156e6a-46eb-4164-9986-e46621043032" size="EncounterCard">
+      <property name="CardNumber" value="43032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="x23_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to your identity.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When your turn ends, discard this card and take 4 damage.</property>
+    </card>
+    <card name="Hack 'n' Slash" id="75156e6a-46eb-4164-9986-e46621043033" size="EncounterCard">
+      <property name="CardNumber" value="43033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="x23_nemesis"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Discard 1 random card from your hand and take damage equal to the number of printed resources on it.
+Discard 1 random card from your hand and take damage equal to the number of printed resources on it.</property>
+    </card>
+  </cards>
+</set>

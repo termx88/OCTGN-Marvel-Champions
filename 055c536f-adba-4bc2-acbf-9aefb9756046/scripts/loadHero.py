@@ -208,6 +208,11 @@ def heroSetup(group=table, x = 0, y = 0):
                 c.moveToTable(playerX(id)+(70*i),tableLocations['hero'][1])
                 i += 1
 
+        # X-23
+        if heroPlayed == 'x23':
+            for c in filter(lambda card: card.CardNumber == "43002", me.Deck):
+                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+
 def countHeros(p):
     heros = 0
     for card in table:
