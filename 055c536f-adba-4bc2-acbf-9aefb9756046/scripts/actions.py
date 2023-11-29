@@ -434,6 +434,7 @@ def startGame(group = None, x = 0, y = 0):
         remoteCall(p, "shuffle", [p.piles['Deck']])
         remoteCall(p, "drawMany", [p.piles['Deck'], maxHandSize(p) - p_hand_size, True])
         remoteCall(p, "addObligationsToEncounter", [p.piles["Nemesis"]])
+        checkPoolcards(p.piles['Deck'])
     update()
     advanceGame()
 
@@ -444,6 +445,15 @@ def addObligationsToEncounter(group = me.piles["Nemesis"]):
     playerOblCard = filter(lambda card: card.Type == 'obligation', group)
     for c in playerOblCard:
         c.moveTo(encounterDeck())
+    shuffle(encounterDeck())
+
+def checkPoolcards(group = me.piles["Deck"]):
+    for c in group:
+        if c.Faction == 'pool' and len(shared.piles["Dreadpool"]) == 0:
+            createCardsFromSet(shared.piles["Dreadpool"], "dreadpool", "Dreadpool", True)
+            for c in shared.piles["Dreadpool"]:
+                if c.CardNumber == '44037':
+                    c.moveTo(encounterDeck())   
     shuffle(encounterDeck())
 
 def advanceGame(group = None, x = 0, y = 0):
@@ -711,7 +721,11 @@ def addDamage(card, x = 0, y = 0):
 def addMarker(card, x = 0, y = 0, qty = 1):
     mute()
     card.controller = me
-    if isScheme([card]):
+    if card.CardNumber in markerSpecificList:
+        marker, quantity = askMarker()
+        if quantity == 0: return
+        card.markers[marker] += quantity
+    elif isScheme([card]):
         card.markers[ThreatMarker] += qty
         notify("{} adds {} Threat on {}.".format(me, qty, card))
     elif card.Type in ["hero", "alter_ego", "villain"]:

@@ -1,14 +1,14 @@
 #------------------------------------------------------------
 # Global Variables
 #------------------------------------------------------------
-DamageMarker = ('Damage', '396f9a8e-542c-4992-a776-5abe03353979')
-HealthMarker = ('Health', '38c95116-8b6e-41af-b2df-b30102ab2f1d')
-ThreatMarker = ('Threat', '8b974efd-733c-4111-8f96-d667fee4de5a')
-AllPurposeMarker = ('All Purpose', 'bceb440d-2696-484e-8d76-cef609227779')
-StunnedMarker = ('Stunned', '8fa2056b-5786-429f-9d33-b96138e7aa98')
-ConfusedMarker = ('Confused', '1c0a87cf-3f38-4e84-9744-d627b9c54c93')
-ToughMarker = ('Tough', 'edcebfd6-3f75-40cb-b442-a8fb1154f6e2')
-AccelerationMarker = ('Acceleration', 'dd4a1de8-116c-4fd4-908c-6a8a70d58fc2')
+ThreatMarker = ('Threat', '055c536f-adba-4bc2-acbf-9aefb9000001')
+DamageMarker = ('Damage', '055c536f-adba-4bc2-acbf-9aefb9000002')
+HealthMarker = ('Health', '055c536f-adba-4bc2-acbf-9aefb9000003')
+AllPurposeMarker = ('All Purpose', '055c536f-adba-4bc2-acbf-9aefb9000004')
+AccelerationMarker = ('Acceleration', '055c536f-adba-4bc2-acbf-9aefb9000005')
+StunnedMarker = ('Stunned', '055c536f-adba-4bc2-acbf-9aefb9000006')
+ConfusedMarker = ('Confused', '055c536f-adba-4bc2-acbf-9aefb9000007')
+ToughMarker = ('Tough', '055c536f-adba-4bc2-acbf-9aefb9000008')
 
 
 BoardWidth = 800
@@ -41,6 +41,12 @@ tableLocations = {
     'attachment' : (-240, -235),
     'environment' : (-120, -235)
 }
+
+linkedCard = {
+    '43021': ['43034', '43035', '43036', '43037']
+}
+markerSpecificList = ['44053', '44057']
+
 
 # --------------------------------
 # Universal Pre-Built Decks (Aspect Cards Only)

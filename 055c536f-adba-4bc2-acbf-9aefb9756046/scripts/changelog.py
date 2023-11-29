@@ -336,7 +336,7 @@ changelog = {
         "NeXt Evolution data updated",
         "This update also fix some bugs and errors introduced with v3.60 update"
         ]),
-    '0000365': ("0.0.3.65", "26 November 2023", [
+    '0000365': ("0.0.3.65", "29 November 2023", [
         "X-23 Hero pack added",
         "Deadpool Hero pack added"
         ])

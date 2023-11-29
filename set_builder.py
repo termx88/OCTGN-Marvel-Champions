@@ -67,6 +67,11 @@ def buildXmlProps(propDict, xmlElement):
     cardDuplicate.set('name', 'DuplicateOf')
     cardDuplicate.set('value', str(propDict['duplicate_of']))
 
+  if 'faction_code' in propDict.keys():
+    cardDuplicate = ET.SubElement(xmlElement, 'property')
+    cardDuplicate.set('name', 'Faction')
+    cardDuplicate.set('value', str(propDict['faction_code']))
+
   if 'type_code' in propDict.keys():
     type = str(propDict['type_code'])
     if type == 'villain':

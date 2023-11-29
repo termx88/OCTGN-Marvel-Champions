@@ -5,6 +5,7 @@
       <property name="CardNumber" value="44001a"/>
       <property name="Position" value="1"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="hero"/>
       <property name="Owner" value="deadpool"/>
       <property name="HandSize" value="5"/>
@@ -19,6 +20,7 @@
         <property name="CardNumber" value="44001b"/>
         <property name="Position" value="1"/>
         <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
         <property name="Type" value="alter_ego"/>
         <property name="Owner" value="deadpool"/>
         <property name="HandSize" value="6"/>
@@ -34,6 +36,7 @@
       <property name="CardNumber" value="44002"/>
       <property name="Position" value="2"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="ally"/>
       <property name="Owner" value="deadpool"/>
       <property name="Thwart" value="1"/>
@@ -52,6 +55,7 @@
       <property name="CardNumber" value="44003"/>
       <property name="Position" value="3"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="0"/>
@@ -64,6 +68,7 @@
       <property name="CardNumber" value="44004"/>
       <property name="Position" value="4"/>
       <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="0"/>
@@ -76,6 +81,7 @@
       <property name="CardNumber" value="44005"/>
       <property name="Position" value="5"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="1"/>
@@ -87,6 +93,7 @@
       <property name="CardNumber" value="44006"/>
       <property name="Position" value="6"/>
       <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="1"/>
@@ -99,6 +106,7 @@
       <property name="CardNumber" value="44007"/>
       <property name="Position" value="7"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="resource"/>
       <property name="Owner" value="deadpool"/>
       <property name="Resource_Wild" value="1"/>
@@ -108,6 +116,7 @@
       <property name="CardNumber" value="44008"/>
       <property name="Position" value="8"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="support"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="2"/>
@@ -120,6 +129,7 @@
       <property name="CardNumber" value="44009"/>
       <property name="Position" value="9"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="2"/>
@@ -131,6 +141,7 @@
       <property name="CardNumber" value="44010"/>
       <property name="Position" value="10"/>
       <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="2"/>
@@ -143,6 +154,7 @@
       <property name="CardNumber" value="44011"/>
       <property name="Position" value="11"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="upgrade"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="1"/>
@@ -156,6 +168,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44012"/>
       <property name="Position" value="12"/>
       <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
       <property name="Type" value="event"/>
       <property name="Owner" value="deadpool"/>
       <property name="Cost" value="3"/>
@@ -168,6 +181,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44013"/>
       <property name="Position" value="13"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="0"/>
       <property name="Attack" value="1"/>
@@ -184,6 +198,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44014"/>
       <property name="Position" value="14"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
       <property name="Attack" value="1"/>
@@ -198,6 +213,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44015"/>
       <property name="Position" value="15"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="Attack" value="2"/>
@@ -214,6 +230,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44016"/>
       <property name="Position" value="16"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
       <property name="Attack" value="2"/>
@@ -228,6 +245,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44017"/>
       <property name="Position" value="17"/>
       <property name="Quantity" value="3"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Mental" value="1"/>
@@ -238,6 +256,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44018"/>
       <property name="Position" value="18"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Physical" value="1"/>
@@ -249,6 +268,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44019"/>
       <property name="Position" value="19"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="6"/>
       <property name="Resource_Physical" value="1"/>
@@ -259,6 +279,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44020"/>
       <property name="Position" value="20"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Physical" value="1"/>
@@ -270,6 +291,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44021"/>
       <property name="Position" value="21"/>
       <property name="Quantity" value="3"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Energy" value="1"/>
@@ -283,6 +305,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44022"/>
       <property name="Position" value="22"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Mental" value="1"/>
@@ -293,6 +316,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44023"/>
       <property name="Position" value="23"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="6"/>
       <property name="Resource_Mental" value="1"/>
@@ -305,6 +329,7 @@ Increase the target threat value of attached scheme by 2 for each acceleration t
       <property name="CardNumber" value="44024"/>
       <property name="Position" value="24"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="player_side_scheme"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Energy" value="1"/>
@@ -323,6 +348,7 @@ Each identity gets +2 hand size.</property>
       <property name="CardNumber" value="44025"/>
       <property name="Position" value="25"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="resource"/>
       <property name="Resource_Physical" value="1"/>
       <property name="Text">Max 1 per deck.
@@ -332,6 +358,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44026"/>
       <property name="Position" value="26"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="resource"/>
       <property name="Resource_Mental" value="1"/>
       <property name="Text">Max 1 per deck.
@@ -341,6 +368,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44027"/>
       <property name="Position" value="27"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="resource"/>
       <property name="Resource_Energy" value="1"/>
       <property name="Text">Max 1 per deck.
@@ -350,6 +378,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44028"/>
       <property name="Position" value="28"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
@@ -361,6 +390,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44029"/>
       <property name="Position" value="29"/>
       <property name="Quantity" value="3"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Energy" value="1"/>
@@ -373,6 +403,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44030"/>
       <property name="Position" value="30"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
@@ -385,6 +416,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44043"/>
       <property name="Position" value="43"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="1"/>
       <property name="Attack" value="1"/>
@@ -400,6 +432,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44044"/>
       <property name="Position" value="44"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="2"/>
       <property name="Attack" value="2"/>
@@ -415,6 +448,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44045"/>
       <property name="Position" value="45"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="ally"/>
       <property name="Thwart" value="0"/>
       <property name="Attack" value="3"/>
@@ -431,6 +465,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44046"/>
       <property name="Position" value="46"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Energy" value="1"/>
@@ -441,6 +476,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44047"/>
       <property name="Position" value="47"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
@@ -451,6 +487,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44048"/>
       <property name="Position" value="48"/>
       <property name="Quantity" value="3"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="event"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Mental" value="1"/>
@@ -462,6 +499,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44049"/>
       <property name="Position" value="49"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="support"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
@@ -474,6 +512,7 @@ Double the number of resources this card generates if your identity has sustaine
       <property name="CardNumber" value="44050"/>
       <property name="Position" value="50"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="support"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Mental" value="1"/>
@@ -487,6 +526,7 @@ Any player may trigger this ability.</property>
       <property name="CardNumber" value="44051"/>
       <property name="Position" value="51"/>
       <property name="Quantity" value="3"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
@@ -499,6 +539,7 @@ Any player may trigger this ability.</property>
       <property name="CardNumber" value="44052"/>
       <property name="Position" value="52"/>
       <property name="Quantity" value="2"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="2"/>
       <property name="Resource_Energy" value="1"/>
@@ -510,6 +551,7 @@ Any player may trigger this ability.</property>
       <property name="CardNumber" value="44053"/>
       <property name="Position" value="53"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Energy" value="1"/>
@@ -521,6 +563,7 @@ Any player may trigger this ability.</property>
       <property name="CardNumber" value="44054"/>
       <property name="Position" value="54"/>
       <property name="Quantity" value="3"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Physical" value="1"/>
@@ -532,6 +575,7 @@ Attached minion cannot activate.</property>
       <property name="CardNumber" value="44055"/>
       <property name="Position" value="55"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="3"/>
       <property name="Resource_Energy" value="1"/>
@@ -544,6 +588,7 @@ Your hero gets +1 ATK for each [crisis], [acceleration], [amplify], and [hazard]
       <property name="CardNumber" value="44056"/>
       <property name="Position" value="56"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Wild" value="1"/>
@@ -555,6 +600,7 @@ Your hero gets +1 ATK for each [crisis], [acceleration], [amplify], and [hazard]
       <property name="CardNumber" value="44057"/>
       <property name="Position" value="57"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="0"/>
       <property name="Resource_Mental" value="1"/>
@@ -566,6 +612,7 @@ Your hero gets +1 ATK for each [crisis], [acceleration], [amplify], and [hazard]
       <property name="CardNumber" value="44058"/>
       <property name="Position" value="58"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="pool"/>
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Physical" value="1"/>
@@ -578,6 +625,7 @@ Your hero gets +1 ATK for each [crisis], [acceleration], [amplify], and [hazard]
       <property name="Position" value="32"/>
       <property name="Quantity" value="1"/>
       <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="obligation"/>
       <property name="Owner" value="deadpool"/>
       <property name="Boost" value="2"/>
@@ -590,6 +638,7 @@ Exhaust each ally you control. Allies you control cannot ready. Other players ca
       <property name="CardNumber" value="44033"/>
       <property name="Position" value="33"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="deadpool_nemesis"/>
       <property name="Attack" value="1"/>
@@ -605,6 +654,7 @@ You are confused</property>
       <property name="CardNumber" value="44034"/>
       <property name="Position" value="34"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="deadpool_nemesis"/>
       <property name="Boost" value="3"/>
@@ -619,6 +669,7 @@ You are confused</property>
       <property name="CardNumber" value="44035"/>
       <property name="Position" value="35"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="deadpool_nemesis"/>
       <property name="Text">Attach to your identity.
@@ -631,6 +682,7 @@ Attach Tabula Rasa 16 to your identity.</property>
       <property name="CardNumber" value="44036"/>
       <property name="Position" value="36"/>
       <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="deadpool_nemesis"/>
       <property name="Attack" value="2"/>
@@ -646,6 +698,7 @@ Attach Tabula Rasa 16 to your identity.</property>
       <property name="CardNumber" value="44037"/>
       <property name="Position" value="37"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="dreadpool"/>
       <property name="Boost" value="2"/>
@@ -655,6 +708,7 @@ Attach Tabula Rasa 16 to your identity.</property>
       <property name="CardNumber" value="44038"/>
       <property name="Position" value="38"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="minion"/>
       <property name="Owner" value="dreadpool"/>
       <property name="Attack" value="2"/>
@@ -670,6 +724,7 @@ Attach Tabula Rasa 16 to your identity.</property>
       <property name="CardNumber" value="44039"/>
       <property name="Position" value="39"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="dreadpool"/>
       <property name="Boost" value="3"/>
@@ -683,6 +738,7 @@ Attach Tabula Rasa 16 to your identity.</property>
       <property name="CardNumber" value="44040"/>
       <property name="Position" value="40"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="dreadpool"/>
       <property name="Attack" value="1"/>
@@ -696,6 +752,7 @@ Attach Tabula Rasa 16 to your identity.</property>
       <property name="CardNumber" value="44041"/>
       <property name="Position" value="41"/>
       <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="attachment"/>
       <property name="Owner" value="dreadpool"/>
       <property name="Boost" value="2"/>
@@ -706,6 +763,7 @@ Attach Tabula Rasa 16 to your identity.</property>
       <property name="CardNumber" value="44042"/>
       <property name="Position" value="42"/>
       <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
       <property name="Type" value="treachery"/>
       <property name="Owner" value="dreadpool"/>
       <property name="Boost" value="2"/>

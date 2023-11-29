@@ -102,6 +102,16 @@ Reset the game in order to generate a new deck."""
     if nemesisCards is not None:
         changeOwner(nemesisCards, heroSet)
 
+    # Check for linked cards  
+    for c in me.piles["Deck"]:
+        if c.CardNumber in linkedCard.keys():
+            for lnkC in linkedCard[c.CardNumber]:
+                cardModel = queryCard({"CardNumber":lnkC}, True)
+                if len(cardModel) == 0:
+                    notify("Card not found in octgn database. Code from marvelcdb url : {}.".format(cardid))
+                    continue 
+                cards = me.piles["Removed"].create(cardModel[0], 1)            
+
     heroSetup()
     checkSetup()
 

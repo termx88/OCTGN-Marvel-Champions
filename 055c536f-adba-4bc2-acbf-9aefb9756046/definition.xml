@@ -49,14 +49,18 @@
         <symbol name="Wild" id="wild" src="symbols/wild.png" />
     </symbols>
     <markers>
-        <marker id="8b974efd-733c-4111-8f96-d667fee4de5a" name="Threat" src="Markers/8b974efd-733c-4111-8f96-d667fee4de5a.png" />
-        <marker id="396f9a8e-542c-4992-a776-5abe03353979" name="Damage" src="Markers/396f9a8e-542c-4992-a776-5abe03353979.png" />
-        <marker id="38c95116-8b6e-41af-b2df-b30102ab2f1d" name="Health" src="Markers/38c95116-8b6e-41af-b2df-b30102ab2f1d.png" />
-        <marker id="bceb440d-2696-484e-8d76-cef609227779" name="All Purpose" src="Markers/bceb440d-2696-484e-8d76-cef609227779.png" />
-        <marker id="dd4a1de8-116c-4fd4-908c-6a8a70d58fc2" name="Acceleration" src="Markers/dd4a1de8-116c-4fd4-908c-6a8a70d58fc2.png" />
-        <marker id="8fa2056b-5786-429f-9d33-b96138e7aa98" name="Stunned" src="Markers/8fa2056b-5786-429f-9d33-b96138e7aa98.png" />
-        <marker id="1c0a87cf-3f38-4e84-9744-d627b9c54c93" name="Confused" src="Markers/1c0a87cf-3f38-4e84-9744-d627b9c54c93.png" />
-        <marker id="edcebfd6-3f75-40cb-b442-a8fb1154f6e2" name="Tough" src="Markers/edcebfd6-3f75-40cb-b442-a8fb1154f6e2.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000001" name="Threat" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000001.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000002" name="Damage" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000002.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000003" name="Health" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000003.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000004" name="All Purpose" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000004.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000005" name="Acceleration" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000005.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000006" name="Stunned" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000006.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000007" name="Confused" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000007.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000008" name="Tough" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000008.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000101" name="Physical" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000101.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000102" name="Energy" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000102.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000103" name="Mental" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000103.png" />
+        <marker id="055c536f-adba-4bc2-acbf-9aefb9000104" name="Wild" src="Markers/055c536f-adba-4bc2-acbf-9aefb9000104.png" />
     </markers>
     <proxygen definitionsrc="proxy/proxydef.xml" />
     <phases>
@@ -89,6 +93,7 @@
         <property name="nbModular" type="String" />
         <property name="mandatoryModular" type="String" />
         <property name="recommendedModular" type="String" />
+        <property name="Faction" type="String" />
         <property name="Type" type="String" />
         <property name="Owner" type="String" />
         <property name="Stage" type="Integer" />
@@ -295,6 +300,10 @@
         <group name="Special Discard" visibility="all" icon="symbols/special-discard.png" collapsed="True">
             <groupaction menu="View Pile" default="True" execute="viewGroup" />
             <groupaction menu="Shuffle Into Deck" execute="shuffleDiscardIntoDeck" />
+        </group>
+        <group name="Dreadpool" visibility="all" icon="symbols/dreadpool.png" collapsed="False">
+            <groupaction menu="View Pile" default="True" execute="viewGroup" />
+            <groupaction menu="Move All to Encounter Deck and Shuffle" execute="moveAllToEncounter" />
         </group>
         <group name="Villain" visibility="all" icon="symbols/skull.png" collapsed="False">
             <groupaction menu="View Pile" default="True" execute="viewGroup" />
