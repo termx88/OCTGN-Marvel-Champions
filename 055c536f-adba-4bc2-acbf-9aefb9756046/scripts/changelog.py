@@ -339,5 +339,11 @@ changelog = {
     '0000365': ("0.0.3.65", "29 November 2023", [
         "X-23 Hero pack added",
         "Deadpool Hero pack added"
+        ]),
+    '0000366': ("0.0.3.66", "29 November 2023", [
+        "Fix: Sci-Fi modular set was not loading properly",
+        "Fix: Villainous keyword on Exodus minion",
+        "Fix: Magneto I, II, III was loaded in standard and expert",
+        "Fix: Orbital Decay side scheme threat fixed"
         ])
 }

@@ -2173,7 +2173,7 @@ The first player controls Jubilee. She does not count against your ally limit.
       <property name="Owner" value="magneto"/>
       <property name="Stage" value="0"/>
       <property name="Standard" value="True"/>
-      <property name="Expert" value="True"/>
+      <property name="Expert" value="False"/>
       <property name="Attack" value="2"/>
       <property name="Scheme" value="2"/>
       <property name="HP" value="18"/>
@@ -2208,7 +2208,7 @@ The first player controls Jubilee. She does not count against your ally limit.
       <property name="Type" value="villain"/>
       <property name="Owner" value="magneto"/>
       <property name="Stage" value="0"/>
-      <property name="Standard" value="True"/>
+      <property name="Standard" value="False"/>
       <property name="Expert" value="True"/>
       <property name="Attack" value="3"/>
       <property name="Scheme" value="3"/>
@@ -2321,6 +2321,7 @@ The first player controls Jubilee. She does not count against your ally limit.
       <property name="DefaultSetupPile" value="Side"/>
       <property name="Type" value="side_scheme"/>
       <property name="Owner" value="magneto"/>
+      <property name="BaseThreat" value="3"/>
       <property name="BaseThreatFixed" value="False"/>
       <property name="EscalationThreatFixed" value="False"/>
       <alternate name="Physical Strain" type="b" size="EncounterCard">

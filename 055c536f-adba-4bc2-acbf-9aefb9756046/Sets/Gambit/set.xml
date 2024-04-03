@@ -338,7 +338,7 @@ Quickstrike.</property>
       <property name="Boost" value="3"/>
       <property name="HP" value="6"/>
       <property name="Attribute" value="Acolyte. Elite. Psionic."/>
-      <property name="Text">Retaliate 1. Villanous.
+      <property name="Text">Retaliate 1. Villainous.
 &lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter deck and discard pile for the Psionic Shield attachment and attach it to Exodus. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
       <property name="Quote">"I serve proudly in the house and name of Magneto!"</property>
       <property name="Unique" value="True"/>
