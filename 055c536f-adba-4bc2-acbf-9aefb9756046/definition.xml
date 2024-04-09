@@ -2,10 +2,10 @@
 <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     name="Marvel Champions"
     id="055c536f-adba-4bc2-acbf-9aefb9756046"
-    octgnVersion="3.4.384.0"
-    version="0.0.3.66"
+    octgnVersion="3.4.389.0"
+    version="0.0.3.72"
     scriptVersion="3.1.0.2"
-    markersize="15"
+    markersize="90"
     tags="OCTGN, Marvel, Champions"
     description="The Marvel Champions Game Package for OCTGN."
     setsurl="https://twistedsistem.wixsite.com/octgnmarvelchampions"
@@ -83,7 +83,7 @@
         <globalvariable name="recommendedModular" value="" />
         <globalvariable name="villainSetup" value="" />
     </globalvariables>
-    <card back="cards/back.png" front="cards/front.png" width="63" height="88" cornerRadius="4">
+    <card back="cards/back.png" front="cards/front.png" width="330" height="467" cornerRadius="21">
         <property name="CardNumber" type="String" />
         <property name="Position" type="String" />
         <property name="Quantity" type="Integer" />
@@ -129,13 +129,13 @@
         <property name="Text" type="RichText" />
         <property name="Quote" type="RichText" />
         <property name="Unique" type="String" /> 
-        <size name="PlayerSchemeCard" width="88" height="63"  backWidth="63" backHeight="88" back="cards/back.png" front="cards/front.png" cornerRadius="4" />
-        <size name="SchemeCard" width="88" height="63"  backWidth="63" backHeight="88" back="cards/altback.png" front="cards/front.png" cornerRadius="4" />
-        <size name="EncounterCard" width="63" height="88" back="cards/altback.png" front="cards/front.png" cornerRadius="4" />
-        <size name="VillainCard" width="63" height="88" back="cards/vilback.png" front="cards/front.png" cornerRadius="4" />
-        <size name="StatusCard" width="43" height="24" backWidth="43" backHeight="24" front="cards/statback.png" back="cards/statback.png" cornerRadius="2" />
+        <size name="PlayerSchemeCard" width="467" height="330"  backWidth="330" backHeight="467" back="cards/back.png" front="cards/front.png" cornerRadius="21" />
+        <size name="SchemeCard" width="467" height="330"  backWidth="330" backHeight="467" back="cards/altback.png" front="cards/front.png" cornerRadius="21" />
+        <size name="EncounterCard" width="330" height="467" back="cards/altback.png" front="cards/front.png" cornerRadius="21" />
+        <size name="VillainCard" width="330" height="467" back="cards/vilback.png" front="cards/front.png" cornerRadius="21" />
+        <size name="StatusCard" width="172" height="96" backWidth="172" backHeight="96" front="cards/statback.png" back="cards/statback.png" cornerRadius="16" />
     </card>
-    <table name="Table" visibility="undefined" ordered="False" width="800" height="500" background="background/playmat2.png" backgroundStyle="uniformToFill" >
+    <table name="Table" visibility="undefined" ordered="False" width="1918" height="1000" background="background/playmat2.png" backgroundStyle="uniformToFill" >
         <groupaction menu="Welcome Screen" default="False" execute="showWelcomeScreen" />
         <groupaction menu="Create Card" default="False" execute="createCard" />
         <groupactions menu="Setup">

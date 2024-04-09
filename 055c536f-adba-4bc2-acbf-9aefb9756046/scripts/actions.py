@@ -899,7 +899,7 @@ def randomPlayer(group, x=0, y=0):
 def readyExhaust(card, x = 0, y = 0):
     mute()
     if card.orientation == Rot0:
-        card.orientation = Rot90
+        card.orientation = Rot180
         notify("{} exhausts {}.".format(me, card))
     else:
         card.orientation = Rot0

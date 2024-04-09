@@ -2,6 +2,8 @@
 # 'Load Villain' event
 #------------------------------------------------------------
 
+horizontal_offset_scheme = 507
+
 def loadFanmadeVillain(group, x = 0, y = 0, setupType = "fm_villain_setup"):
     mute()
     loadVillain(group, x = 0, y = 0, setupType = "fm_villain_setup")
@@ -126,7 +128,7 @@ def villainSetup(group=table, x = 0, y = 0):
                 c.highlight = ActiveColour
         ssCards = sorted(filter(lambda card: card.Type == "side_scheme", encounterDeck()), key=lambda c: c.CardNumber)
         for idx, c in enumerate(ssCards):
-            c.moveToTable(villainX(4,idx)-10, tableLocations['villain'][1]+100)
+            c.moveToTable(villainX(4,idx)-10, tableLocations['villain'][1]+horizontal_offset_scheme)
 
     elif vName == "Red Skull":
         for c in filter(lambda card: card.Type == "side_scheme", encounterDeck()):
@@ -147,7 +149,7 @@ def villainSetup(group=table, x = 0, y = 0):
         villainAttCards[0].moveToTable(villainX(2,1)-90, tableLocations['villain'][1]+75)
 
         for idx, c in enumerate(sorted(mainSchemeCards)):
-            c.moveToTable(villainX(2,idx)-10, tableLocations['villain'][1]+100)
+            c.moveToTable(villainX(2,idx)-10, tableLocations['villain'][1]+horizontal_offset_scheme)
 
     elif vName == "Thanos":
         showGroup(specialDeckDiscard(), False)
@@ -181,7 +183,7 @@ def villainSetup(group=table, x = 0, y = 0):
             loop -= 1
 
         # If we loaded the encounter deck - add the first main scheme card to the table
-        sorted(mainSchemeCards)[0].moveToTable(tableLocations['mainSchemeCentered'][0]-100,tableLocations['villain'][1]+100)
+        sorted(mainSchemeCards)[0].moveToTable(tableLocations['mainSchemeCentered'][0]-horizontal_offset_scheme,tableLocations['villain'][1]+horizontal_offset_scheme)
 
     elif vName == 'Mansion Attack':
         # If we loaded the encounter deck - add the first main scheme card to the table
@@ -308,7 +310,7 @@ def SpecificVillainSetup(vName = ''):
     villainAttCards = sorted(filter(lambda card: card.Type == "attachment", encounterDeck()))
     vilX, vilY = vCardOnTable[0].position
     msX, msY = msCardOnTable[0].position
-    ssX = msX + 100
+    ssX = msX + horizontal_offset_scheme + 357
     ssY = msY
 
     if vName == 'Rhino':
@@ -324,7 +326,7 @@ def SpecificVillainSetup(vName = ''):
             ssCard1_OnTable = filter(lambda card: card.CardNumber == "01125", table)
             # Check if Defense Network already on table to adapt card's position for 2nd side scheme
             if len(ssCard1_OnTable) > 0:
-                ssX = ssCard1_OnTable[0].position[0] + 100
+                ssX = ssCard1_OnTable[0].position[0] + horizontal_offset_scheme
                 ssY = ssCard1_OnTable[0].position[1]
             revealCardOnSetup("'Immortal' Klaw", "01127", ssX, ssY)
 
@@ -377,7 +379,7 @@ def SpecificVillainSetup(vName = ''):
             ssCard1_OnTable = filter(lambda card: card.CardNumber == "04122", table)
             # Check if Hydra Prison already on table to adapt card's position for 2nd side scheme
             if len(ssCard1_OnTable) > 0:
-                ssX = ssCard1_OnTable[0].position[0] + 100
+                ssX = ssCard1_OnTable[0].position[0] + horizontal_offset_scheme
                 ssY = ssCard1_OnTable[0].position[1]
             revealCardOnSetup("Test Subjects", "04123", ssX, ssY)
 
@@ -423,7 +425,7 @@ def SpecificVillainSetup(vName = ''):
             ssCard1_OnTable = filter(lambda card: card.CardNumber == "16111", table)
             # Check if 'Cut the Power' already on table to adapt card's position for 2nd side scheme
             if len(ssCard1_OnTable) > 0:
-                ssX = ssCard1_OnTable[0].position[0] + 100
+                ssX = ssCard1_OnTable[0].position[0] + horizontal_offset_scheme
                 ssY = ssCard1_OnTable[0].position[1]
             revealCardOnSetup("Superior Tactics", "16113", ssX, ssY)
 
@@ -503,14 +505,14 @@ def SpecificVillainSetup(vName = ''):
 
     if vName == 'Sinister Six':
         if msCardOnTable[0].CardNumber == "27100a": # Stage 1 main scheme
-            revealCardOnSetup("Light at the End", "27102a", tableLocations['mainSchemeCentered'][0]+100, tableLocations['villain'][1]+100)
+            revealCardOnSetup("Light at the End", "27102a", tableLocations['mainSchemeCentered'][0]+horizontal_offset_scheme, tableLocations['villain'][1]+horizontal_offset_scheme)
 
 
     if vName == 'Venom Goblin':
         if msCardOnTable[0].CardNumber == "27116a": # Stage 1 main scheme
             msCards = filter(lambda card: card.Type == "main_scheme", mainSchemeDeck())
             for idx, c in enumerate(msCards):
-                c.moveToTable(villainX(3, idx), tableLocations['villain'][1]+100)
+                c.moveToTable(villainX(3, idx), tableLocations['villain'][1]+horizontal_offset_scheme)
 
 
     if vName == 'Sabretooth':
@@ -522,7 +524,7 @@ def SpecificVillainSetup(vName = ''):
     if vName == 'Project Wideawake':
         if msCardOnTable[0].CardNumber == "32087a": # Stage 1 main scheme
             revealCardOnSetup("Operation Zero Tolerance", "32104", ssX, ssY)
-            revealCardOnSetup("Mutants at the Mall", "32088a", ssX+100, ssY)
+            revealCardOnSetup("Mutants at the Mall", "32088a", ssX+horizontal_offset_scheme, ssY)
 
 
     if vName == 'Master Mold':

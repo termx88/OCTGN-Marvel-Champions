@@ -11,9 +11,9 @@ ConfusedMarker = ('Confused', '055c536f-adba-4bc2-acbf-9aefb9000007')
 ToughMarker = ('Tough', '055c536f-adba-4bc2-acbf-9aefb9000008')
 
 
-BoardWidth = 800
-PlayerY = 120
-VillainY = -235
+BoardWidth = 1920
+PlayerY = 19
+VillainY = -488
 DoneColour = '#D8D8D8' # Grey
 WaitingColour = '#FACC2E' # Orange
 ActiveColour = '#82FA58' # Green
@@ -32,14 +32,14 @@ Github     = "https://github.com/Ouroboros009/OCTGN-Marvel-Champions/issues"
 
 # Table Locations for Cards
 tableLocations = {
-    'hero': (0, 120),
-    'heroPermanent': (120, 120),
-    'villain': (0,-235),
-    'mainScheme': (45.5, -235),
-    'mainSchemeCentered': (-45.5, -235),
-    'sideScheme': (80, -215),
-    'attachment' : (-240, -235),
-    'environment' : (-120, -235)
+    'hero': (0, 19),
+    'heroPermanent': (-392, 19),
+    'villain': (0 ,-488),
+    'mainScheme': (-532, -488),
+    'mainSchemeCentered': (-289, -488),
+    'sideScheme': (322, -488),
+    'attachment' : (-1256, -488),
+    'environment' : (-889, -488)
 }
 
 linkedCard = {

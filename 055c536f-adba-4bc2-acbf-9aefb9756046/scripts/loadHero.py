@@ -2,6 +2,8 @@
 # 'Load Hero' event
 #------------------------------------------------------------
 
+card_horizontal_offset = -357
+
 def loadFanmadeHero(group, x = 0, y = 0):
     mute()
     loadHero(group, x, y, True, 0, "fm_hero_setup")
@@ -170,7 +172,7 @@ def heroSetup(group=table, x = 0, y = 0):
         if heroPlayed == 'vision':
             # me.counters['Default Card Draw'].value += 1
             for c in filter(lambda card: card.CardNumber == "26002a", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+                c.moveToTable(playerX(id)+card_horizontal_offset,tableLocations['hero'][1])
 
         # Ironheart
         if heroPlayed == 'ironheart':
@@ -180,23 +182,23 @@ def heroSetup(group=table, x = 0, y = 0):
         # SP//dr
         if heroPlayed == 'spdr':
             for c in me.piles['Special']:
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+                c.moveToTable(playerX(id)+card_horizontal_offset,tableLocations['hero'][1])
 
         # Shadowcat
         if heroPlayed == 'shadowcat':
             for c in filter(lambda card: card.CardNumber == "32031a", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+                c.moveToTable(playerX(id)+card_horizontal_offset,tableLocations['hero'][1])
 
         # Phoenix
         if heroPlayed == 'phoenix':
             for c in filter(lambda card: card.CardNumber == "34002a", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+                c.moveToTable(playerX(id)+card_horizontal_offset,tableLocations['hero'][1])
                 c.markers[AllPurposeMarker] = 4
 
         # Wolverine
         if heroPlayed == 'wolverine':
             for c in filter(lambda card: card.CardNumber == "35002", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+                c.moveToTable(playerX(id)+card_horizontal_offset,tableLocations['hero'][1])
 
         # Storm
         if heroPlayed == 'storm':
@@ -215,13 +217,13 @@ def heroSetup(group=table, x = 0, y = 0):
         if heroPlayed == 'psylocke':
             i = 1
             for c in filter(lambda card: card.CardNumber == "41002a", me.Special):
-                c.moveToTable(playerX(id)+(70*i),tableLocations['hero'][1])
+                c.moveToTable(playerX(id)+(card_horizontal_offset*i),tableLocations['hero'][1])
                 i += 1
 
         # X-23
         if heroPlayed == 'x23':
             for c in filter(lambda card: card.CardNumber == "43002", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
+                c.moveToTable(playerX(id)+card_horizontal_offset,tableLocations['hero'][1])
 
 def countHeros(p):
     heros = 0
